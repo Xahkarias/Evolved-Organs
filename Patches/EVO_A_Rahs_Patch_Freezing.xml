@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>/Defs/HediffDef[defName = "ChronicKidneyDisease"]/stages</xpath>
+                <success>Normal</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedChunk"]</xpath>
+                <value>
+                    <tickerType>Rare</tickerType>
+                    <comps>
+                        <li Class="CompProperties_Rottable">
+                            <daysToRotStart>0.6</daysToRotStart>
+                            <rotDestroys>true</rotDestroys>
+                        </li>
+                    </comps>
+                </value>
+                <success>Always</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedSecondHeart"]</xpath>
+                <value>
+                    <tickerType>Rare</tickerType>
+                    <comps>
+                        <li Class="CompProperties_Rottable">
+                            <daysToRotStart>0.6</daysToRotStart>
+                            <rotDestroys>true</rotDestroys>
+                        </li>
+                    </comps>
+                </value>
+                <success>Always</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedPrimaryHeart"]</xpath>
+                <value>
+                    <tickerType>Rare</tickerType>
+                    <comps>
+                        <li Class="CompProperties_Rottable">
+                            <daysToRotStart>0.6</daysToRotStart>
+                            <rotDestroys>true</rotDestroys>
+                        </li>
+                    </comps>
+                </value>
+                <success>Always</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedKidney"]</xpath>
+                <value>
+                    <tickerType>Rare</tickerType>
+                    <comps>
+                        <li Class="CompProperties_Rottable">
+                            <daysToRotStart>0.6</daysToRotStart>
+                            <rotDestroys>true</rotDestroys>
+                        </li>
+                    </comps>
+                </value>
+                <success>Always</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedLung"]</xpath>
+                <value>
+                    <tickerType>Rare</tickerType>
+                    <comps>
+                        <li Class="CompProperties_Rottable">
+                            <daysToRotStart>0.6</daysToRotStart>
+                            <rotDestroys>true</rotDestroys>
+                        </li>
+                    </comps>
+                </value>
+                <success>Always</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedThirdLung"]</xpath>
+                <value>
+                    <tickerType>Rare</tickerType>
+                    <comps>
+                        <li Class="CompProperties_Rottable">
+                            <daysToRotStart>0.6</daysToRotStart>
+                            <rotDestroys>true</rotDestroys>
+                        </li>
+                    </comps>
+                </value>
+                <success>Always</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedStomach"]</xpath>
+                <value>
+                    <tickerType>Rare</tickerType>
+                    <comps>
+                        <li Class="CompProperties_Rottable">
+                            <daysToRotStart>0.6</daysToRotStart>
+                            <rotDestroys>true</rotDestroys>
+                        </li>
+                    </comps>
+                </value>
+                <success>Always</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedLiver"]</xpath>
+                <value>
+                    <tickerType>Rare</tickerType>
+                    <comps>
+                        <li Class="CompProperties_Rottable">
+                            <daysToRotStart>0.6</daysToRotStart>
+                            <rotDestroys>true</rotDestroys>
+                        </li>
+                    </comps>
+                </value>
+                <success>Always</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedEye"]</xpath>
+                <value>
+                    <tickerType>Rare</tickerType>
+                    <comps>
+                        <li Class="CompProperties_Rottable">
+                            <daysToRotStart>0.6</daysToRotStart>
+                            <rotDestroys>true</rotDestroys>
+                        </li>
+                    </comps>
+                </value>
+                <success>Always</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedPinions"]</xpath>
+                <value>
+                    <tickerType>Rare</tickerType>
+                    <comps>
+                        <li Class="CompProperties_Rottable">
+                            <daysToRotStart>0.6</daysToRotStart>
+                            <rotDestroys>true</rotDestroys>
+                        </li>
+                    </comps>
+                </value>
+                <success>Always</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedCombatGlands"]</xpath>
+                <value>
+                    <tickerType>Rare</tickerType>
+                    <comps>
+                        <li Class="CompProperties_Rottable">
+                            <daysToRotStart>0.6</daysToRotStart>
+                            <rotDestroys>true</rotDestroys>
+                        </li>
+                    </comps>
+                </value>
+                <success>Always</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedLeg"]</xpath>
+                <value>
+                    <tickerType>Rare</tickerType>
+                    <comps>
+                        <li Class="CompProperties_Rottable">
+                            <daysToRotStart>0.6</daysToRotStart>
+                            <rotDestroys>true</rotDestroys>
+                        </li>
+                    </comps>
+                </value>
+                <success>Always</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedNose"]</xpath>
+                <value>
+                    <tickerType>Rare</tickerType>
+                    <comps>
+                        <li Class="CompProperties_Rottable">
+                            <daysToRotStart>0.6</daysToRotStart>
+                            <rotDestroys>true</rotDestroys>
+                        </li>
+                    </comps>
+                </value>
+                <success>Always</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedLarnyx"]</xpath>
+                <value>
+                    <tickerType>Rare</tickerType>
+                    <comps>
+                        <li Class="CompProperties_Rottable">
+                            <daysToRotStart>0.6</daysToRotStart>
+                            <rotDestroys>true</rotDestroys>
+                        </li>
+                    </comps>
+                </value>
+                <success>Always</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedEar"]</xpath>
+                <value>
+                    <tickerType>Rare</tickerType>
+                    <comps>
+                        <li Class="CompProperties_Rottable">
+                            <daysToRotStart>0.6</daysToRotStart>
+                            <rotDestroys>true</rotDestroys>
+                        </li>
+                    </comps>
+                </value>
+                <success>Always</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedRibcage"]</xpath>
+                <value>
+                    <tickerType>Rare</tickerType>
+                    <comps>
+                        <li Class="CompProperties_Rottable">
+                            <daysToRotStart>0.6</daysToRotStart>
+                            <rotDestroys>true</rotDestroys>
+                        </li>
+                    </comps>
+                </value>
+                <success>Always</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedCarapace"]</xpath>
+                <value>
+                    <tickerType>Rare</tickerType>
+                    <comps>
+                        <li Class="CompProperties_Rottable">
+                            <daysToRotStart>0.6</daysToRotStart>
+                            <rotDestroys>true</rotDestroys>
+                        </li>
+                    </comps>
+                </value>
+                <success>Always</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedSpine"]</xpath>
+                <value>
+                    <tickerType>Rare</tickerType>
+                    <comps>
+                        <li Class="CompProperties_Rottable">
+                            <daysToRotStart>0.6</daysToRotStart>
+                            <rotDestroys>true</rotDestroys>
+                        </li>
+                    </comps>
+                </value>
+                <success>Always</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedTail"]</xpath>
+                <value>
+                    <tickerType>Rare</tickerType>
+                    <comps>
+                        <li Class="CompProperties_Rottable">
+                            <daysToRotStart>0.6</daysToRotStart>
+                            <rotDestroys>true</rotDestroys>
+                        </li>
+                    </comps>
+                </value>
+                <success>Always</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedJaw"]</xpath>
+                <value>
+                    <tickerType>Rare</tickerType>
+                    <comps>
+                        <li Class="CompProperties_Rottable">
+                            <daysToRotStart>0.6</daysToRotStart>
+                            <rotDestroys>true</rotDestroys>
+                        </li>
+                    </comps>
+                </value>
+                <success>Always</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedBrains"]</xpath>
+                <value>
+                    <tickerType>Rare</tickerType>
+                    <comps>
+                        <li Class="CompProperties_Rottable">
+                            <daysToRotStart>0.6</daysToRotStart>
+                            <rotDestroys>true</rotDestroys>
+                        </li>
+                    </comps>
+                </value>
+                <success>Always</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedArm"]</xpath>
+                <value>
+                    <tickerType>Rare</tickerType>
+                    <comps>
+                        <li Class="CompProperties_Rottable">
+                            <daysToRotStart>0.6</daysToRotStart>
+                            <rotDestroys>true</rotDestroys>
+                        </li>
+                    </comps>
+                </value>
+                <success>Always</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedArmClaw"]</xpath>
+                <value>
+                    <tickerType>Rare</tickerType>
+                    <comps>
+                        <li Class="CompProperties_Rottable">
+                            <daysToRotStart>0.6</daysToRotStart>
+                            <rotDestroys>true</rotDestroys>
+                        </li>
+                    </comps>
+                </value>
+                <success>Always</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedArmSabre"]</xpath>
+                <value>
+                    <tickerType>Rare</tickerType>
+                    <comps>
+                        <li Class="CompProperties_Rottable">
+                            <daysToRotStart>0.6</daysToRotStart>
+                            <rotDestroys>true</rotDestroys>
+                        </li>
+                    </comps>
+                </value>
+                <success>Always</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedArmMace"]</xpath>
+                <value>
+                    <tickerType>Rare</tickerType>
+                    <comps>
+                        <li Class="CompProperties_Rottable">
+                            <daysToRotStart>0.6</daysToRotStart>
+                            <rotDestroys>true</rotDestroys>
+                        </li>
+                    </comps>
+                </value>
+                <success>Always</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedArmTentacle"]</xpath>
+                <value>
+                    <tickerType>Rare</tickerType>
+                    <comps>
+                        <li Class="CompProperties_Rottable">
+                            <daysToRotStart>0.6</daysToRotStart>
+                            <rotDestroys>true</rotDestroys>
+                        </li>
+                    </comps>
+                </value>
+                <success>Always</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedArmShield"]</xpath>
+                <value>
+                    <tickerType>Rare</tickerType>
+                    <comps>
+                        <li Class="CompProperties_Rottable">
+                            <daysToRotStart>0.6</daysToRotStart>
+                            <rotDestroys>true</rotDestroys>
+                        </li>
+                    </comps>
+                </value>
+                <success>Always</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedSpider"]</xpath>
+                <value>
+                    <tickerType>Rare</tickerType>
+                    <comps>
+                        <li Class="CompProperties_Rottable">
+                            <daysToRotStart>0.6</daysToRotStart>
+                            <rotDestroys>true</rotDestroys>
+                        </li>
+                    </comps>
+                </value>
+                <success>Always</success>
+            </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </operations>
+    </Operation>
+
+
+</Patch>
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/StatDef[defName = "SwimSpeed"]/minValue</xpath>
+				<success>Normal</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs</xpath>
+				<value>
+					
+				</value>
+				<success>Always</success>
+			</li>
+			
+		</operations>
+	</Operation>
+
+</Patch>-->
+
+
+
+

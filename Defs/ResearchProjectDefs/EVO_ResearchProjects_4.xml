@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchProjectDef>
+		<defName>EvolvedOrgansR1</defName>
+		<label>evolved cell creation</label>
+		<description>By combining our knowledge of biology and bionics, we can create cells that have much more potential than anything we could create naturally.</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>AdvancedFabrication</li>
+			<li>VitalsMonitor</li>
+			<li>Bionics</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>17</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>EvolvedOrgansR2</defName>
+		<label>evolved organ creation</label>
+		<description>We can now differtiate our evolved cells into organs that far surpass anything that could be achieved naturally.</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>EvolvedOrgansR1</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>18</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+</Defs>

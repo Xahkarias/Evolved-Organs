@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>InstallEvolvedArm_Primary</defName>
+		<label>implant evolved arm (primary)</label>
+		<description>Implant an evolved arm (primary).</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Implanting evolved arm.</jobString>
+		<workAmount>3000</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EvolvedArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>EvolvedArm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>EvolvedArm</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>InstallEvolvedArm_Secondary</defName>
+		<label>implant evolved arm (secondary)</label>
+		<description>Implant an evolved arm (secondary).</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Implanting evolved secondary arm.</jobString>
+		<workAmount>3000</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EvolvedArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EvolvedChunk</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>EvolvedArm</li>
+				<li>EvolvedChunk</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>LowerShoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>EvolvedArm_Secondary</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>InstallEvolvedArmClaw_Primary</defName>
+		<label>implant evolved claw (primary)</label>
+		<description>Implant an evolved claw (primary).</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Implanting evolved arm claw.</jobString>
+		<workAmount>3000</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EvolvedArmClaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>EvolvedArmClaw</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>EvolvedArmClaw</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>InstallEvolvedArmClaw_Secondary</defName>
+		<label>implant evolved claw (secondary)</label>
+		<description>Implant an evolved claw (secondary).</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Implanting evolved arm claw.</jobString>
+		<workAmount>3000</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EvolvedArmClaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EvolvedChunk</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>EvolvedArmClaw</li>
+				<li>EvolvedChunk</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>LowerShoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>EvolvedArmClaw_Secondary</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>InstallEvolvedArmSabre_Primary</defName>
+		<label>implant evolved arm sabre (primary)</label>
+		<description>Implant an evolved arm sabre (primary).</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Implanting evolved arm sabre.</jobString>
+		<workAmount>3000</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<recipeUsers><li>Human</li></recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EvolvedArmSabre</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>EvolvedArmSabre</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>EvolvedArmSabre</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>InstallEvolvedArmSabre_Secondary</defName>
+		<label>implant evolved arm sabre (secondary)</label>
+		<description>Implant an evolved arm sabre (secondary)</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Implanting evolved arm sabre.</jobString>
+		<workAmount>3000</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EvolvedArmSabre</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EvolvedChunk</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>EvolvedArmSabre</li>
+				<li>EvolvedChunk</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>LowerShoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>EvolvedArmSabre_Secondary</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>InstallEvolvedArmMace_Primary</defName>
+		<label>implant evolved arm mace (primary)</label>
+		<description>Implant an evolved arm mace (primary).</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Implanting evolved arm mace.</jobString>
+		<workAmount>3000</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EvolvedArmMace</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>EvolvedArmMace</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>EvolvedArmMace</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>InstallEvolvedArmMace_Secondary</defName>
+		<label>implant evolved arm mace (secondary)</label>
+		<description>Implant an evolved arm mace (secondary)</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Implanting evolved arm mace.</jobString>
+		<workAmount>3000</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EvolvedArmMace</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EvolvedChunk</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>EvolvedArmMace</li>
+				<li>EvolvedChunk</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>LowerShoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>EvolvedArmMace_Secondary</addsHediff>
+	</RecipeDef>
+
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>InstallEvolvedArmTentacle_Primary</defName>
+		<label>implant evolved tentacle (primary)</label>
+		<description>Implant an evolved tentacle (primary).</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Implanting evolved tentacle.</jobString>
+		<workAmount>3000</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EvolvedArmTentacle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>EvolvedArmTentacle</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>EvolvedArmTentacle</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>InstallEvolvedArmTentacle_Secondary</defName>
+		<label>implant evolved tentacle (secondary)</label>
+		<description>Implant an evolved tentacle (secondary)</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Implanting evolved tentacle.</jobString>
+		<workAmount>3000</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EvolvedArmTentacle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EvolvedChunk</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>EvolvedArmTentacle</li>
+				<li>EvolvedChunk</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>LowerShoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>EvolvedArmTentacle_Secondary</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>InstallEvolvedArmShield_Primary</defName>
+		<label>implant evolved arm shield (primary)</label>
+		<description>Implant an evolved arm shield (primary).</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Implanting evolved arm shield.</jobString>
+		<workAmount>3000</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EvolvedArmShield</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>EvolvedArmShield</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>EvolvedArmShield</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>InstallEvolvedArmShield_Secondary</defName>
+		<label>implant evolved arm shield (secondary)</label>
+		<description>Implant an evolved arm shield (secondary)</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Implanting evolved arm shield.</jobString>
+		<workAmount>3000</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EvolvedArmShield</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EvolvedChunk</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>EvolvedArmShield</li>
+				<li>EvolvedChunk</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>LowerShoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>EvolvedArmShield_Secondary</addsHediff>
+	</RecipeDef>
+
+
+</Defs>

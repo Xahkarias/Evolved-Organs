@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BodyPartDef>
+    <defName>RightAbdomenCavity</defName>
+    <label>Right Abdominal Cavity</label>
+    <hitPoints>10</hitPoints>
+    <skinCovered>true</skinCovered>
+	<canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>Back</defName>
+    <label>Back</label>
+    <hitPoints>10</hitPoints>
+    <skinCovered>true</skinCovered>
+	<canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RightChestCavity</defName>
+    <label>Right Chest Cavity</label>
+    <hitPoints>10</hitPoints>
+    <skinCovered>true</skinCovered>
+	<canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>LeftChestCavity</defName>
+    <label>Left Chest Cavity</label>
+    <hitPoints>10</hitPoints>
+    <skinCovered>true</skinCovered>
+	<canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>LowerShoulder</defName>
+    <label>Lower Shoulder</label>
+    <hitPoints>20</hitPoints>
+    <skinCovered>false</skinCovered>
+	<canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+</Defs>
