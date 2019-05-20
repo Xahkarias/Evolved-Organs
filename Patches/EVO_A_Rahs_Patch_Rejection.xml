@@ -159,11 +159,9 @@
 							</li>
 							<li>
 								<minSeverity>0.4</minSeverity>
-								<li>
-									<statOffsets>
-										<ToxicSensitivity>-0.1</ToxicSensitivity>
-									</statOffsets>
-								</li>
+								<statOffsets>
+									<ToxicSensitivity>-0.1</ToxicSensitivity>
+								</statOffsets>
 							</li>
 						</stages>
 					</HediffDef>
@@ -2059,6 +2057,6 @@
 
 	</Operation>
 
-	
+
 </Patch>
 
