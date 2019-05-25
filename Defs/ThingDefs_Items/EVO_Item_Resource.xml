@@ -25,5 +25,30 @@
 			<li>ExoticMisc</li>
 		</tradeTags>
 	</ThingDef>
-
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>EO_Humanoid_Proteins</defName>
+		<label>Humanoid Protein</label>
+		<description>A vial of humanoid protiens ready to be synthesized with mechanites and formed into a specialized appendage or organ.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/HumanoidProtienVial</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<MarketValue>10</MarketValue>
+			<Mass>0.01</Mass>
+			<Flammability>.8</Flammability>
+			<DeteriorationRate>5.0</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+	</ThingDef>
 </Defs>
