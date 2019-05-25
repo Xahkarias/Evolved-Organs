@@ -29,6 +29,10 @@
 					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Avali"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[1]/bodyPart</xpath>
 					<value><bodyPart>Tail</bodyPart></value>
 				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Avali"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[2]/bodyPart</xpath>
+					<value><bodyPart>Tail</bodyPart></value>
+				</li>
 
 
 			<li Class="PatchOperationAdd">
