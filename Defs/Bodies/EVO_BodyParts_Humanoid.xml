@@ -3,7 +3,7 @@
 
   <BodyPartDef>
     <defName>RightAbdomenCavity</defName>
-    <label>Right Abdominal Cavity</label>
+    <label>right abdominal cavity</label>
     <hitPoints>10</hitPoints>
     <skinCovered>true</skinCovered>
 	<canSuggestAmputation>false</canSuggestAmputation>
@@ -11,7 +11,7 @@
 
   <BodyPartDef>
     <defName>Back</defName>
-    <label>Back</label>
+    <label>back</label>
     <hitPoints>10</hitPoints>
     <skinCovered>true</skinCovered>
 	<canSuggestAmputation>false</canSuggestAmputation>
@@ -19,7 +19,7 @@
 
   <BodyPartDef>
     <defName>RightChestCavity</defName>
-    <label>Right Chest Cavity</label>
+    <label>right chest cavity</label>
     <hitPoints>10</hitPoints>
     <skinCovered>true</skinCovered>
 	<canSuggestAmputation>false</canSuggestAmputation>
@@ -27,7 +27,7 @@
   
   <BodyPartDef>
     <defName>LeftChestCavity</defName>
-    <label>Left Chest Cavity</label>
+    <label>left chest cavity</label>
     <hitPoints>10</hitPoints>
     <skinCovered>true</skinCovered>
 	<canSuggestAmputation>false</canSuggestAmputation>
@@ -35,7 +35,7 @@
   
   <BodyPartDef>
     <defName>LowerShoulder</defName>
-    <label>Lower Shoulder</label>
+    <label>lower shoulder</label>
     <hitPoints>20</hitPoints>
     <skinCovered>false</skinCovered>
 	<canSuggestAmputation>false</canSuggestAmputation>
