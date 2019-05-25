@@ -11,8 +11,12 @@
 				<xpath>/Defs/RecipeDef[defName="Make_Humanoid_Protein"]/fixedIngredientFilter/thingDefs</xpath>
 				<value>
 					<li>Meat_Alien_Leeani</li>
-				</value>
+				</value>			
+			</li>
 			
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/BodyDef[defName="Leeani"]/corePart/parts/li[4]</xpath>
+				<!--litterally counting down the list of lists until u get to the part u want? thats not annoyyyying -->
 			</li>
 			
 			<li Class="PatchOperationAdd">
@@ -68,6 +72,15 @@
 							<depth>Inside</depth>
 							<groups>
 								<li>Torso</li>
+							</groups>
+						</li>
+						<li>
+							<def>Tail</def>
+							<customLabel>leeani tail</customLabel>
+							<coverage>.05</coverage>
+							<depth>Outside</depth>
+							<groups>
+								<li>Waist</li>
 							</groups>
 						</li>
 				</value>

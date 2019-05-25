@@ -712,7 +712,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>Waist</li>
+			<li>Tail</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>EvolvedTail</addsHediff>
 	</RecipeDef>

@@ -40,4 +40,12 @@
     <skinCovered>false</skinCovered>
 	<canSuggestAmputation>false</canSuggestAmputation>
   </BodyPartDef>
+  
+    <BodyPartDef>
+    <defName>Tail</defName>
+    <label>tail</label>
+    <hitPoints>20</hitPoints>
+    <skinCovered>true</skinCovered>
+	<canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
 </Defs>

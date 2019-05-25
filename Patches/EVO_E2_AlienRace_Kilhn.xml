@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>Kilhn Race</modName>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/RecipeDef[defName="Make_Humanoid_Protein"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>Meat_Dragon_Kilhn</li>
+				</value>
+				
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<!--Tail-->
+					<xpath>/Defs/BodyDef[defName="KilhnBody"]/corePart/parts/li[20]</xpath>
+
+
+				</li>
+				
+								<li Class="PatchOperationRemove">
+					<!--R Wing-->
+					<xpath>/Defs/BodyDef[defName="KilhnBody"]/corePart/parts/li[15]</xpath>
+
+
+				</li>
+				
+								<li Class="PatchOperationRemove">
+					<!--L Wing-->
+					<xpath>/Defs/BodyDef[defName="KilhnBody"]/corePart/parts/li[14]</xpath>
+
+
+				</li>
+
+				<!-- <li Class="PatchOperationRemove"> -->
+					<!--Left Wing?-->
+				<!-- </li> -->
+
+				<!-- <li Class="PatchOperationRemove"> -->
+				 <!--Right Wing?--> 
+				<!-- </li> -->
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BodyDef[defName="KilhnBody"]/corePart/parts</xpath>
+				<value>
+
+					<li>
+						<def>LowerShoulder</def>
+						<customLabel>right lower shoulder</customLabel>
+						<coverage>0.00</coverage>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>LowerShoulder</def>
+						<customLabel>left lower shoulder</customLabel>
+						<coverage>0.00</coverage>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>	
+						<def>RightAbdomenCavity</def>
+						<customLabel>Right Abdominal Cavity</customLabel>
+						<coverage>0.020</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>RightChestCavity</def>
+						<customLabel>Right Chest Cavity</customLabel>
+						<coverage>0.010</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>LeftChestCavity</def>
+						<customLabel>Left Chest Cavity</customLabel>
+						<coverage>0.010</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>	
+						<def>Back</def>
+						<coverage>0.020</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+						<parts>
+							<li>
+								<def>KilhnWing</def>
+								<customLabel>left wing</customLabel>
+								<coverage>0.075</coverage>  
+								<depth>Outside</depth>
+								<groups>
+									<li>Torso</li>			
+								</groups>
+								<parts>
+									<li>
+										<def>KilhnWingMembrane</def>
+										<customLabel>left wing membrane</customLabel>
+										<coverage>0.062</coverage>
+										<groups>
+											<li>KilhnWings</li>
+										</groups>
+									</li>
+								</parts> 
+							</li>
+							<li>
+								<def>KilhnWing</def>
+								<customLabel>right wing</customLabel>
+								<coverage>0.075</coverage>		  
+								<depth>Outside</depth>
+								<groups>
+									<li>Torso</li>
+								</groups>
+								<parts>
+									<li>
+										<def>KilhnWingMembrane</def>
+										<customLabel>right wing membrane</customLabel>
+										<coverage>0.062</coverage>
+										<groups>
+											<li>KilhnWings</li>
+										</groups>
+									</li>
+								</parts>
+							</li>		
+						</parts>
+					</li>
+					<li>
+						<def>Tail</def>
+						<customLabel>KilhnTail</customLabel>
+						<coverage>.08</coverage>
+						<depth>Outside</depth>
+						<groups>
+							<li>Waist</li>
+						</groups>
+					</li>
+
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>
+
