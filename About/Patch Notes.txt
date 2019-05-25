@@ -1,0 +1,6 @@
+Added Humanoid Protein item type
+	-included patch template for adding alien_race_meat
+
+Changed Evolved Meat recipe to require Humanoid Protein.
+
+Added Humanoid Patch Template.

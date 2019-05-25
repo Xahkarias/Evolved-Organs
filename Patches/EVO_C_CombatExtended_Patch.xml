@@ -1,28 +1,12 @@
-<!-- stuff to change
-	more dodge chance for ears
-	more dodge chhance for glands
-	jaw is basic weapon
-	spider led is basic weapon
-	normal arm is better fist
-	claw is normal fist, slightly better, but really good at parry chance
-	sabre high stats
-	mace high stats
-	tentacle low stats
-	
-	carapace
-	ribcage
- shield
-
-
-
-
-
--->
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>Combat Extended</modName>
+			</li>
+			
 			<li Class="PatchOperationTest">
 				<xpath>/Defs/ThingDef[defName = "Apparel_MeleeShield"]</xpath>
 				<success>Normal</success>
@@ -50,7 +34,26 @@
 	</Operation>
 
 </Patch>
+<!-- stuff to change
+	more dodge chance for ears
+	more dodge chhance for glands
+	jaw is basic weapon
+	spider led is basic weapon
+	normal arm is better fist
+	claw is normal fist, slightly better, but really good at parry chance
+	sabre high stats
+	mace high stats
+	tentacle low stats
+	
+	carapace
+	ribcage
+ shield
 
+
+
+
+
+-->
 
 
 

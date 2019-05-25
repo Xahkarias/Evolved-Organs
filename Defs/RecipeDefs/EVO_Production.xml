@@ -82,7 +82,6 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>Meat_Human</li>
-				<li>Meat_Alien_Leeani</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
