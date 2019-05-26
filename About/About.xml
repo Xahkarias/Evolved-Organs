@@ -2,9 +2,11 @@
 	<ModMetaData>
 		<name>Evolved Organs</name>
 		<author>Xahkarias</author>
+
 		<url>https://github.com/Xahkarias/Evolved-Organs</url>
 		<supportedVersions>
 			<li>1.0.2272</li>
 		</supportedVersions>
+
 		<description>Adds a whole slew of new implants and replacements for colonists, by adding new parts that have been evolved beyond what could naturally have been created.</description>
 </ModMetaData>
