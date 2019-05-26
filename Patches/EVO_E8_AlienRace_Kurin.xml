@@ -4,21 +4,19 @@
 		<success>Always</success>
 		<operations>
 			<li Class="ModCheck.isModLoaded">
-				<modName>Leeani Playable Race</modName>
+				<modName>Kurin, The Three Tailed Fox</modName>
 			</li>
 
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/RecipeDef[defName="Make_Humanoid_Protein"]/fixedIngredientFilter/thingDefs</xpath>
 				<value>
-					<li>Meat_Alien_Leeani</li>
+					<li>Meat_DRNTF_Race</li>
 				</value>
 			</li>
 
-
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BodyDef[defName="Leeani"]/corePart/parts</xpath>
+				<xpath>/Defs/BodyDef[defName="DRNTF_Body"]/corePart/parts</xpath>
 				<value>
-
 					<li>
 						<def>LowerShoulder</def>
 						<customLabel>right lower shoulder</customLabel>
@@ -77,16 +75,16 @@
 				<xpath>/Defs</xpath>
 				<value>
 					<RecipeDef ParentName="SurgeryFlesh">
-						<defName>EVO_InstallEvolvedTail_Alien_Leeani</defName>
-						<label>install an evolved leeani tail</label>
-						<description>Implant an evolved leeani tail.</description>
+						<defName>EVO_InstallEvolvedTail_DRNTF</defName>
+						<label>implant evolved kurin tail</label>
+						<description>Implant an evolved kurin tail.</description>
 						<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-						<jobString>implanting evolved leeani tail.</jobString>
+						<jobString>implanting evolved kurin tail.</jobString>
 						<workAmount>2000</workAmount>
 						<skillRequirements>
 							<Medicine>10</Medicine>
 						</skillRequirements>
-						<recipeUsers><li>Alien_Leeani</li></recipeUsers>
+						<recipeUsers><li>DRNTF_Race</li></recipeUsers>
 						<ingredients>
 							<li>
 								<filter>
@@ -114,12 +112,61 @@
 							</thingDefs>
 						</fixedIngredientFilter>
 						<appliedOnFixedBodyParts>
-							<li>LeeaniTail</li>
+							<li>DRNTF_Tail</li>
 						</appliedOnFixedBodyParts>
 						<addsHediff>EvolvedTail</addsHediff>
 					</RecipeDef>
 				</value>
 			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs</xpath>
+				<value>
+					<RecipeDef ParentName="SurgeryFlesh">
+						<defName>EVO_InstallEvolvedEar_DRNTF</defName>
+						<label>implant evolved ear</label>
+						<description>Implant an evolved ear.</description>
+						<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+						<jobString>Implanting evolved ear.</jobString>
+						<workAmount>3000</workAmount>
+						<skillRequirements>
+							<Medicine>10</Medicine>
+						</skillRequirements>
+						<recipeUsers><li>Human</li></recipeUsers>
+						<ingredients>
+							<li>
+								<filter>
+									<categories>
+										<li>Medicine</li>
+									</categories>
+								</filter>
+								<count>2</count>
+							</li>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>EvolvedEar</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<categories>
+								<li>Medicine</li>
+							</categories>
+							<thingDefs>
+								<li>EvolvedEar</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<appliedOnFixedBodyParts>
+							<li>DRNTF_Ear</li>
+						</appliedOnFixedBodyParts>
+						<addsHediff>EvolvedEar</addsHediff>
+					</RecipeDef>
+				</value>
+			</li>
+
 		</operations>
 	</Operation>
 

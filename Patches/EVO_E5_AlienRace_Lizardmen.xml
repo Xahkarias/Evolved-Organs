@@ -14,10 +14,6 @@
 				</value>				
 			</li>
 
-			<li Class="PatchOperationRemove">
-				<xpath>/Defs/BodyDef[defName="Lizardman"]/corePart/parts/li[15]/parts/li[1]</xpath>
-
-			</li>
 			
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/BodyDef[defName="Lizardman"]/corePart/parts</xpath>
@@ -74,17 +70,10 @@
 								<li>Torso</li>
 							</groups>
 						</li>
-						<li>
-							<def>Tail</def>
-							<customLabel>lizard tail</customLabel>
-							<coverage>.05</coverage>
-							<depth>Outside</depth>
-							<groups>
-								<li>Waist</li>
-							</groups>
-						</li>
 				</value>
 			</li>
+
+			<!--Since Lizardmen race has a "Tail" def that matches our own, no need for adding a special surgery-->
 			</operations>
 	</Operation>
 
