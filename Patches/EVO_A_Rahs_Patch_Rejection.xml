@@ -3,9 +3,9 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/HediffDef[defName = "ChronicKidneyDisease"]/stages</xpath>
-				<success>Normal</success>
+
+			<li Class="ModCheck.isModLoaded">
+				<modName>Rah's Bionics and Surgery Expansion</modName>
 			</li>
 
 			<!-- Second Heart -->
