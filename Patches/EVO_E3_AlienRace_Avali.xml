@@ -15,25 +15,7 @@
 				
 				</li>
 
-				<li Class="PatchOperationRemove">
-					<!--Tail-->
-					<xpath>/Defs/BodyDef[defName="Avali"]/corePart/parts/li[4]</xpath>
-				</li>
-
- 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/BodyPartDef[defName="TailAvali"]/label</xpath>
-					<value><label>avali tail</label></value>
-				</li>
 				
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Avali"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[1]/bodyPart</xpath>
-					<value><bodyPart>Tail</bodyPart></value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Avali"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[2]/bodyPart</xpath>
-					<value><bodyPart>Tail</bodyPart></value>
-				</li>
-
 
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/BodyDef[defName="Avali"]/corePart/parts</xpath>
@@ -90,18 +72,56 @@
 							<li>Torso</li>
 						</groups>
 					</li>
-					<li>
-						<def>Tail</def>
-						<customLabel>avali tail</customLabel>
-						<coverage>.05</coverage>
-						<height>Bottom</height>
-						<depth>Outside</depth>
-						<groups>
-							<li>Waist</li>
-							<li>TailAvali</li>
-						</groups>
-					</li>
 
+
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs</xpath>
+				<value>
+					<RecipeDef ParentName="SurgeryFlesh">
+						<defName>EVO_InstallEvolvedTail_Alien_Avali</defName>
+						<label>install an evolved Avali tail</label>
+						<description>Implant an evolved Avali tail.</description>
+						<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+						<jobString>implanting evolved Avali tail.</jobString>
+						<workAmount>2000</workAmount>
+						<skillRequirements>
+							<Medicine>10</Medicine>
+						</skillRequirements>
+						<recipeUsers><li>Alien_Avali</li></recipeUsers>
+						<ingredients>
+							<li>
+								<filter>
+									<categories>
+										<li>Medicine</li>
+									</categories>
+								</filter>
+								<count>2</count>
+							</li>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>EvolvedTail</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<categories>
+								<li>Medicine</li>
+							</categories>
+							<thingDefs>
+								<li>EvolvedTail</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<appliedOnFixedBodyParts>
+							<li>TailAvali</li>
+						</appliedOnFixedBodyParts>
+						<addsHediff>EvolvedTail</addsHediff>
+					</RecipeDef>
 				</value>
 			</li>
 		</operations>
