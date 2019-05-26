@@ -3,9 +3,9 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/HediffDef[defName = "ChronicKidneyDisease"]/stages</xpath>
-				<success>Normal</success>
+
+			<li Class="ModCheck.isModLoaded">
+				<modName>Rah's Bionics and Surgery Expansion</modName>
 			</li>
 
 			<!-- Second Heart -->
@@ -608,13 +608,17 @@
 										<postFactor>0.80</postFactor>
 									</li>
 								</capMods>
-								<WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
+								<statOffsets>
+									<WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
+								</statOffsets>
 							</li>
 							<li>
 								<label>partly adapted</label>
 								<minSeverity>0.2</minSeverity>
 								<vomitMtbDays>1</vomitMtbDays>
-								<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+								<statOffsets>
+									<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+								</statOffsets>
 							</li>
 							<li>
 								<minSeverity>0.4</minSeverity>
@@ -2021,10 +2025,12 @@
 									<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
 									<ArmorRating_Sharp>0.10</ArmorRating_Sharp>
 								</statOffsets>
+								<capMods>
 								<li>
 									<capacity>Manipulation</capacity>
 									<offset>0.50</offset>
 								</li>
+								</capMods>
 							</li>
 							<li>
 								<minSeverity>0.4</minSeverity>

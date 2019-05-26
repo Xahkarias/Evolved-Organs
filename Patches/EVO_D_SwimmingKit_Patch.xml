@@ -5,13 +5,11 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/StatDef[defName = "SwimSpeed"]/minValue</xpath>
-				<success>Normal</success>
+			<li Class="ModCheck.isModLoaded">
+				<modName>[1.0] SwimmingKit</modName>
 			</li>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/HediffDef[defName = "ChronicKidneyDisease"]/stages</xpath>
-				<success>Normal</success>
+			<li Class="ModCheck.isModLoaded">
+				<modName>Rah's Bionics and Surgery Expansion</modName>
 			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/HediffDef[defName = "EvolvedArmTentacle"]/stages/li[3]</xpath>
@@ -40,12 +38,11 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/StatDef[defName = "SwimSpeed"]/minValue</xpath>
-				<success>Normal</success>
+			<li Class="ModCheck.isModLoaded">
+				<modName>[1.0] SwimmingKit</modName>
 			</li>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/HediffDef[defName = "ChronicKidneyDisease"]/stages</xpath>
+			<li Class="ModCheck.isModLoaded">
+				<modName>Rah's Bionics and Surgery Expansion</modName>
 				<success>Invert</success>
 			</li>
 			<li Class="PatchOperationAdd">
