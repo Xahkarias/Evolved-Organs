@@ -139,16 +139,55 @@
 							</li>		
 						</parts>
 					</li>
-					<li>
-						<def>Tail</def>
-						<customLabel>KilhnTail</customLabel>
-						<coverage>.08</coverage>
-						<depth>Outside</depth>
-						<groups>
-							<li>Waist</li>
-						</groups>
-					</li>
 
+				</value>
+			</li>
+			
+						<li Class="PatchOperationAdd">
+				<xpath>/Defs</xpath>
+				<value>
+					<RecipeDef ParentName="SurgeryFlesh">
+						<defName>EVO_InstallEvolvedTail_Alien_Kilhn</defName>
+						<label>install an evolved kilhn tail</label>
+						<description>Implant an evolved kilhn tail.</description>
+						<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+						<jobString>implanting evolved kilhn tail.</jobString>
+						<workAmount>2000</workAmount>
+						<skillRequirements>
+							<Medicine>10</Medicine>
+						</skillRequirements>
+						<recipeUsers><li>Alien_kilhn</li></recipeUsers>
+						<ingredients>
+							<li>
+								<filter>
+									<categories>
+										<li>Medicine</li>
+									</categories>
+								</filter>
+								<count>2</count>
+							</li>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>EvolvedTail</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<categories>
+								<li>Medicine</li>
+							</categories>
+							<thingDefs>
+								<li>EvolvedTail</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<appliedOnFixedBodyParts>
+							<li>KilhnTail</li>
+						</appliedOnFixedBodyParts>
+						<addsHediff>EvolvedTail</addsHediff>
+					</RecipeDef>
 				</value>
 			</li>
 		</operations>
