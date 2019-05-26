@@ -1,0 +1,11 @@
+Added Humanoid Protein item type
+	-included patch template for adding alien_race_meat
+
+Changed Evolved Meat recipe to require Humanoid Protein.
+
+Added Humanoid Patch Template.
+
+Add Humanlike TailBone body part for tail installations as a parallel to tailed races.
+
+Added Kilhn Race Patch
+Added Leeani Race Patch

@@ -3,9 +3,8 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/HediffDef[defName = "BionicReproductiveOrgans"]/addedPartProps</xpath>
-				<success>Normal</success>
+			<li Class="ModCheck.isModLoaded">
+				<modName>The Birds and the Bees</modName>
 			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs</xpath>
@@ -49,7 +48,10 @@
 						<workAmount>3000</workAmount>
 						<skillRequirements>
 							<Medicine>10</Medicine>
-						</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
+						</skillRequirements>
+						<recipeUsers>
+							<li>Human</li>
+						</recipeUsers>
 						<ingredients>
 							<li>
 								<filter>
@@ -91,13 +93,11 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/HediffDef[defName = "ChronicKidneyDisease"]/stages</xpath>
-				<success>Normal</success>
+			<li Class="ModCheck.isModLoaded">
+				<modName>Rah's Bionics and Surgery Expansion</modName>
 			</li>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/HediffDef[defName = "BionicReproductiveOrgans"]/addedPartProps</xpath>
-				<success>Normal</success>
+			<li Class="ModCheck.isModLoaded">
+				<modName>The Birds and the Bees</modName>
 			</li>
 			<!-- UBERDONG -->
 			<li Class="PatchOperationReplace">

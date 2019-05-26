@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>Yabils: Space Gremlins</modName>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/RecipeDef[defName="Make_Humanoid_Protein"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>Meat_Alien_Yabil</li>
+				</value>				
+			</li>
+
+			<!-- No unique body def used, just inherits body from humanlike thus all normal EVOparts default just fine-->
+		</operations>
+	</Operation>
+</Patch>
+

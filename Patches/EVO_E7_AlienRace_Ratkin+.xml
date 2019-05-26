@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>NewRatkinPlus</modName>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/RecipeDef[defName="Make_Humanoid_Protein"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>Meat_Ratkin</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[1]/bodyPart</xpath>
+				<value>
+					<bodyPart>Tail</bodyPart>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BodyDef[defName="Ratkin"]/corePart/parts</xpath>
+				<value>
+
+					<li>
+						<def>LowerShoulder</def>
+						<customLabel>right lower shoulder</customLabel>
+						<coverage>0.00</coverage>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>LowerShoulder</def>
+						<customLabel>left lower shoulder</customLabel>
+						<coverage>0.00</coverage>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>RightAbdomenCavity</def>
+						<customLabel>right abdominal cavity</customLabel>
+						<coverage>0.020</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>RightChestCavity</def>
+						<customLabel>right chest cavity</customLabel>
+						<coverage>0.010</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>LeftChestCavity</def>
+						<customLabel>left chest cavity</customLabel>
+						<coverage>0.010</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>Back</def>
+						<coverage>0.020</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs</xpath>
+				<value>
+					<RecipeDef ParentName="SurgeryFlesh">
+						<defName>EVO_InstallEvolvedTail_RK</defName>
+						<label>implant evolved ratkin tail</label>
+						<description>Implant an evolved ratkin tail.</description>
+						<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+						<jobString>implanting evolved ratkin tail.</jobString>
+						<workAmount>2000</workAmount>
+						<skillRequirements>
+							<Medicine>10</Medicine>
+						</skillRequirements>
+						<ingredients>
+							<li>
+								<filter>
+									<categories>
+										<li>Medicine</li>
+									</categories>
+								</filter>
+								<count>2</count>
+							</li>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>EvolvedTail</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<categories>
+								<li>Medicine</li>
+							</categories>
+							<thingDefs>
+								<li>EvolvedTail</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<appliedOnFixedBodyParts>
+							<li>RK_RatTail</li>
+						</appliedOnFixedBodyParts>
+						<addsHediff>EvolvedTail</addsHediff>
+					</RecipeDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>
+

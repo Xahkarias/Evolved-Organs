@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>Leeani Playable Race</modName>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/RecipeDef[defName="Make_Humanoid_Protein"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>Meat_Alien_Leeani</li>
+				</value>
+			</li>
+
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BodyDef[defName="Leeani"]/corePart/parts</xpath>
+				<value>
+
+					<li>
+						<def>LowerShoulder</def>
+						<customLabel>right lower shoulder</customLabel>
+						<coverage>0.00</coverage>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>LowerShoulder</def>
+						<customLabel>left lower shoulder</customLabel>
+						<coverage>0.00</coverage>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>RightAbdomenCavity</def>
+						<customLabel>Right Abdominal Cavity</customLabel>
+						<coverage>0.020</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>RightChestCavity</def>
+						<customLabel>Right Chest Cavity</customLabel>
+						<coverage>0.010</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>LeftChestCavity</def>
+						<customLabel>Left Chest Cavity</customLabel>
+						<coverage>0.010</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>Back</def>
+						<coverage>0.020</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs</xpath>
+				<value>
+					<RecipeDef ParentName="SurgeryFlesh">
+						<defName>EVO_InstallEvolvedTail_Alien_Leeani</defName>
+						<label>install an evolved leeani tail</label>
+						<description>Implant an evolved leeani tail.</description>
+						<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+						<jobString>implanting evolved leeani tail.</jobString>
+						<workAmount>2000</workAmount>
+						<skillRequirements>
+							<Medicine>10</Medicine>
+						</skillRequirements>
+						<recipeUsers><li>Alien_Leeani</li></recipeUsers>
+						<ingredients>
+							<li>
+								<filter>
+									<categories>
+										<li>Medicine</li>
+									</categories>
+								</filter>
+								<count>2</count>
+							</li>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>EvolvedTail</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<categories>
+								<li>Medicine</li>
+							</categories>
+							<thingDefs>
+								<li>EvolvedTail</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<appliedOnFixedBodyParts>
+							<li>LeeaniTail</li>
+						</appliedOnFixedBodyParts>
+						<addsHediff>EvolvedTail</addsHediff>
+					</RecipeDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>
+
+	
