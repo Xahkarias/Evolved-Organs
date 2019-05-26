@@ -76,7 +76,7 @@
 				<value>
 					<RecipeDef ParentName="SurgeryFlesh">
 						<defName>EVO_InstallEvolvedTail_DRNTF</defName>
-						<label>install an evolved kurin tail</label>
+						<label>implant evolved kurin tail</label>
 						<description>Implant an evolved kurin tail.</description>
 						<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 						<jobString>implanting evolved kurin tail.</jobString>
@@ -84,7 +84,7 @@
 						<skillRequirements>
 							<Medicine>10</Medicine>
 						</skillRequirements>
-						<recipeUsers><li>Human</li></recipeUsers>
+						<recipeUsers><li>DRNTF_Race</li></recipeUsers>
 						<ingredients>
 							<li>
 								<filter>

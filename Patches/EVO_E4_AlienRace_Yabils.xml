@@ -17,6 +17,5 @@
 			<!-- No unique body def used, just inherits body from humanlike thus all normal EVOparts default just fine-->
 		</operations>
 	</Operation>
-
 </Patch>
 
