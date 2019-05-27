@@ -27,7 +27,7 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="ResourceBase">
-		<defName>EO_Humanoid_Protein</defName>
+		<defName>EVO_Humanoid_Protein</defName>
 		<label>Humanoid Protein</label>
 		<description>A vial of humanoid protiens ready to be synthesized with mechanites and formed into a specialized appendage or organ.</description>
 		<graphicData>
