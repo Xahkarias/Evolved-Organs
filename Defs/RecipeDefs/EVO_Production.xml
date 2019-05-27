@@ -85,7 +85,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<EO_Humanoid_Protein>5</EO_Humanoid_Protein>
+			<EVO_Humanoid_Protein>5</EVO_Humanoid_Protein>
 		</products>
 		<researchPrerequisite>EvolvedOrgansR1</researchPrerequisite>
 		<skillRequirements>
