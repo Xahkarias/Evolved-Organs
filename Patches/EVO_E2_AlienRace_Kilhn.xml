@@ -148,7 +148,7 @@
 				<value>
 					<RecipeDef ParentName="SurgeryFlesh">
 						<defName>EVO_InstallEvolvedTail_Alien_Kilhn</defName>
-						<label>install an evolved kilhn tail</label>
+						<label>implant an evolved kilhn tail</label>
 						<description>Implant an evolved kilhn tail.</description>
 						<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 						<jobString>implanting evolved kilhn tail.</jobString>

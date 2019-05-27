@@ -82,7 +82,7 @@
 				<value>
 					<RecipeDef ParentName="SurgeryFlesh">
 						<defName>EVO_InstallEvolvedTail_Alien_Avali</defName>
-						<label>install an evolved Avali tail</label>
+						<label>implant an evolved Avali tail</label>
 						<description>Implant an evolved Avali tail.</description>
 						<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 						<jobString>implanting evolved Avali tail.</jobString>

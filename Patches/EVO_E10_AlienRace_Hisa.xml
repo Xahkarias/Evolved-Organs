@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+
+			<li Class="ModCheck.OR">
+				<tests>
+					<li Class="ModCheck.isModLoaded">
+						<modName>Hisa Faction</modName>
+					</li>
+					<li Class="ModCheck.isModLoaded">
+						<modName>Hisa Faction Lite</modName>
+					</li>
+				</tests>
+			</li>
+
+			<!--This file literally does nothing but is here for future purposes.
+				Hisa's produce human meat when butchered, thus do not need a patch for creating proteins
+				Hisas also refer to the base human body, and thus do not need patching for organs
+			-->
+
+
+
+		</operations>
+	</Operation>
+
+</Patch>
+
+	
