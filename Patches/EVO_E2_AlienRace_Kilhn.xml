@@ -12,37 +12,37 @@
 				<value>
 					<li>Meat_Dragon_Kilhn</li>
 				</value>
-				
-				</li>
 
-				<li Class="PatchOperationRemove">
-					<!--Tail-->
-					<xpath>/Defs/BodyDef[defName="KilhnBody"]/corePart/parts/li[20]</xpath>
+			</li>
 
-
-				</li>
-				
-								<li Class="PatchOperationRemove">
-					<!--R Wing-->
-					<xpath>/Defs/BodyDef[defName="KilhnBody"]/corePart/parts/li[15]</xpath>
+			<li Class="PatchOperationRemove">
+				<!--Tail-->
+				<xpath>/Defs/BodyDef[defName="KilhnBody"]/corePart/parts/li[20]</xpath>
 
 
-				</li>
-				
-								<li Class="PatchOperationRemove">
-					<!--L Wing-->
-					<xpath>/Defs/BodyDef[defName="KilhnBody"]/corePart/parts/li[14]</xpath>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<!--R Wing-->
+				<xpath>/Defs/BodyDef[defName="KilhnBody"]/corePart/parts/li[15]</xpath>
 
 
-				</li>
+			</li>
 
-				<!-- <li Class="PatchOperationRemove"> -->
-					<!--Left Wing?-->
-				<!-- </li> -->
+			<li Class="PatchOperationRemove">
+				<!--L Wing-->
+				<xpath>/Defs/BodyDef[defName="KilhnBody"]/corePart/parts/li[14]</xpath>
 
-				<!-- <li Class="PatchOperationRemove"> -->
-				 <!--Right Wing?--> 
-				<!-- </li> -->
+
+			</li>
+
+			<!-- <li Class="PatchOperationRemove"> -->
+			<!--Left Wing?-->
+			<!-- </li> -->
+
+			<!-- <li Class="PatchOperationRemove"> -->
+			<!--Right Wing?-->
+			<!-- </li> -->
 
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/BodyDef[defName="KilhnBody"]/corePart/parts</xpath>
@@ -64,7 +64,7 @@
 							<li>Torso</li>
 						</groups>
 					</li>
-					<li>	
+					<li>
 						<def>RightAbdomenCavity</def>
 						<customLabel>Right Abdominal Cavity</customLabel>
 						<coverage>0.020</coverage>
@@ -91,7 +91,7 @@
 							<li>Torso</li>
 						</groups>
 					</li>
-					<li>	
+					<li>
 						<def>Back</def>
 						<coverage>0.020</coverage>
 						<depth>Inside</depth>
@@ -102,10 +102,10 @@
 							<li>
 								<def>KilhnWing</def>
 								<customLabel>left wing</customLabel>
-								<coverage>0.075</coverage>  
+								<coverage>0.075</coverage>
 								<depth>Outside</depth>
 								<groups>
-									<li>Torso</li>			
+									<li>Torso</li>
 								</groups>
 								<parts>
 									<li>
@@ -116,12 +116,12 @@
 											<li>KilhnWings</li>
 										</groups>
 									</li>
-								</parts> 
+								</parts>
 							</li>
 							<li>
 								<def>KilhnWing</def>
 								<customLabel>right wing</customLabel>
-								<coverage>0.075</coverage>		  
+								<coverage>0.075</coverage>
 								<depth>Outside</depth>
 								<groups>
 									<li>Torso</li>
@@ -136,14 +136,14 @@
 										</groups>
 									</li>
 								</parts>
-							</li>		
+							</li>
 						</parts>
 					</li>
 
 				</value>
 			</li>
-			
-						<li Class="PatchOperationAdd">
+
+			<li Class="PatchOperationAdd">
 				<xpath>/Defs</xpath>
 				<value>
 					<RecipeDef ParentName="SurgeryFlesh">
@@ -156,7 +156,9 @@
 						<skillRequirements>
 							<Medicine>10</Medicine>
 						</skillRequirements>
-						<recipeUsers><li>Alien_kilhn</li></recipeUsers>
+						<recipeUsers>
+							<li>Alien_kilhn</li>
+						</recipeUsers>
 						<ingredients>
 							<li>
 								<filter>
