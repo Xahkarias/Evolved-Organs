@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+
+			<li Class="ModCheck.isModLoaded">
+				<modName>RimEffect - Asari of the Rims</modName>
+			</li>
+
+
+			<!--This file literally does nothing but is here for future purposes.
+				asari's produce human meat when butchered, thus do not need a patch for creating proteins
+				asaris also refer to the base human body, and thus do not need patching for organs
+			-->
+		</operations>
+	</Operation>
+
+</Patch>
+
+	
