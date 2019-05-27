@@ -4,21 +4,77 @@
 		<success>Always</success>
 		<operations>
 			<li Class="ModCheck.isModLoaded">
-				<modName>Leeani Playable Race</modName>
+				<modName>Warhammer: Skaven</modName>
 			</li>
 
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/RecipeDef[defName="Make_Humanoid_Protein"]/fixedIngredientFilter/thingDefs</xpath>
 				<value>
-					<li>Meat_Alien_Leeani</li>
+					<li>Meat_Alien_Skaven</li>
 				</value>
 			</li>
 
 
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BodyDef[defName="Leeani"]/corePart/parts</xpath>
+				<xpath>/Defs/BodyDef[defName="Skaven"]/corePart/parts</xpath>
 				<value>
+					<li>
+						<def>LowerShoulder</def>
+						<customLabel>right lower shoulder</customLabel>
+						<coverage>0.00</coverage>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>LowerShoulder</def>
+						<customLabel>left lower shoulder</customLabel>
+						<coverage>0.00</coverage>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>RightAbdomenCavity</def>
+						<customLabel>Right Abdominal Cavity</customLabel>
+						<coverage>0.020</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>RightChestCavity</def>
+						<customLabel>Right Chest Cavity</customLabel>
+						<coverage>0.010</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>LeftChestCavity</def>
+						<customLabel>Left Chest Cavity</customLabel>
+						<coverage>0.010</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+					<li>
+						<def>Back</def>
+						<coverage>0.020</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+				</value>
+			</li>
 
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BodyDef[defName="SkavenHorned"]/corePart/parts</xpath>
+				<value>
 					<li>
 						<def>LowerShoulder</def>
 						<customLabel>right lower shoulder</customLabel>
@@ -77,16 +133,20 @@
 				<xpath>/Defs</xpath>
 				<value>
 					<RecipeDef ParentName="SurgeryFlesh">
-						<defName>EVO_InstallEvolvedTail_Alien_Leeani</defName>
-						<label>implant an evolved leeani tail</label>
-						<description>Implant an evolved leeani tail.</description>
+						<defName>EVO_InstallEvolvedTail_Alien_Skaven</defName>
+						<label>implant an evolved skaven tail</label>
+						<description>Implant an evolved skaven tail.</description>
 						<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-						<jobString>implanting evolved leeani tail.</jobString>
+						<jobString>implanting evolved skaven tail.</jobString>
 						<workAmount>2000</workAmount>
 						<skillRequirements>
 							<Medicine>10</Medicine>
 						</skillRequirements>
-						<recipeUsers><li>Alien_Leeani</li></recipeUsers>
+						<recipeUsers>
+							<li>Alien_SkavenStorm</li>
+							<li>Alien_HornedSkaven</li>
+							<li>Alien_Skaven</li>
+						</recipeUsers>
 						<ingredients>
 							<li>
 								<filter>
@@ -114,7 +174,7 @@
 							</thingDefs>
 						</fixedIngredientFilter>
 						<appliedOnFixedBodyParts>
-							<li>LeeaniTail</li>
+							<li>SkavenTail</li>
 						</appliedOnFixedBodyParts>
 						<addsHediff>EvolvedTail</addsHediff>
 					</RecipeDef>
