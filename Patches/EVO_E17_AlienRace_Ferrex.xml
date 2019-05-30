@@ -4,8 +4,6 @@
 		<success>Always</success>
 		<operations>
 
-			<!--Patch still needs to be tested-->
-
 			<li Class="ModCheck.isModLoaded">
 				<modName>Ferrex Race 1.0</modName>
 			</li>

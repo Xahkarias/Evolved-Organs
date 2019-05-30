@@ -623,15 +623,6 @@
 						<li>Torso</li>
 					</groups>
 				</li>
-				<li>	
-					<def>Tail</def>
-					<customLabel>tail bone</customLabel>
-					<coverage>0.002</coverage>
-					<depth>Outside</depth>
-					<groups>
-						<li>Torso</li>
-					</groups>
-				</li>
 				
 			</parts>
 		</corePart>
