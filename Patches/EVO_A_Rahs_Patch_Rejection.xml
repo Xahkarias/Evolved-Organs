@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationSequence">
+	<Operation Class="PatchOperationFindMod">
 		<success>Always</success>
+		<mods><li>Rah's Bionics and Surgery Expansion</li></mods>
+		<match Class="PatchOperationSequence">
 		<operations>
-
-			<li Class="ModCheck.isModLoaded">
-				<modName>Rah's Bionics and Surgery Expansion</modName>
-			</li>
 
 			<!-- Second Heart -->
 			<li Class="PatchOperationReplace">
@@ -2057,11 +2055,8 @@
 
 
 		</operations>
-
-
-
-
-	</Operation>
+		</match>
+		</Operation>
 
 
 </Patch>

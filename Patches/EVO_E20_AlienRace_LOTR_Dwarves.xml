@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationSequence">
+	<Operation Class="PatchOperationFindMod">
 		<success>Always</success>
-		<operations>
-			<li Class="ModCheck.isModLoaded">
-				<modName>Lord of the Rims - Dwarves</modName>
-			</li>
+		<mods>
+			<li>Lord of the Rims - Dwarves</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
 
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName="Make_Humanoid_Protein"]/fixedIngredientFilter/thingDefs</xpath>
-				<value>
-					<li>Meat_LotRD_DwarfStandardRace</li>
-				</value>
-			</li>
-			
-		</operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName="Make_Humanoid_Protein"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Meat_LotRD_DwarfStandardRace</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
 	</Operation>
 
 </Patch>
 
-	
