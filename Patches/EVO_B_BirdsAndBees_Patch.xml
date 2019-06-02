@@ -41,7 +41,7 @@
 					<xpath>/Defs</xpath>
 					<value>
 						<RecipeDef ParentName="SurgeryFlesh">
-							<defName>InstalEvolvedReproductiveOrgans</defName>
+							<defName>InstallEvolvedReproductiveOrgans</defName>
 							<label>implant evolved reproductive organs</label>
 							<description>Implant some evolved reproductive organs.</description>
 							<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
