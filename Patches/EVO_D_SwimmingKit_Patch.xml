@@ -5,7 +5,7 @@
 	<Operation Class="PatchOperationFindMod">
 		<success>Always</success>
 		<mods>
-			<li>Rah's Bionics and Surgery Expansion</li>				
+			<li>[1.0] SwimmingKit</li>				
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
@@ -29,34 +29,35 @@
 					<success>Always</success>
 				</li>
 
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>[1.0] SwimmingKit</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-							<li Class="PatchOperationAdd">
-								<xpath>/Defs/HediffDef[defName = "EvolvedArmTentacle"]/stages/li[1]</xpath>
-								<value>
-									<statOffsets>
-										<SwimSpeed>3.5</SwimSpeed>
-									</statOffsets>
-								</value>
-								<success>Always</success>
-							</li>
-							<li Class="PatchOperationAdd">
-								<xpath>/Defs/HediffDef[defName = "EvolvedArmTentacle_Secondary"]/stages/li[1]</xpath>
-								<value>
-									<statOffsets>
-										<SwimSpeed>3.5</SwimSpeed>
-									</statOffsets>
-								</value>
-								<success>Always</success>
-							</li>
+				<!-- Why is this here ? -->
+				<!-- <li Class="PatchOperationFindMod"> -->
+					<!-- <mods> -->
+						<!-- <li>Rah's Bionics and Surgery Expansion</li> -->
+					<!-- </mods> -->
+					<!-- <match Class="PatchOperationSequence"> -->
+						<!-- <operations> -->
+							<!-- <li Class="PatchOperationAdd"> -->
+								<!-- <xpath>/Defs/HediffDef[defName = "EvolvedArmTentacle"]/stages/li[1]</xpath> -->
+								<!-- <value> -->
+									<!-- <statOffsets> -->
+										<!-- <SwimSpeed>3.5</SwimSpeed> -->
+									<!-- </statOffsets> -->
+								<!-- </value> -->
+								<!-- <success>Always</success> -->
+							<!-- </li> -->
+							<!-- <li Class="PatchOperationAdd"> -->
+								<!-- <xpath>/Defs/HediffDef[defName = "EvolvedArmTentacle_Secondary"]/stages/li[1]</xpath> -->
+								<!-- <value> -->
+									<!-- <statOffsets> -->
+										<!-- <SwimSpeed>3.5</SwimSpeed> -->
+									<!-- </statOffsets> -->
+								<!-- </value> -->
+								<!-- <success>Always</success> -->
+							<!-- </li> -->
 
-						</operations>
-					</match>
-				</li>
+						<!-- </operations> -->
+					<!-- </match> -->
+				<!-- </li> -->
 			</operations>
 		</match>
 	</Operation>
