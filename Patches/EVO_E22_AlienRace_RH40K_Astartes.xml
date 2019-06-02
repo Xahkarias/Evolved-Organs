@@ -8,7 +8,19 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 
-				<!--This race has some custom parts that might need to be changed, I'm just adding the basic Evo installation parts for now-->
+				<li Class="PatchOperationRemove">
+					<!--secondary heart-->
+					<xpath>/Defs/BodyDef[defName="AstartesBody"]/corePart/parts/li[9]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<!--biscopea?-->
+					<xpath>/Defs/BodyDef[defName="AstartesBody"]/corePart/parts/li[11]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<!--third lung-->
+					<xpath>/Defs/BodyDef[defName="AstartesBody"]/corePart/parts/li[14]</xpath>
+				</li>
+
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/BodyDef[defName="AstartesBody"]/corePart/parts</xpath>
 					<value>
@@ -36,6 +48,16 @@
 							<groups>
 								<li>Torso</li>
 							</groups>
+							<parts>
+								<li>
+									<def>Biscopea</def>
+									<coverage>0.020</coverage>
+									<depth>Inside</depth>
+									<groups>
+										<li>Torso</li>
+									</groups>
+								</li>
+							</parts>
 						</li>
 						<li>
 							<def>RightChestCavity</def>
@@ -45,6 +67,16 @@
 							<groups>
 								<li>Torso</li>
 							</groups>
+							<parts>
+								<li>
+									<def>SecondaryHeart</def>
+									<coverage>0.010</coverage>
+									<depth>Inside</depth>
+									<groups>
+										<li>Torso</li>
+									</groups>
+								</li>
+							</parts>
 						</li>
 						<li>
 							<def>LeftChestCavity</def>
@@ -54,6 +86,7 @@
 							<groups>
 								<li>Torso</li>
 							</groups>
+
 						</li>
 						<li>
 							<def>Back</def>
@@ -74,7 +107,7 @@
 						</li>
 					</value>
 				</li>
-				
+
 			</operations>
 		</match>
 	</Operation>
