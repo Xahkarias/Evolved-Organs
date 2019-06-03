@@ -79,15 +79,7 @@
 				<count>3</count>
 			</li>
 		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedArm</li>
-				<li>EvolvedChunk</li>
-			</thingDefs>
-		</fixedIngredientFilter>
+
 		<appliedOnFixedBodyParts>
 			<li>LowerShoulder</li>
 		</appliedOnFixedBodyParts>
@@ -172,15 +164,6 @@
 				<count>3</count>
 			</li>
 		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedArmClaw</li>
-				<li>EvolvedChunk</li>
-			</thingDefs>
-		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>LowerShoulder</li>
 		</appliedOnFixedBodyParts>
@@ -266,15 +249,6 @@
 				<count>3</count>
 			</li>
 		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedArmSabre</li>
-				<li>EvolvedChunk</li>
-			</thingDefs>
-		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>LowerShoulder</li>
 		</appliedOnFixedBodyParts>
@@ -359,15 +333,7 @@
 				<count>3</count>
 			</li>
 		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedArmMace</li>
-				<li>EvolvedChunk</li>
-			</thingDefs>
-		</fixedIngredientFilter>
+
 		<appliedOnFixedBodyParts>
 			<li>LowerShoulder</li>
 		</appliedOnFixedBodyParts>
@@ -453,15 +419,7 @@
 				<count>3</count>
 			</li>
 		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedArmTentacle</li>
-				<li>EvolvedChunk</li>
-			</thingDefs>
-		</fixedIngredientFilter>
+
 		<appliedOnFixedBodyParts>
 			<li>LowerShoulder</li>
 		</appliedOnFixedBodyParts>
@@ -546,15 +504,7 @@
 				<count>3</count>
 			</li>
 		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedArmShield</li>
-				<li>EvolvedChunk</li>
-			</thingDefs>
-		</fixedIngredientFilter>
+
 		<appliedOnFixedBodyParts>
 			<li>LowerShoulder</li>
 		</appliedOnFixedBodyParts>
