@@ -1,151 +1,149 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationSequence">
+	<Operation Class="PatchOperationFindMod">
 		<success>Always</success>
-		<operations>
-			<li Class="ModCheck.isModLoaded">
-				<modName>The Birds and the Bees</modName>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs</xpath>
-				<value>
-					<HediffDef ParentName="AddedBodyPartBase">
-						<defName>EvolvedReproductiveOrgans</defName>
-						<label>evolved reproductive organs</label>
-						<spawnThingOnRemoved>EvolvedReproductiveOrgans</spawnThingOnRemoved>
-						<addedPartProps>
-							<solid>true</solid>
-							<partEfficiency>2.0</partEfficiency>
-						</addedPartProps>
-					</HediffDef>
-				</value>
-				<success>Always</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs</xpath>
-				<value>
-					<ThingDef ParentName="EvolvedOrganBase">
-						<defName>EvolvedReproductiveOrgans</defName>
-						<label>evolved reproductive organs</label>
-						<description>A set of reproductive organs created by accelerated evolution. I cannot imagine what "features" this has to make it so efficient.</description>
-						<costList>
-							<EvolvedChunk>12</EvolvedChunk>
-							<ComponentSpacer>1</ComponentSpacer>
-						</costList>
-					</ThingDef>
-				</value>
-				<success>Always</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs</xpath>
-				<value>
-					<RecipeDef ParentName="SurgeryFlesh">
-						<defName>InstalEvolvedReproductiveOrgans</defName>
-						<label>implant evolved reproductive organs</label>
-						<description>Implant some evolved reproductive organs.</description>
-						<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-						<jobString>Implanting evolved reproductive organs.</jobString>
-						<workAmount>3000</workAmount>
-						<skillRequirements>
-							<Medicine>10</Medicine>
-						</skillRequirements>
-						<recipeUsers>
-							<li>Human</li>
-						</recipeUsers>
-						<ingredients>
-							<li>
-								<filter>
-									<categories>
-										<li>Medicine</li>
-									</categories>
-								</filter>
-								<count>2</count>
+		<mods>
+			<li>The Birds and the Bees</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<HediffDef ParentName="AddedBodyPartBase">
+							<defName>EvolvedReproductiveOrgans</defName>
+							<label>evolved reproductive organs</label>
+							<spawnThingOnRemoved>EvolvedReproductiveOrgans</spawnThingOnRemoved>
+							<addedPartProps>
+								<solid>true</solid>
+								<partEfficiency>2.0</partEfficiency>
+							</addedPartProps>
+						</HediffDef>
+					</value>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<ThingDef ParentName="EvolvedOrganBase">
+							<defName>EvolvedReproductiveOrgans</defName>
+							<label>evolved reproductive organs</label>
+							<description>A set of reproductive organs created by accelerated evolution. I cannot imagine what "features" this has to make it so efficient.</description>
+							<costList>
+								<EvolvedChunk>12</EvolvedChunk>
+								<ComponentSpacer>1</ComponentSpacer>
+							</costList>
+						</ThingDef>
+					</value>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<RecipeDef ParentName="SurgeryFlesh">
+							<defName>InstallEvolvedReproductiveOrgans</defName>
+							<label>implant evolved reproductive organs</label>
+							<description>Implant some evolved reproductive organs.</description>
+							<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+							<jobString>Implanting evolved reproductive organs.</jobString>
+							<workAmount>3000</workAmount>
+							<skillRequirements>
+								<Medicine>10</Medicine>
+							</skillRequirements>
+							<recipeUsers>
+								<li>Human</li>
+							</recipeUsers>
+							<ingredients>
+								<li>
+									<filter>
+										<categories>
+											<li>Medicine</li>
+										</categories>
+									</filter>
+									<count>2</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>EvolvedReproductiveOrgans</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<categories>
+									<li>Medicine</li>
+								</categories>
+								<thingDefs>
+									<li>EvolvedReproductiveOrgans</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<appliedOnFixedBodyParts>
+								<li>ReproductiveOrgans</li>
+							</appliedOnFixedBodyParts>
+							<addsHediff>EvolvedReproductiveOrgans</addsHediff>
+						</RecipeDef>
+					</value>
+					<success>Always</success>
+				</li>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rah's Bionics and Surgery Expansion</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- UBERDONG -->
+							<li Class="PatchOperationReplace">
+								<xpath>/Defs/HediffDef[defName = "EvolvedReproductiveOrgans"]</xpath>
+								<value>
+									<HediffDef ParentName="AddedBodyPartBase">
+										<defName>EvolvedReproductiveOrgans</defName>
+										<label>evolved reproductive organs</label>
+										<spawnThingOnRemoved>EvolvedReproductiveOrgans</spawnThingOnRemoved>
+										<addedPartProps>
+											<solid>true</solid>
+											<partEfficiency>2.0</partEfficiency>
+										</addedPartProps>
+										<comps>
+											<li Class="HediffCompProperties_Immunizable">
+												<severityPerDayNotImmune>0.1</severityPerDayNotImmune>
+											</li>
+										</comps>
+										<initialSeverity>0.001</initialSeverity>
+										<stages>
+											<li>
+												<label>newly implanted</label>
+												<vomitMtbDays>1</vomitMtbDays>
+												<painOffset>0.20</painOffset>
+												<partEfficiencyOffset>-1.2</partEfficiencyOffset>
+												<capMods>
+													<li>
+														<capacity>Consciousness</capacity>
+														<postFactor>0.8</postFactor>
+													</li>
+												</capMods>
+											</li>
+											<li>
+												<label>partly adapted</label>
+												<minSeverity>0.2</minSeverity>
+												<partEfficiencyOffset>-0.3</partEfficiencyOffset>
+											</li>
+											<li>
+												<minSeverity>0.4</minSeverity>
+												<capMods>
+												</capMods>
+											</li>
+										</stages>
+									</HediffDef>
+								</value>
+								<success>Normal</success>
 							</li>
-							<li>
-								<filter>
-									<thingDefs>
-										<li>EvolvedReproductiveOrgans</li>
-									</thingDefs>
-								</filter>
-								<count>1</count>
-							</li>
-						</ingredients>
-						<fixedIngredientFilter>
-							<categories>
-								<li>Medicine</li>
-							</categories>
-							<thingDefs>
-								<li>EvolvedReproductiveOrgans</li>
-							</thingDefs>
-						</fixedIngredientFilter>
-						<appliedOnFixedBodyParts>
-							<li>ReproductiveOrgans</li>
-						</appliedOnFixedBodyParts>
-						<addsHediff>EvolvedReproductiveOrgans</addsHediff>
-					</RecipeDef>
-				</value>
-				<success>Always</success>
-			</li>
-		</operations>
-	</Operation>
-
-	<!--WITH RAHS PATCH-->
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="ModCheck.isModLoaded">
-				<modName>Rah's Bionics and Surgery Expansion</modName>
-			</li>
-			<li Class="ModCheck.isModLoaded">
-				<modName>The Birds and the Bees</modName>
-			</li>
-			<!-- UBERDONG -->
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/HediffDef[defName = "EvolvedReproductiveOrgans"]</xpath>
-				<value>
-					<HediffDef ParentName="AddedBodyPartBase">
-						<defName>EvolvedReproductiveOrgans</defName>
-						<label>evolved reproductive organs</label>
-						<spawnThingOnRemoved>EvolvedReproductiveOrgans</spawnThingOnRemoved>
-						<addedPartProps>
-							<solid>true</solid>
-							<partEfficiency>2.0</partEfficiency>
-						</addedPartProps>
-						<comps>
-							<li Class="HediffCompProperties_Immunizable">
-								<severityPerDayNotImmune>0.1</severityPerDayNotImmune>
-							</li>
-						</comps>
-						<initialSeverity>0.001</initialSeverity>
-						<stages>
-							<li>
-								<label>newly implanted</label>
-								<vomitMtbDays>1</vomitMtbDays>
-								<painOffset>0.20</painOffset>
-								<partEfficiencyOffset>-1.2</partEfficiencyOffset>
-								<capMods>
-									<li>
-										<capacity>Consciousness</capacity>
-										<postFactor>0.8</postFactor>
-									</li>
-								</capMods>
-							</li>
-							<li>
-								<label>partly adapted</label>
-								<minSeverity>0.2</minSeverity>
-								<partEfficiencyOffset>-0.3</partEfficiencyOffset>
-							</li>
-							<li>
-								<minSeverity>0.4</minSeverity>
-								<capMods>
-								</capMods>
-							</li>
-						</stages>
-					</HediffDef>
-				</value>
-				<success>Normal</success>
-			</li>
-		</operations>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
 	</Operation>
 
 </Patch>

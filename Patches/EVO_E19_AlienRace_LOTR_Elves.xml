@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
+	<Operation Class="PatchOperationFindMod">
+		<mods><li>Lord of the Rims - Elves</li></mods>
+		<match Class="PatchOperationSequence">
 		<operations>
-			<li Class="ModCheck.isModLoaded">
-				<modName>Lord of the Rims - Elves</modName>
-			</li>
 
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/RecipeDef[defName="Make_Humanoid_Protein"]/fixedIngredientFilter/thingDefs</xpath>
@@ -16,6 +14,7 @@
 			</li>
 			
 		</operations>
+		</match>
 	</Operation>
 
 </Patch>

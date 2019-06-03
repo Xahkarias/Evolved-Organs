@@ -3,21 +3,26 @@
 	<Operation Class="PatchOperationFindMod">
 		<success>Always</success>
 		<mods>
-			<li>Vulipine Race Pack</li>
+			<li>[O21] Rimhammer 40K</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
 
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RecipeDef[defName="Make_Humanoid_Protein"]/fixedIngredientFilter/thingDefs</xpath>
-					<value>
-						<li>Meat_Alien_Frijjid</li>
-						<li>Meat_Alien_Fennex</li>
-					</value>
+				<li Class="PatchOperationRemove">
+					<!--secondary heart-->
+					<xpath>/Defs/BodyDef[defName="AstartesBody"]/corePart/parts/li[9]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<!--biscopea?-->
+					<xpath>/Defs/BodyDef[defName="AstartesBody"]/corePart/parts/li[11]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<!--third lung-->
+					<xpath>/Defs/BodyDef[defName="AstartesBody"]/corePart/parts/li[14]</xpath>
 				</li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/BodyDef[defName="Fennex"]/corePart/parts</xpath>
+					<xpath>/Defs/BodyDef[defName="AstartesBody"]/corePart/parts</xpath>
 					<value>
 						<li>
 							<def>LowerShoulder</def>
@@ -43,6 +48,16 @@
 							<groups>
 								<li>Torso</li>
 							</groups>
+							<parts>
+								<li>
+									<def>Biscopea</def>
+									<coverage>0.020</coverage>
+									<depth>Inside</depth>
+									<groups>
+										<li>Torso</li>
+									</groups>
+								</li>
+							</parts>
 						</li>
 						<li>
 							<def>RightChestCavity</def>
@@ -52,6 +67,16 @@
 							<groups>
 								<li>Torso</li>
 							</groups>
+							<parts>
+								<li>
+									<def>SecondaryHeart</def>
+									<coverage>0.010</coverage>
+									<depth>Inside</depth>
+									<groups>
+										<li>Torso</li>
+									</groups>
+								</li>
+							</parts>
 						</li>
 						<li>
 							<def>LeftChestCavity</def>
@@ -61,11 +86,21 @@
 							<groups>
 								<li>Torso</li>
 							</groups>
+
 						</li>
 						<li>
 							<def>Back</def>
 							<coverage>0.020</coverage>
 							<depth>Inside</depth>
+							<groups>
+								<li>Torso</li>
+							</groups>
+						</li>
+						<li>
+							<def>Tail</def>
+							<customLabel>tail bone</customLabel>
+							<coverage>0.002</coverage>
+							<depth>Outside</depth>
 							<groups>
 								<li>Torso</li>
 							</groups>
