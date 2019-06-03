@@ -3,6 +3,7 @@
 
 
 <ThingDef Name="EvolvedOrganBase" ParentName="BodyPartArtificialBase" Abstract="True">
+	<defName>EvolvedOrganBase</defName>
 	<techLevel>Spacer</techLevel>
 	<statBases>
 		<MarketValue>2800</MarketValue>
