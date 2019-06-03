@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<success>Always</success>
+		<mods>
+			<li>Questionable Ethics</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!--
+				x	Remove Evolved Meat
+				x	Remove Evolved Table
+					Replace Evolved Recipes/Add evolved recipes to vat? & remove from table?
+				x	Add thingdef for mechanoid serum/mechanites
+				x	Add way to extract mechanites
+				x	add long term way to create mechanites , propogate mechanites = organ vat + mechanites + steel+gold+nutrient solution?
+				-->
+
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedChunk"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedWorkbench"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedSecondHeart"]/costList</xpath>
+
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<ThingDef ParentName="ResourceBase">
+							<defName>EVO_Mechanite_slurry</defName>
+							<label>Mechanite Slurry</label>
+							<description>A vial of distilled water full of nano-scale mechanites ready to be combined with humanoid proteins to be grown into a advanced organ.</description>
+							<graphicData>
+								<texPath>Things/Item/Resource/MechaniteSlurryVial</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>
+							<soundInteract>Standard_Drop</soundInteract>
+							<soundDrop>Standard_Drop</soundDrop>
+							<useHitPoints>true</useHitPoints>
+							<statBases>
+								<MaxHitPoints>50</MaxHitPoints>
+								<MarketValue>10</MarketValue>
+								<Mass>0.01</Mass>
+								<Flammability>.8</Flammability>
+								<DeteriorationRate>15.0</DeteriorationRate>
+							</statBases>
+							<thingCategories>
+								<li>Manufactured</li>
+							</thingCategories>
+							<tradeTags>
+								<li>ExoticMisc</li>
+							</tradeTags>
+						</ThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<RecipeDef>
+							<defName>Make_Mechanite_Slurry</defName>
+							<label>extract mechanites</label>
+							<description>Dissassemble a dead mechanoid into its component parts while taking the time to capture and preserve the nanomachines within.</description>
+							<jobString>Extracting mechanites.</jobString>
+							<workSpeedStat>SmithingSpeed</workSpeedStat>
+							<allowMixingIngredients>false</allowMixingIngredients>
+							<effectWorking>ButcherMechanoid</effectWorking>
+							<soundWorking>Recipe_ButcherCorpseMechanoid</soundWorking>
+							<workAmount>450</workAmount>
+							<recipeUsers>
+								<li/>
+							</recipeUsers>
+							<ingredients>
+								<li>
+									<filter>
+										<categories>
+											<li>Corpses</li>
+										</categories>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<categories>
+									<li>CorpsesMechanoid</li>
+								</categories>
+							</fixedIngredientFilter>
+							<products>
+								<EVO_Mechanite_slurry>5</EVO_Mechanite_slurry>
+							</products>
+							<specialProducts>
+								<li>Butchery</li>
+							</specialProducts>
+							<researchPrerequisite>EvolvedOrgansR1</researchPrerequisite>
+							<skillRequirements>
+								<Crafting>7</Crafting>
+								<Medicine>5</Medicine>
+							</skillRequirements>
+							<workSkill>Crafting</workSkill>
+						</RecipeDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<QEthics.GrowerRecipeDef Name="EvolvedMechaniteSlurryPropigate">
+							<productAmount>20</productAmount>
+							<craftingTime>100000</craftingTime>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>EVO_Mechanite_Slurry</li>
+										</thingDefs>
+									</filter>
+									<count>5</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>Steel</li>
+										</thingDefs>
+									</filter>
+									<count>25</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>Gold</li>
+										</thingDefs>
+									</filter>
+									<count>5</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>QE_NutrientSolution</li>
+										</thingDefs>
+									</filter>
+									<count>25</count>
+								</li>
+							</ingredients>
+							<productGraphic>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Patches/QE/motes</texPath>
+								<shaderType>MoteGlow</shaderType>
+								<drawRotated>false</drawRotated>
+							</productGraphic>
+							<recipeUsers>
+								<li>QE_OrganVat</li>
+							</recipeUsers>
+						</QEthics.GrowerRecipeDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<QEthics.GrowerRecipeDef Name="EvolvedOrganGrowerRecipeBase" Abstract="True">
+							<productAmount>1</productAmount>
+							<craftingTime>300000</craftingTime>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>EVO_Mechanite_Slurry</li>
+										</thingDefs>
+									</filter>
+									<count>20</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>EVO_Humanoid_Protein</li>
+										</thingDefs>
+									</filter>
+									<count>35</count>
+								</li>
+							</ingredients>
+							<productGraphic>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Effects/Organs/Shinzy_Organ</texPath>
+								<shaderType>MoteGlow</shaderType>
+								<drawRotated>false</drawRotated>
+							</productGraphic>
+							<recipeUsers>
+								<li>QE_OrganVat</li>
+							</recipeUsers>
+						</QEthics.GrowerRecipeDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+							<defName>EvolvedSecondHeart</defName>
+							<label>evolved secondary heart</label>
+							<productDef>EvolvedSecondHeart</productDef>
+							<productAmount>1</productAmount>
+							<requiredResearch>EvolvedOrgansR1</requiredResearch>
+						</QEthics.GrowerRecipeDef>
+					</value>
+				</li>
+
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

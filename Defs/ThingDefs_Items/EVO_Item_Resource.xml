@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!--Depricated, this will be removed in the future-->
 	<ThingDef ParentName="ResourceBase">
 		<defName>EvolvedChunk</defName>
 		<label>Evolved Meat</label>
@@ -25,6 +26,8 @@
 			<li>ExoticMisc</li>
 		</tradeTags>
 	</ThingDef>
+	
+	
 	
 	<ThingDef ParentName="ResourceBase">
 		<defName>EVO_Humanoid_Protein</defName>
