@@ -7,31 +7,163 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-				<!--
+				<!--TODO
 				x	Remove Evolved Meat
 				x	Remove Evolved Table
-					Replace Evolved Recipes/Add evolved recipes to vat? & remove from table?
+				x	Replace Evolved Recipes/Add evolved recipes to vat? & remove from table?
 				x	Add thingdef for mechanoid serum/mechanites
 				x	Add way to extract mechanites
 				x	add long term way to create mechanites , propogate mechanites = organ vat + mechanites + steel+gold+nutrient solution?
+					patch in research prequiste
+					FIND THAT ONE FUCKING MEAT CHUNK STILL THROWING THAT ERROR!!
 				-->
 
+
+				<!--Removes default costlists for crafting the items-->
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedSecondHeart"]/costList</xpath>
+				</li>				
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedPrimaryHeart"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedKidney"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedLung"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedThirdLung"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedStomach"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedLiver"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedEye"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedPinions"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedCombatGlands"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedLeg"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedNose"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedLarnyx"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedEar"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedRibcage"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedCarapace"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedSpine"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedTail"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedJaw"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedBrain"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedArm"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedArmClaw"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedArmMace"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedArmSabre"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedArmTentacle"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedArmShield"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedSpider"]/costList</xpath>
+				</li>
+				
+				<!--removes the recipeMaker so that they cant be crafted and dont throw the "you dont have a costlist error" -->
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedOrganBase"]/recipeMaker</xpath>
+				</li>
+				
+				<!--Then we remove the bench altogether -->
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="EvolvedWorkbench"]</xpath>
+				</li>				
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/WorkGiverDef[defName="DoBillsEvolvedWorkbench"]</xpath>
+				</li>
+
+				<!--Then the magical meat itself -->
 				<li Class="PatchOperationRemove">
 					<xpath>/Defs/ThingDef[defName="EvolvedChunk"]</xpath>
 				</li>
+				<!--And the specific bill to make it -->
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedWorkbench"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedSecondHeart"]/costList</xpath>
-
+					<xpath>/Defs/RecipeDef[defName="Make_EvolvedChunk"]</xpath>
 				</li>
 
+				<!--but wait the secondary arms still use it! nOPE!-->
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArm_Secondary"]/ingredients/li[2]
+					</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmClaw_Secondary"]/ingredients/li[2]
+					</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmSabre_Secondary"]/ingredients/li[2]
+					</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmMace_Secondary"]/ingredients/li[2]
+					</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmTentacle_Secondary"]/ingredients/li[2]
+					</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmShield_Secondary"]/ingredients/li[2]
+					</xpath>
+				</li>
+
+				<!--next we make it so that the drug lab can do what the bench did for the human extracts-->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RecipeDef[defName="Make_Humanoid_Protein"]/recipeUsers</xpath>
+					<value>
+						<recipeUsers><li>DrugLab</li></recipeUsers>
+					</value>
+				</li>
+
+				<!--Finally were patching in new stuff to replace the meat to be used with the vats -->
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs</xpath>
 					<value>
 						<ThingDef ParentName="ResourceBase">
-							<defName>EVO_Mechanite_slurry</defName>
+							<defName>EVO_Mechanite_Slurry</defName>
 							<label>Mechanite Slurry</label>
 							<description>A vial of distilled water full of nano-scale mechanites ready to be combined with humanoid proteins to be grown into a advanced organ.</description>
 							<graphicData>
@@ -71,7 +203,7 @@
 							<soundWorking>Recipe_ButcherCorpseMechanoid</soundWorking>
 							<workAmount>450</workAmount>
 							<recipeUsers>
-								<li/>
+								<li>TableMachining</li>
 							</recipeUsers>
 							<ingredients>
 								<li>
@@ -89,7 +221,7 @@
 								</categories>
 							</fixedIngredientFilter>
 							<products>
-								<EVO_Mechanite_slurry>5</EVO_Mechanite_slurry>
+								<EVO_Mechanite_Slurry>5</EVO_Mechanite_Slurry>
 							</products>
 							<specialProducts>
 								<li>Butchery</li>
@@ -104,10 +236,11 @@
 					</value>
 				</li>
 
+				<!--adding vat recipe bases-->
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs</xpath>
 					<value>
-						<QEthics.GrowerRecipeDef Name="EvolvedMechaniteSlurryPropigate">
+						<QEthics.GrowerRecipeDef Name="EvolvedMechaniteSlurryPropigate" Abstract="True">
 							<productAmount>20</productAmount>
 							<craftingTime>100000</craftingTime>
 							<ingredients>
@@ -122,7 +255,7 @@
 								<li>
 									<filter>
 										<thingDefs>
-											<li>Steel</li>
+											<li>Plasteel</li>
 										</thingDefs>
 									</filter>
 									<count>25</count>
@@ -156,7 +289,6 @@
 						</QEthics.GrowerRecipeDef>
 					</value>
 				</li>
-
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs</xpath>
 					<value>
@@ -194,9 +326,17 @@
 					</value>
 				</li>
 
+				<!--adding the actual recipes -->
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs</xpath>
 					<value>
+						<QEthics.GrowerRecipeDef ParentName="EvolvedMechaniteSlurryPropigate">
+							<defName>EVO_Mechanite_Slurry</defName>
+							<label>propogate mechanites</label>
+							<productDef>EVO_Mechanite_Slurry</productDef>
+							<requiredResearch>EvolvedOrgansR1</requiredResearch>
+						</QEthics.GrowerRecipeDef>
+
 						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
 							<defName>EvolvedSecondHeart</defName>
 							<label>evolved secondary heart</label>
@@ -204,7 +344,9 @@
 							<productAmount>1</productAmount>
 							<requiredResearch>EvolvedOrgansR1</requiredResearch>
 						</QEthics.GrowerRecipeDef>
+
 					</value>
+
 				</li>
 
 
