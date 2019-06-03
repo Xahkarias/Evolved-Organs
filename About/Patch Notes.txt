@@ -1,7 +1,15 @@
 0.1.3
 Removed ModCheck Dependency, replaced all patches with FindMod
 
-Added Rimhammer40k Race compatability with basic functions until a closer look can be made.
+Added Rimhammer40k Race compatability
+
+Added Questionable Ethics Integration
+	-THIS IS A LARGE OVERHAUL TO EVOLVED ORGANS
+	-Removed Evolved Meat
+	-Removed Evolved Workbench
+	-Added Mechanite Slurry
+	-Moved Evolved Organ Research
+	-To create evolved organs first complete the prequisite research in questionable ethics then acquire mechanite slurry by extracting it from mechanoids.  Acquire Humanoid Proteins.  Create organ at any powered organ vat.  Keep a handful of mechanites around, mechanites can always make more mechanites if you have the prequisite research.
 
 ------
 
