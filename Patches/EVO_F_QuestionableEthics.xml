@@ -107,6 +107,32 @@
 					<xpath>/Defs/ThingDef[defName="EvolvedOrganBase"]/recipeMaker</xpath>
 				</li>
 				
+								<!--but wait the secondary arms still use it! nOPE!-->
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArm_Secondary"]/ingredients/li[3]
+					</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmClaw_Secondary"]/ingredients/li[3]
+					</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmSabre_Secondary"]/ingredients/li[3]
+					</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmMace_Secondary"]/ingredients/li[3]
+					</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmTentacle_Secondary"]/ingredients/li[3]
+					</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmShield_Secondary"]/ingredients/li[3]
+					</xpath>
+				</li>
+				
 				<!--Then we remove the bench altogether -->
 				<li Class="PatchOperationRemove">
 					<xpath>/Defs/ThingDef[defName="EvolvedWorkbench"]</xpath>
@@ -124,31 +150,7 @@
 					<xpath>/Defs/RecipeDef[defName="Make_EvolvedChunk"]</xpath>
 				</li>
 
-				<!--but wait the secondary arms still use it! nOPE!-->
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArm_Secondary"]/ingredients/li[2]
-					</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmClaw_Secondary"]/ingredients/li[2]
-					</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmSabre_Secondary"]/ingredients/li[2]
-					</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmMace_Secondary"]/ingredients/li[2]
-					</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmTentacle_Secondary"]/ingredients/li[2]
-					</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmShield_Secondary"]/ingredients/li[2]
-					</xpath>
-				</li>
+
 
 				<!--next we make it so that the drug lab can do what the bench did for the human extracts-->
 				<li Class="PatchOperationReplace">
