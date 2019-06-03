@@ -1,175 +1,180 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationSequence">
+	<Operation Class="PatchOperationFindMod">
 		<success>Always</success>
-		<operations>
-			<li Class="ModCheck.isModLoaded">
-				<modName>Kurin, The Three Tailed Fox</modName>
-			</li>
+		<mods>
+			<li>Kurin, The Three Tailed Fox</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
 
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName="Make_Humanoid_Protein"]/fixedIngredientFilter/thingDefs</xpath>
-				<value>
-					<li>Meat_DRNTF_Race</li>
-				</value>
-			</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName="Make_Humanoid_Protein"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Meat_DRNTF_Race</li>
+					</value>
+				</li>
 
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BodyDef[defName="DRNTF_Body"]/corePart/parts</xpath>
-				<value>
-					<li>
-						<def>LowerShoulder</def>
-						<customLabel>right lower shoulder</customLabel>
-						<coverage>0.00</coverage>
-						<groups>
-							<li>Torso</li>
-						</groups>
-					</li>
-					<li>
-						<def>LowerShoulder</def>
-						<customLabel>left lower shoulder</customLabel>
-						<coverage>0.00</coverage>
-						<groups>
-							<li>Torso</li>
-						</groups>
-					</li>
-					<li>
-						<def>RightAbdomenCavity</def>
-						<customLabel>Right Abdominal Cavity</customLabel>
-						<coverage>0.020</coverage>
-						<depth>Inside</depth>
-						<groups>
-							<li>Torso</li>
-						</groups>
-					</li>
-					<li>
-						<def>RightChestCavity</def>
-						<customLabel>Right Chest Cavity</customLabel>
-						<coverage>0.010</coverage>
-						<depth>Inside</depth>
-						<groups>
-							<li>Torso</li>
-						</groups>
-					</li>
-					<li>
-						<def>LeftChestCavity</def>
-						<customLabel>Left Chest Cavity</customLabel>
-						<coverage>0.010</coverage>
-						<depth>Inside</depth>
-						<groups>
-							<li>Torso</li>
-						</groups>
-					</li>
-					<li>
-						<def>Back</def>
-						<coverage>0.020</coverage>
-						<depth>Inside</depth>
-						<groups>
-							<li>Torso</li>
-						</groups>
-					</li>
-				</value>
-			</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BodyDef[defName="DRNTF_Body"]/corePart/parts</xpath>
+					<value>
+						<li>
+							<def>LowerShoulder</def>
+							<customLabel>right lower shoulder</customLabel>
+							<coverage>0.00</coverage>
+							<groups>
+								<li>Torso</li>
+							</groups>
+						</li>
+						<li>
+							<def>LowerShoulder</def>
+							<customLabel>left lower shoulder</customLabel>
+							<coverage>0.00</coverage>
+							<groups>
+								<li>Torso</li>
+							</groups>
+						</li>
+						<li>
+							<def>RightAbdomenCavity</def>
+							<customLabel>Right Abdominal Cavity</customLabel>
+							<coverage>0.020</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>Torso</li>
+							</groups>
+						</li>
+						<li>
+							<def>RightChestCavity</def>
+							<customLabel>Right Chest Cavity</customLabel>
+							<coverage>0.010</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>Torso</li>
+							</groups>
+						</li>
+						<li>
+							<def>LeftChestCavity</def>
+							<customLabel>Left Chest Cavity</customLabel>
+							<coverage>0.010</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>Torso</li>
+							</groups>
+						</li>
+						<li>
+							<def>Back</def>
+							<coverage>0.020</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>Torso</li>
+							</groups>
+						</li>
+					</value>
+				</li>
 
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs</xpath>
-				<value>
-					<RecipeDef ParentName="SurgeryFlesh">
-						<defName>EVO_InstallEvolvedTail_DRNTF</defName>
-						<label>implant evolved kurin tail</label>
-						<description>Implant an evolved kurin tail.</description>
-						<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-						<jobString>implanting evolved kurin tail.</jobString>
-						<workAmount>2000</workAmount>
-						<skillRequirements>
-							<Medicine>10</Medicine>
-						</skillRequirements>
-						<recipeUsers><li>DRNTF_Race</li></recipeUsers>
-						<ingredients>
-							<li>
-								<filter>
-									<categories>
-										<li>Medicine</li>
-									</categories>
-								</filter>
-								<count>2</count>
-							</li>
-							<li>
-								<filter>
-									<thingDefs>
-										<li>EvolvedTail</li>
-									</thingDefs>
-								</filter>
-								<count>1</count>
-							</li>
-						</ingredients>
-						<fixedIngredientFilter>
-							<categories>
-								<li>Medicine</li>
-							</categories>
-							<thingDefs>
-								<li>EvolvedTail</li>
-							</thingDefs>
-						</fixedIngredientFilter>
-						<appliedOnFixedBodyParts>
-							<li>DRNTF_Tail</li>
-						</appliedOnFixedBodyParts>
-						<addsHediff>EvolvedTail</addsHediff>
-					</RecipeDef>
-				</value>
-			</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<RecipeDef ParentName="SurgeryFlesh">
+							<defName>EVO_InstallEvolvedTail_DRNTF</defName>
+							<label>implant evolved kurin tail</label>
+							<description>Implant an evolved kurin tail.</description>
+							<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+							<jobString>implanting evolved kurin tail.</jobString>
+							<workAmount>2000</workAmount>
+							<skillRequirements>
+								<Medicine>10</Medicine>
+							</skillRequirements>
+							<recipeUsers>
+								<li>DRNTF_Race</li>
+							</recipeUsers>
+							<ingredients>
+								<li>
+									<filter>
+										<categories>
+											<li>Medicine</li>
+										</categories>
+									</filter>
+									<count>2</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>EvolvedTail</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<categories>
+									<li>Medicine</li>
+								</categories>
+								<thingDefs>
+									<li>EvolvedTail</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<appliedOnFixedBodyParts>
+								<li>DRNTF_Tail</li>
+							</appliedOnFixedBodyParts>
+							<addsHediff>EvolvedTail</addsHediff>
+						</RecipeDef>
+					</value>
+				</li>
 
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs</xpath>
-				<value>
-					<RecipeDef ParentName="SurgeryFlesh">
-						<defName>EVO_InstallEvolvedEar_DRNTF</defName>
-						<label>implant evolved ear</label>
-						<description>Implant an evolved ear.</description>
-						<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-						<jobString>Implanting evolved ear.</jobString>
-						<workAmount>3000</workAmount>
-						<skillRequirements>
-							<Medicine>10</Medicine>
-						</skillRequirements>
-						<recipeUsers><li>Human</li></recipeUsers>
-						<ingredients>
-							<li>
-								<filter>
-									<categories>
-										<li>Medicine</li>
-									</categories>
-								</filter>
-								<count>2</count>
-							</li>
-							<li>
-								<filter>
-									<thingDefs>
-										<li>EvolvedEar</li>
-									</thingDefs>
-								</filter>
-								<count>1</count>
-							</li>
-						</ingredients>
-						<fixedIngredientFilter>
-							<categories>
-								<li>Medicine</li>
-							</categories>
-							<thingDefs>
-								<li>EvolvedEar</li>
-							</thingDefs>
-						</fixedIngredientFilter>
-						<appliedOnFixedBodyParts>
-							<li>DRNTF_Ear</li>
-						</appliedOnFixedBodyParts>
-						<addsHediff>EvolvedEar</addsHediff>
-					</RecipeDef>
-				</value>
-			</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<RecipeDef ParentName="SurgeryFlesh">
+							<defName>EVO_InstallEvolvedEar_DRNTF</defName>
+							<label>implant evolved ear</label>
+							<description>Implant an evolved ear.</description>
+							<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+							<jobString>Implanting evolved ear.</jobString>
+							<workAmount>3000</workAmount>
+							<skillRequirements>
+								<Medicine>10</Medicine>
+							</skillRequirements>
+							<recipeUsers>
+								<li>Human</li>
+							</recipeUsers>
+							<ingredients>
+								<li>
+									<filter>
+										<categories>
+											<li>Medicine</li>
+										</categories>
+									</filter>
+									<count>2</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>EvolvedEar</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<categories>
+									<li>Medicine</li>
+								</categories>
+								<thingDefs>
+									<li>EvolvedEar</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<appliedOnFixedBodyParts>
+								<li>DRNTF_Ear</li>
+							</appliedOnFixedBodyParts>
+							<addsHediff>EvolvedEar</addsHediff>
+						</RecipeDef>
+					</value>
+				</li>
 
-		</operations>
+			</operations>
+		</match>
 	</Operation>
 
 </Patch>
 
-	

@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationSequence">
+	<Operation Class="PatchOperationFindMod">
 		<success>Always</success>
+		<mods><li>Astoriel</li></mods>
+		<match Class="PatchOperationSequence">
 		<operations>
-			<li Class="ModCheck.isModLoaded">
-				<modName>Astoriel</modName>
-			</li>
-
 			
 			<!--Astoriel use human meat, so no need to add to the recipe-->
 
@@ -77,6 +75,7 @@
 			</li>
 
 		</operations>
+		</match>
 	</Operation>
 
 </Patch>
