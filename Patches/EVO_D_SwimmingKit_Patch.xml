@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<!-- if there is RAHS-->
+	<!-- if there is Swimming-->
 	<Operation Class="PatchOperationFindMod">
 		<success>Always</success>
 		<mods>
