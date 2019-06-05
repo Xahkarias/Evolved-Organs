@@ -884,6 +884,48 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>EvolvedPelt</addsHediff>
 	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>EVO_InstallEvolvedPelt</defName>
+		<label>implant psychic filter</label>
+		<description>Implant an organ dedicated to filtering psyhcic emenations into the host's skull.</description>
+		<workerClass>Recipe_InstallImplant</workerClass>
+		<jobString>Implanting psychic filter.</jobString>
+		<workAmount>3000</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EvolvedFilter</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>EvolvedFilter</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Skull</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>EvolvedFilter</addsHediff>
+	</RecipeDef>
 
 
 	<RecipeDef ParentName="SurgeryFlesh">

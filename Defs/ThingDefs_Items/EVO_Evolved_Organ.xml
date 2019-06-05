@@ -418,5 +418,19 @@
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 	</ThingDef>
+	
+		<ThingDef ParentName="EvolvedOrganBase">
+		<defName>EvolvedFilter</defName>
+		<label>evolved psychic filter</label>
+		<description>An organ developed for the exclusive purpose of filtering the psychic emenations absorbed by the humanoid skull, preventing the host from receiving any such psychic signals..</description>
+		<recipeMaker>
+			<researchPrerequisite>EvolvedOrgansResearchOrgans2</researchPrerequisite>
+
+		</recipeMaker>
+		<costList>
+			<EvolvedChunk>12</EvolvedChunk>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+	</ThingDef>
 
 </Defs>
