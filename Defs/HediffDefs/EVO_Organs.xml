@@ -280,7 +280,6 @@
 				<statOffsets>
 					<SocialImpact>0.3</SocialImpact>
 					<TradePriceImprovement>0.10</TradePriceImprovement>
-					<AimingDelayFactor>-0.25</AimingDelayFactor>
 				</statOffsets>
 			</li>
 		</stages>
