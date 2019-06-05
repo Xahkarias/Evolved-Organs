@@ -240,7 +240,21 @@
 	<ThingDef ParentName="EvolvedOrganBase">
 		<defName>EvolvedCarapace</defName>
 		<label>evolved skin</label>
-		<description>A carapace created by accelerated evolution. Allows the host to ignore light damage to the skin, while also serving as a massive insulant versus any large temperature changes outside the body.</description>
+		<description>A carapace created by accelerated evolution. Allows the host to ignore light damage to the skin, while also serving as a barrier to fire.</description>
+		<recipeMaker>
+			<researchPrerequisite>EvolvedOrgansResearchOrgans1</researchPrerequisite>
+
+		</recipeMaker>
+		<costList>
+			<EvolvedChunk>12</EvolvedChunk>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+	</ThingDef>
+	
+		<ThingDef ParentName="EvolvedOrganBase">
+		<defName>EvolvedPelt</defName>
+		<label>evolved pelt</label>
+		<description>A furred pelt created by accelerated evolution.  Allows the host to blend into it's surroundings while also serving as a effective insulant protecting the humanoid from hostile temperatures.</description>
 		<recipeMaker>
 			<researchPrerequisite>EvolvedOrgansResearchOrgans1</researchPrerequisite>
 

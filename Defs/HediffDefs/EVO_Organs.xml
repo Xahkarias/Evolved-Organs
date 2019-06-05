@@ -327,7 +327,7 @@
 	<!-- Torso -->
 	<HediffDef ParentName="ImplantHediffBase">
 		<defName>EvolvedCarapace</defName>
-		<label>evolved carapace</label>
+		<label>Dragonskin</label>
 		<labelNoun>some evolved carapace</labelNoun>
 		<spawnThingOnRemoved>EvolvedCarapace</spawnThingOnRemoved>
 		<addedPartProps>
@@ -339,13 +339,34 @@
 				<statOffsets>
 					<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
 					<ArmorRating_Heat>0.20</ArmorRating_Heat>
+					<Flammability>-.8</Flammability>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>EvolvedPelt</defName>
+		<label>evolved pelt</label>
+		<labelNoun>some evolved pelts</labelNoun>
+		<spawnThingOnRemoved>EvolvedPelt</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>2.0</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<HuntingStealth>5</HuntingStealth>
+					<ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+					<ArmorRating_Heat>0.10</ArmorRating_Heat>
 					<ComfyTemperatureMin>-35</ComfyTemperatureMin>
 					<ComfyTemperatureMax>30</ComfyTemperatureMax>
 				</statOffsets>
 			</li>
 		</stages>
 	</HediffDef>
-
 	<!-- Spine -->
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>EvolvedSpine</defName>

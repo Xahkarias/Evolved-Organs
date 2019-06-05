@@ -844,6 +844,49 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>EVO_InstallEvolvedPelt</defName>
+		<label>implant evolved pelt</label>
+		<description>Implant the cells required to grow an evolved pelt into the host's lower dermis.</description>
+		<workerClass>Recipe_InstallImplant</workerClass>
+		<jobString>Implanting evolved pelt.</jobString>
+		<workAmount>3000</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EvolvedPelt</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>EvolvedCarapace</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>EvolvedPelt</addsHediff>
+	</RecipeDef>
+
+
+	<RecipeDef ParentName="SurgeryFlesh">
 		<defName>EVO_InstallEvolvedSpider</defName>
 		<label>implant evolved spider leg cluster</label>
 		<description>Implant an evolved spider leg cluster.</description>
