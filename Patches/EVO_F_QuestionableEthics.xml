@@ -93,85 +93,85 @@
 				
 				<!--Removes the researchPrereq for the vanilla organ recipes-->
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedSecondHeart"]/researchPrerequisite</xpath>
+					<xpath>/Defs/ThingDef[defName="EvolvedSecondHeart"]/recipeMaker</xpath>
 				</li>				
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedPrimaryHeart"]/researchPrerequisite</xpath>
+					<xpath>/Defs/ThingDef[defName="EvolvedPrimaryHeart"]/recipeMaker</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedKidney"]/researchPrerequisite</xpath>
+					<xpath>/Defs/ThingDef[defName="EvolvedKidney"]/recipeMaker</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedLung"]/researchPrerequisite</xpath>
+					<xpath>/Defs/ThingDef[defName="EvolvedLung"]/recipeMaker</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedThirdLung"]/researchPrerequisite</xpath>
+					<xpath>/Defs/ThingDef[defName="EvolvedThirdLung"]/recipeMaker</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedStomach"]/researchPrerequisite</xpath>
+					<xpath>/Defs/ThingDef[defName="EvolvedStomach"]/recipeMaker</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedLiver"]/researchPrerequisite</xpath>
+					<xpath>/Defs/ThingDef[defName="EvolvedLiver"]/recipeMaker</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedEye"]/researchPrerequisite</xpath>
+					<xpath>/Defs/ThingDef[defName="EvolvedEye"]/recipeMaker</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedPinions"]/researchPrerequisite</xpath>
+					<xpath>/Defs/ThingDef[defName="EvolvedPinions"]/recipeMaker</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedCombatGlands"]/researchPrerequisite</xpath>
+					<xpath>/Defs/ThingDef[defName="EvolvedCombatGlands"]/recipeMaker</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedLeg"]/researchPrerequisite</xpath>
+					<xpath>/Defs/ThingDef[defName="EvolvedLeg"]/recipeMaker</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedNose"]/researchPrerequisite</xpath>
+					<xpath>/Defs/ThingDef[defName="EvolvedNose"]/recipeMaker</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedLarnyx"]/researchPrerequisite</xpath>
+					<xpath>/Defs/ThingDef[defName="EvolvedLarnyx"]/recipeMaker</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedEar"]/researchPrerequisite</xpath>
+					<xpath>/Defs/ThingDef[defName="EvolvedEar"]/recipeMaker</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedRibcage"]/researchPrerequisite</xpath>
+					<xpath>/Defs/ThingDef[defName="EvolvedRibcage"]/recipeMaker</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedCarapace"]/researchPrerequisite</xpath>
+					<xpath>/Defs/ThingDef[defName="EvolvedCarapace"]/recipeMaker</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedSpine"]/researchPrerequisite</xpath>
+					<xpath>/Defs/ThingDef[defName="EvolvedSpine"]/recipeMaker</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedTail"]/researchPrerequisite</xpath>
+					<xpath>/Defs/ThingDef[defName="EvolvedTail"]/recipeMaker</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedJaw"]/researchPrerequisite</xpath>
+					<xpath>/Defs/ThingDef[defName="EvolvedJaw"]/recipeMaker</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedBrain"]/researchPrerequisite</xpath>
+					<xpath>/Defs/ThingDef[defName="EvolvedBrain"]/recipeMaker</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedArm"]/researchPrerequisite</xpath>
+					<xpath>/Defs/ThingDef[defName="EvolvedArm"]/recipeMaker</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedArmClaw"]/researchPrerequisite</xpath>
+					<xpath>/Defs/ThingDef[defName="EvolvedArmClaw"]/recipeMaker</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedArmMace"]/researchPrerequisite</xpath>
+					<xpath>/Defs/ThingDef[defName="EvolvedArmMace"]/recipeMaker</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedArmSabre"]/researchPrerequisite</xpath>
+					<xpath>/Defs/ThingDef[defName="EvolvedArmSabre"]/recipeMaker</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedArmTentacle"]/researchPrerequisite</xpath>
+					<xpath>/Defs/ThingDef[defName="EvolvedArmTentacle"]/recipeMaker</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedArmShield"]/researchPrerequisite</xpath>
+					<xpath>/Defs/ThingDef[defName="EvolvedArmShield"]/recipeMaker</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedSpider"]/researchPrerequisite</xpath>
+					<xpath>/Defs/ThingDef[defName="EvolvedSpider"]/recipeMaker</xpath>
 				</li>
 
 				<!--removes the recipeMaker so that they cant be crafted and dont throw the "you dont have a costlist error" -->
