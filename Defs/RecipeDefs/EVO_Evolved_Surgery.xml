@@ -876,7 +876,7 @@
 				<li>Medicine</li>
 			</categories>
 			<thingDefs>
-				<li>EvolvedCarapace</li>
+				<li>EvolvedPelt</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
@@ -886,7 +886,7 @@
 	</RecipeDef>
 	
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedPelt</defName>
+		<defName>EVO_InstallEvolvedFilter</defName>
 		<label>implant psychic filter</label>
 		<description>Implant an organ dedicated to filtering psyhcic emenations into the host's skull.</description>
 		<workerClass>Recipe_InstallImplant</workerClass>
