@@ -10,7 +10,10 @@
 		<workAmount>3000</workAmount>
 		<skillRequirements>
 			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
+		</skillRequirements>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -52,7 +55,10 @@
 		<workAmount>3000</workAmount>
 		<skillRequirements>
 			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
+		</skillRequirements>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -103,7 +109,10 @@
 		<workAmount>3000</workAmount>
 		<skillRequirements>
 			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
+		</skillRequirements>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -145,7 +154,10 @@
 		<workAmount>3000</workAmount>
 		<skillRequirements>
 			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
+		</skillRequirements>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -172,7 +184,7 @@
 				<count>3</count>
 			</li>
 		</ingredients>
-				<fixedIngredientFilter>
+		<fixedIngredientFilter>
 			<categories>
 				<li>Medicine</li>
 			</categories>
@@ -197,7 +209,9 @@
 		<skillRequirements>
 			<Medicine>10</Medicine>
 		</skillRequirements>
-		<recipeUsers><li>Human</li></recipeUsers>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -239,7 +253,10 @@
 		<workAmount>3000</workAmount>
 		<skillRequirements>
 			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
+		</skillRequirements>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -290,7 +307,10 @@
 		<workAmount>3000</workAmount>
 		<skillRequirements>
 			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
+		</skillRequirements>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -332,7 +352,10 @@
 		<workAmount>3000</workAmount>
 		<skillRequirements>
 			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
+		</skillRequirements>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -384,7 +407,10 @@
 		<workAmount>3000</workAmount>
 		<skillRequirements>
 			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
+		</skillRequirements>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -426,7 +452,10 @@
 		<workAmount>3000</workAmount>
 		<skillRequirements>
 			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
+		</skillRequirements>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -477,7 +506,10 @@
 		<workAmount>3000</workAmount>
 		<skillRequirements>
 			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
+		</skillRequirements>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -519,7 +551,10 @@
 		<workAmount>3000</workAmount>
 		<skillRequirements>
 			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
+		</skillRequirements>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
