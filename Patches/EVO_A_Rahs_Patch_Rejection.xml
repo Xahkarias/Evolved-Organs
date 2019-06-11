@@ -1310,10 +1310,10 @@
 								</li>
 								<li>
 									<minSeverity>0.4</minSeverity>
+									<statOffsets>
+										<MeleeWeapon_CooldownMultiplier>-.8</MeleeWeapon_CooldownMultiplier>
+									</statOffsets>
 									<capMods>
-										<statOffsets>
-											<MeleeWeapon_CooldownMultiplier>-.8</MeleeWeapon_CooldownMultiplier>
-										</statOffsets>
 										<li>
 											<capacity>Manipulation</capacity>
 											<offset>1.0</offset>
