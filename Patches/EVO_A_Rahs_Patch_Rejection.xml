@@ -305,7 +305,7 @@
 									<vomitMtbDays>1</vomitMtbDays>
 									<painOffset>0.15</painOffset>
 									<partEfficiencyOffset>-1.1</partEfficiencyOffset>
-									<makeImmuneTo>FoodPoisoning</makeImmuneTo>
+									<makeImmuneTo><li>FoodPoisoning</li></makeImmuneTo>
 
 									<capMods>
 										<li>
@@ -318,13 +318,13 @@
 									<label>partly adapted</label>
 									<minSeverity>0.2</minSeverity>
 									<partEfficiencyOffset>-0.3</partEfficiencyOffset>
-									<makeImmuneTo>FoodPoisoning</makeImmuneTo>
+									<makeImmuneTo><li>FoodPoisoning</li></makeImmuneTo>
 
 								</li>
 								<li>
 									<minSeverity>0.4</minSeverity>
 									<hungerRateFactor>0.75</hungerRateFactor>
-									<makeImmuneTo>FoodPoisoning</makeImmuneTo>
+									<makeImmuneTo><li>FoodPoisoning</li></makeImmuneTo>
 
 								</li>
 							</stages>

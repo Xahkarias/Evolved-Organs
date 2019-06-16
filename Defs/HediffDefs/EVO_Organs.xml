@@ -109,7 +109,7 @@
 		</addedPartProps>
 		<stages>
 			<li>
-				<makeImmuneTo>FoodPoisoning</makeImmuneTo>
+				<makeImmuneTo><li>FoodPoisoning</li></makeImmuneTo>
 				<hungerRateFactor>0.75</hungerRateFactor>
 			</li>
 		</stages>
