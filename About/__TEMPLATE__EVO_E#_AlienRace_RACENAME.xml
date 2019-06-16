@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>---MOD NAME HERE---</modName>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/RecipeDef[defName="Make_Humanoid_Protein"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>---MEAT DEF NAME, USUALLY Meat_Alien_Racename---</li>
+				</value>
+			
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BodyDef[defName="---AlienBodyDefName USUALLY just the Race---"]/corePart/parts</xpath>
+				<value>
+					
+						<li>
+							<def>LowerShoulder</def>
+							<customLabel>right lower shoulder</customLabel>
+							<coverage>0.00</coverage>
+							<groups>
+								<li>Torso</li>
+							</groups>
+						</li>
+						<li>
+							<def>LowerShoulder</def>
+							<customLabel>left lower shoulder</customLabel>
+							<coverage>0.00</coverage>
+							<groups>
+								<li>Torso</li>
+							</groups>
+						</li>
+						<li>	
+							<def>RightAbdomenCavity</def>
+							<customLabel>Right Abdominal Cavity</customLabel>
+							<coverage>0.020</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>Torso</li>
+							</groups>
+						</li>
+						<li>
+							<def>RightChestCavity</def>
+							<customLabel>Right Chest Cavity</customLabel>
+							<coverage>0.010</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>Torso</li>
+							</groups>
+						</li>
+						<li>
+							<def>LeftChestCavity</def>
+							<customLabel>Left Chest Cavity</customLabel>
+							<coverage>0.010</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>Torso</li>
+							</groups>
+						</li>
+						<li>	
+							<def>Back</def>
+							<coverage>0.020</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>Torso</li>
+							</groups>
+						</li>
+				</value>
+			</li>
+		</operations>
+		</Operation>
+
+	</Patch>
+
+	

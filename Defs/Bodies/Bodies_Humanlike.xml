@@ -590,7 +590,7 @@
 				</li>
 				<li>	
 					<def>RightAbdomenCavity</def>
-					<customLabel>Right Abdominal Cavity</customLabel>
+					<customLabel>right abdominal cavity</customLabel>
 					<coverage>0.020</coverage>
 					<depth>Inside</depth>
 					<groups>
@@ -599,7 +599,7 @@
 				</li>
 				<li>
 					<def>RightChestCavity</def>
-					<customLabel>Right Chest Cavity</customLabel>
+					<customLabel>right chest cavity</customLabel>
 					<coverage>0.010</coverage>
 					<depth>Inside</depth>
 					<groups>
@@ -608,7 +608,7 @@
 				</li>
 				<li>
 					<def>LeftChestCavity</def>
-					<customLabel>Left Chest Cavity</customLabel>
+					<customLabel>left chest cavity</customLabel>
 					<coverage>0.010</coverage>
 					<depth>Inside</depth>
 					<groups>
@@ -619,6 +619,15 @@
 					<def>Back</def>
 					<coverage>0.020</coverage>
 					<depth>Inside</depth>
+					<groups>
+						<li>Torso</li>
+					</groups>
+				</li>
+				<li>	
+					<def>Tail</def>
+					<customLabel>tail bone</customLabel>
+					<coverage>0.002</coverage>
+					<depth>Outside</depth>
 					<groups>
 						<li>Torso</li>
 					</groups>

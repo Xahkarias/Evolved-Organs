@@ -97,6 +97,7 @@
 	</HediffDef>
 
 	<!-- Stomach -->
+	<!--This needs to be expanded to match your description-->
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>EvolvedStomach</defName>
 		<label>evolved stomach</label>
@@ -108,6 +109,7 @@
 		</addedPartProps>
 		<stages>
 			<li>
+				<makeImmuneTo>FoodPoisoning</makeImmuneTo>
 				<hungerRateFactor>0.75</hungerRateFactor>
 			</li>
 		</stages>
@@ -219,6 +221,7 @@
 				<statOffsets>
 					<MeleeDodgeChance>1.0</MeleeDodgeChance>
 					<MeleeHitChance>6</MeleeHitChance>
+					<MeleeWeapon_CooldownMultiplier>-.1</MeleeWeapon_CooldownMultiplier>
 				</statOffsets>
 				<painFactor>0.9</painFactor>
 			</li>
@@ -280,7 +283,6 @@
 				<statOffsets>
 					<SocialImpact>0.3</SocialImpact>
 					<TradePriceImprovement>0.10</TradePriceImprovement>
-					<AimingDelayFactor>-0.25</AimingDelayFactor>
 				</statOffsets>
 			</li>
 		</stages>
@@ -328,7 +330,7 @@
 	<!-- Torso -->
 	<HediffDef ParentName="ImplantHediffBase">
 		<defName>EvolvedCarapace</defName>
-		<label>evolved carapace</label>
+		<label>Dragonskin</label>
 		<labelNoun>some evolved carapace</labelNoun>
 		<spawnThingOnRemoved>EvolvedCarapace</spawnThingOnRemoved>
 		<addedPartProps>
@@ -340,6 +342,28 @@
 				<statOffsets>
 					<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
 					<ArmorRating_Heat>0.20</ArmorRating_Heat>
+					<Flammability>-.8</Flammability>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>EvolvedPelt</defName>
+		<label>evolved pelt</label>
+		<labelNoun>some evolved pelts</labelNoun>
+		<spawnThingOnRemoved>EvolvedPelt</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>2.0</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<HuntingStealth>5</HuntingStealth>
+					<ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+					<ArmorRating_Heat>0.10</ArmorRating_Heat>
 					<ComfyTemperatureMin>-35</ComfyTemperatureMin>
 					<ComfyTemperatureMax>30</ComfyTemperatureMax>
 				</statOffsets>
@@ -394,6 +418,9 @@
 		</addedPartProps>
 		<stages>
 			<li>
+				<statOffsets>
+					<MeleeWeapon_CooldownMultiplier>-.5</MeleeWeapon_CooldownMultiplier>
+				</statOffsets>
 				<capMods>
 					<li>
 						<capacity>Manipulation</capacity>
@@ -470,6 +497,23 @@
 
 				<statOffsets>
 					<MeleeDodgeChance>4</MeleeDodgeChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>EvolvedFilter</defName>
+		<label>evolved psychic filter</label>
+		<labelNoun>a psychic brain filter</labelNoun>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.0</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<PsychicSensitivity>-2</PsychicSensitivity>
 				</statOffsets>
 			</li>
 		</stages>

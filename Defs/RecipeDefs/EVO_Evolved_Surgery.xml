@@ -3,7 +3,7 @@
 
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedSecondaryHeart</defName>
+		<defName>EVO_InstallEvolvedSecondaryHeart</defName>
 		<label>implant evolved secondary heart</label>
 		<description>Implant an evolved secondary heart.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -45,7 +45,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedPrimaryHeart</defName>
+		<defName>EVO_InstallEvolvedPrimaryHeart</defName>
 		<label>implant evolved primary heart</label>
 		<description>Implant an evolved primary heart.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -87,7 +87,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedKidney</defName>
+		<defName>EVO_InstallEvolvedKidney</defName>
 		<label>implant evolved kidney</label>
 		<description>Implant an evolved kidney.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -129,7 +129,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedLung</defName>
+		<defName>EVO_InstallEvolvedLung</defName>
 		<label>implant evolved lung</label>
 		<description>Implant an evolved lung.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -171,7 +171,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedJaw</defName>
+		<defName>EVO_InstallEvolvedJaw</defName>
 		<label>implant evolved jaw</label>
 		<description>Implant an evolved jaw.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -213,7 +213,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedThirdLung</defName>
+		<defName>EVO_InstallEvolvedThirdLung</defName>
 		<label>implant evolved third lung</label>
 		<description>Implant an evolved third lung.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -255,7 +255,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedStomach</defName>
+		<defName>EVO_InstallEvolvedStomach</defName>
 		<label>implant evolved stomach</label>
 		<description>Implant an evolved stomach.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -297,7 +297,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedLiver</defName>
+		<defName>EVO_InstallEvolvedLiver</defName>
 		<label>implant evolved liver</label>
 		<description>Implant an evolved liver.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -339,7 +339,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedBrain</defName>
+		<defName>EVO_InstallEvolvedBrain</defName>
 		<label>implant evolved brain</label>
 		<description>Implant an evolved brain.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -382,7 +382,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedEye</defName>
+		<defName>EVO_InstallEvolvedEye</defName>
 		<label>implant evolved eye</label>
 		<description>Implant an evolved eye.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -424,7 +424,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedPinions</defName>
+		<defName>EVO_InstallEvolvedPinions</defName>
 		<label>implant evolved pinions</label>
 		<description>Implant evolved pinions.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -466,7 +466,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedSpine</defName>
+		<defName>EVO_InstallEvolvedSpine</defName>
 		<label>implant evolved spine</label>
 		<description>Implant an evolved spine.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -508,7 +508,7 @@
 	</RecipeDef> 
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedNose</defName>
+		<defName>EVO_InstallEvolvedNose</defName>
 		<label>implant evolved nose</label>
 		<description>Implant an evolved nose.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -550,7 +550,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedEar</defName>
+		<defName>EVO_InstallEvolvedEar</defName>
 		<label>implant evolved ear</label>
 		<description>Implant an evolved ear.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -592,7 +592,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedRibcage</defName>
+		<defName>EVO_InstallEvolvedRibcage</defName>
 		<label>implant evolved ribcage</label>
 		<description>Implant an evolved ribcage.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -634,7 +634,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedLeg</defName>
+		<defName>EVO_InstallEvolvedLeg</defName>
 		<label>implant evolved leg</label>
 		<description>Implant an evolved leg.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -676,7 +676,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedTail</defName>
+		<defName>EVO_InstallEvolvedTail</defName>
 		<label>implant evolved tail</label>
 		<description>Implant an evolved tail.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -712,13 +712,13 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>Waist</li>
+			<li>Tail</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>EvolvedTail</addsHediff>
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedCombatGlands</defName>
+		<defName>EVO_InstallEvolvedCombatGlands</defName>
 		<label>implant evolved combat glands</label>
 		<description>Implant an evolved combat glands.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -760,7 +760,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedLarnyx</defName>
+		<defName>EVO_InstallEvolvedLarnyx</defName>
 		<label>implant evolved larnyx</label>
 		<description>Implant an evolved larnyx.</description>
 		<workerClass>Recipe_InstallImplant</workerClass>
@@ -802,7 +802,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedCarapace</defName>
+		<defName>EVO_InstallEvolvedCarapace</defName>
 		<label>implant evolved carapace</label>
 		<description>Implant an evolved carapace.</description>
 		<workerClass>Recipe_InstallImplant</workerClass>
@@ -844,7 +844,92 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedSpider</defName>
+		<defName>EVO_InstallEvolvedPelt</defName>
+		<label>implant evolved pelt</label>
+		<description>Implant the cells required to grow an evolved pelt into the host's lower dermis.</description>
+		<workerClass>Recipe_InstallImplant</workerClass>
+		<jobString>Implanting evolved pelt.</jobString>
+		<workAmount>3000</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EvolvedPelt</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>EvolvedPelt</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>EvolvedPelt</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>EVO_InstallEvolvedFilter</defName>
+		<label>implant psychic filter</label>
+		<description>Implant an organ dedicated to filtering psyhcic emenations into the host's skull.</description>
+		<workerClass>Recipe_InstallImplant</workerClass>
+		<jobString>Implanting psychic filter.</jobString>
+		<workAmount>3000</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EvolvedFilter</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>EvolvedFilter</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Skull</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>EvolvedFilter</addsHediff>
+	</RecipeDef>
+
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>EVO_InstallEvolvedSpider</defName>
 		<label>implant evolved spider leg cluster</label>
 		<description>Implant an evolved spider leg cluster.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>

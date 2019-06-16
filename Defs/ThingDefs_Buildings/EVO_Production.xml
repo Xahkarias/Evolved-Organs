@@ -70,7 +70,7 @@
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
 		<researchPrerequisites>
-			<li>EvolvedOrgansR1</li>
+			<li>EvolvedOrgansResearch1</li>
 		</researchPrerequisites>
 	</ThingDef>
 </Defs>

@@ -33,25 +33,64 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Meat_Human</li>
+						<li>EVO_Humanoid_Protein</li>
 					</thingDefs>
 				</filter>
-				<count>15</count>
+				<count>5</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>MedicineIndustrial</li>
 				<li>ComponentIndustrial</li>
-				<li>Meat_Human</li>
+				<li>EVO_Humanoid_Protein</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
 			<EvolvedChunk>5</EvolvedChunk>
 		</products>
-		<researchPrerequisite>EvolvedOrgansR1</researchPrerequisite>
+		<researchPrerequisite>EvolvedOrgansResearch1</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>10</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>Make_Humanoid_Protein</defName>
+		<label>refine humanoid proteins</label>
+		<description>Refine proteins from Humanoid Meat.</description>
+		<jobString>Refining humanoid protein.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		    <allowMixingIngredients>true</allowMixingIngredients>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<workAmount>250</workAmount>
+		<recipeUsers>
+			<li>EvolvedWorkbench</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Meat_Human</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<EVO_Humanoid_Protein>5</EVO_Humanoid_Protein>
+		</products>
+		<researchPrerequisite>EvolvedOrgansResearch1</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+			<Cooking>5</Cooking>
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
 	</RecipeDef>

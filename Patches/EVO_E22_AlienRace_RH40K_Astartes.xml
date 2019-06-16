@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<success>Always</success>
+		<mods>
+			<li>[O21] Rimhammer 40K</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationRemove">
+					<!--secondary heart-->
+					<xpath>/Defs/BodyDef[defName="AstartesBody"]/corePart/parts/li[9]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<!--biscopea?-->
+					<xpath>/Defs/BodyDef[defName="AstartesBody"]/corePart/parts/li[11]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<!--third lung-->
+					<xpath>/Defs/BodyDef[defName="AstartesBody"]/corePart/parts/li[14]</xpath>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BodyDef[defName="AstartesBody"]/corePart/parts</xpath>
+					<value>
+						<li>
+							<def>LowerShoulder</def>
+							<customLabel>right lower shoulder</customLabel>
+							<coverage>0.00</coverage>
+							<groups>
+								<li>Torso</li>
+							</groups>
+						</li>
+						<li>
+							<def>LowerShoulder</def>
+							<customLabel>left lower shoulder</customLabel>
+							<coverage>0.00</coverage>
+							<groups>
+								<li>Torso</li>
+							</groups>
+						</li>
+						<li>
+							<def>RightAbdomenCavity</def>
+							<customLabel>Right Abdominal Cavity</customLabel>
+							<coverage>0.020</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>Torso</li>
+							</groups>
+							<parts>
+								<li>
+									<def>Biscopea</def>
+									<coverage>0.020</coverage>
+									<depth>Inside</depth>
+									<groups>
+										<li>Torso</li>
+									</groups>
+								</li>
+							</parts>
+						</li>
+						<li>
+							<def>RightChestCavity</def>
+							<customLabel>Right Chest Cavity</customLabel>
+							<coverage>0.010</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>Torso</li>
+							</groups>
+							<parts>
+								<li>
+									<def>SecondaryHeart</def>
+									<coverage>0.010</coverage>
+									<depth>Inside</depth>
+									<groups>
+										<li>Torso</li>
+									</groups>
+								</li>
+							</parts>
+						</li>
+						<li>
+							<def>LeftChestCavity</def>
+							<customLabel>Left Chest Cavity</customLabel>
+							<coverage>0.010</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>Torso</li>
+							</groups>
+
+						</li>
+						<li>
+							<def>Back</def>
+							<coverage>0.020</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>Torso</li>
+							</groups>
+						</li>
+						<li>
+							<def>Tail</def>
+							<customLabel>tail bone</customLabel>
+							<coverage>0.002</coverage>
+							<depth>Outside</depth>
+							<groups>
+								<li>Torso</li>
+							</groups>
+						</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
+

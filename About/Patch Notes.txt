@@ -1,0 +1,37 @@
+0.1.3
+Removed ModCheck Dependency, replaced all patches with FindMod
+
+Added Rimhammer40k Race compatability with basic functions until a closer look can be made.
+
+------
+
+
+
+Added Humanoid Protein item type
+	-included patch template for adding alien_race_meat
+
+Changed Evolved Meat recipe to require Humanoid Protein.
+
+Added Humanoid Patch Template.
+
+Add Humanlike TailBone body part for tail installations as a parallel to tailed races.
+
+Added Kilhn Race Patch
+Added Leeani Race Patch
+Added Avali Race Patch
+Added Yabils Race Patch
+Added Lizardmen Race Patch
+Added Racc Race Patch
+Added Ratkin Race Patch
+Added Kurin Race Patch
+Added Vulpine Race Patch
+Added Hisa Race Patch
+Added Skaven Race Patch
+Added Gor Race Patch
+Added Deathjack Race Patch
+Added Orassans Race Patch
+Added Oni Race Patch
+Added Asari Race Patch
+Added Fennex Race Patch
+Added Astoral Race Patch
+Added LOTR Races Patch

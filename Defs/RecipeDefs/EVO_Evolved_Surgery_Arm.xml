@@ -2,7 +2,7 @@
 <Defs>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedArm_Primary</defName>
+		<defName>EVO_InstallEvolvedArm_Primary</defName>
 		<label>implant evolved arm (primary)</label>
 		<description>Implant an evolved arm (primary).</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -44,7 +44,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedArm_Secondary</defName>
+		<defName>EVO_InstallEvolvedArm_Secondary</defName>
 		<label>implant evolved arm (secondary)</label>
 		<description>Implant an evolved arm (secondary).</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -95,7 +95,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedArmClaw_Primary</defName>
+		<defName>EVO_InstallEvolvedArmClaw_Primary</defName>
 		<label>implant evolved claw (primary)</label>
 		<description>Implant an evolved claw (primary).</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -137,7 +137,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedArmClaw_Secondary</defName>
+		<defName>EVO_InstallEvolvedArmClaw_Secondary</defName>
 		<label>implant evolved claw (secondary)</label>
 		<description>Implant an evolved claw (secondary).</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -172,7 +172,7 @@
 				<count>3</count>
 			</li>
 		</ingredients>
-		<fixedIngredientFilter>
+				<fixedIngredientFilter>
 			<categories>
 				<li>Medicine</li>
 			</categories>
@@ -188,7 +188,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedArmSabre_Primary</defName>
+		<defName>EVO_InstallEvolvedArmSabre_Primary</defName>
 		<label>implant evolved arm sabre (primary)</label>
 		<description>Implant an evolved arm sabre (primary).</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -231,7 +231,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedArmSabre_Secondary</defName>
+		<defName>EVO_InstallEvolvedArmSabre_Secondary</defName>
 		<label>implant evolved arm sabre (secondary)</label>
 		<description>Implant an evolved arm sabre (secondary)</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -266,7 +266,7 @@
 				<count>3</count>
 			</li>
 		</ingredients>
-		<fixedIngredientFilter>
+				<fixedIngredientFilter>
 			<categories>
 				<li>Medicine</li>
 			</categories>
@@ -282,7 +282,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedArmMace_Primary</defName>
+		<defName>EVO_InstallEvolvedArmMace_Primary</defName>
 		<label>implant evolved arm mace (primary)</label>
 		<description>Implant an evolved arm mace (primary).</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -324,7 +324,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedArmMace_Secondary</defName>
+		<defName>EVO_InstallEvolvedArmMace_Secondary</defName>
 		<label>implant evolved arm mace (secondary)</label>
 		<description>Implant an evolved arm mace (secondary)</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -376,7 +376,7 @@
 
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedArmTentacle_Primary</defName>
+		<defName>EVO_InstallEvolvedArmTentacle_Primary</defName>
 		<label>implant evolved tentacle (primary)</label>
 		<description>Implant an evolved tentacle (primary).</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -418,7 +418,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedArmTentacle_Secondary</defName>
+		<defName>EVO_InstallEvolvedArmTentacle_Secondary</defName>
 		<label>implant evolved tentacle (secondary)</label>
 		<description>Implant an evolved tentacle (secondary)</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -469,7 +469,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedArmShield_Primary</defName>
+		<defName>EVO_InstallEvolvedArmShield_Primary</defName>
 		<label>implant evolved arm shield (primary)</label>
 		<description>Implant an evolved arm shield (primary).</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -511,7 +511,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>InstallEvolvedArmShield_Secondary</defName>
+		<defName>EVO_InstallEvolvedArmShield_Secondary</defName>
 		<label>implant evolved arm shield (secondary)</label>
 		<description>Implant an evolved arm shield (secondary)</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
