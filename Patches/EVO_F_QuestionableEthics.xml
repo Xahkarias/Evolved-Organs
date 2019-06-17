@@ -197,49 +197,25 @@
 					</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArm_Secondary"]/fixedIngredientFilter/thingDefs/li[2]</xpath>
-				</li>
-
-				<li Class="PatchOperationRemove">
 					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmClaw_Secondary"]/ingredients/li[3]
 					</xpath>
 				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmClaw_Secondary"]/fixedIngredientFilter/thingDefs/li[2]</xpath>
-				</li>
-
 				<li Class="PatchOperationRemove">
 					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmSabre_Secondary"]/ingredients/li[3]
 					</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmSabre_Secondary"]/fixedIngredientFilter/thingDefs/li[2]</xpath>
-				</li>
-
-				<li Class="PatchOperationRemove">
 					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmMace_Secondary"]/ingredients/li[3]
 					</xpath>
 				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmMace_Secondary"]/fixedIngredientFilter/thingDefs/li[2]</xpath>
-				</li>
-
 				<li Class="PatchOperationRemove">
 					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmTentacle_Secondary"]/ingredients/li[3]
 					</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmTentacle_Secondary"]/fixedIngredientFilter/thingDefs/li[2]</xpath>
-				</li>
-
-				<li Class="PatchOperationRemove">
 					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmShield_Secondary"]/ingredients/li[3]
 					</xpath>
 				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmShield_Secondary"]/fixedIngredientFilter/thingDefs/li[2]</xpath>
-				</li>
-
 
 				<!--Then we remove the bench altogether -->
 				<li Class="PatchOperationRemove">

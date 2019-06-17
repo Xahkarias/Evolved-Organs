@@ -305,6 +305,8 @@
 									<vomitMtbDays>1</vomitMtbDays>
 									<painOffset>0.15</painOffset>
 									<partEfficiencyOffset>-1.1</partEfficiencyOffset>
+									<makeImmuneTo><li>FoodPoisoning</li></makeImmuneTo>
+
 									<capMods>
 										<li>
 											<capacity>Consciousness</capacity>
@@ -316,10 +318,14 @@
 									<label>partly adapted</label>
 									<minSeverity>0.2</minSeverity>
 									<partEfficiencyOffset>-0.3</partEfficiencyOffset>
+									<makeImmuneTo><li>FoodPoisoning</li></makeImmuneTo>
+
 								</li>
 								<li>
 									<minSeverity>0.4</minSeverity>
 									<hungerRateFactor>0.75</hungerRateFactor>
+									<makeImmuneTo><li>FoodPoisoning</li></makeImmuneTo>
+
 								</li>
 							</stages>
 						</HediffDef>
@@ -933,6 +939,9 @@
 									<label>newly implanted</label>
 									<vomitMtbDays>1</vomitMtbDays>
 									<painOffset>0.15</painOffset>
+									<statOffsets>
+										<MeleeWeapon_CooldownMultiplier>-.5</MeleeWeapon_CooldownMultiplier>
+									</statOffsets>
 									<capMods>
 										<li>
 											<capacity>Consciousness</capacity>
@@ -944,9 +953,15 @@
 									<label>partly adapted</label>
 									<minSeverity>0.2</minSeverity>
 									<vomitMtbDays>1</vomitMtbDays>
+									<statOffsets>
+										<MeleeWeapon_CooldownMultiplier>-.5</MeleeWeapon_CooldownMultiplier>
+									</statOffsets>
 								</li>
 								<li>
 									<minSeverity>0.4</minSeverity>
+									<statOffsets>
+										<MeleeWeapon_CooldownMultiplier>-.5</MeleeWeapon_CooldownMultiplier>
+									</statOffsets>
 									<capMods>
 										<li>
 											<capacity>Manipulation</capacity>
@@ -1806,9 +1821,9 @@
 								</li>
 								<li>
 									<minSeverity>0.4</minSeverity>
-																			<statOffsets>
-											<MeleeWeapon_CooldownMultiplier>-.8</MeleeWeapon_CooldownMultiplier>
-										</statOffsets>
+									<statOffsets>
+										<MeleeWeapon_CooldownMultiplier>-.8</MeleeWeapon_CooldownMultiplier>
+									</statOffsets>
 									<capMods>
 
 										<li>

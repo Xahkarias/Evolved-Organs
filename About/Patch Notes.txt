@@ -11,6 +11,7 @@ Added Questionable Ethics Integration
 	-Moved Evolved Organ Research
 	-To create evolved organs first complete the prequisite research in questionable ethics then acquire mechanite slurry by extracting it from mechanoids.  Acquire Humanoid Proteins.  Create organ at any powered organ vat.  Keep a handful of mechanites around, mechanites can always make more mechanites if you have the prequisite research.
 
+
 ------
 
 
