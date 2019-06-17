@@ -370,7 +370,6 @@
 			</li>
 		</stages>
 	</HediffDef>
-
 	<!-- Spine -->
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>EvolvedSpine</defName>
@@ -497,6 +496,23 @@
 
 				<statOffsets>
 					<MeleeDodgeChance>4</MeleeDodgeChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+		<HediffDef ParentName="AddedBodyPartBase">
+		<defName>EvolvedFilter</defName>
+		<label>evolved psychic filter</label>
+		<labelNoun>a psychic brain filter</labelNoun>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.0</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<PsychicSensitivity>-2</PsychicSensitivity>
 				</statOffsets>
 			</li>
 		</stages>
