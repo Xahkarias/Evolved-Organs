@@ -2,7 +2,7 @@
 <Patch>
 	<!--courtesy of Saebbi-->
 	<Operation Class="PatchOperationFindMod">
-		<modName>Combat Extended</modName>
+		<mods><li>Combat Extended</li></mods>
 		<success>Always</success>
 		<match Class="PatchOperationSequence">
 			<operations>

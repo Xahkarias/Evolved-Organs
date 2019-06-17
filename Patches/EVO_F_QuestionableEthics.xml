@@ -90,10 +90,10 @@
 				<li Class="PatchOperationRemove">
 					<xpath>/Defs/ThingDef[defName="EvolvedSpider"]/costList</xpath>
 				</li>
-								<li Class="PatchOperationRemove">
+				<li Class="PatchOperationRemove">
 					<xpath>/Defs/ThingDef[defName="EvolvedPelt"]/costList</xpath>
 				</li>
-								<li Class="PatchOperationRemove">
+				<li Class="PatchOperationRemove">
 					<xpath>/Defs/ThingDef[defName="EvolvedFilter"]/costList</xpath>
 				</li>
 
@@ -462,7 +462,7 @@
 						<ThingDef ParentName="ResourceBase">
 							<defName>EVO_Mechanite_Slurry</defName>
 							<label>Mechanite Slurry</label>
-							<description>A vial of distilled water full of nano-scale mechanites ready to be combined with humanoid proteins to be grown into a advanced organ.  These machines were once capable of anything, however during the extraction process they have been rendered generally harmless and will only reactive when provided data from a Organ Vat and provided a nutrient suspension to begin work.  Maybe someday there will be the concern about the dreaded "Grey Goo" disaster but that day is not today.</description>
+							<description>A vial of distilled water full of nano-scale mechanites ready to be combined with humanoid proteins to be grown into a advanced organ.  These machines were once capable of anything, however during the extraction process they have been rendered generally harmless and will only reactivate when provided data from a Organ Vat and provided a nutrient suspension to begin work.  Maybe someday there will be the concern about the dreaded "Grey Goo" disaster but that day is not today.</description>
 							<graphicData>
 								<texPath>Things/Item/Resource/MechaniteSlurryVial</texPath>
 								<graphicClass>Graphic_Single</graphicClass>
