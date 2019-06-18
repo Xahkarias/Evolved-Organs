@@ -25,22 +25,6 @@
 					<xpath>/Defs/BodyDef[defName="AstartesBody"]/corePart/parts</xpath>
 					<value>
 						<li>
-							<def>LowerShoulder</def>
-							<customLabel>right lower shoulder</customLabel>
-							<coverage>0.00</coverage>
-							<groups>
-								<li>Torso</li>
-							</groups>
-						</li>
-						<li>
-							<def>LowerShoulder</def>
-							<customLabel>left lower shoulder</customLabel>
-							<coverage>0.00</coverage>
-							<groups>
-								<li>Torso</li>
-							</groups>
-						</li>
-						<li>
 							<def>RightAbdomenCavity</def>
 							<customLabel>Right Abdominal Cavity</customLabel>
 							<coverage>0.020</coverage>
@@ -86,7 +70,6 @@
 							<groups>
 								<li>Torso</li>
 							</groups>
-
 						</li>
 						<li>
 							<def>Back</def>

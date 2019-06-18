@@ -8,14 +8,12 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RecipeDef[defName="Make_Humanoid_Protein"]/fixedIngredientFilter/thingDefs</xpath>
-					<value>
-						<li>Meat_Alien_Terran</li>
-					</value>
-				</li>
-
 				<!--This race has some custom parts that might need to be changed, I'm just adding the basic Evo installation parts for now-->
+        <li Class="PatchOperationTest">
+          <!--test for terran body, if none then skip-->
+          <xpath>/Defs/BodyDef[defName="TerranBody"]</xpath>
+          <success>Normal</success>
+        </li>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/BodyDef[defName="TerranBody"]/corePart/parts</xpath>
 					<value>
@@ -81,8 +79,19 @@
 						</li>
 					</value>
 				</li>
+        <!--tests for terran meat and if not found skip recipe add-->
+        <li Class="PatchOperationTest">
+          <xpath>/Defs/ThingDef[defName="Meat_Alien_Terran"]</xpath>
+          <success>Normal</success>
+        </li>        
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="Make_Humanoid_Protein"]/fixedIngredientFilter/thingDefs</xpath>
+          <value>
+            <li>Meat_Alien_Terran</li>
+          </value>
+        </li>
 
-			</operations>
+      </operations>
 		</match>
 	</Operation>
 

@@ -5,10 +5,11 @@
     "\\Defs",
     "\\Defs\\HediffDefs",
     "\\Defs\\RecipeDefs",
+    "\\Defs\\ResearchProjectDefs",
     "\\Defs\\ThingDefs_Items",
     "\\Patches",
     "\\Source"
   ],
-  "SelectedNode": "\\Patches\\EVO_G_CombatExtended.xml",
+  "SelectedNode": "\\Defs\\ResearchProjectDefs\\EVO_ResearchProjects_4.xml",
   "PreviewInSolutionExplorer": false
 }
