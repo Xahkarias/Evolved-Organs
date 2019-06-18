@@ -99,7 +99,7 @@
 	<ThingDef ParentName="EvolvedOrganBase">
 		<defName>EvolvedStomach</defName>
 		<label>evolved stomach</label>
-		<description>A stomach created by accelerated evolution. Capable of breaking down almost anything into usable nutrients, even large chunks of metal.</description>
+		<description>A stomach created by accelerated evolution. Capable of neutralizing toxins and breaking down food much more effectively.</description>
 		<recipeMaker>
 			<researchPrerequisite>EvolvedOrgansResearchOrgans2</researchPrerequisite>
 
