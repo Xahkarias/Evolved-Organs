@@ -240,7 +240,7 @@
 	<ThingDef ParentName="EvolvedOrganBase">
 		<defName>EvolvedCarapace</defName>
 		<label>evolved skin</label>
-		<description>A carapace created by accelerated evolution. Allows the host to ignore light damage to the skin, while also serving as a barrier to fire.</description>
+		<description>A scaly caparace created by accelerated evolution. Allows the host to ignore light damage to the skin, while also serving as a barrier to fire.</description>
 		<recipeMaker>
 			<researchPrerequisite>EvolvedOrgansResearchOrgans1</researchPrerequisite>
 

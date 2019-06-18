@@ -330,7 +330,7 @@
 	<HediffDef ParentName="ImplantHediffBase">
 		<defName>EvolvedCarapace</defName>
 		<label>Dragonskin</label>
-		<labelNoun>some evolved carapace</labelNoun>
+		<labelNoun>some dragonskin</labelNoun>
 		<spawnThingOnRemoved>EvolvedCarapace</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
