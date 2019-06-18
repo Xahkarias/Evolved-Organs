@@ -305,7 +305,9 @@
 									<vomitMtbDays>1</vomitMtbDays>
 									<painOffset>0.15</painOffset>
 									<partEfficiencyOffset>-1.1</partEfficiencyOffset>
-									<makeImmuneTo><li>FoodPoisoning</li></makeImmuneTo>
+									<makeImmuneTo>
+										<li>FoodPoisoning</li>
+									</makeImmuneTo>
 									<capMods>
 										<li>
 											<capacity>Consciousness</capacity>
@@ -317,14 +319,18 @@
 									<label>partly adapted</label>
 									<minSeverity>0.2</minSeverity>
 									<partEfficiencyOffset>-0.3</partEfficiencyOffset>
-                  <hungerRateFactor>0.95</hungerRateFactor>
-                  <makeImmuneTo><li>FoodPoisoning</li></makeImmuneTo>
+									<hungerRateFactor>0.95</hungerRateFactor>
+									<makeImmuneTo>
+										<li>FoodPoisoning</li>
+									</makeImmuneTo>
 
 								</li>
 								<li>
 									<minSeverity>0.4</minSeverity>
 									<hungerRateFactor>0.75</hungerRateFactor>
-									<makeImmuneTo><li>FoodPoisoning</li></makeImmuneTo>
+									<makeImmuneTo>
+										<li>FoodPoisoning</li>
+									</makeImmuneTo>
 								</li>
 							</stages>
 						</HediffDef>
@@ -2153,125 +2159,121 @@
 								</li>
 							</stages>
 						</HediffDef>
-
-					</value>
+          </value>
 					<success>Normal</success>
 				</li>
 
-        <li Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EvolvedPelt"]</xpath>
-          <value>
-            <HediffDef ParentName="ImplantHediffBase">
-              <defName>EvolvedPelt</defName>
-              <label>evolved pelt</label>
-              <labelNoun>some evolved pelts</labelNoun>
-              <spawnThingOnRemoved>EvolvedPelt</spawnThingOnRemoved>
-              <addedPartProps>
-                <solid>true</solid>
-                <partEfficiency>2.0</partEfficiency>
-              </addedPartProps>
-              <comps>
-                <li Class="HediffCompProperties_Immunizable">
-                  <severityPerDayNotImmune>0.1</severityPerDayNotImmune>
-                </li>
-              </comps>
-              <initialSeverity>0.001</initialSeverity>
-              <stages>
-                <li>
-                  <label>newly implanted</label>
-                  <vomitMtbDays>1</vomitMtbDays>
-                  <painOffset>0.15</painOffset>
-                  <statOffsets>
-                    <HuntingStealth>-1</HuntingStealth>
-                  </statOffsets>
-                  <capMods>
-                    <li>
-                      <capacity>Moving</capacity>
-                      <offset>-.1</offset>
-                    </li>
-                  </capMods>
-                </li>
-                <li>
-                  <label>partly adapted</label>
-                  <minSeverity>0.2</minSeverity>
-                  <vomitMtbDays>1</vomitMtbDays>
-                  <statOffsets>
-                    <HuntingStealth>1</HuntingStealth>
-                    <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
-                    <ArmorRating_Heat>0.10</ArmorRating_Heat>
-                  </statOffsets>
-                </li>
-                <li>
-                  <minSeverity>0.4</minSeverity>
-                  <statOffsets>
-                    <HuntingStealth>5</HuntingStealth>
-                    <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
-                    <ArmorRating_Heat>0.10</ArmorRating_Heat>
-                    <ComfyTemperatureMin>-35</ComfyTemperatureMin>
-                    <ComfyTemperatureMax>30</ComfyTemperatureMax>
-                  </statOffsets>
-                </li>
-              </stages>
-            </HediffDef>
-          </value>
-        </li>
-
-        <li Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EvolvedFilter"]</xpath>
-          <value>
-            <HediffDef ParentName="ImplantHediffBase">
-              <defName>EvolvedFilter</defName>
-              <label>evolved psychic filter</label>
-              <labelNoun>a psychic brain filter</labelNoun>
-              <addedPartProps>
-                <solid>true</solid>
-                <partEfficiency>1.0</partEfficiency>
-              </addedPartProps>
-              <comps>
-                <li Class="HediffCompProperties_Immunizable">
-                  <severityPerDayNotImmune>0.1</severityPerDayNotImmune>
-                </li>
-              </comps>
-              <initialSeverity>0.001</initialSeverity>
-              <stages>
-                <li>
-                  <label>newly implanted</label>
-                  <vomitMtbDays>1</vomitMtbDays>
-                  <painOffset>0.15</painOffset>
-                  <statOffsets>
-                    <PsychicSensitivity>-.5</PsychicSensitivity>
-                  </statOffsets>
-                </li>
-                <li>
-                  <label>partly adapted</label>
-                  <minSeverity>0.2</minSeverity>
-                  <vomitMtbDays>1</vomitMtbDays>
-                  <statOffsets>
-                    <PsychicSensitivity>-.75</PsychicSensitivity>
-                  </statOffsets>
-                </li>
-                <li>
-                  <minSeverity>0.4</minSeverity>
-                  <statOffsets>
-                    <PsychicSensitivity>-2</PsychicSensitivity>
-                  </statOffsets>
-                </li>
-              </stages>
-            </HediffDef>
-          </value>
-        </li>
-        
-
-          </value>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[defName = "EvolvedPelt"]</xpath>
+					<value>
+						<HediffDef ParentName="ImplantHediffBase">
+							<defName>EvolvedPelt</defName>
+							<label>evolved pelt</label>
+							<labelNoun>some evolved pelts</labelNoun>
+							<spawnThingOnRemoved>EvolvedPelt</spawnThingOnRemoved>
+							<addedPartProps>
+								<solid>true</solid>
+								<partEfficiency>2.0</partEfficiency>
+							</addedPartProps>
+							<comps>
+								<li Class="HediffCompProperties_Immunizable">
+									<severityPerDayNotImmune>0.1</severityPerDayNotImmune>
+								</li>
+							</comps>
+							<initialSeverity>0.001</initialSeverity>
+							<stages>
+								<li>
+									<label>newly implanted</label>
+									<vomitMtbDays>1</vomitMtbDays>
+									<painOffset>0.15</painOffset>
+									<statOffsets>
+										<HuntingStealth>-1</HuntingStealth>
+									</statOffsets>
+									<capMods>
+										<li>
+											<capacity>Moving</capacity>
+											<offset>-.1</offset>
+										</li>
+									</capMods>
+								</li>
+								<li>
+									<label>partly adapted</label>
+									<minSeverity>0.2</minSeverity>
+									<vomitMtbDays>1</vomitMtbDays>
+									<statOffsets>
+										<HuntingStealth>1</HuntingStealth>
+										<ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+										<ArmorRating_Heat>0.10</ArmorRating_Heat>
+									</statOffsets>
+								</li>
+								<li>
+									<minSeverity>0.4</minSeverity>
+									<statOffsets>
+										<HuntingStealth>5</HuntingStealth>
+										<ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+										<ArmorRating_Heat>0.10</ArmorRating_Heat>
+										<ComfyTemperatureMin>-35</ComfyTemperatureMin>
+										<ComfyTemperatureMax>30</ComfyTemperatureMax>
+									</statOffsets>
+								</li>
+							</stages>
+						</HediffDef>
+					</value>
           <success>Normal</success>
-        </li>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[defName = "EvolvedFilter"]</xpath>
+					<value>
+						<HediffDef ParentName="ImplantHediffBase">
+							<defName>EvolvedFilter</defName>
+							<label>evolved psychic filter</label>
+							<labelNoun>a psychic brain filter</labelNoun>
+							<addedPartProps>
+								<solid>true</solid>
+								<partEfficiency>1.0</partEfficiency>
+							</addedPartProps>
+							<comps>
+								<li Class="HediffCompProperties_Immunizable">
+									<severityPerDayNotImmune>0.1</severityPerDayNotImmune>
+								</li>
+							</comps>
+							<initialSeverity>0.001</initialSeverity>
+							<stages>
+								<li>
+									<label>newly implanted</label>
+									<vomitMtbDays>1</vomitMtbDays>
+									<painOffset>0.15</painOffset>
+									<statOffsets>
+										<PsychicSensitivity>-.5</PsychicSensitivity>
+									</statOffsets>
+								</li>
+								<li>
+									<label>partly adapted</label>
+									<minSeverity>0.2</minSeverity>
+									<vomitMtbDays>1</vomitMtbDays>
+									<statOffsets>
+										<PsychicSensitivity>-.75</PsychicSensitivity>
+									</statOffsets>
+								</li>
+								<li>
+									<minSeverity>0.4</minSeverity>
+									<statOffsets>
+										<PsychicSensitivity>-2</PsychicSensitivity>
+									</statOffsets>
+								</li>
+							</stages>
+						</HediffDef>
+					</value>
+          <success>Normal</success>
+				</li>
 
 
 
 
-			</operations>
-		</match>
-	</Operation>
+	</operations>
+</match>
+</Operation>
 
 
 </Patch>
