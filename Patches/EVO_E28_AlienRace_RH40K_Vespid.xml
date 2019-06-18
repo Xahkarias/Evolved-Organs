@@ -15,7 +15,7 @@
 					</value>
 				</li>
 
-				<li Class="PatchOperationInsert">
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/BodyDef[defName="VespidBody"]/corePart/parts</xpath>
 					<value>
 						<li>
