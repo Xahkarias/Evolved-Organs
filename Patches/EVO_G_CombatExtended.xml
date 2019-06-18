@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 	<!--courtesy of Saebbi-->
-	<Operation Class="CombatExtended.PatchOperationFindMod">
-		<modName>Combat Extended</modName>
+	<Operation Class="PatchOperationFindMod">
+		<mods><li>Combat Extended</li></mods>
 		<success>Always</success>
 		<match Class="PatchOperationSequence">
 			<operations>
