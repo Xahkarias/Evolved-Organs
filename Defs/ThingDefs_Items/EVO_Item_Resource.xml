@@ -4,7 +4,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>EvolvedChunk</defName>
 		<label>Evolved Meat</label>
-		<description>A chunk of unassuming flesh. Its cells are capable of rapid differntation and duplication, allowing the user to create organs of fantastical abilities that far outstrip even archotech.</description>
+		<description>A chunk of unassuming flesh. Its cells are capable of rapid differntation and duplication, allowing the user to create organs of fantastical abilities that far outstrip even archotech, used at the Evolved Workbench.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/EvolvedChunk</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
