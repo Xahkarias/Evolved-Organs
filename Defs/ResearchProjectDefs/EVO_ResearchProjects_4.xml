@@ -1,22 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-	<!--	Nano-scale cellular engineering
-			extract humanoid protein, mechanites, make evolved meat
-			
-		Simple Organ Application
-		
-			Complex Organ Application
-		
-				Advanced Organ Application
-		
-			Structural Organ Application
-				
-				Complex Limb Structures
-				
-					Advanced Limb Structures					
--->
-
 	<ResearchTabDef>
 		<defName>EVO_EvolvedOrgansResearchTab</defName>
 		<label>Evolved Organs</label>
