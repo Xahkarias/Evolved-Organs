@@ -2,8 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\About",
-    "\\Defs"
+    "\\Defs",
+    "\\Defs\\HediffDefs",
+    "\\Defs\\RecipeDefs",
+    "\\Defs\\ThingDefs_Items",
+    "\\Patches",
+    "\\Source"
   ],
-  "SelectedNode": "\\About\\About.xml",
+  "SelectedNode": "\\Patches\\EVO_A_Rahs_Patch_Rejection.xml",
   "PreviewInSolutionExplorer": false
 }
