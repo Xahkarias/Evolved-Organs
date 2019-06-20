@@ -185,6 +185,9 @@
 				<li Class="PatchOperationRemove">
 					<xpath>/Defs/ThingDef[defName="EvolvedFilter"]/recipeMaker</xpath>
 				</li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="ImmortalOrgan"]/recipeMaker</xpath>
+        </li>
 
 				<!--removes the recipeMaker so that they cant be crafted and dont throw the "you dont have a costlist error" -->
 				<li Class="PatchOperationRemove">
@@ -991,6 +994,14 @@
 							<productAmount>1</productAmount>
 							<requiredResearch>EvolvedOrgansResearchOrgans2</requiredResearch>
 						</QEthics.GrowerRecipeDef>
+
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>ImmortalOrgan</defName>
+              <label>ra's vacuole</label>
+              <productDef>ImmortalOrgan</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchOrgans3</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 					</value>
 				</li>
 			</operations>

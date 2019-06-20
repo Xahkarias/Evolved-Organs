@@ -12,3 +12,9 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\EvolvedOrgans\Evolve
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\EvolvedOrgans\EvolvedOrgans\EvolvedOrgans\obj\Debug\EvolvedOrgans.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\EvolvedOrgans\EvolvedOrgans\EvolvedOrgans\obj\Debug\EvolvedOrgans.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\EvolvedOrgans\EvolvedOrgans\EvolvedOrgans\obj\Debug\EvolvedOrgans.csproj.CopyComplete
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\EvolvedOrgans\Source\EvolvedOrgans\obj\Debug\EvolvedOrgans.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\EvolvedOrgans\Source\EvolvedOrgans\obj\Debug\EvolvedOrgans.Properties.Resources.resources
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\EvolvedOrgans\Source\EvolvedOrgans\obj\Debug\EvolvedOrgans.csproj.GenerateResource.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\EvolvedOrgans\Source\EvolvedOrgans\obj\Debug\EvolvedOrgans.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\EvolvedOrgans\Source\EvolvedOrgans\obj\Debug\EvolvedOrgans.csproj.CopyComplete
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\EvolvedOrgans\Source\EvolvedOrgans\obj\Debug\EvolvedOrgans.dll

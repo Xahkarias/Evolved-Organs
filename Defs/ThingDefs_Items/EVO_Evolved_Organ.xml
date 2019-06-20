@@ -2,435 +2,446 @@
 <Defs>
 
 
-	<ThingDef Name="EvolvedOrganBase" ParentName="BodyPartArtificialBase" Abstract="True">
-		<defName>EvolvedOrganBase</defName>
-		<techLevel>Spacer</techLevel>
-		<statBases>
-			<MarketValue>2800</MarketValue>
-			<Mass>0.3</Mass>
-			<WorkToMake>5000</WorkToMake>
-		</statBases>
-		<recipeMaker>
-			<skillRequirements>
-				<Crafting>15</Crafting>
-			</skillRequirements>
-			<recipeUsers>
-				<li>EvolvedWorkbench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<graphicData>
-			<texPath>Things/Item/Resource/EvoOrgBox</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>0.80</drawSize>
-		</graphicData>
-		<comps/>
-	</ThingDef>
+  <ThingDef Name="EvolvedOrganBase" ParentName="BodyPartArtificialBase" Abstract="True">
+    <defName>EvolvedOrganBase</defName>
+    <techLevel>Spacer</techLevel>
+    <statBases>
+      <MarketValue>2800</MarketValue>
+      <Mass>0.3</Mass>
+      <WorkToMake>5000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>15</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>EvolvedWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Item/Resource/EvoOrgBox</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+    </graphicData>
+    <comps/>
+  </ThingDef>
 
-	<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedSecondHeart</defName>
-		<label>evolved secondary heart</label>
-		<description>A secondary heart created by accelerated evolution. Grants its host a level of physical redundancy that allows them to survive should their primary heart fail.</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchOrgans3</researchPrerequisite>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedSecondHeart</defName>
+    <label>evolved secondary heart</label>
+    <description>A secondary heart created by accelerated evolution. Grants its host a level of physical redundancy that allows them to survive should their primary heart fail.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchOrgans3</researchPrerequisite>
 
-		</recipeMaker>
-		<costList>
-			<EvolvedChunk>12</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>12</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
-	<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedPrimaryHeart</defName>
-		<label>evolved primary heart</label>
-		<description>A primary heart created by accelerated evolution. Much more efficient and resilitent compared to a regular heart, it consists of a more robust and powerful design.</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchOrgans2</researchPrerequisite>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedPrimaryHeart</defName>
+    <label>evolved primary heart</label>
+    <description>A primary heart created by accelerated evolution. Much more efficient and resilitent compared to a regular heart, it consists of a more robust and powerful design.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchOrgans2</researchPrerequisite>
 
-		</recipeMaker>
-		<costList>
-			<EvolvedChunk>20</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>20</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
-	<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedKidney</defName>
-		<label>evolved kidney</label>
-		<description>A kidney created by accelerated evolution. Can filter toxic buildup and other impurities out of blood much more efficiently.</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchOrgans1</researchPrerequisite>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedKidney</defName>
+    <label>evolved kidney</label>
+    <description>A kidney created by accelerated evolution. Can filter toxic buildup and other impurities out of blood much more efficiently.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchOrgans1</researchPrerequisite>
 
-		</recipeMaker>
-		<costList>
-			<EvolvedChunk>12</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>12</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
-	<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedLung</defName>
-		<label>evolved lung</label>
-		<description>A lung created by accelerated evolution. Capable of cycling more gases in and out of its host than any many augumentic upgrades.</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchOrgans2</researchPrerequisite>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedLung</defName>
+    <label>evolved lung</label>
+    <description>A lung created by accelerated evolution. Capable of cycling more gases in and out of its host than any many augumentic upgrades.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchOrgans2</researchPrerequisite>
 
-		</recipeMaker>
-		<costList>
-			<EvolvedChunk>16</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>16</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
-	<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedThirdLung</defName>
-		<label>evolved third lung</label>
-		<description>An extra lung created by accelerated evolution. Capable of increasing the amount of air cycled through the body, but more importantly, is much more efficient at resisting airborne toxins.</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchOrgans3</researchPrerequisite>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedThirdLung</defName>
+    <label>evolved third lung</label>
+    <description>An extra lung created by accelerated evolution. Capable of increasing the amount of air cycled through the body, but more importantly, is much more efficient at resisting airborne toxins.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchOrgans3</researchPrerequisite>
 
-		</recipeMaker>
-		<costList>
-			<EvolvedChunk>12</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>12</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
-	<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedStomach</defName>
-		<label>evolved stomach</label>
-		<description>A stomach created by accelerated evolution. Capable of neutralizing toxins and breaking down food much more effectively.</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchOrgans2</researchPrerequisite>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedStomach</defName>
+    <label>evolved stomach</label>
+    <description>A stomach created by accelerated evolution. Capable of neutralizing toxins and breaking down food much more effectively.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchOrgans2</researchPrerequisite>
 
-		</recipeMaker>
-		<costList>
-			<EvolvedChunk>16</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>16</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
-	<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedLiver</defName>
-		<label>evolved liver</label>
-		<description>A liver created by accelerated evolution. Capable of filtering out large amounts of toxins from the blood, as well as regulating the body more efficiently than a normal liver.</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchOrgans1</researchPrerequisite>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedLiver</defName>
+    <label>evolved liver</label>
+    <description>A liver created by accelerated evolution. Capable of filtering out large amounts of toxins from the blood, as well as regulating the body more efficiently than a normal liver.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchOrgans1</researchPrerequisite>
 
-		</recipeMaker>
-		<costList>
-			<EvolvedChunk>20</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>20</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
-	<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedEye</defName>
-		<label>evolved eye</label>
-		<description>An eye created by accelerated evolution. Allows the host to see in multiple wavelengths of the EM spectrum, as well as having telescopic vision, while also providing extra brain matter to process the information.</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchOrgans2</researchPrerequisite>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedEye</defName>
+    <label>evolved eye</label>
+    <description>An eye created by accelerated evolution. Allows the host to see in multiple wavelengths of the EM spectrum, as well as having telescopic vision, while also providing extra brain matter to process the information.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchOrgans2</researchPrerequisite>
 
-		</recipeMaker>
-		<costList>
-			<EvolvedChunk>12</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>12</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
-	<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedPinions</defName>
-		<label>evolved pinions</label>
-		<description>A set of pinions created by accelerated evolution. Allows the host to fly at rapid speeds while carrying a medium weight load. Remarkably durable for their function.</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchLimbs3</researchPrerequisite>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedPinions</defName>
+    <label>evolved pinions</label>
+    <description>A set of pinions created by accelerated evolution. Allows the host to fly at rapid speeds while carrying a medium weight load. Remarkably durable for their function.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchLimbs3</researchPrerequisite>
 
-		</recipeMaker>
-		<costList>
-			<EvolvedChunk>12</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>12</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
-	<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedCombatGlands</defName>
-		<label>evolved combat glands</label>
-		<description>A set of combat glands created by accelerated evolution. Allows the host to percieve their enemies movements more effectively in the heat of battle.</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchOrgans3</researchPrerequisite>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedCombatGlands</defName>
+    <label>evolved combat glands</label>
+    <description>A set of combat glands created by accelerated evolution. Allows the host to percieve their enemies movements more effectively in the heat of battle.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchOrgans3</researchPrerequisite>
 
-		</recipeMaker>
-		<costList>
-			<EvolvedChunk>12</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>12</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
-	<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedLeg</defName>
-		<label>evolved leg</label>
-		<description>A leg created by accelerated evolution. Allows the host to move at a rapid speed, while also supporting much more mass than ever before.</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchLimbs1</researchPrerequisite>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedLeg</defName>
+    <label>evolved leg</label>
+    <description>A leg created by accelerated evolution. Allows the host to move at a rapid speed, while also supporting much more mass than ever before.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchLimbs1</researchPrerequisite>
 
-		</recipeMaker>
-		<costList>
-			<EvolvedChunk>12</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>12</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
-	<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedNose</defName>
-		<label>evolved nose</label>
-		<description>A nose created by accelerated evolution. Allows the host to detect microscopic changes in the chemicals surrounding them, increasing efficiency when working with plants or fauna.</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchOrgans1</researchPrerequisite>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedNose</defName>
+    <label>evolved nose</label>
+    <description>A nose created by accelerated evolution. Allows the host to detect microscopic changes in the chemicals surrounding them, increasing efficiency when working with plants or fauna.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchOrgans1</researchPrerequisite>
 
-		</recipeMaker>
-		<costList>
-			<EvolvedChunk>12</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>12</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
-	<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedLarnyx</defName>
-		<label>evolved larnyx</label>
-		<description>A voice box created by accelerated evolution. Allows the host to change their voice to appeal to any person.</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchOrgans2</researchPrerequisite>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedLarnyx</defName>
+    <label>evolved larnyx</label>
+    <description>A voice box created by accelerated evolution. Allows the host to change their voice to appeal to any person.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchOrgans2</researchPrerequisite>
 
-		</recipeMaker>
+    </recipeMaker>
 
-		<costList>
-			<EvolvedChunk>12</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
+    <costList>
+      <EvolvedChunk>12</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
-	<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedEar</defName>
-		<label>evolved ear</label>
-		<description>An ear created by accelerated evolution. Allows the host to detect noises far outside the normal hearing range, while also allowing them to detect slight pressure changes in the area.</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchOrgans2</researchPrerequisite>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedEar</defName>
+    <label>evolved ear</label>
+    <description>An ear created by accelerated evolution. Allows the host to detect noises far outside the normal hearing range, while also allowing them to detect slight pressure changes in the area.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchOrgans2</researchPrerequisite>
 
-		</recipeMaker>
-		<costList>
-			<EvolvedChunk>12</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>12</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
-	<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedRibcage</defName>
-		<label>evolved ribcage</label>
-		<description>A ribcage created by accelerated evolution. Allows the host to resist much more damage towards the torso, effectively becoming a second layer of armor.</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchOrgans1</researchPrerequisite>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedRibcage</defName>
+    <label>evolved ribcage</label>
+    <description>A ribcage created by accelerated evolution. Allows the host to resist much more damage towards the torso, effectively becoming a second layer of armor.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchOrgans1</researchPrerequisite>
 
-		</recipeMaker>
-		<costList>
-			<EvolvedChunk>12</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>12</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
-	<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedCarapace</defName>
-		<label>evolved skin</label>
-		<description>A scaly caparace created by accelerated evolution. Allows the host to ignore light damage to the skin, while also serving as a barrier to fire.</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchOrgans1</researchPrerequisite>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedCarapace</defName>
+    <label>evolved skin</label>
+    <description>A scaly caparace created by accelerated evolution. Allows the host to ignore light damage to the skin, while also serving as a barrier to fire.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchOrgans1</researchPrerequisite>
 
-		</recipeMaker>
-		<costList>
-			<EvolvedChunk>12</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
-	
-		<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedPelt</defName>
-		<label>evolved pelt</label>
-		<description>A furred pelt created by accelerated evolution.  Allows the host to blend into it's surroundings while also serving as a effective insulant protecting the humanoid from hostile temperatures.</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchOrgans1</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>12</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
-		</recipeMaker>
-		<costList>
-			<EvolvedChunk>12</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedPelt</defName>
+    <label>evolved pelt</label>
+    <description>A furred pelt created by accelerated evolution.  Allows the host to blend into it's surroundings while also serving as a effective insulant protecting the humanoid from hostile temperatures.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchOrgans1</researchPrerequisite>
 
-	<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedSpine</defName>
-		<label>evolved spine</label>
-		<description>A spine created by accelerated evolution. Integrated neural clusters allows the host to react more quickly to any circumstance, increasing efficiency.</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchOrgans3</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>12</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
-		</recipeMaker>
-		<costList>
-			<EvolvedChunk>12</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedSpine</defName>
+    <label>evolved spine</label>
+    <description>A spine created by accelerated evolution. Integrated neural clusters allows the host to react more quickly to any circumstance, increasing efficiency.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchOrgans3</researchPrerequisite>
 
-	<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedTail</defName>
-		<label>evolved tail</label>
-		<description>A tail created by accelerated evolution. While increasing the host's manipulation ability slightly, its main purpose is the massive blade at the tip.</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchLimbs2</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>12</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
-		</recipeMaker>
-		<costList>
-			<EvolvedChunk>12</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedTail</defName>
+    <label>evolved tail</label>
+    <description>A tail created by accelerated evolution. While increasing the host's manipulation ability slightly, its main purpose is the massive blade at the tip.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchLimbs2</researchPrerequisite>
 
-	<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedJaw</defName>
-		<label>evolved jaw</label>
-		<description>A jaw created by accelerated evolution. Allows the host to devour food at a rapid rate, while also increasing diplomatic skills. Contains retractable fangs.</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchOrgans1</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>12</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
-		</recipeMaker>
-		<costList>
-			<EvolvedChunk>12</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedJaw</defName>
+    <label>evolved jaw</label>
+    <description>A jaw created by accelerated evolution. Allows the host to devour food at a rapid rate, while also increasing diplomatic skills. Contains retractable fangs.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchOrgans1</researchPrerequisite>
 
-	<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedBrain</defName>
-		<label>evolved brain</label>
-		<description>A brain created by accelerated evolution. Amplifies the ability to process all information, as well as granting new ways to deal with high amounts of mental stress.</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchOrgans3</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>12</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
-		</recipeMaker>
-		<costList>
-			<EvolvedChunk>30</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedBrain</defName>
+    <label>evolved brain</label>
+    <description>A brain created by accelerated evolution. Amplifies the ability to process all information, as well as granting new ways to deal with high amounts of mental stress.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchOrgans3</researchPrerequisite>
 
-	<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedArm</defName>
-		<label>evolved arm</label>
-		<description>A normal arm created by accelerated evolution. Much more efficient than a natural arm in all ways, even outstripping bionics.</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchLimbs1</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>30</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
-		</recipeMaker>
-		<costList>
-			<EvolvedChunk>12</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedArm</defName>
+    <label>evolved arm</label>
+    <description>A normal arm created by accelerated evolution. Much more efficient than a natural arm in all ways, even outstripping bionics.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchLimbs1</researchPrerequisite>
 
-	<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedArmClaw</defName>
-		<label>evolved arm claw</label>
-		<description>An arm claw created by accelerated evolution. While worse than an normal arm at manipulation and worse than a bone sabre at combat, lives in a healthy balance between the two.</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchLimbs2</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>12</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
-		</recipeMaker>
-		<costList>
-			<EvolvedChunk>12</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedArmClaw</defName>
+    <label>evolved arm claw</label>
+    <description>An arm claw created by accelerated evolution. While worse than an normal arm at manipulation and worse than a bone sabre at combat, lives in a healthy balance between the two.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchLimbs2</researchPrerequisite>
 
-	<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedArmSabre</defName>
-		<label>evolved arm sabre</label>
-		<description>An arm sabre created by accelerated evolution. While not great at manpulation, serves as one of the most deadly close combat weapons known to the rim.</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchLimbs2</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>12</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
-		</recipeMaker>
-		<costList>
-			<EvolvedChunk>12</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedArmSabre</defName>
+    <label>evolved arm sabre</label>
+    <description>An arm sabre created by accelerated evolution. While not great at manpulation, serves as one of the most deadly close combat weapons known to the rim.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchLimbs2</researchPrerequisite>
 
-	<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedArmMace</defName>
-		<label>evolved arm mace</label>
-		<description>An arm mace created by accelerated evolution. While not great at manpulation, serves as one of the most deadly close combat weapons known to the rim.</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchLimbs2</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>12</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
-		</recipeMaker>
-		<costList>
-			<EvolvedChunk>12</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedArmMace</defName>
+    <label>evolved arm mace</label>
+    <description>An arm mace created by accelerated evolution. While not great at manpulation, serves as one of the most deadly close combat weapons known to the rim.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchLimbs2</researchPrerequisite>
 
-	<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedArmTentacle</defName>
-		<label>evolved arm tentacle</label>
-		<description>An arm tentacle created by accelerated evolution. Not great at combat, but amazing at manipulating objects due to the wide range of articulation.</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchLimbs2</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>12</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
-		</recipeMaker>
-		<costList>
-			<EvolvedChunk>12</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedArmTentacle</defName>
+    <label>evolved arm tentacle</label>
+    <description>An arm tentacle created by accelerated evolution. Not great at combat, but amazing at manipulating objects due to the wide range of articulation.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchLimbs2</researchPrerequisite>
 
-	<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedArmShield</defName>
-		<label>evolved arm shield</label>
-		<description>An arm shield created by accelerated evolution. Not really usable for anything other than blocking damage, but grants its user a massive boost in defensive capabilities.</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchLimbs2</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>12</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
-		</recipeMaker>
-		<costList>
-			<EvolvedChunk>12</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedArmShield</defName>
+    <label>evolved arm shield</label>
+    <description>An arm shield created by accelerated evolution. Not really usable for anything other than blocking damage, but grants its user a massive boost in defensive capabilities.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchLimbs2</researchPrerequisite>
 
-	<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedSpider</defName>
-		<label>evolved extra leg cluster</label>
-		<description>An extra leg cluster created by accelerated evolution. Mimicking the extremities of a spider, these extra waist mounted legs allows the host more mobility in the battlefield.</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchLimbs3</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>12</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
-		</recipeMaker>
-		<costList>
-			<EvolvedChunk>12</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
-	
-		<ThingDef ParentName="EvolvedOrganBase">
-		<defName>EvolvedFilter</defName>
-		<label>evolved psychic filter</label>
-		<description>An organ developed for the exclusive purpose of filtering the psychic emenations absorbed by the humanoid skull, preventing the host from receiving any such psychic signals..</description>
-		<recipeMaker>
-			<researchPrerequisite>EvolvedOrgansResearchOrgans2</researchPrerequisite>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedSpider</defName>
+    <label>evolved extra leg cluster</label>
+    <description>An extra leg cluster created by accelerated evolution. Mimicking the extremities of a spider, these extra waist mounted legs allows the host more mobility in the battlefield.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchLimbs3</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>12</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
-		</recipeMaker>
-		<costList>
-			<EvolvedChunk>12</EvolvedChunk>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-	</ThingDef>
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EvolvedFilter</defName>
+    <label>evolved psychic filter</label>
+    <description>An organ developed for the exclusive purpose of filtering the psychic emenations absorbed by the humanoid skull, preventing the host from receiving any such psychic signals..</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchOrgans2</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>12</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>ImmortalOrgan</defName>
+    <label>ra's vacuole</label>
+    <description>An evolved organ developed to maintain a humanoid bodies age forever.  It will prevent age related illnesses and injuries by repairing telomeres and generating stem cells.  Bodily injury or illness still present a risk for the host of this organ, the Rim is a dangerous place after all.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchOrgans3</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>12</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
 
 </Defs>

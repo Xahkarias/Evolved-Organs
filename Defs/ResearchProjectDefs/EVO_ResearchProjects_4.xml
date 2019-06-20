@@ -1,174 +1,174 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ResearchTabDef>
-		<defName>EVO_EvolvedOrgansResearchTab</defName>
-		<label>Evolved Organs</label>
-	</ResearchTabDef>
+  <ResearchTabDef>
+    <defName>EVO_EvolvedOrgansResearchTab</defName>
+    <label>Evolved Organs</label>
+  </ResearchTabDef>
 
-	<ResearchProjectDef>
-		<defName>EvolvedOrgansResearch1</defName>
-		<tab>EVO_EvolvedOrgansResearchTab</tab>
-		<label>Nano-Scale Cellular Engineering</label>
-		<description>By combining our knowledge of biology and bionics, we can engineer cells that have much more potential than anything created naturally.</description>
-		<baseCost>4000</baseCost>
-		<techLevel>Spacer</techLevel>
-		<prerequisites>
-			<li>AdvancedFabrication</li>
-			<li>VitalsMonitor</li>
-			<li>Bionics</li>
-		</prerequisites>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<requiredResearchFacilities>
-			<li>MultiAnalyzer</li>
-		</requiredResearchFacilities>
-		<researchViewX>1</researchViewX>
-		<researchViewY>2</researchViewY>
-	</ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>EvolvedOrgansResearch1</defName>
+    <tab>EVO_EvolvedOrgansResearchTab</tab>
+    <label>Nano-Scale Cellular Engineering</label>
+    <description>By combining our knowledge of biology and bionics, we can engineer cells that have much more potential than anything created naturally.</description>
+    <baseCost>4000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>AdvancedFabrication</li>
+      <li>VitalsMonitor</li>
+      <li>Bionics</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
 
-	<!--OrganPath-->
-	<ResearchProjectDef>
-		<defName>EvolvedOrgansResearchOrgans1</defName>
-		<tab>EVO_EvolvedOrgansResearchTab</tab>
-		<label>BioMechanical Organ Application</label>
-		<description>Through the selective processes of germinating and stimulating stem cells at the nano-scale with mechanites, it is possible to create simple internal organs.</description>
-		<baseCost>2000</baseCost>
-		<techLevel>Spacer</techLevel>
-		<prerequisites>
-			<li>EvolvedOrgansResearch1</li>
-		</prerequisites>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<requiredResearchFacilities>
-			<li>MultiAnalyzer</li>
-		</requiredResearchFacilities>
-		<researchViewX>2</researchViewX>
-		<researchViewY>2</researchViewY>
-	</ResearchProjectDef>
+  <!--OrganPath-->
+  <ResearchProjectDef>
+    <defName>EvolvedOrgansResearchOrgans1</defName>
+    <tab>EVO_EvolvedOrgansResearchTab</tab>
+    <label>BioMechanical Organ Application</label>
+    <description>Through the selective processes of germinating and stimulating stem cells at the nano-scale with mechanites, it is possible to create simple internal organs.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>EvolvedOrgansResearch1</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>2</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
 
-	<ResearchProjectDef>
-		<defName>EvolvedOrgansResearchOrgans2</defName>
-		<tab>EVO_EvolvedOrgansResearchTab</tab>
-		<label>Complex Organ Application</label>
-		<description>The continued understand of stem cells and mechanite integration has allowed the development of advanced cellular structures which can be utilized to create advanced interal organs.</description>
-		<baseCost>3000</baseCost>
-		<techLevel>Spacer</techLevel>
-		<prerequisites>
-			<li>EvolvedOrgansResearchOrgans1</li>
-		</prerequisites>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<requiredResearchFacilities>
-			<li>MultiAnalyzer</li>
-		</requiredResearchFacilities>
-		<researchViewX>3</researchViewX>
-		<researchViewY>2</researchViewY>
-	</ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>EvolvedOrgansResearchOrgans2</defName>
+    <tab>EVO_EvolvedOrgansResearchTab</tab>
+    <label>Complex Organ Application</label>
+    <description>The continued understand of stem cells and mechanite integration has allowed the development of advanced cellular structures which can be utilized to create advanced interal organs.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>EvolvedOrgansResearchOrgans1</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>3</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
 
-	<ResearchProjectDef>
-		<defName>EvolvedOrgansResearchOrgans3</defName>
-		<tab>EVO_EvolvedOrgansResearchTab</tab>
-		<label>Advanced Organ Application</label>
-		<description>The understanding of the most difficult bodily structures which would unlock the capacity to engineer the most complex organs and beyond.</description>
-		<baseCost>4000</baseCost>
-		<techLevel>Spacer</techLevel>
-		<prerequisites>
-			<li>EvolvedOrgansResearchOrgans2</li>
-		</prerequisites>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<requiredResearchFacilities>
-			<li>MultiAnalyzer</li>
-		</requiredResearchFacilities>
-		<researchViewX>4</researchViewX>
-		<researchViewY>2</researchViewY>
-	</ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>EvolvedOrgansResearchOrgans3</defName>
+    <tab>EVO_EvolvedOrgansResearchTab</tab>
+    <label>Advanced Organ Application</label>
+    <description>The understanding of the most difficult bodily structures which would unlock the capacity to engineer the most complex organs and beyond.</description>
+    <baseCost>4000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>EvolvedOrgansResearchOrgans2</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>4</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
 
-	<!-- Limbs -->
-	<ResearchProjectDef>
-		<defName>EvolvedOrgansResearchLimbs1</defName>
-		<tab>EVO_EvolvedOrgansResearchTab</tab>
-		<label>Structural Organ Application</label>
-		<description>To create bones and musculature we must first understand how to propogate the cells and mechanites in load bearing configurations.</description>
-		<baseCost>2000</baseCost>
-		<techLevel>Spacer</techLevel>
-		<prerequisites>
-			<li>EvolvedOrgansResearchOrgans1</li>
-		</prerequisites>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<requiredResearchFacilities>
-			<li>MultiAnalyzer</li>
-		</requiredResearchFacilities>
-		<researchViewX>3</researchViewX>
-		<researchViewY>4</researchViewY>
-	</ResearchProjectDef>
+  <!-- Limbs -->
+  <ResearchProjectDef>
+    <defName>EvolvedOrgansResearchLimbs1</defName>
+    <tab>EVO_EvolvedOrgansResearchTab</tab>
+    <label>Structural Organ Application</label>
+    <description>To create bones and musculature we must first understand how to propogate the cells and mechanites in load bearing configurations.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>EvolvedOrgansResearchOrgans1</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>3</researchViewX>
+    <researchViewY>4</researchViewY>
+  </ResearchProjectDef>
 
-	<ResearchProjectDef>
-		<defName>EvolvedOrgansResearchLimbs2</defName>
-		<tab>EVO_EvolvedOrgansResearchTab</tab>
-		<label>Complex Limb Strcutures</label>
-		<description>The capability to create simple load-bearing structures has been understood, now we must scale up the technology to apply and test it.</description>
-		<baseCost>3000</baseCost>
-		<techLevel>Spacer</techLevel>
-		<prerequisites>
-			<li>EvolvedOrgansResearchLimbs1</li>
-		</prerequisites>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<requiredResearchFacilities>
-			<li>MultiAnalyzer</li>
-		</requiredResearchFacilities>
-		<researchViewX>4</researchViewX>
-		<researchViewY>4</researchViewY>
-	</ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>EvolvedOrgansResearchLimbs2</defName>
+    <tab>EVO_EvolvedOrgansResearchTab</tab>
+    <label>Complex Limb Strcutures</label>
+    <description>The capability to create simple load-bearing structures has been understood, now we must scale up the technology to apply and test it.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>EvolvedOrgansResearchLimbs1</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>4</researchViewX>
+    <researchViewY>4</researchViewY>
+  </ResearchProjectDef>
 
-	<ResearchProjectDef>
-		<defName>EvolvedOrgansResearchLimbs3</defName>
-		<tab>EVO_EvolvedOrgansResearchTab</tab>
-		<label>Advanced Limb Strcutures</label>
-		<description>The study of what can exist beyond the configurations nature has provided us.  GMO-Humanoid Limbs.  Is the sky the limit?</description>
-		<baseCost>4000</baseCost>
-		<techLevel>Spacer</techLevel>
-		<prerequisites>
-			<li>EvolvedOrgansResearchLimbs2</li>
-		</prerequisites>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<requiredResearchFacilities>
-			<li>MultiAnalyzer</li>
-		</requiredResearchFacilities>
-		<researchViewX>5</researchViewX>
-		<researchViewY>4</researchViewY>
-	</ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>EvolvedOrgansResearchLimbs3</defName>
+    <tab>EVO_EvolvedOrgansResearchTab</tab>
+    <label>Advanced Limb Strcutures</label>
+    <description>The study of what can exist beyond the configurations nature has provided us.  GMO-Humanoid Limbs.  Is the sky the limit?</description>
+    <baseCost>4000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>EvolvedOrgansResearchLimbs2</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>5</researchViewX>
+    <researchViewY>4</researchViewY>
+  </ResearchProjectDef>
 
-	<ResearchProjectDef>
-		<defName>EvolvedOrgansResearchAdvanced1</defName>
-		<tab>EVO_EvolvedOrgansResearchTab</tab>
-		<label>True Bio-Mechanical Integration NYI</label>
-		<description>Can we put a powerplant in a humanoid?  Not yet implemented just enjoy the thought</description>
-		<baseCost>10000</baseCost>
-		<techLevel>Spacer</techLevel>
-		<prerequisites>
-			<li>EvolvedOrgansResearchOrgans3</li>
-			<li>EvolvedOrgansResearchLimbs3</li>
-		</prerequisites>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<requiredResearchFacilities>
-			<li>MultiAnalyzer</li>
-		</requiredResearchFacilities>
-		<researchViewX>6</researchViewX>
-		<researchViewY>3</researchViewY>
-	</ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>EvolvedOrgansResearchAdvanced1</defName>
+    <tab>EVO_EvolvedOrgansResearchTab</tab>
+    <label>True Bio-Mechanical Integration NYI</label>
+    <description>Can we put a powerplant in a humanoid?  Not yet implemented just enjoy the thought</description>
+    <baseCost>10000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>EvolvedOrgansResearchOrgans3</li>
+      <li>EvolvedOrgansResearchLimbs3</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>6</researchViewX>
+    <researchViewY>3</researchViewY>
+  </ResearchProjectDef>
 
-	<ResearchProjectDef>
-		<defName>EvolvedOrgansResearchAdvanced2</defName>
-		<tab>EVO_EvolvedOrgansResearchTab</tab>
-		<label>Advanced Bio-Mechanical Integration NYI</label>
-		<description>K we can, but now what? We get to finally coding in blaster weapons that you can mount on your arms for the arm god thats what, but thats not in yet so... wait patiently I guess.</description>
-		<baseCost>20000</baseCost>
-		<techLevel>Spacer</techLevel>
-		<prerequisites>
-			<li>EvolvedOrgansResearchAdvanced1</li>
-		</prerequisites>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<requiredResearchFacilities>
-			<li>MultiAnalyzer</li>
-		</requiredResearchFacilities>
-		<researchViewX>7</researchViewX>
-		<researchViewY>3</researchViewY>
-	</ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>EvolvedOrgansResearchAdvanced2</defName>
+    <tab>EVO_EvolvedOrgansResearchTab</tab>
+    <label>Advanced Bio-Mechanical Integration NYI</label>
+    <description>K we can, but now what? We get to finally coding in blaster weapons that you can mount on your arms for the arm god thats what, but thats not in yet so... wait patiently I guess.</description>
+    <baseCost>20000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>EvolvedOrgansResearchAdvanced1</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>7</researchViewX>
+    <researchViewY>3</researchViewY>
+  </ResearchProjectDef>
 </Defs>

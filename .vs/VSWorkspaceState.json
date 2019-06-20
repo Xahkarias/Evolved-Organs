@@ -6,10 +6,12 @@
     "\\Defs\\HediffDefs",
     "\\Defs\\RecipeDefs",
     "\\Defs\\ResearchProjectDefs",
+    "\\Defs\\ThingDefs_Buildings",
     "\\Defs\\ThingDefs_Items",
-    "\\Patches",
-    "\\Source"
+    "\\Source",
+    "\\Source\\EvolvedOrgans",
+    "\\Source\\packages"
   ],
-  "SelectedNode": "\\Defs\\ResearchProjectDefs\\EVO_ResearchProjects_4.xml",
+  "SelectedNode": "\\Source\\EvolvedOrgans\\FoodPoisoningTest.cs",
   "PreviewInSolutionExplorer": false
 }
