@@ -2,973 +2,1086 @@
 <Defs>
 
 
-	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedSecondaryHeart</defName>
-		<label>implant evolved secondary heart</label>
-		<description>Implant an evolved secondary heart.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-		<jobString>Implanting evolved secondary heart.</jobString>
-		<workAmount>3000</workAmount>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>EvolvedSecondHeart</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedSecondHeart</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>RightChestCavity</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedSecondHeart</addsHediff>
-	</RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>EVO_InstallEvolvedSecondaryHeart</defName>
+    <label>implant evolved secondary heart</label>
+    <description>Implant an evolved secondary heart.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Implanting evolved secondary heart.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EvolvedSecondHeart</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>EvolvedSecondHeart</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>RightChestCavity</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EvolvedSecondHeart</addsHediff>
+  </RecipeDef>
 
-	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedPrimaryHeart</defName>
-		<label>implant evolved primary heart</label>
-		<description>Implant an evolved primary heart.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-		<jobString>Implanting evolved primary heart.</jobString>
-		<workAmount>3000</workAmount>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>EvolvedPrimaryHeart</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedPrimaryHeart</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Heart</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedPrimaryHeart</addsHediff>
-	</RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>EVO_InstallEvolvedPrimaryHeart</defName>
+    <label>implant evolved primary heart</label>
+    <description>Implant an evolved primary heart.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Implanting evolved primary heart.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EvolvedPrimaryHeart</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>EvolvedPrimaryHeart</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Heart</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EvolvedPrimaryHeart</addsHediff>
+  </RecipeDef>
 
-	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedKidney</defName>
-		<label>implant evolved kidney</label>
-		<description>Implant an evolved kidney.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-		<jobString>Implanting evolved kidney.</jobString>
-		<workAmount>3000</workAmount>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>EvolvedKidney</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedKidney</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Kidney</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedKidney</addsHediff>
-	</RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>EVO_InstallEvolvedKidney</defName>
+    <label>implant evolved kidney</label>
+    <description>Implant an evolved kidney.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Implanting evolved kidney.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EvolvedKidney</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>EvolvedKidney</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Kidney</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EvolvedKidney</addsHediff>
+  </RecipeDef>
 
-	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedLung</defName>
-		<label>implant evolved lung</label>
-		<description>Implant an evolved lung.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-		<jobString>Implanting evolved lung.</jobString>
-		<workAmount>3000</workAmount>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>EvolvedLung</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedLung</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Lung</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedLung</addsHediff>
-	</RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>EVO_InstallEvolvedLung</defName>
+    <label>implant evolved lung</label>
+    <description>Implant an evolved lung.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Implanting evolved lung.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EvolvedLung</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>EvolvedLung</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Lung</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EvolvedLung</addsHediff>
+  </RecipeDef>
 
-	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedJaw</defName>
-		<label>implant evolved jaw</label>
-		<description>Implant an evolved jaw.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-		<jobString>Implanting evolved jaw.</jobString>
-		<workAmount>3000</workAmount>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>EvolvedJaw</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedJaw</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Jaw</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedJaw</addsHediff>
-	</RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>EVO_InstallEvolvedJaw</defName>
+    <label>implant evolved jaw</label>
+    <description>Implant an evolved jaw.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Implanting evolved jaw.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EvolvedJaw</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>EvolvedJaw</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Jaw</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EvolvedJaw</addsHediff>
+  </RecipeDef>
 
-	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedThirdLung</defName>
-		<label>implant evolved third lung</label>
-		<description>Implant an evolved third lung.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-		<jobString>Implanting evolved third lung.</jobString>
-		<workAmount>3000</workAmount>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>EvolvedThirdLung</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedThirdLung</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>LeftChestCavity</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedThirdLung</addsHediff>
-	</RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>EVO_InstallEvolvedThirdLung</defName>
+    <label>implant evolved third lung</label>
+    <description>Implant an evolved third lung.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Implanting evolved third lung.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EvolvedThirdLung</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>EvolvedThirdLung</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>LeftChestCavity</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EvolvedThirdLung</addsHediff>
+  </RecipeDef>
 
-	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedStomach</defName>
-		<label>implant evolved stomach</label>
-		<description>Implant an evolved stomach.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-		<jobString>Implanting evolved stomach.</jobString>
-		<workAmount>3000</workAmount>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>EvolvedStomach</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedStomach</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Stomach</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedStomach</addsHediff>
-	</RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>EVO_InstallEvolvedStomach</defName>
+    <label>implant evolved stomach</label>
+    <description>Implant an evolved stomach.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Implanting evolved stomach.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EvolvedStomach</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>EvolvedStomach</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Stomach</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EvolvedStomach</addsHediff>
+  </RecipeDef>
 
-	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedLiver</defName>
-		<label>implant evolved liver</label>
-		<description>Implant an evolved liver.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-		<jobString>Implanting evolved liver.</jobString>
-		<workAmount>3000</workAmount>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>EvolvedLiver</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedLiver</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Liver</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedLiver</addsHediff>
-	</RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>EVO_InstallEvolvedLiver</defName>
+    <label>implant evolved liver</label>
+    <description>Implant an evolved liver.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Implanting evolved liver.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EvolvedLiver</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>EvolvedLiver</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Liver</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EvolvedLiver</addsHediff>
+  </RecipeDef>
 
-	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedBrain</defName>
-		<label>implant evolved brain</label>
-		<description>Implant an evolved brain.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-		<jobString>Implanting evolved brain.</jobString>
-		<workAmount>8000</workAmount>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
-		<deathOnFailedSurgeryChance>0.15</deathOnFailedSurgeryChance>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>6</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>EvolvedBrain</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedBrain</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Brain</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedBrain</addsHediff>
-	</RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>EVO_InstallEvolvedBrain</defName>
+    <label>implant evolved brain</label>
+    <description>Implant an evolved brain.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Implanting evolved brain.</jobString>
+    <workAmount>8000</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <deathOnFailedSurgeryChance>0.15</deathOnFailedSurgeryChance>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EvolvedBrain</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>EvolvedBrain</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EvolvedBrain</addsHediff>
+  </RecipeDef>
 
-	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedEye</defName>
-		<label>implant evolved eye</label>
-		<description>Implant an evolved eye.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-		<jobString>Implanting evolved eye.</jobString>
-		<workAmount>3000</workAmount>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>EvolvedEye</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedEye</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Eye</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedEye</addsHediff>
-	</RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>EVO_InstallEvolvedEye</defName>
+    <label>implant evolved eye</label>
+    <description>Implant an evolved eye.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Implanting evolved eye.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EvolvedEye</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>EvolvedEye</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EvolvedEye</addsHediff>
+  </RecipeDef>
 
-	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedPinions</defName>
-		<label>implant evolved pinions</label>
-		<description>Implant evolved pinions.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-		<jobString>Implanting evolved pinions.</jobString>
-		<workAmount>3000</workAmount>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>EvolvedPinions</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedPinions</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Back</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedPinions</addsHediff>
-	</RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>EVO_InstallEvolvedPinions</defName>
+    <label>implant evolved pinions</label>
+    <description>Implant evolved pinions.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Implanting evolved pinions.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EvolvedPinions</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>EvolvedPinions</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Back</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EvolvedPinions</addsHediff>
+  </RecipeDef>
 
-	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedSpine</defName>
-		<label>implant evolved spine</label>
-		<description>Implant an evolved spine.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-		<jobString>Implanting evolved spine.</jobString>
-		<workAmount>3000</workAmount>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>EvolvedSpine</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedSpine</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Spine</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedSpine</addsHediff>
-	</RecipeDef> 
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>EVO_InstallEvolvedSpine</defName>
+    <label>implant evolved spine</label>
+    <description>Implant an evolved spine.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Implanting evolved spine.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EvolvedSpine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>EvolvedSpine</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Spine</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EvolvedSpine</addsHediff>
+  </RecipeDef>
 
-	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedNose</defName>
-		<label>implant evolved nose</label>
-		<description>Implant an evolved nose.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-		<jobString>Implanting evolved nose.</jobString>
-		<workAmount>3000</workAmount>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>EvolvedNose</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedNose</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Nose</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedNose</addsHediff>
-	</RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>EVO_InstallEvolvedNose</defName>
+    <label>implant evolved nose</label>
+    <description>Implant an evolved nose.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Implanting evolved nose.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EvolvedNose</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>EvolvedNose</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Nose</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EvolvedNose</addsHediff>
+  </RecipeDef>
 
-	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedEar</defName>
-		<label>implant evolved ear</label>
-		<description>Implant an evolved ear.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-		<jobString>Implanting evolved ear.</jobString>
-		<workAmount>3000</workAmount>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>EvolvedEar</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedEar</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Ear</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedEar</addsHediff>
-	</RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>EVO_InstallEvolvedEar</defName>
+    <label>implant evolved ear</label>
+    <description>Implant an evolved ear.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Implanting evolved ear.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EvolvedEar</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>EvolvedEar</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Ear</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EvolvedEar</addsHediff>
+  </RecipeDef>
 
-	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedRibcage</defName>
-		<label>implant evolved ribcage</label>
-		<description>Implant an evolved ribcage.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-		<jobString>Implanting evolved ribcage.</jobString>
-		<workAmount>3000</workAmount>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>EvolvedRibcage</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedRibcage</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Ribcage</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedRibcage</addsHediff>
-	</RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>EVO_InstallEvolvedRibcage</defName>
+    <label>implant evolved ribcage</label>
+    <description>Implant an evolved ribcage.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Implanting evolved ribcage.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EvolvedRibcage</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>EvolvedRibcage</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Ribcage</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EvolvedRibcage</addsHediff>
+  </RecipeDef>
 
-	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedLeg</defName>
-		<label>implant evolved leg</label>
-		<description>Implant an evolved leg.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-		<jobString>Implanting evolved leg.</jobString>
-		<workAmount>3000</workAmount>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>EvolvedLeg</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedLeg</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Leg</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedLeg</addsHediff>
-	</RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>EVO_InstallEvolvedLeg</defName>
+    <label>implant evolved leg</label>
+    <description>Implant an evolved leg.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Implanting evolved leg.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EvolvedLeg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>EvolvedLeg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Leg</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EvolvedLeg</addsHediff>
+  </RecipeDef>
 
-	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedTail</defName>
-		<label>implant evolved tail</label>
-		<description>Implant an evolved tail.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-		<jobString>Implanting evolved tail.</jobString>
-		<workAmount>3000</workAmount>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>EvolvedTail</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedTail</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Tail</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedTail</addsHediff>
-	</RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>EVO_InstallEvolvedTail</defName>
+    <label>implant evolved tail</label>
+    <description>Implant an evolved tail.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Implanting evolved tail.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EvolvedTail</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>EvolvedTail</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Tail</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EvolvedTail</addsHediff>
+  </RecipeDef>
 
-	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedCombatGlands</defName>
-		<label>implant evolved combat glands</label>
-		<description>Implant an evolved combat glands.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-		<jobString>Implanting evolved combat glands.</jobString>
-		<workAmount>3000</workAmount>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>EvolvedCombatGlands</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedCombatGlands</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>RightAbdomenCavity</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedCombatGlands</addsHediff>
-	</RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>EVO_InstallEvolvedCombatGlands</defName>
+    <label>implant evolved combat glands</label>
+    <description>Implant an evolved combat glands.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Implanting evolved combat glands.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EvolvedCombatGlands</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>EvolvedCombatGlands</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>RightAbdomenCavity</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EvolvedCombatGlands</addsHediff>
+  </RecipeDef>
 
-	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedLarnyx</defName>
-		<label>implant evolved larnyx</label>
-		<description>Implant an evolved larnyx.</description>
-		<workerClass>Recipe_InstallImplant</workerClass>
-		<jobString>Implanting evolved larnyx.</jobString>
-		<workAmount>3000</workAmount>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>EvolvedLarnyx</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedLarnyx</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Neck</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedLarnyx</addsHediff>
-	</RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>EVO_InstallEvolvedLarnyx</defName>
+    <label>implant evolved larnyx</label>
+    <description>Implant an evolved larnyx.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Implanting evolved larnyx.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EvolvedLarnyx</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>EvolvedLarnyx</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Neck</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EvolvedLarnyx</addsHediff>
+  </RecipeDef>
 
-	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedCarapace</defName>
-		<label>implant evolved carapace</label>
-		<description>Implant an evolved carapace.</description>
-		<workerClass>Recipe_InstallImplant</workerClass>
-		<jobString>Implanting evolved carapace.</jobString>
-		<workAmount>3000</workAmount>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>EvolvedCarapace</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedCarapace</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Torso</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedCarapace</addsHediff>
-	</RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>EVO_InstallEvolvedCarapace</defName>
+    <label>implant evolved carapace</label>
+    <description>Implant an evolved carapace.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Implanting evolved carapace.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EvolvedCarapace</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>EvolvedCarapace</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EvolvedCarapace</addsHediff>
+  </RecipeDef>
 
-	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedPelt</defName>
-		<label>implant evolved pelt</label>
-		<description>Implant the cells required to grow an evolved pelt into the host's lower dermis.</description>
-		<workerClass>Recipe_InstallImplant</workerClass>
-		<jobString>Implanting evolved pelt.</jobString>
-		<workAmount>3000</workAmount>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>EvolvedPelt</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedPelt</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Torso</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedPelt</addsHediff>
-	</RecipeDef>
-	
-	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedFilter</defName>
-		<label>implant psychic filter</label>
-		<description>Implant an organ dedicated to filtering psyhcic emenations into the host's skull.</description>
-		<workerClass>Recipe_InstallImplant</workerClass>
-		<jobString>Implanting psychic filter.</jobString>
-		<workAmount>3000</workAmount>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>EvolvedFilter</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedFilter</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Skull</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedFilter</addsHediff>
-	</RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>EVO_InstallEvolvedPelt</defName>
+    <label>implant evolved pelt</label>
+    <description>Implant the cells required to grow an evolved pelt into the host's lower dermis.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Implanting evolved pelt.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EvolvedPelt</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>EvolvedPelt</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EvolvedPelt</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>EVO_InstallEvolvedFilter</defName>
+    <label>implant psychic filter</label>
+    <description>Implant an organ dedicated to filtering psyhcic emenations into the host's skull.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Implanting psychic filter.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EvolvedFilter</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>EvolvedFilter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Skull</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EvolvedFilter</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>EVO_InstallImmortalOrgan</defName>
+    <label>implant ra's vacuole</label>
+    <description>Implant an organ dedicated to biological immortality to render a pawn ageless.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Implanting Ra's vacuole.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ImmortalOrgan</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>ImmortalOrgan</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>RightAbdomenCavity</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>ImmortalOrgan</addsHediff>
+  </RecipeDef>
 
 
-	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedSpider</defName>
-		<label>implant evolved spider leg cluster</label>
-		<description>Implant an evolved spider leg cluster.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-		<jobString>Implanting evolved spider leg cluster.</jobString>
-		<workAmount>3000</workAmount>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements>
-		<recipeUsers><li>Human</li></recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>EvolvedSpider</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>EvolvedSpider</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Waist</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedSpider</addsHediff>
-	</RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>EVO_InstallEvolvedSpider</defName>
+    <label>implant evolved spider leg cluster</label>
+    <description>Implant an evolved spider leg cluster.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Implanting evolved spider leg cluster.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EvolvedSpider</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>EvolvedSpider</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Waist</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>EvolvedSpider</addsHediff>
+  </RecipeDef>
 
 </Defs>
