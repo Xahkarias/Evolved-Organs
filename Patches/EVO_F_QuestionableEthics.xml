@@ -1,9 +1,125 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+	<!--In this patch, QE = 'Questionable Ethics' mod and QEE = 'Questionable Ethics Enhanced' mod-->
+
+	<!--Apply patches to QE only, not QEE-->
 	<Operation Class="PatchOperationFindMod">
 		<success>Always</success>
 		<mods>
 			<li>Questionable Ethics</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationReplace"> 
+					<!--moving this to 5x, 2y default is 3x, 3y-->
+					<xpath>/Defs/ResearchProjectDef[defName="QE_LifeSupportSystem"]/researchViewX</xpath>
+					<value>
+						<researchViewX>4</researchViewX>
+					</value>
+					</li>
+					<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="QE_LifeSupportSystem"]/researchViewY</xpath>
+					<value>
+						<researchViewY>0</researchViewY>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<!--moving this to 5x, 1y default is 4x, 3y-->
+					<xpath>/Defs/ResearchProjectDef[defName="QE_NerveStapling"]/researchViewX</xpath>
+					<value>
+						<researchViewX>5</researchViewX>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="QE_NerveStapling"]/researchViewY</xpath>
+					<value>
+						<researchViewY>1</researchViewY>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace"> 
+					<!--moving this to 5x, 3y default is 4x, 4y-->
+					<xpath>/Defs/ResearchProjectDef[defName="QE_CrudeBionics"]/researchViewX</xpath>
+					<value>
+						<researchViewX>1</researchViewX>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="QE_CrudeBionics"]/researchViewY</xpath>
+					<value>
+						<researchViewY>5</researchViewY>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<!--moving this to 4x, 4y default is 5x, 3y-->
+					<xpath>/Defs/ResearchProjectDef[defName="QE_IntegratedWeaponry"]/researchViewX</xpath>
+					<value>
+						<researchViewX>2</researchViewX>
+					</value>
+					</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="QE_IntegratedWeaponry"]/researchViewY</xpath>
+					<value>
+						<researchViewY>5</researchViewY>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<!--moving this to 4x, 4y default is 5x, 3y-->
+					<xpath>/Defs/ResearchProjectDef[defName="QE_GenomeSequencing"]/researchViewX</xpath>
+					<value>
+						<researchViewX>2</researchViewX>
+					</value>
+					</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="QE_GenomeSequencing"]/researchViewY</xpath>
+					<value>
+						<researchViewY>2</researchViewY>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<!--moving this to 4x, 4y default is 5x, 3y-->
+					<xpath>/Defs/ResearchProjectDef[defName="QE_VatGrownBeings"]/researchViewX</xpath>
+					<value>
+						<researchViewX>3</researchViewX>
+					</value>
+					</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="QE_VatGrownBeings"]/researchViewY</xpath>
+					<value>
+						<researchViewY>2</researchViewY>
+					</value>
+				</li>
+
+				
+				<li Class="PatchOperationReplace">
+					<!--moving this to 4x, 4y default is 5x, 3y-->
+					<xpath>/Defs/ResearchProjectDef[defName="QE_BrainScanning"]/researchViewX</xpath>
+					<value>
+						<researchViewX>4</researchViewX>
+					</value>
+					</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="QE_BrainScanning"]/researchViewY</xpath>
+					<value>
+						<researchViewY>2</researchViewY>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!--Apply patches to features that QEE and QE share-->
+	<Operation Class="PatchOperationFindMod">
+		<success>Always</success>
+		<mods>
+			<li>Questionable Ethics</li>
+			<li>Questionable Ethics Enhanced</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
@@ -193,52 +309,11 @@
 
 				<!--but wait the secondary arms still use it! nOPE!-->
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArm_Secondary"]/ingredients/li[3]
+					<xpath>/Defs/RecipeDef[contains(defName, "EVO_InstallEvolvedArm")]/ingredients/li[3]
 					</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArm_Secondary"]/fixedIngredientFilter/thingDefs/li[2]
-					</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmClaw_Secondary"]/ingredients/li[3]
-					</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmClaw_Secondary"]/fixedIngredientFilter/thingDefs/li[2]
-					</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmSabre_Secondary"]/ingredients/li[3]
-					</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmSabre_Secondary"]/fixedIngredientFilter/thingDefs/li[2]
-					</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmMace_Secondary"]/ingredients/li[3]
-					</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmMace_Secondary"]/fixedIngredientFilter/thingDefs/li[2]
-					</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmTentacle_Secondary"]/ingredients/li[3]
-					</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmTentacle_Secondary"]/fixedIngredientFilter/thingDefs/li[2]
-					</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmShield_Secondary"]/ingredients/li[3]
-					</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmShield_Secondary"]/fixedIngredientFilter/thingDefs/li[2]
-					</xpath>
+					<xpath>/Defs/RecipeDef[contains(defName, "EVO_InstallEvolvedArm")]/fixedIngredientFilter/thingDefs/li[2]</xpath>
 				</li>
 
 				<!--Then we remove the bench altogether -->
@@ -253,7 +328,7 @@
         <li Class="PatchOperationReplace">
           <xpath>/Defs/ThingDef[defName="EvolvedChunk"]/description</xpath>
           <value>
-            <description>This has been deprecated, it has no use in this mod configuration with Questionable Ethics, either disassemble it at a crafting spot/machining workbench/drug lab or sell it to a trader.</description>
+            <description>This has been deprecated. It is not used when the mod is enabled with Questionable Ethics, so either disassemble it at a crafting spot/machining workbench/drug lab or sell it to a trader.</description>
           </value>
         </li>
         
@@ -324,57 +399,6 @@
 				<li Class="PatchOperationRemove">
 					<xpath>/Defs/ResearchTabDef[defName="EVO_EvolvedOrgansResearchTab"]</xpath>
 				</li>
-        <li Class="PatchOperationReplace"><!--moving this to 6x, 4y default is 4x, 4y-->
-          <xpath>/Defs/ResearchProjectDef[defName="QE_CrudeBionics"]/researchViewX</xpath>
-          <value>
-            <researchViewX>5</researchViewX>
-          </value>
-        </li>
-        <li Class="PatchOperationReplace">
-          <xpath>/Defs/ResearchProjectDef[defName="QE_CrudeBionics"]/researchViewY</xpath>
-          <value>
-            <researchViewY>3</researchViewY>
-          </value>
-        </li>
-        <li Class="PatchOperationReplace">
-          <!--moving this to 5x, 4y default is 5x, 3y-->
-          <xpath>/Defs/ResearchProjectDef[defName="QE_BrainScanning"]/researchViewX</xpath>
-          <value>
-            <researchViewX>4</researchViewX>
-          </value>
-        </li>
-        <li Class="PatchOperationReplace">
-          <xpath>/Defs/ResearchProjectDef[defName="QE_BrainScanning"]/researchViewY</xpath>
-          <value>
-            <researchViewY>4</researchViewY>
-          </value>
-        </li>
-        <li Class="PatchOperationReplace">
-          <!--moving this to 6x, 2y default is 3x, 3y-->
-          <xpath>/Defs/ResearchProjectDef[defName="QE_LifeSupportSystem"]/researchViewX</xpath>
-          <value>
-            <researchViewX>5</researchViewX>
-          </value>
-        </li>
-        <li Class="PatchOperationReplace">
-          <xpath>/Defs/ResearchProjectDef[defName="QE_LifeSupportSystem"]/researchViewY</xpath>
-          <value>
-            <researchViewY>2</researchViewY>
-          </value>
-        </li>
-        <li Class="PatchOperationReplace">
-          <!--moving this to 6x, 2y default is 4x, 3y-->
-          <xpath>/Defs/ResearchProjectDef[defName="QE_NerveStapling"]/researchViewX</xpath>
-          <value>
-            <researchViewX>5</researchViewX>
-          </value>
-        </li>
-        <li Class="PatchOperationReplace">
-          <xpath>/Defs/ResearchProjectDef[defName="QE_NerveStapling"]/researchViewY</xpath>
-          <value>
-            <researchViewY>1</researchViewY>
-          </value>
-        </li>
         
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ResearchProjectDef[defName="EvolvedOrgansResearch1"]</xpath>
@@ -389,7 +413,7 @@
 							<prerequisites>
 								<li>QE_OrganVat_SensoryOrgans</li>
 								<li>QE_OrganVat_Limbs</li>
-								<li>QE_IntegratedWeaponry</li>
+								<li>Bionics</li>
 								<li>QE_BrainScanning</li>
 							</prerequisites>
 							<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -397,7 +421,7 @@
 								<li>MultiAnalyzer</li>
 							</requiredResearchFacilities>
 							<researchViewX>4</researchViewX>
-							<researchViewY>5</researchViewY>
+							<researchViewY>4</researchViewY>
 						</ResearchProjectDef>
 					</value>
 				</li>
@@ -419,7 +443,7 @@
 								<li>MultiAnalyzer</li>
 							</requiredResearchFacilities>
 							<researchViewX>5</researchViewX>
-							<researchViewY>5</researchViewY>
+							<researchViewY>4</researchViewY>
 						</ResearchProjectDef>
 					</value>
 				</li>
@@ -441,7 +465,7 @@
 								<li>MultiAnalyzer</li>
 							</requiredResearchFacilities>
 							<researchViewX>6</researchViewX>
-							<researchViewY>5</researchViewY>
+							<researchViewY>4</researchViewY>
 						</ResearchProjectDef>
 					</value>
 				</li>
@@ -463,7 +487,7 @@
 								<li>MultiAnalyzer</li>
 							</requiredResearchFacilities>
 							<researchViewX>7</researchViewX>
-							<researchViewY>5</researchViewY>
+							<researchViewY>4</researchViewY>
 						</ResearchProjectDef>
 					</value>
 				</li>
@@ -485,7 +509,7 @@
 								<li>MultiAnalyzer</li>
 							</requiredResearchFacilities>
 							<researchViewX>5</researchViewX>
-							<researchViewY>6</researchViewY>
+							<researchViewY>5</researchViewY>
 						</ResearchProjectDef>
 					</value>
 				</li>
@@ -507,7 +531,7 @@
 								<li>MultiAnalyzer</li>
 							</requiredResearchFacilities>
 							<researchViewX>6</researchViewX>
-							<researchViewY>6</researchViewY>
+							<researchViewY>5</researchViewY>
 						</ResearchProjectDef>
 					</value>
 				</li>
@@ -529,7 +553,7 @@
 								<li>MultiAnalyzer</li>
 							</requiredResearchFacilities>
 							<researchViewX>7</researchViewX>
-							<researchViewY>6</researchViewY>
+							<researchViewY>5</researchViewY>
 						</ResearchProjectDef>
 					</value>
 				</li>
@@ -552,7 +576,7 @@
 								<li>MultiAnalyzer</li>
 							</requiredResearchFacilities>
 							<researchViewX>8</researchViewX>
-							<researchViewY>5</researchViewY>
+							<researchViewY>4</researchViewY>
 						</ResearchProjectDef>
 					</value>
 				</li>
@@ -573,8 +597,8 @@
 							<requiredResearchFacilities>
 								<li>MultiAnalyzer</li>
 							</requiredResearchFacilities>
-							<researchViewX>8</researchViewX>
-							<researchViewY>6</researchViewY>
+							<researchViewX>9</researchViewX>
+							<researchViewY>4</researchViewY>
 						</ResearchProjectDef>
 					</value>
 				</li>
