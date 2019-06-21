@@ -810,6 +810,7 @@
     <appliedOnFixedBodyParts>
       <li>RightAbdomenCavity</li>
     </appliedOnFixedBodyParts>
+    <removesHediff>ImmortalOrgan</removesHediff>
     <addsHediff>EvolvedCombatGlands</addsHediff>
   </RecipeDef>
 
@@ -900,6 +901,7 @@
     <appliedOnFixedBodyParts>
       <li>Torso</li>
     </appliedOnFixedBodyParts>
+    <removesHediff>EvolvedPelt</removesHediff>
     <addsHediff>EvolvedCarapace</addsHediff>
   </RecipeDef>
 
@@ -945,6 +947,7 @@
     <appliedOnFixedBodyParts>
       <li>Torso</li>
     </appliedOnFixedBodyParts>
+    <removesHediff>EvolvedCarapace</removesHediff>
     <addsHediff>EvolvedPelt</addsHediff>
   </RecipeDef>
 
@@ -990,7 +993,54 @@
     <appliedOnFixedBodyParts>
       <li>Skull</li>
     </appliedOnFixedBodyParts>
+    <removesHediff>EmpathicResonator</removesHediff>
     <addsHediff>EvolvedFilter</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>EVO_InstallEmpathicResonator</defName>
+    <label>implant empathic resonator</label>
+    <description>Implant an organ dedicated to psychic manipulaton via empathic suggestion.  Boosts a pawn ability to communicate both verbally and non-verbally increasing social and animal interaction outcomes.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Implanting empathic resonator.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>EvolvedFilter</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>EmpathicResonator</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Skull</li>
+    </appliedOnFixedBodyParts>
+    <removesHediff>EvolvedFilter</removesHediff>
+    <addsHediff>EmpathicResonator</addsHediff>
   </RecipeDef>
 
   <RecipeDef ParentName="SurgeryFlesh">
@@ -1035,6 +1085,7 @@
     <appliedOnFixedBodyParts>
       <li>RightAbdomenCavity</li>
     </appliedOnFixedBodyParts>
+    <removesHediff>EvolvedCombatGlands</removesHediff>
     <addsHediff>ImmortalOrgan</addsHediff>
   </RecipeDef>
 

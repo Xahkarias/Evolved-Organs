@@ -6,7 +6,7 @@
   </ResearchTabDef>
 
   <ResearchProjectDef>
-    <defName>EvolvedOrgansResearch1</defName>
+    <defName>EvolvedOrgansR1</defName>
     <tab>EVO_EvolvedOrgansResearchTab</tab>
     <label>Nano-Scale Cellular Engineering</label>
     <description>By combining our knowledge of biology and bionics, we can engineer cells that have much more potential than anything created naturally.</description>
@@ -27,14 +27,14 @@
 
   <!--OrganPath-->
   <ResearchProjectDef>
-    <defName>EvolvedOrgansResearchOrgans1</defName>
+    <defName>EvolvedOrgansR2</defName>
     <tab>EVO_EvolvedOrgansResearchTab</tab>
     <label>BioMechanical Organ Application</label>
     <description>Through the selective processes of germinating and stimulating stem cells at the nano-scale with mechanites, it is possible to create simple internal organs.</description>
     <baseCost>2000</baseCost>
     <techLevel>Spacer</techLevel>
     <prerequisites>
-      <li>EvolvedOrgansResearch1</li>
+      <li>EvolvedOrgansR1</li>
     </prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
@@ -52,7 +52,7 @@
     <baseCost>3000</baseCost>
     <techLevel>Spacer</techLevel>
     <prerequisites>
-      <li>EvolvedOrgansResearchOrgans1</li>
+      <li>EvolvedOrgansR2</li>
     </prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
@@ -89,7 +89,7 @@
     <baseCost>2000</baseCost>
     <techLevel>Spacer</techLevel>
     <prerequisites>
-      <li>EvolvedOrgansResearchOrgans1</li>
+      <li>EvolvedOrgansR2</li>
     </prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>

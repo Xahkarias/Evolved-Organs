@@ -6,6 +6,7 @@
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>EvolvedSecondHeart</defName>
     <label>evolved second heart</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
     <labelNoun>an evolved second heart</labelNoun>
     <spawnThingOnRemoved>EvolvedSecondHeart</spawnThingOnRemoved>
     <addedPartProps>
@@ -32,6 +33,7 @@
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>EvolvedPrimaryHeart</defName>
     <label>evolved primary heart</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
     <labelNoun>an evolved primary heart</labelNoun>
     <spawnThingOnRemoved>EvolvedPrimaryHeart</spawnThingOnRemoved>
     <addedPartProps>
@@ -44,6 +46,7 @@
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>EvolvedKidney</defName>
     <label>evolved kidney</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
     <labelNoun>an evolved kidney</labelNoun>
     <spawnThingOnRemoved>EvolvedKidney</spawnThingOnRemoved>
     <addedPartProps>
@@ -63,6 +66,7 @@
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>EvolvedLung</defName>
     <label>evolved lung</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
     <labelNoun>an evolved lung</labelNoun>
     <spawnThingOnRemoved>EvolvedLung</spawnThingOnRemoved>
     <addedPartProps>
@@ -75,6 +79,7 @@
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>EvolvedThirdLung</defName>
     <label>evolved third lung</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
     <labelNoun>an evolved third lung</labelNoun>
     <spawnThingOnRemoved>EvolvedThirdLung</spawnThingOnRemoved>
     <addedPartProps>
@@ -100,6 +105,7 @@
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>EvolvedStomach</defName>
     <label>evolved stomach</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
     <labelNoun>an evolved stomach</labelNoun>
     <spawnThingOnRemoved>EvolvedStomach</spawnThingOnRemoved>
     <addedPartProps>
@@ -120,6 +126,7 @@
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>EvolvedLiver</defName>
     <label>evolved liver</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
     <labelNoun>an evolved liver</labelNoun>
     <spawnThingOnRemoved>EvolvedLiver</spawnThingOnRemoved>
     <addedPartProps>
@@ -140,6 +147,7 @@
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>EvolvedBrain</defName>
     <label>evolved brain</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
     <labelNoun>an evolved brain</labelNoun>
     <addedPartProps>
       <solid>true</solid>
@@ -166,6 +174,7 @@
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>EvolvedEye</defName>
     <label>evolved eye</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
     <labelNoun>an evolved eye</labelNoun>
     <spawnThingOnRemoved>EvolvedEye</spawnThingOnRemoved>
     <addedPartProps>
@@ -186,6 +195,7 @@
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>EvolvedPinions</defName>
     <label>evolved pinions</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
     <labelNoun>some evolved pinions</labelNoun>
     <spawnThingOnRemoved>EvolvedPinions</spawnThingOnRemoved>
     <addedPartProps>
@@ -208,6 +218,7 @@
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>EvolvedCombatGlands</defName>
     <label>evolved combat glands</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
     <labelNoun>some evolved glands</labelNoun>
     <spawnThingOnRemoved>EvolvedCombatGlands</spawnThingOnRemoved>
     <addedPartProps>
@@ -230,6 +241,7 @@
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>EvolvedLeg</defName>
     <label>evolved leg</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
     <labelNoun>an evolved leg</labelNoun>
     <spawnThingOnRemoved>EvolvedLeg</spawnThingOnRemoved>
     <addedPartProps>
@@ -249,6 +261,7 @@
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>EvolvedNose</defName>
     <label>evolved nose</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
     <labelNoun>an evolved nose</labelNoun>
     <spawnThingOnRemoved>EvolvedNose</spawnThingOnRemoved>
     <addedPartProps>
@@ -270,6 +283,7 @@
   <HediffDef ParentName="ImplantHediffBase">
     <defName>EvolvedLarnyx</defName>
     <label>evolved larnyx</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
     <labelNoun>an evolved larnyx</labelNoun>
     <spawnThingOnRemoved>EvolvedLarnyx</spawnThingOnRemoved>
     <addedPartProps>
@@ -290,6 +304,7 @@
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>EvolvedEar</defName>
     <label>evolved ear</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
     <labelNoun>an evolved ear</labelNoun>
     <spawnThingOnRemoved>EvolvedEar</spawnThingOnRemoved>
     <addedPartProps>
@@ -309,6 +324,7 @@
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>EvolvedRibcage</defName>
     <label>evolved ribcage</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
     <labelNoun>an evolved ribcage</labelNoun>
     <spawnThingOnRemoved>EvolvedRibcage</spawnThingOnRemoved>
     <addedPartProps>
@@ -329,6 +345,7 @@
   <HediffDef ParentName="ImplantHediffBase">
     <defName>EvolvedCarapace</defName>
     <label>Dragonskin</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
     <labelNoun>some dragonskin</labelNoun>
     <spawnThingOnRemoved>EvolvedCarapace</spawnThingOnRemoved>
     <addedPartProps>
@@ -350,6 +367,7 @@
   <HediffDef ParentName="ImplantHediffBase">
     <defName>EvolvedPelt</defName>
     <label>evolved pelt</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
     <labelNoun>some evolved pelts</labelNoun>
     <spawnThingOnRemoved>EvolvedPelt</spawnThingOnRemoved>
     <addedPartProps>
@@ -372,6 +390,7 @@
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>EvolvedSpine</defName>
     <label>evolved spine</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
     <labelNoun>an evolved spine</labelNoun>
     <spawnThingOnRemoved>EvolvedSpine</spawnThingOnRemoved>
     <addedPartProps>
@@ -391,6 +410,7 @@
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>EvolvedTail</defName>
     <label>evolved tail</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
     <labelNoun>an evolved tail</labelNoun>
     <comps>
       <li Class="HediffCompProperties_VerbGiver">
@@ -417,6 +437,7 @@
       <li>
         <statOffsets>
           <MeleeWeapon_CooldownMultiplier>-.5</MeleeWeapon_CooldownMultiplier>
+          <MeleeParryChance>2</MeleeParryChance>
         </statOffsets>
         <capMods>
           <li>
@@ -432,6 +453,7 @@
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>EvolvedJaw</defName>
     <label>evolved jaw</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
     <labelNoun>an evolved jaw</labelNoun>
     <comps>
       <li Class="HediffCompProperties_VerbGiver">
@@ -453,7 +475,6 @@
       <solid>true</solid>
       <partEfficiency>2.0</partEfficiency>
     </addedPartProps>
-
     <stages>
       <li>
         <statOffsets>
@@ -468,6 +489,7 @@
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>EvolvedSpider</defName>
     <label>evolved spider leg cluster</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
     <labelNoun>an evolved spider leg cluster</labelNoun>
     <comps>
       <li Class="HediffCompProperties_VerbGiver">
@@ -491,7 +513,6 @@
     </addedPartProps>
     <stages>
       <li>
-
         <statOffsets>
           <MeleeDodgeChance>4</MeleeDodgeChance>
         </statOffsets>
@@ -502,6 +523,7 @@
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>EvolvedFilter</defName>
     <label>evolved psychic filter</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
     <labelNoun>a psychic brain filter</labelNoun>
     <addedPartProps>
       <solid>true</solid>
@@ -519,6 +541,7 @@
   <HediffDef ParentName="ImplantHediffBase">
     <defName>EvolvedFilter</defName>
     <label>evolved psychic filter</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
     <labelNoun>a psychic brain filter</labelNoun>
     <stages>
       <li>
@@ -529,9 +552,27 @@
     </stages>
   </HediffDef>
 
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>EmpathicResonator</defName>
+    <label>empathic resonator</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>a empathic resonator</labelNoun>
+    <stages>
+      <li>
+        <statOffsets>
+          <PsychicSensitivity>1.5</PsychicSensitivity>
+          <SocialImpact>2</SocialImpact>
+          <TameAnimalChance>2</TameAnimalChance>
+          <TrainAnimalChance>1.5</TrainAnimalChance>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>ImmortalOrgan</defName>
     <label>ra's vacuole</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
     <labelNoun>an organ that renders a pawn biologically immortal</labelNoun>
     <addedPartProps>
       <solid>true</solid>
@@ -548,7 +589,6 @@
         </makeImmuneTo>
       </li>
     </stages>
-    <defaultLabelColor>(200,60,60)</defaultLabelColor>
   </HediffDef>
 
   <HediffDef ParentName="InfectionBase">

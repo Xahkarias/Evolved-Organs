@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Rimatomics</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <ThingDef ParentName="EvolvedOrganBase">
+              <defName>EvolvedRadiationFilter</defName>
+              <label>RAD suppressor</label>
+              <description>An evolved organ developed to release protective protiens which insulate cells from radiation damage as well as filtering and replacing irradiated tissue.</description>
+              <recipeMaker>
+                <researchPrerequisite>EvolvedOrgansResearchOrgans2</researchPrerequisite>
+              </recipeMaker>
+              <costList>
+                <EvolvedChunk>12</EvolvedChunk>
+                <ComponentSpacer>1</ComponentSpacer>
+              </costList>
+            </ThingDef>
+
+            <HediffDef ParentName="AddedBodyPartBase">
+              <defName>EvolvedRadiationFilter</defName>
+              <label>RAD suppressor</label>
+              <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+              <labelNoun>a RAD suppressor</labelNoun>
+              <spawnThingOnRemoved>EvolvedRadiationFilter</spawnThingOnRemoved>
+              <addedPartProps>
+                <solid>true</solid>
+                <partEfficiency>1.0</partEfficiency>
+              </addedPartProps>
+              <stages>
+                <li>
+                  <statOffsets>
+                    <Radiation>-1</Radiation>
+                    <hungerRateFactor>1.1</hungerRateFactor>
+                  </statOffsets>
+                </li>
+              </stages>
+            </HediffDef>
+
+            <RecipeDef ParentName="SurgeryFlesh">
+              <defName>EVO_InstallEvolvedRadiationFilter</defName>
+              <label>implant RAD suppressort</label>
+              <description>Implant an organ capable of filtering irrdaiated tissue from it's host.</description>
+              <workerClass>Recipe_InstallImplant</workerClass>
+              <jobString>Implanting a RAD suppressor.</jobString>
+              <workAmount>3000</workAmount>
+              <skillRequirements>
+                <Medicine>10</Medicine>
+              </skillRequirements>
+              <recipeUsers>
+                <li>Human</li>
+              </recipeUsers>
+              <ingredients>
+                <li>
+                  <filter>
+                    <categories>
+                      <li>Medicine</li>
+                    </categories>
+                  </filter>
+                  <count>2</count>
+                </li>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>EvolvedRadiationFilter</li>
+                    </thingDefs>
+                  </filter>
+                  <count>1</count>
+                </li>
+              </ingredients>
+              <fixedIngredientFilter>
+                <categories>
+                  <li>Medicine</li>
+                </categories>
+                <thingDefs>
+                  <li>EvolvedRadiationFilter</li>
+                </thingDefs>
+              </fixedIngredientFilter>
+              <appliedOnFixedBodyParts>
+                <li>LeftChestCavity</li>
+              </appliedOnFixedBodyParts>
+              <removesHediff>EvolvedThirdLung</removesHediff>
+              <addsHediff>EvolvedRadiationFilter</addsHediff>
+            </RecipeDef>
+          </value>
+        </li>
+        <li Class="PatchOperationFindMod">
+          <success>Always</success>
+          <mods>
+            <li>Rah's Bionics and Surgery Expansion</li>
+          </mods>
+          <match Class="PatchOperationSequence">
+            <operations>
+              <li Class="PatchOperationReplace">
+                <xpath>/Defs/HediffDefs[defName="EvolvedRadiationFilter']</xpath>
+                <value>
+                  <HediffDef ParentName="AddedBodyPartBase">
+                    <defName>EvolvedRadiationFilter</defName>
+                    <label>RAD suppressor</label>
+                    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+                    <labelNoun>a RAD suppressor</labelNoun>
+                    <spawnThingOnRemoved>EvolvedRadiationFilter</spawnThingOnRemoved>
+                    <addedPartProps>
+                      <solid>true</solid>
+                      <partEfficiency>1.0</partEfficiency>
+                    </addedPartProps>
+                    <comps>
+                      <li Class="HediffCompProperties_Immunizable">
+                        <severityPerDayNotImmune>0.1</severityPerDayNotImmune>
+                      </li>
+                    </comps>
+                    <initialSeverity>0.001</initialSeverity>
+                    <stages>
+                      <li>
+                        <label>newly implanted</label>
+                        <vomitMtbDays>1</vomitMtbDays>
+                        <painOffset>0.15</painOffset>
+                        <statOffsets>
+                          <Radiation>-.2</Radiation>
+                        </statOffsets>
+                      </li>
+                      <li>
+                        <label>partly adapted</label>
+                        <minSeverity>0.2</minSeverity>
+                        <statOffsets>
+                          <Radiation>-.5</Radiation>
+                        </statOffsets>
+                      </li>
+                      <li>
+                        <minSeverity>0.4</minSeverity>
+                        <statOffsets>
+                          <Radiation>-1</Radiation>
+                        </statOffsets>
+                      </li>
+                    </stages>
+                  </HediffDef>
+                </value>
+              </li>
+              <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "EvolvedRadiationFilter"]</xpath>
+                <value>
+                  <tickerType>Rare</tickerType>
+                  <comps>
+                    <li Class="CompProperties_Rottable">
+                      <daysToRotStart>0.6</daysToRotStart>
+                      <rotDestroys>true</rotDestroys>
+                    </li>
+                  </comps>
+                </value>
+                <success>Always</success>
+              </li>
+            </operations>
+          </match>
+        </li>
+        <li Class="PatchOperationFindMod">
+          <success>Always</success>
+          <mods>
+            <li>Questionable Ethics</li>
+            <li>Questionable Ethics Enhanced</li>
+          </mods>
+          <match Class="PatchOperationSequence">
+            <operations>
+              <li Class="PatchOperationRemove">
+                <xpath>/Defs/ThingDef[defName="EvolvedRadiationFilter"]/costList</xpath>
+              </li>
+              <li Class="PatchOperationRemove">
+                <xpath>/Defs/ThingDef[defName="EvolvedRadiationFilter"]/recipeMaker</xpath>
+              </li>
+              <li Class="PatchOperationAdd">
+                <xpath>/Defs</xpath>
+                <value>
+                  <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+                    <defName>EmpathicResonator</defName>
+                    <label>empathic resonator</label>
+                    <productDef>EmpathicResonator</productDef>
+                    <productAmount>1</productAmount>
+                    <requiredResearch>EvolvedOrgansResearchOrgans3</requiredResearch>
+                  </QEthics.GrowerRecipeDef>
+                </value>
+              </li>
+            </operations>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>
