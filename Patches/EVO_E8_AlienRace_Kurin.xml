@@ -70,7 +70,7 @@
               </groups>
             </li>
             <li>
-              <def>LeftAbdominalCavity</def>
+              <def>LeftAbdomenCavity</def>
               <customLabel>left abdominal cavity</customLabel>
               <coverage>0.020</coverage>
               <depth>Inside</depth>

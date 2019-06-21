@@ -48,4 +48,12 @@
     <skinCovered>true</skinCovered>
 	<canSuggestAmputation>false</canSuggestAmputation>
   </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>LeftAbdomenCavity</defName>
+    <label>left abdominal cavity</label>
+    <hitPoints>10</hitPoints>
+    <skinCovered>true</skinCovered>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
 </Defs>

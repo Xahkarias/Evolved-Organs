@@ -1131,8 +1131,8 @@
     <appliedOnFixedBodyParts>
       <li>LeftAbdomenCavity</li>
     </appliedOnFixedBodyParts>
-    <removesHediff>EvolvedCombatGlands</removesHediff>
-    <addsHediff>ImmortalOrgan</addsHediff>
+    <removesHediff></removesHediff>
+    <addsHediff>LymphaticProliferator</addsHediff>
   </RecipeDef>
 
 
