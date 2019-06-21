@@ -520,10 +520,6 @@
     <defName>EvolvedFilter</defName>
     <label>evolved psychic filter</label>
     <labelNoun>a psychic brain filter</labelNoun>
-    <addedPartProps>
-      <solid>true</solid>
-      <partEfficiency>1.0</partEfficiency>
-    </addedPartProps>
     <stages>
       <li>
         <statOffsets>
@@ -552,6 +548,7 @@
         </makeImmuneTo>
       </li>
     </stages>
+    <defaultLabelColor>(200,60,60)</defaultLabelColor>
   </HediffDef>
 
   <HediffDef ParentName="InfectionBase">
