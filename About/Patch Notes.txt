@@ -1,21 +1,25 @@
 0.1.4
 
-Combat Extended Patch
+Added.
+Combat Extended Compatability
+Rimatomics Compatability
 
 Research Overhaul, added 9 new researches, removed legacy research.  Added research tab.
 
 New Organs:
 Psychic Filter - blocks psychic emenations and is installed in the skull.
 Camoflauged Pelt - increases hunting stealth and has a wide thermal comfort zone installed on the torso.
+Ra's Vacuole - will heal old wounds such as scars, damage, etc & renders a pawn biologically immortal by preventing all age related problems such as cancer/fraility/etc (They can still die via bullets and stuff).
+(Rimatomics only) RAD Filter - will prevent radiation buildup as if you were wearing a protective suit.
 
 Changed Organs:
-Evolved Carapace - thermal coefficients removed, added flammability reduction, changed name to dragonskin.
-Evolved Stomach - adjusted description, added immunity to food poisoning. 
+Evolved Carapace - changed name to dragonskin, thermal coefficients removed, added flammability reduction, changed name to dragonskin.
+Evolved Stomach - adjusted description, added immunity to food poisoning (woot!). 
 Arms/Tail - added Melee Cooldown reductions per part to increase attack speed as the number of evolved weapons become available.
 
 Fix for savegame compatibility with Questionable Ethics configuration.
 
-Multitude of minor changes.
+Multitude of minor changes such as hediff color, description changes, etc.
 
 
 0.1.3
