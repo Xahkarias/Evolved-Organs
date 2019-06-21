@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationFindMod">
-		<success>Always</success>
-		<mods>
-			<li>Lord of the Rims - Hobbits</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Lord of the Rims - Hobbits</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
 
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RecipeDef[defName="Make_Humanoid_Protein"]/fixedIngredientFilter/thingDefs</xpath>
-					<value>
-						<li>Meat_LotRH_HobbitStandardRace</li>
-					</value>
-				</li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="Make_Humanoid_Protein"]/fixedIngredientFilter/thingDefs</xpath>
+          <value>
+            <li>Meat_LotRH_HobbitStandardRace</li>
+          </value>
+        </li>
 
-			</operations>
-		</match>
-	</Operation>
+      </operations>
+    </match>
+  </Operation>
 
 </Patch>
 

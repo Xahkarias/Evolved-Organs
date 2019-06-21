@@ -2359,7 +2359,73 @@
           </value>
           <success>Normal</success>
         </li>
-
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName = "LymphaticProliferator"]</xpath>
+          <value>
+            <HediffDef ParentName="ImplantHediffBase">
+              <defName>LymphaticProliferator</defName>
+              <label>lymphatic proliferator</label>
+              <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+              <labelNoun>a lymphatic proliferator</labelNoun>
+              <addedPartProps>
+                <solid>true</solid>
+                <partEfficiency>1.0</partEfficiency>
+              </addedPartProps>
+              <comps>
+                <li Class="HediffCompProperties_Immunizable">
+                  <severityPerDayNotImmune>0.1</severityPerDayNotImmune>
+                </li>
+              </comps>
+              <initialSeverity>0.001</initialSeverity>
+              <stages>
+                <li>
+                  <label>newly implanted</label>
+                  <vomitMtbDays>1</vomitMtbDays>
+                  <painOffset>0.15</painOffset>
+                  <makeImmuneTo>
+                    <li>WoundInfection</li>
+                    <li>Flu</li>
+                    <li>Plague</li>
+                    <li>Malaria</li>
+                    <li>SleepingSickness</li>
+                  </makeImmuneTo>
+                  <statOffsets>
+                    <ImmunityGainSpeed>.5</ImmunityGainSpeed>
+                  </statOffsets>
+                </li>
+                <li>
+                  <label>partly adapted</label>
+                  <minSeverity>0.2</minSeverity>
+                  <vomitMtbDays>1</vomitMtbDays>
+                  <makeImmuneTo>
+                    <li>WoundInfection</li>
+                    <li>Flu</li>
+                    <li>Plague</li>
+                    <li>Malaria</li>
+                    <li>SleepingSickness</li>
+                  </makeImmuneTo>
+                  <statOffsets>
+                    <ImmunityGainSpeed>1</ImmunityGainSpeed>
+                  </statOffsets>
+                </li>
+                <li>
+                  <minSeverity>0.4</minSeverity>
+                  <makeImmuneTo>
+                    <li>WoundInfection</li>
+                    <li>Flu</li>
+                    <li>Plague</li>
+                    <li>Malaria</li>
+                    <li>SleepingSickness</li>
+                  </makeImmuneTo>
+                  <statOffsets>
+                    <ImmunityGainSpeed>1.5</ImmunityGainSpeed>
+                  </statOffsets>
+                </li>
+              </stages>
+            </HediffDef>
+          </value>
+          <success>Normal</success>
+        </li>
 
 
 

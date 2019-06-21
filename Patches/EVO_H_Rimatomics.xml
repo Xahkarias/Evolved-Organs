@@ -179,11 +179,11 @@
                 <xpath>/Defs</xpath>
                 <value>
                   <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-                    <defName>EmpathicResonator</defName>
-                    <label>empathic resonator</label>
-                    <productDef>EmpathicResonator</productDef>
+                    <defName>EvolvedRadiationFilter</defName>
+                    <label>RAD filter</label>
+                    <productDef>EvolvedRadiationFilter</productDef>
                     <productAmount>1</productAmount>
-                    <requiredResearch>EvolvedOrgansResearchOrgans3</requiredResearch>
+                    <requiredResearch>EvolvedOrgansResearchOrgans2</requiredResearch>
                   </QEthics.GrowerRecipeDef>
                 </value>
               </li>

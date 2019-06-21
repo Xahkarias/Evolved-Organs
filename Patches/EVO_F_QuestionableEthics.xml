@@ -218,6 +218,9 @@
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="EmpathicResonator"]/costList</xpath>
         </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="LymphaticProliferator"]/costList</xpath>
+        </li>
 
         <!--Removes the researchPrereq for the vanilla organ recipes-->
         <li Class="PatchOperationRemove">
@@ -307,7 +310,9 @@
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="EvolvedFilter"]/recipeMaker</xpath>
         </li>
-
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="LymphaticProliferator"]/recipeMaker</xpath>
+        </li>
 
 
         <!--removes the recipeMaker so that they cant be crafted and dont throw the "you dont have a costlist error" -->
@@ -1039,6 +1044,14 @@
               <productDef>EmpathicResonator</productDef>
               <productAmount>1</productAmount>
               <requiredResearch>EvolvedOrgansResearchOrgans3</requiredResearch>
+            </QEthics.GrowerRecipeDef>
+
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>LymphaticProliferator</defName>
+              <label>lymphatic proliferator</label>
+              <productDef>LymphaticProliferator</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchOrgans2</requiredResearch>
             </QEthics.GrowerRecipeDef>
           </value>
         </li>

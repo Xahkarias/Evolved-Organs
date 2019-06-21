@@ -560,7 +560,7 @@
     <stages>
       <li>
         <statOffsets>
-          <PsychicSensitivity>1.5</PsychicSensitivity>
+          <PsychicSensitivity>.5</PsychicSensitivity>
           <SocialImpact>2</SocialImpact>
           <TameAnimalChance>2</TameAnimalChance>
           <TrainAnimalChance>1.5</TrainAnimalChance>
@@ -598,6 +598,32 @@
     <comps>
       <li Class="HediffCompProperties_Immunizable"/>
     </comps>
+  </HediffDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>LympathicProliferator</defName>
+    <label>lymphatic proliferator</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>an organ that significantly boosts it's hosts immunizing capability, rendering them immune to most normal infectious agents.</labelNoun>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.0</partEfficiency>
+    </addedPartProps>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <makeImmuneTo>
+          <li>WoundInfection</li>
+          <li>Flu</li>
+          <li>Plague</li>
+          <li>Malaria</li>
+          <li>SleepingSickness</li>
+        </makeImmuneTo>
+        <statOffsets>
+          <ImmunityGainSpeed>1.5</ImmunityGainSpeed>
+        </statOffsets>
+      </li>
+    </stages>
   </HediffDef>
 
 </Defs>
