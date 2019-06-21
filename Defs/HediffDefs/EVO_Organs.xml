@@ -437,7 +437,6 @@
       <li>
         <statOffsets>
           <MeleeWeapon_CooldownMultiplier>-.5</MeleeWeapon_CooldownMultiplier>
-          <MeleeParryChance>2</MeleeParryChance>
         </statOffsets>
         <capMods>
           <li>
@@ -601,7 +600,7 @@
   </HediffDef>
 
   <HediffDef ParentName="AddedBodyPartBase">
-    <defName>LympathicProliferator</defName>
+    <defName>LymphaticProliferator</defName>
     <label>lymphatic proliferator</label>
     <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
     <labelNoun>an organ that significantly boosts it's hosts immunizing capability, rendering them immune to most normal infectious agents.</labelNoun>
