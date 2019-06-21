@@ -445,6 +445,19 @@
   </ThingDef>
 
   <ThingDef ParentName="EvolvedOrganBase">
+    <defName>LymphaticProliferator</defName>
+    <label>lymphatic proliferator</label>
+    <description>An evolved organ developed to significantly boost a humanoid's immune system rendering them immune to most common infections and increasing resistance to infections that cannot be outright prevented.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchOrgans2</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>6</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="EvolvedOrganBase">
     <defName>EmpathicResonator</defName>
     <label>empathic resonator</label>
     <description>An evolved organ developed to allow a host to send and recieve empathic emenations from living things greatly increasing the outcomes of social and animal interactions.</description>

@@ -79,6 +79,15 @@
 								<li>Torso</li>
 							</groups>
 						</li>
+            <li>
+              <def>LeftAbdominalCavity</def>
+              <customLabel>left abdominal cavity</customLabel>
+              <coverage>0.020</coverage>
+              <depth>Inside</depth>
+              <groups>
+                <li>Torso</li>
+              </groups>
+            </li>
 					</value>
 				</li>
 
