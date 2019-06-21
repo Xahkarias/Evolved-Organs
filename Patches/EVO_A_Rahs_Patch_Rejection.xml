@@ -2291,29 +2291,29 @@
                   <label>newly implanted</label>
                   <vomitMtbDays>1</vomitMtbDays>
                   <painOffset>0.15</painOffset>
-                  <li>
+                  
                     <makeImmuneTo>
                       <li>Aging</li>
                     </makeImmuneTo>
-                  </li>
+                  
                 </li>
                 <li>
                   <label>partly adapted</label>
                   <minSeverity>0.2</minSeverity>
                   <vomitMtbDays>1</vomitMtbDays>
-                  <li>
+                  
                     <makeImmuneTo>
                       <li>Aging</li>
                     </makeImmuneTo>
-                  </li>
+                  
                 </li>
                 <li>
                   <minSeverity>0.4</minSeverity>
-                  <li>
+                  
                     <makeImmuneTo>
                       <li>Aging</li>
                     </makeImmuneTo>
-                  </li>
+                  
                 </li>
               </stages>
             </HediffDef>
