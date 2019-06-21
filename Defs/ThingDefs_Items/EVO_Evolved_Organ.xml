@@ -59,7 +59,7 @@
     <label>evolved kidney</label>
     <description>A kidney created by accelerated evolution. Can filter toxic buildup and other impurities out of blood much more efficiently.</description>
     <recipeMaker>
-      <researchPrerequisite>EvolvedOrgansResearchOrgans1</researchPrerequisite>
+      <researchPrerequisite>EvolvedOrgansR2</researchPrerequisite>
 
     </recipeMaker>
     <costList>
@@ -115,7 +115,7 @@
     <label>evolved liver</label>
     <description>A liver created by accelerated evolution. Capable of filtering out large amounts of toxins from the blood, as well as regulating the body more efficiently than a normal liver.</description>
     <recipeMaker>
-      <researchPrerequisite>EvolvedOrgansResearchOrgans1</researchPrerequisite>
+      <researchPrerequisite>EvolvedOrgansR2</researchPrerequisite>
 
     </recipeMaker>
     <costList>
@@ -185,7 +185,7 @@
     <label>evolved nose</label>
     <description>A nose created by accelerated evolution. Allows the host to detect microscopic changes in the chemicals surrounding them, increasing efficiency when working with plants or fauna.</description>
     <recipeMaker>
-      <researchPrerequisite>EvolvedOrgansResearchOrgans1</researchPrerequisite>
+      <researchPrerequisite>EvolvedOrgansR2</researchPrerequisite>
 
     </recipeMaker>
     <costList>
@@ -228,7 +228,7 @@
     <label>evolved ribcage</label>
     <description>A ribcage created by accelerated evolution. Allows the host to resist much more damage towards the torso, effectively becoming a second layer of armor.</description>
     <recipeMaker>
-      <researchPrerequisite>EvolvedOrgansResearchOrgans1</researchPrerequisite>
+      <researchPrerequisite>EvolvedOrgansR2</researchPrerequisite>
 
     </recipeMaker>
     <costList>
@@ -242,7 +242,7 @@
     <label>evolved skin</label>
     <description>A scaly caparace created by accelerated evolution. Allows the host to ignore light damage to the skin, while also serving as a barrier to fire.</description>
     <recipeMaker>
-      <researchPrerequisite>EvolvedOrgansResearchOrgans1</researchPrerequisite>
+      <researchPrerequisite>EvolvedOrgansR2</researchPrerequisite>
 
     </recipeMaker>
     <costList>
@@ -256,7 +256,7 @@
     <label>evolved pelt</label>
     <description>A furred pelt created by accelerated evolution.  Allows the host to blend into it's surroundings while also serving as a effective insulant protecting the humanoid from hostile temperatures.</description>
     <recipeMaker>
-      <researchPrerequisite>EvolvedOrgansResearchOrgans1</researchPrerequisite>
+      <researchPrerequisite>EvolvedOrgansR2</researchPrerequisite>
 
     </recipeMaker>
     <costList>
@@ -298,7 +298,7 @@
     <label>evolved jaw</label>
     <description>A jaw created by accelerated evolution. Allows the host to devour food at a rapid rate, while also increasing diplomatic skills. Contains retractable fangs.</description>
     <recipeMaker>
-      <researchPrerequisite>EvolvedOrgansResearchOrgans1</researchPrerequisite>
+      <researchPrerequisite>EvolvedOrgansR2</researchPrerequisite>
 
     </recipeMaker>
     <costList>
@@ -443,5 +443,19 @@
       <ComponentSpacer>1</ComponentSpacer>
     </costList>
   </ThingDef>
+
+  <ThingDef ParentName="EvolvedOrganBase">
+    <defName>EmpathicResonator</defName>
+    <label>empathic resonator</label>
+    <description>An evolved organ developed to allow a host to send and recieve empathic emenations from living things greatly increasing the outcomes of social and animal interactions.</description>
+    <recipeMaker>
+      <researchPrerequisite>EvolvedOrgansResearchOrgans3</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>12</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
+
 
 </Defs>

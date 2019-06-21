@@ -1,272 +1,357 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationFindMod">
-		<success>Always</success>
-		<mods>
-			<li>Questionable Ethics</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
+  <!--In this patch, QE = 'Questionable Ethics' mod and QEE = 'Questionable Ethics Enhanced' mod-->
 
-				<!--Removes default costlists for crafting the items-->
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedSecondHeart"]/costList</xpath>
-				</li>				
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedPrimaryHeart"]/costList</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedKidney"]/costList</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedLung"]/costList</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedThirdLung"]/costList</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedStomach"]/costList</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedLiver"]/costList</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedEye"]/costList</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedPinions"]/costList</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedCombatGlands"]/costList</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedLeg"]/costList</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedNose"]/costList</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedLarnyx"]/costList</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedEar"]/costList</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedRibcage"]/costList</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedCarapace"]/costList</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedSpine"]/costList</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedTail"]/costList</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedJaw"]/costList</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedBrain"]/costList</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedArm"]/costList</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedArmClaw"]/costList</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedArmMace"]/costList</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedArmSabre"]/costList</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedArmTentacle"]/costList</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedArmShield"]/costList</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedSpider"]/costList</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedPelt"]/costList</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedFilter"]/costList</xpath>
-				</li>
+  <!--Apply patches to QE only, not QEE-->
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Questionable Ethics</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
 
-				<!--Removes the researchPrereq for the vanilla organ recipes-->
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedSecondHeart"]/recipeMaker</xpath>
-				</li>				
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedPrimaryHeart"]/recipeMaker</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedKidney"]/recipeMaker</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedLung"]/recipeMaker</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedThirdLung"]/recipeMaker</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedStomach"]/recipeMaker</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedLiver"]/recipeMaker</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedEye"]/recipeMaker</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedPinions"]/recipeMaker</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedCombatGlands"]/recipeMaker</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedLeg"]/recipeMaker</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedNose"]/recipeMaker</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedLarnyx"]/recipeMaker</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedEar"]/recipeMaker</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedRibcage"]/recipeMaker</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedCarapace"]/recipeMaker</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedSpine"]/recipeMaker</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedTail"]/recipeMaker</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedJaw"]/recipeMaker</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedBrain"]/recipeMaker</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedArm"]/recipeMaker</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedArmClaw"]/recipeMaker</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedArmMace"]/recipeMaker</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedArmSabre"]/recipeMaker</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedArmTentacle"]/recipeMaker</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedArmShield"]/recipeMaker</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedSpider"]/recipeMaker</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedPelt"]/recipeMaker</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedFilter"]/recipeMaker</xpath>
-				</li>
+        <li Class="PatchOperationReplace">
+          <!--moving this to 4x, 0y default is 3x, 3y-->
+          <xpath>/Defs/ResearchProjectDef[defName="QE_LifeSupportSystem"]/researchViewX</xpath>
+          <value>
+            <researchViewX>4</researchViewX>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ResearchProjectDef[defName="QE_LifeSupportSystem"]/researchViewY</xpath>
+          <value>
+            <researchViewY>0</researchViewY>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <!--moving this to 5x, 1y default is 4x, 3y-->
+          <xpath>/Defs/ResearchProjectDef[defName="QE_NerveStapling"]/researchViewX</xpath>
+          <value>
+            <researchViewX>5</researchViewX>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ResearchProjectDef[defName="QE_NerveStapling"]/researchViewY</xpath>
+          <value>
+            <researchViewY>1</researchViewY>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <!--moving this to 1x, 5y default is 4x, 4y-->
+          <xpath>/Defs/ResearchProjectDef[defName="QE_CrudeBionics"]/researchViewX</xpath>
+          <value>
+            <researchViewX>1</researchViewX>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ResearchProjectDef[defName="QE_CrudeBionics"]/researchViewY</xpath>
+          <value>
+            <researchViewY>5</researchViewY>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <!--moving this to 2x, 5y default is 5x, 3y-->
+          <xpath>/Defs/ResearchProjectDef[defName="QE_IntegratedWeaponry"]/researchViewX</xpath>
+          <value>
+            <researchViewX>2</researchViewX>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ResearchProjectDef[defName="QE_IntegratedWeaponry"]/researchViewY</xpath>
+          <value>
+            <researchViewY>5</researchViewY>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <!--moving this to 2x, 2y default is 5x, 3y-->
+          <xpath>/Defs/ResearchProjectDef[defName="QE_GenomeSequencing"]/researchViewX</xpath>
+          <value>
+            <researchViewX>2</researchViewX>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ResearchProjectDef[defName="QE_GenomeSequencing"]/researchViewY</xpath>
+          <value>
+            <researchViewY>2</researchViewY>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <!--moving this to 3x, 2y default is 5x, 3y-->
+          <xpath>/Defs/ResearchProjectDef[defName="QE_VatGrownBeings"]/researchViewX</xpath>
+          <value>
+            <researchViewX>3</researchViewX>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ResearchProjectDef[defName="QE_VatGrownBeings"]/researchViewY</xpath>
+          <value>
+            <researchViewY>2</researchViewY>
+          </value>
+        </li>
+
+
+        <li Class="PatchOperationReplace">
+          <!--moving this to 4x, 2y default is 5x, 3y-->
+          <xpath>/Defs/ResearchProjectDef[defName="QE_BrainScanning"]/researchViewX</xpath>
+          <value>
+            <researchViewX>4</researchViewX>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ResearchProjectDef[defName="QE_BrainScanning"]/researchViewY</xpath>
+          <value>
+            <researchViewY>2</researchViewY>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+  <!--Apply patches to features that QEE and QE share-->
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Questionable Ethics</li>
+      <li>Questionable Ethics Enhanced</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <!--Removes default costlists for crafting the items-->
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedSecondHeart"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedPrimaryHeart"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedKidney"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedLung"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedThirdLung"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedStomach"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedLiver"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedEye"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedPinions"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedCombatGlands"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedLeg"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedNose"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedLarnyx"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedEar"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedRibcage"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedCarapace"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedSpine"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedTail"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedJaw"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedBrain"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedArm"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedArmClaw"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedArmMace"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedArmSabre"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedArmTentacle"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedArmShield"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedSpider"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedPelt"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedFilter"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="ImmortalOrgan"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EmpathicResonator"]/costList</xpath>
+        </li>
+
+        <!--Removes the researchPrereq for the vanilla organ recipes-->
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedSecondHeart"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedPrimaryHeart"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedKidney"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedLung"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedThirdLung"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedStomach"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedLiver"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedEye"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedPinions"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedCombatGlands"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedLeg"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedNose"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedLarnyx"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedEar"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedRibcage"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedCarapace"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedSpine"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedTail"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedJaw"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedBrain"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedArm"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedArmClaw"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedArmMace"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedArmSabre"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedArmTentacle"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedArmShield"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedSpider"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedPelt"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedFilter"]/recipeMaker</xpath>
+        </li>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="ImmortalOrgan"]/recipeMaker</xpath>
         </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EmpathicResonator"]/costList</xpath>
+        </li>
 
-				<!--removes the recipeMaker so that they cant be crafted and dont throw the "you dont have a costlist error" -->
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedOrganBase"]/recipeMaker</xpath>
-				</li>
+        <!--removes the recipeMaker so that they cant be crafted and dont throw the "you dont have a costlist error" -->
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedOrganBase"]/recipeMaker</xpath>
+        </li>
 
-				<!--but wait the secondary arms still use it! nOPE!-->
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArm_Secondary"]/ingredients/li[3]
-					</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArm_Secondary"]/fixedIngredientFilter/thingDefs/li[2]
-					</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmClaw_Secondary"]/ingredients/li[3]
-					</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmClaw_Secondary"]/fixedIngredientFilter/thingDefs/li[2]
-					</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmSabre_Secondary"]/ingredients/li[3]
-					</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmSabre_Secondary"]/fixedIngredientFilter/thingDefs/li[2]
-					</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmMace_Secondary"]/ingredients/li[3]
-					</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmMace_Secondary"]/fixedIngredientFilter/thingDefs/li[2]
-					</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmTentacle_Secondary"]/ingredients/li[3]
-					</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmTentacle_Secondary"]/fixedIngredientFilter/thingDefs/li[2]
-					</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmShield_Secondary"]/ingredients/li[3]
-					</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="EVO_InstallEvolvedArmShield_Secondary"]/fixedIngredientFilter/thingDefs/li[2]
-					</xpath>
-				</li>
+        <!--but wait the secondary arms still use it! nOPE!-->
+        <li Class="PatchOperationRemove">
+          <xpath>
+            /Defs/RecipeDef[contains(defName, "EVO_InstallEvolvedArm")]/ingredients/li[3]
+          </xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[contains(defName, "EVO_InstallEvolvedArm")]/fixedIngredientFilter/thingDefs/li[2]</xpath>
+        </li>
 
-				<!--Then we remove the bench altogether -->
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="EvolvedWorkbench"]</xpath>
-				</li>				
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/WorkGiverDef[defName="DoBillsEvolvedWorkbench"]</xpath>
-				</li>
+        <!--Then we remove the bench altogether -->
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EvolvedWorkbench"]</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/WorkGiverDef[defName="DoBillsEvolvedWorkbench"]</xpath>
+        </li>
 
-				<!--Then the magical meat itself, were leaving it in so users dont have red warnings in their savegames, they can either take it apart or sell it -->
+        <!--Then the magical meat itself, were leaving it in so users dont have red warnings in their savegames, they can either take it apart or sell it -->
         <li Class="PatchOperationReplace">
           <xpath>/Defs/ThingDef[defName="EvolvedChunk"]/description</xpath>
           <value>
-            <description>This has been deprecated, it has no use in this mod configuration with Questionable Ethics, either disassemble it at a crafting spot/machining workbench/drug lab or sell it to a trader.</description>
+            <description>This has been deprecated. It is unused when the mod is enabled with Questionable Ethics, so either disassemble it at a crafting spot/machining workbench/drug lab, or sell it to a trader.</description>
           </value>
         </li>
-        
+
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
             <RecipeDef>
               <defName>Disassemble_EvolvedChunk</defName>
               <label>disassemble evolved meat</label>
-              <description>Disassemble some evolved meat because its deprecated and not used with the questionable ethics patch.</description>
+              <description>Disassemble some evolved meat, because it's deprecated and unused when the Questionable Ethics mod is enabled.</description>
               <jobString>Disassembling evolved meat.</jobString>
               <workSpeedStat>SmithingSpeed</workSpeedStat>
               <effectWorking>Cook</effectWorking>
@@ -305,695 +390,644 @@
             </RecipeDef>
           </value>
         </li>
-        
-				<!--And the specific bill to make it -->
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="Make_EvolvedChunk"]</xpath>
-				</li>
+
+        <!--And the specific bill to make it -->
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="Make_EvolvedChunk"]</xpath>
+        </li>
 
 
 
-				<!--next we make it so that the drug lab can do what the bench did for the human extracts-->
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RecipeDef[defName="Make_Humanoid_Protein"]/recipeUsers</xpath>
-					<value>
-						<recipeUsers>
-							<li>DrugLab</li>
-						</recipeUsers>
-					</value>
-				</li>
-
-				<!-- moving research to the right tab and creating correct prequisites-->
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ResearchTabDef[defName="EVO_EvolvedOrgansResearchTab"]</xpath>
-				</li>
-        <li Class="PatchOperationReplace"><!--moving this to 6x, 4y default is 4x, 4y-->
-          <xpath>/Defs/ResearchProjectDef[defName="QE_CrudeBionics"]/researchViewX</xpath>
+        <!--next we make it so that the drug lab can do what the bench did for the human extracts-->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/RecipeDef[defName="Make_Humanoid_Protein"]/recipeUsers</xpath>
           <value>
-            <researchViewX>5</researchViewX>
+            <recipeUsers>
+              <li>DrugLab</li>
+            </recipeUsers>
+          </value>
+        </li>
+
+        <!-- moving research to the right tab and creating correct prequisites-->
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ResearchTabDef[defName="EVO_EvolvedOrgansResearchTab"]</xpath>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ResearchProjectDef[defName="EvolvedOrgansResearch1"]</xpath>
+          <value>
+            <ResearchProjectDef>
+              <defName>EvolvedOrgansResearch1</defName>
+              <tab>QE_ResearchTab</tab>
+              <label>Nano-Scale Cellular Engineering</label>
+              <description>Extract Humanoid Protein at the Butcher Table and create Mechanite Slurry at the Machining Table. Made possible through a synthesis of biology and bionics knowledge.</description>
+              <baseCost>4000</baseCost>
+              <techLevel>Spacer</techLevel>
+              <prerequisites>
+                <li>QE_OrganVat_SensoryOrgans</li>
+                <li>QE_OrganVat_Limbs</li>
+                <li>Bionics</li>
+                <li>QE_BrainScanning</li>
+              </prerequisites>
+              <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+              <requiredResearchFacilities>
+                <li>MultiAnalyzer</li>
+              </requiredResearchFacilities>
+              <researchViewX>4</researchViewX>
+              <researchViewY>4</researchViewY>
+            </ResearchProjectDef>
           </value>
         </li>
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/ResearchProjectDef[defName="QE_CrudeBionics"]/researchViewY</xpath>
+          <xpath>/Defs/ResearchProjectDef[defName="EvolvedOrgansResearchOrgans1"]</xpath>
           <value>
-            <researchViewY>3</researchViewY>
+            <ResearchProjectDef>
+              <defName>EvolvedOrgansResearchOrgans1</defName>
+              <tab>QE_ResearchTab</tab>
+              <label>Biomechanical Organ Evolution</label>
+              <description>Grow evolved organs for simple body parts, like the kidney and liver, at the Organ Vat. We've learned how to germinate and stimulate stem cells with mechanites.</description>
+              <baseCost>2000</baseCost>
+              <techLevel>Spacer</techLevel>
+              <prerequisites>
+                <li>EvolvedOrgansResearch1</li>
+              </prerequisites>
+              <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+              <requiredResearchFacilities>
+                <li>MultiAnalyzer</li>
+              </requiredResearchFacilities>
+              <researchViewX>5</researchViewX>
+              <researchViewY>4</researchViewY>
+            </ResearchProjectDef>
           </value>
         </li>
         <li Class="PatchOperationReplace">
-          <!--moving this to 5x, 4y default is 5x, 3y-->
-          <xpath>/Defs/ResearchProjectDef[defName="QE_BrainScanning"]/researchViewX</xpath>
+          <xpath>/Defs/ResearchProjectDef[defName="EvolvedOrgansResearchOrgans2"]</xpath>
           <value>
-            <researchViewX>4</researchViewX>
+            <ResearchProjectDef>
+              <defName>EvolvedOrgansResearchOrgans2</defName>
+              <tab>QE_ResearchTab</tab>
+              <label>Complex Organ Evolution</label>
+              <description>Grow evolved organs for complex body parts, like the heart and lungs, at the Organ Vat. Our development of advanced cellular structures continues!</description>
+              <baseCost>3000</baseCost>
+              <techLevel>Spacer</techLevel>
+              <prerequisites>
+                <li>EvolvedOrgansResearchOrgans1</li>
+              </prerequisites>
+              <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+              <requiredResearchFacilities>
+                <li>MultiAnalyzer</li>
+              </requiredResearchFacilities>
+              <researchViewX>6</researchViewX>
+              <researchViewY>4</researchViewY>
+            </ResearchProjectDef>
           </value>
         </li>
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/ResearchProjectDef[defName="QE_BrainScanning"]/researchViewY</xpath>
+          <xpath>/Defs/ResearchProjectDef[defName="EvolvedOrgansResearchOrgans3"]</xpath>
           <value>
-            <researchViewY>4</researchViewY>
+            <ResearchProjectDef>
+              <defName>EvolvedOrgansResearchOrgans3</defName>
+              <tab>QE_ResearchTab</tab>
+              <label>Advanced Organ Evolution</label>
+              <description>Grow evolved organs for new body parts entirely, like the second lung and combat glands, at the Organ Vat. We are now the masters of organ bio-engineering.</description>
+              <baseCost>4000</baseCost>
+              <techLevel>Spacer</techLevel>
+              <prerequisites>
+                <li>EvolvedOrgansResearchOrgans2</li>
+              </prerequisites>
+              <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+              <requiredResearchFacilities>
+                <li>MultiAnalyzer</li>
+              </requiredResearchFacilities>
+              <researchViewX>7</researchViewX>
+              <researchViewY>4</researchViewY>
+            </ResearchProjectDef>
           </value>
         </li>
         <li Class="PatchOperationReplace">
-          <!--moving this to 6x, 2y default is 3x, 3y-->
-          <xpath>/Defs/ResearchProjectDef[defName="QE_LifeSupportSystem"]/researchViewX</xpath>
+          <xpath>/Defs/ResearchProjectDef[defName="EvolvedOrgansResearchLimbs1"]</xpath>
           <value>
-            <researchViewX>5</researchViewX>
+            <ResearchProjectDef>
+              <defName>EvolvedOrgansResearchLimbs1</defName>
+              <tab>QE_ResearchTab</tab>
+              <label>Structural Organ Evolution</label>
+              <description>Grow evolved limbs for simple body parts, like the arm and leg, at the Organ Vat. We've learned how to engineer cells and mechanites in a load-bearing configuration.</description>
+              <baseCost>2000</baseCost>
+              <techLevel>Spacer</techLevel>
+              <prerequisites>
+                <li>EvolvedOrgansResearchOrgans1</li>
+              </prerequisites>
+              <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+              <requiredResearchFacilities>
+                <li>MultiAnalyzer</li>
+              </requiredResearchFacilities>
+              <researchViewX>5</researchViewX>
+              <researchViewY>5</researchViewY>
+            </ResearchProjectDef>
           </value>
         </li>
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/ResearchProjectDef[defName="QE_LifeSupportSystem"]/researchViewY</xpath>
+          <xpath>/Defs/ResearchProjectDef[defName="EvolvedOrgansResearchLimbs2"]</xpath>
           <value>
-            <researchViewY>2</researchViewY>
+            <ResearchProjectDef>
+              <defName>EvolvedOrgansResearchLimbs2</defName>
+              <tab>QE_ResearchTab</tab>
+              <label>Complex Limb Structures</label>
+              <description>Grow new evolved limbs for the body, like the arm mace and arm tentacle, at the Organ Vat. We are now improving on the designs of thousands of years of evolution.</description>
+              <baseCost>3000</baseCost>
+              <techLevel>Spacer</techLevel>
+              <prerequisites>
+                <li>EvolvedOrgansResearchLimbs1</li>
+              </prerequisites>
+              <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+              <requiredResearchFacilities>
+                <li>MultiAnalyzer</li>
+              </requiredResearchFacilities>
+              <researchViewX>6</researchViewX>
+              <researchViewY>5</researchViewY>
+            </ResearchProjectDef>
           </value>
         </li>
         <li Class="PatchOperationReplace">
-          <!--moving this to 6x, 2y default is 4x, 3y-->
-          <xpath>/Defs/ResearchProjectDef[defName="QE_NerveStapling"]/researchViewX</xpath>
+          <xpath>/Defs/ResearchProjectDef[defName="EvolvedOrgansResearchLimbs3"]</xpath>
           <value>
-            <researchViewX>5</researchViewX>
+            <ResearchProjectDef>
+              <defName>EvolvedOrgansResearchLimbs3</defName>
+              <tab>QE_ResearchTab</tab>
+              <label>Advanced Limb Structures</label>
+              <description>Grow exotic evolved limbs for the body, like the spider and pinions, at the Organ Vat. GMO-Humanoid limbs...is the sky the limit?</description>
+              <baseCost>4000</baseCost>
+              <techLevel>Spacer</techLevel>
+              <prerequisites>
+                <li>EvolvedOrgansResearchLimbs2</li>
+              </prerequisites>
+              <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+              <requiredResearchFacilities>
+                <li>MultiAnalyzer</li>
+              </requiredResearchFacilities>
+              <researchViewX>7</researchViewX>
+              <researchViewY>5</researchViewY>
+            </ResearchProjectDef>
           </value>
         </li>
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/ResearchProjectDef[defName="QE_NerveStapling"]/researchViewY</xpath>
+          <xpath>/Defs/ResearchProjectDef[defName="EvolvedOrgansResearchAdvanced1"]</xpath>
           <value>
-            <researchViewY>1</researchViewY>
+            <ResearchProjectDef>
+              <defName>EvolvedOrgansResearchAdvanced1</defName>
+              <tab>QE_ResearchTab</tab>
+              <label>True Bio-Mechanical Integration NYI</label>
+              <description>Can we put a powerplant in a humanoid? Not yet implemented... enjoy the thought, though!</description>
+              <baseCost>10000</baseCost>
+              <techLevel>Spacer</techLevel>
+              <prerequisites>
+                <li>EvolvedOrgansResearchOrgans3</li>
+                <li>EvolvedOrgansResearchLimbs3</li>
+              </prerequisites>
+              <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+              <requiredResearchFacilities>
+                <li>MultiAnalyzer</li>
+              </requiredResearchFacilities>
+              <researchViewX>8</researchViewX>
+              <researchViewY>4</researchViewY>
+            </ResearchProjectDef>
           </value>
         </li>
-        
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/ResearchProjectDef[defName="EvolvedOrgansResearch1"]</xpath>
-					<value>
-						<ResearchProjectDef>
-							<defName>EvolvedOrgansResearch1</defName>
-							<tab>QE_ResearchTab</tab>
-							<label>Nano-Scale Cellular Engineering</label>
-							<description>By combining our knowledge of biology and bionics, we can engineer cells that have much more potential than anything created naturally.</description>
-							<baseCost>4000</baseCost>
-							<techLevel>Spacer</techLevel>
-							<prerequisites>
-								<li>QE_OrganVat_SensoryOrgans</li>
-								<li>QE_OrganVat_Limbs</li>
-								<li>QE_IntegratedWeaponry</li>
-								<li>QE_BrainScanning</li>
-							</prerequisites>
-							<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-							<requiredResearchFacilities>
-								<li>MultiAnalyzer</li>
-							</requiredResearchFacilities>
-							<researchViewX>4</researchViewX>
-							<researchViewY>5</researchViewY>
-						</ResearchProjectDef>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/ResearchProjectDef[defName="EvolvedOrgansResearchOrgans1"]</xpath>
-					<value>
-						<ResearchProjectDef>
-							<defName>EvolvedOrgansResearchOrgans1</defName>
-							<tab>QE_ResearchTab</tab>
-							<label>BioMechanical Organ Application</label>
-							<description>Through the selective processes of germinating and stimulating stem cells at the nano-scale with mechanites, it is possible to create simple internal organs.</description>
-							<baseCost>2000</baseCost>
-							<techLevel>Spacer</techLevel>
-							<prerequisites>
-								<li>EvolvedOrgansResearch1</li>
-							</prerequisites>
-							<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-							<requiredResearchFacilities>
-								<li>MultiAnalyzer</li>
-							</requiredResearchFacilities>
-							<researchViewX>5</researchViewX>
-							<researchViewY>5</researchViewY>
-						</ResearchProjectDef>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/ResearchProjectDef[defName="EvolvedOrgansResearchOrgans2"]</xpath>
-					<value>
-						<ResearchProjectDef>
-							<defName>EvolvedOrgansResearchOrgans2</defName>
-							<tab>QE_ResearchTab</tab>
-							<label>Complex Organ Application</label>
-							<description>The continued understand of stem cells and mechanite integration has allowed the development of advanced cellular structures which can be utilized to create advanced interal organs.</description>
-							<baseCost>3000</baseCost>
-							<techLevel>Spacer</techLevel>
-							<prerequisites>
-								<li>EvolvedOrgansResearchOrgans1</li>
-							</prerequisites>
-							<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-							<requiredResearchFacilities>
-								<li>MultiAnalyzer</li>
-							</requiredResearchFacilities>
-							<researchViewX>6</researchViewX>
-							<researchViewY>5</researchViewY>
-						</ResearchProjectDef>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/ResearchProjectDef[defName="EvolvedOrgansResearchOrgans3"]</xpath>
-					<value>
-						<ResearchProjectDef>
-							<defName>EvolvedOrgansResearchOrgans3</defName>
-							<tab>QE_ResearchTab</tab>
-							<label>Advanced Organ Application</label>
-							<description>The understanding of the most difficult bodily structures which would unlock the capacity to engineer the most complex organs and beyond.</description>
-							<baseCost>4000</baseCost>
-							<techLevel>Spacer</techLevel>
-							<prerequisites>
-								<li>EvolvedOrgansResearchOrgans2</li>
-							</prerequisites>
-							<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-							<requiredResearchFacilities>
-								<li>MultiAnalyzer</li>
-							</requiredResearchFacilities>
-							<researchViewX>7</researchViewX>
-							<researchViewY>5</researchViewY>
-						</ResearchProjectDef>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/ResearchProjectDef[defName="EvolvedOrgansResearchLimbs1"]</xpath>
-					<value>
-						<ResearchProjectDef>
-							<defName>EvolvedOrgansResearchLimbs1</defName>
-							<tab>QE_ResearchTab</tab>
-							<label>Structural Organ Application</label>
-							<description>To create bones and musculature we must first understand how to propogate the cells and mechanites in load bearing configurations.</description>
-							<baseCost>2000</baseCost>
-							<techLevel>Spacer</techLevel>
-							<prerequisites>
-								<li>EvolvedOrgansResearchOrgans1</li>
-							</prerequisites>
-							<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-							<requiredResearchFacilities>
-								<li>MultiAnalyzer</li>
-							</requiredResearchFacilities>
-							<researchViewX>5</researchViewX>
-							<researchViewY>6</researchViewY>
-						</ResearchProjectDef>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/ResearchProjectDef[defName="EvolvedOrgansResearchLimbs2"]</xpath>
-					<value>
-						<ResearchProjectDef>
-							<defName>EvolvedOrgansResearchLimbs2</defName>
-							<tab>QE_ResearchTab</tab>
-							<label>Complex Limb Strcutures</label>
-							<description>The capability to create simple load-bearing structures has been understood, now we must scale up the technology to apply and test it.</description>
-							<baseCost>3000</baseCost>
-							<techLevel>Spacer</techLevel>
-							<prerequisites>
-								<li>EvolvedOrgansResearchLimbs1</li>
-							</prerequisites>
-							<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-							<requiredResearchFacilities>
-								<li>MultiAnalyzer</li>
-							</requiredResearchFacilities>
-							<researchViewX>6</researchViewX>
-							<researchViewY>6</researchViewY>
-						</ResearchProjectDef>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/ResearchProjectDef[defName="EvolvedOrgansResearchLimbs3"]</xpath>
-					<value>
-						<ResearchProjectDef>
-							<defName>EvolvedOrgansResearchLimbs3</defName>
-							<tab>QE_ResearchTab</tab>
-							<label>Advanced Limb Strcutures</label>
-							<description>The study of what can exist beyond the configurations nature has provided us.  GMO-Humanoid Limbs.  Is the sky the limit?</description>
-							<baseCost>4000</baseCost>
-							<techLevel>Spacer</techLevel>
-							<prerequisites>
-								<li>EvolvedOrgansResearchLimbs2</li>
-							</prerequisites>
-							<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-							<requiredResearchFacilities>
-								<li>MultiAnalyzer</li>
-							</requiredResearchFacilities>
-							<researchViewX>7</researchViewX>
-							<researchViewY>6</researchViewY>
-						</ResearchProjectDef>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/ResearchProjectDef[defName="EvolvedOrgansResearchAdvanced1"]</xpath>
-					<value>
-						<ResearchProjectDef>
-							<defName>EvolvedOrgansResearchAdvanced1</defName>
-							<tab>QE_ResearchTab</tab>
-							<label>True Bio-Mechanical Integration NYI</label>
-							<description>Can we put a powerplant in a humanoid?  Not yet implemented just enjoy the thought though.</description>
-							<baseCost>10000</baseCost>
-							<techLevel>Spacer</techLevel>
-							<prerequisites>
-								<li>EvolvedOrgansResearchOrgans3</li>
-								<li>EvolvedOrgansResearchLimbs3</li>
-							</prerequisites>
-							<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-							<requiredResearchFacilities>
-								<li>MultiAnalyzer</li>
-							</requiredResearchFacilities>
-							<researchViewX>8</researchViewX>
-							<researchViewY>5</researchViewY>
-						</ResearchProjectDef>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/ResearchProjectDef[defName="EvolvedOrgansResearchAdvanced2"]</xpath>
-					<value>
-						<ResearchProjectDef>
-							<defName>EvolvedOrgansResearchAdvanced2</defName>
-							<tab>QE_ResearchTab</tab>
-							<label>Advanced Bio-Mechanical Integration NYI</label>
-							<description>K we can, but now what? We get to finally coding in blaster weapons that you can mount on your arms for the arm god thats what, but thats not in yet so... wait patiently I guess.</description>
-							<baseCost>20000</baseCost>
-							<techLevel>Spacer</techLevel>
-							<prerequisites>
-								<li>EvolvedOrgansResearchAdvanced1</li>
-							</prerequisites>
-							<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-							<requiredResearchFacilities>
-								<li>MultiAnalyzer</li>
-							</requiredResearchFacilities>
-							<researchViewX>8</researchViewX>
-							<researchViewY>6</researchViewY>
-						</ResearchProjectDef>
-					</value>
-				</li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ResearchProjectDef[defName="EvolvedOrgansResearchAdvanced2"]</xpath>
+          <value>
+            <ResearchProjectDef>
+              <defName>EvolvedOrgansResearchAdvanced2</defName>
+              <tab>QE_ResearchTab</tab>
+              <label>Advanced Bio-Mechanical Integration NYI</label>
+              <description>K we can, but now what? We get to finally coding in blaster weapons that you can mount on your arms for the arm god thats what, but thats not in yet, so... wait patiently, I guess.</description>
+              <baseCost>20000</baseCost>
+              <techLevel>Spacer</techLevel>
+              <prerequisites>
+                <li>EvolvedOrgansResearchAdvanced1</li>
+              </prerequisites>
+              <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+              <requiredResearchFacilities>
+                <li>MultiAnalyzer</li>
+              </requiredResearchFacilities>
+              <researchViewX>9</researchViewX>
+              <researchViewY>4</researchViewY>
+            </ResearchProjectDef>
+          </value>
+        </li>
 
 
 
-				<!--Finally were patching in new stuff to replace the meat to be used with the vats -->
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs</xpath>
-					<value>
-						<ThingDef ParentName="ResourceBase">
-							<defName>EVO_Mechanite_Slurry</defName>
-							<label>Mechanite Slurry</label>
-							<description>A vial of distilled water full of nano-scale mechanites ready to be combined with humanoid proteins to be grown into a advanced organ.  These machines were once capable of anything, however during the extraction process they have been rendered generally harmless and will only reactivate when provided data from a Organ Vat and provided a nutrient suspension to begin work.  Maybe someday there will be the concern about the dreaded "Grey Goo" disaster but that day is not today.</description>
-							<graphicData>
-								<texPath>Things/Item/Resource/MechaniteSlurryVial</texPath>
-								<graphicClass>Graphic_Single</graphicClass>
-							</graphicData>
-							<soundInteract>Standard_Drop</soundInteract>
-							<soundDrop>Standard_Drop</soundDrop>
-							<useHitPoints>true</useHitPoints>
-							<statBases>
-								<MaxHitPoints>50</MaxHitPoints>
-								<MarketValue>10</MarketValue>
-								<Mass>0.01</Mass>
-								<Flammability>.8</Flammability>
-								<DeteriorationRate>15.0</DeteriorationRate>
-							</statBases>
-							<thingCategories>
-								<li>Manufactured</li>
-							</thingCategories>
-							<tradeTags>
-								<li>ExoticMisc</li>
-							</tradeTags>
-						</ThingDef>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs</xpath>
-					<value>
-						<RecipeDef>
-							<defName>Make_Mechanite_Slurry</defName>
-							<label>extract mechanites</label>
-							<description>By utilizing more learned techniques and taking additional time, dissassemble a dead mechanoid into its component parts while being careful to preserve and capture the mechanites found inside.</description>
-							<jobString>Extracting mechanites.</jobString>
-							<workSpeedStat>SmithingSpeed</workSpeedStat>
-							<allowMixingIngredients>false</allowMixingIngredients>
-							<effectWorking>ButcherMechanoid</effectWorking>
-							<soundWorking>Recipe_ButcherCorpseMechanoid</soundWorking>
-							<workAmount>450</workAmount>
-							<recipeUsers>
-								<li>TableMachining</li>
-							</recipeUsers>
-							<ingredients>
-								<li>
-									<filter>
-										<categories>
-											<li>Corpses</li>
-										</categories>
-									</filter>
-									<count>1</count>
-								</li>
-							</ingredients>
-							<fixedIngredientFilter>
-								<categories>
-									<li>CorpsesMechanoid</li>
-								</categories>
-							</fixedIngredientFilter>
-							<products>
-								<EVO_Mechanite_Slurry>5</EVO_Mechanite_Slurry>
-							</products>
-							<specialProducts>
-								<li>Butchery</li>
-							</specialProducts>
-							<researchPrerequisite>EvolvedOrgansResearch1</researchPrerequisite>
-							<skillRequirements>
-								<Crafting>7</Crafting>
-								<Medicine>5</Medicine>
-							</skillRequirements>
-							<workSkill>Crafting</workSkill>
-						</RecipeDef>
-					</value>
-				</li>
+        <!--Finally were patching in new stuff to replace the meat to be used with the vats -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <ThingDef ParentName="ResourceBase">
+              <defName>EVO_Mechanite_Slurry</defName>
+              <label>Mechanite Slurry</label>
+              <description>A vial of distilled water full of nano-scale mechanites. It can be combined with humanoid proteins and grown into an advanced organ at the Organ Vat. These machines were once capable of anything, but the extraction process rendered them harmless. They will only react when immersed in a nutrient solution inside an Organ Vat. Perhaps someday there will be concern about the dreaded "Grey Goo" disaster, but that day is not today.</description>
+              <graphicData>
+                <texPath>Things/Item/Resource/MechaniteSlurryVial</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+              </graphicData>
+              <soundInteract>Standard_Drop</soundInteract>
+              <soundDrop>Standard_Drop</soundDrop>
+              <useHitPoints>true</useHitPoints>
+              <statBases>
+                <MaxHitPoints>50</MaxHitPoints>
+                <MarketValue>10</MarketValue>
+                <Mass>0.01</Mass>
+                <Flammability>.8</Flammability>
+                <DeteriorationRate>15.0</DeteriorationRate>
+              </statBases>
+              <thingCategories>
+                <li>Manufactured</li>
+              </thingCategories>
+              <tradeTags>
+                <li>ExoticMisc</li>
+              </tradeTags>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <RecipeDef>
+              <defName>Make_Mechanite_Slurry</defName>
+              <label>extract mechanites</label>
+              <description>Utilize specialized techniques to carefully dissassemble a dead mechanoid into its component parts. The mechanites inside will be added to a vial of distilled water.</description>
+              <jobString>Extracting mechanites.</jobString>
+              <workSpeedStat>SmithingSpeed</workSpeedStat>
+              <allowMixingIngredients>false</allowMixingIngredients>
+              <effectWorking>ButcherMechanoid</effectWorking>
+              <soundWorking>Recipe_ButcherCorpseMechanoid</soundWorking>
+              <workAmount>450</workAmount>
+              <recipeUsers>
+                <li>TableMachining</li>
+              </recipeUsers>
+              <ingredients>
+                <li>
+                  <filter>
+                    <categories>
+                      <li>Corpses</li>
+                    </categories>
+                  </filter>
+                  <count>1</count>
+                </li>
+              </ingredients>
+              <fixedIngredientFilter>
+                <categories>
+                  <li>CorpsesMechanoid</li>
+                </categories>
+              </fixedIngredientFilter>
+              <products>
+                <EVO_Mechanite_Slurry>5</EVO_Mechanite_Slurry>
+              </products>
+              <specialProducts>
+                <li>Butchery</li>
+              </specialProducts>
+              <researchPrerequisite>EvolvedOrgansResearch1</researchPrerequisite>
+              <skillRequirements>
+                <Crafting>7</Crafting>
+                <Medicine>5</Medicine>
+              </skillRequirements>
+              <workSkill>Crafting</workSkill>
+            </RecipeDef>
+          </value>
+        </li>
 
-				<!--adding vat recipe bases-->
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs</xpath>
-					<value>
-						<QEthics.GrowerRecipeDef Name="EvolvedMechaniteSlurryPropigate" Abstract="True">
-							<productAmount>20</productAmount>
-							<craftingTime>100000</craftingTime>
-							<ingredients>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>EVO_Mechanite_Slurry</li>
-										</thingDefs>
-									</filter>
-									<count>5</count>
-								</li>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>Plasteel</li>
-										</thingDefs>
-									</filter>
-									<count>25</count>
-								</li>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>Gold</li>
-										</thingDefs>
-									</filter>
-									<count>5</count>
-								</li>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>QE_NutrientSolution</li>
-										</thingDefs>
-									</filter>
-									<count>25</count>
-								</li>
-							</ingredients>
-							<productGraphic>
-								<graphicClass>Graphic_Single</graphicClass>
-								<texPath>Patches/QE/motes</texPath>
-								<shaderType>MoteGlow</shaderType>
-								<drawRotated>false</drawRotated>
-							</productGraphic>
-							<recipeUsers>
-								<li>QE_OrganVat</li>
-							</recipeUsers>
-						</QEthics.GrowerRecipeDef>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs</xpath>
-					<value>
-						<QEthics.GrowerRecipeDef Name="EvolvedOrganGrowerRecipeBase" Abstract="True">
-							<productAmount>1</productAmount>
-							<craftingTime>300000</craftingTime>
-							<ingredients>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>EVO_Mechanite_Slurry</li>
-										</thingDefs>
-									</filter>
-									<count>20</count>
-								</li>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>EVO_Humanoid_Protein</li>
-										</thingDefs>
-									</filter>
-									<count>35</count>
-								</li>
-							</ingredients>
-							<productGraphic>
-								<graphicClass>Graphic_Single</graphicClass>
-								<texPath>Effects/Organs/Shinzy_Organ</texPath>
-								<shaderType>MoteGlow</shaderType>
-								<drawRotated>false</drawRotated>
-							</productGraphic>
-							<recipeUsers>
-								<li>QE_OrganVat</li>
-							</recipeUsers>
-						</QEthics.GrowerRecipeDef>
-					</value>
-				</li>
+        <!--adding vat recipe bases-->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <QEthics.GrowerRecipeDef Name="EvolvedMechaniteSlurryPropigate" Abstract="True">
+              <productAmount>20</productAmount>
+              <craftingTime>100000</craftingTime>
+              <ingredients>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>EVO_Mechanite_Slurry</li>
+                    </thingDefs>
+                  </filter>
+                  <count>5</count>
+                </li>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>Plasteel</li>
+                    </thingDefs>
+                  </filter>
+                  <count>25</count>
+                </li>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>Gold</li>
+                    </thingDefs>
+                  </filter>
+                  <count>5</count>
+                </li>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>QE_NutrientSolution</li>
+                    </thingDefs>
+                  </filter>
+                  <count>25</count>
+                </li>
+              </ingredients>
+              <productGraphic>
+                <graphicClass>Graphic_Single</graphicClass>
+                <texPath>Patches/QE/motes</texPath>
+                <shaderType>MoteGlow</shaderType>
+                <drawRotated>false</drawRotated>
+              </productGraphic>
+              <recipeUsers>
+                <li>QE_OrganVat</li>
+              </recipeUsers>
+            </QEthics.GrowerRecipeDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <QEthics.GrowerRecipeDef Name="EvolvedOrganGrowerRecipeBase" Abstract="True">
+              <productAmount>1</productAmount>
+              <craftingTime>300000</craftingTime>
+              <ingredients>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>EVO_Mechanite_Slurry</li>
+                    </thingDefs>
+                  </filter>
+                  <count>20</count>
+                </li>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>EVO_Humanoid_Protein</li>
+                    </thingDefs>
+                  </filter>
+                  <count>35</count>
+                </li>
+              </ingredients>
+              <productGraphic>
+                <graphicClass>Graphic_Single</graphicClass>
+                <texPath>Effects/Organs/Shinzy_Organ</texPath>
+                <shaderType>MoteGlow</shaderType>
+                <drawRotated>false</drawRotated>
+              </productGraphic>
+              <recipeUsers>
+                <li>QE_OrganVat</li>
+              </recipeUsers>
+            </QEthics.GrowerRecipeDef>
+          </value>
+        </li>
 
-				<!--adding the actual recipes -->
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs</xpath>
-					<value>
-						<QEthics.GrowerRecipeDef ParentName="EvolvedMechaniteSlurryPropigate">
-							<defName>EVO_Mechanite_Slurry</defName>
-							<label>propogate mechanites</label>
-							<productDef>EVO_Mechanite_Slurry</productDef>
-							<requiredResearch>EvolvedOrgansResearch1</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+        <!--adding the actual recipes -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedMechaniteSlurryPropigate">
+              <defName>EVO_Mechanite_Slurry</defName>
+              <label>propogate mechanites</label>
+              <productDef>EVO_Mechanite_Slurry</productDef>
+              <requiredResearch>EvolvedOrgansResearch1</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedSecondHeart</defName>
-							<label>evolved secondary heart</label>
-							<productDef>EvolvedSecondHeart</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchOrgans3</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedSecondHeart</defName>
+              <label>evolved secondary heart</label>
+              <productDef>EvolvedSecondHeart</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchOrgans3</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedPrimaryHeart</defName>
-							<label>evolved primary heart</label>
-							<productDef>EvolvedPrimaryHeart</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchOrgans2</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedPrimaryHeart</defName>
+              <label>evolved primary heart</label>
+              <productDef>EvolvedPrimaryHeart</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchOrgans2</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedKidney</defName>
-							<label>evolved kidney</label>
-							<productDef>EvolvedKidney</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchOrgans1</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedKidney</defName>
+              <label>evolved kidney</label>
+              <productDef>EvolvedKidney</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchOrgans1</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedLung</defName>
-							<label>evolved lung</label>
-							<productDef>EvolvedLung</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchOrgans2</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedLung</defName>
+              <label>evolved lung</label>
+              <productDef>EvolvedLung</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchOrgans2</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedThirdLung</defName>
-							<label>evolved third lung</label>
-							<productDef>EvolvedThirdLung</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchOrgans3</requiredResearch>
-						</QEthics.GrowerRecipeDef>			
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedThirdLung</defName>
+              <label>evolved third lung</label>
+              <productDef>EvolvedThirdLung</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchOrgans3</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedStomach</defName>
-							<label>evolved stomach</label>
-							<productDef>EvolvedStomach</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchOrgans2</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedStomach</defName>
+              <label>evolved stomach</label>
+              <productDef>EvolvedStomach</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchOrgans2</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedLiver</defName>
-							<label>evolved liver</label>
-							<productDef>EvolvedLiver</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchOrgans1</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedLiver</defName>
+              <label>evolved liver</label>
+              <productDef>EvolvedLiver</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchOrgans1</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedEye</defName>
-							<label>evolved eye</label>
-							<productDef>EvolvedEye</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchOrgans2</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedEye</defName>
+              <label>evolved eye</label>
+              <productDef>EvolvedEye</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchOrgans2</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedPinions</defName>
-							<label>evolved pinions</label>
-							<productDef>EvolvedPinions</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchLimbs3</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedPinions</defName>
+              <label>evolved pinions</label>
+              <productDef>EvolvedPinions</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchLimbs3</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedCombatGlands</defName>
-							<label>evolved combat glands</label>
-							<productDef>EvolvedCombatGlands</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchOrgans3</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedCombatGlands</defName>
+              <label>evolved combat glands</label>
+              <productDef>EvolvedCombatGlands</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchOrgans3</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedLeg</defName>
-							<label>evolved leg</label>
-							<productDef>EvolvedLeg</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchLimbs1</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedLeg</defName>
+              <label>evolved leg</label>
+              <productDef>EvolvedLeg</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchLimbs1</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedNose</defName>
-							<label>evolved nose</label>
-							<productDef>EvolvedNose</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchOrgans1</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedNose</defName>
+              <label>evolved nose</label>
+              <productDef>EvolvedNose</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchOrgans1</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedLarnyx</defName>
-							<label>evolved larnyx</label>
-							<productDef>EvolvedLarnyx</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchOrgans2</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedLarnyx</defName>
+              <label>evolved larnyx</label>
+              <productDef>EvolvedLarnyx</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchOrgans2</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedEar</defName>
-							<label>evolved ear</label>
-							<productDef>EvolvedEar</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchOrgans2</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedEar</defName>
+              <label>evolved ear</label>
+              <productDef>EvolvedEar</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchOrgans2</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedRibcage</defName>
-							<label>evolved ribcage</label>
-							<productDef>EvolvedRibcage</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchOrgans1</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedRibcage</defName>
+              <label>evolved ribcage</label>
+              <productDef>EvolvedRibcage</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchOrgans1</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedCarapace</defName>
-							<label>evolved Carapace</label>
-							<productDef>EvolvedCarapace</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchOrgans1</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedCarapace</defName>
+              <label>evolved Carapace</label>
+              <productDef>EvolvedCarapace</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchOrgans1</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedSpine</defName>
-							<label>evolved spine</label>
-							<productDef>EvolvedSpine</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchOrgans3</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedSpine</defName>
+              <label>evolved spine</label>
+              <productDef>EvolvedSpine</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchOrgans3</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedTail</defName>
-							<label>evolved tail</label>
-							<productDef>EvolvedTail</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchLimbs2</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedTail</defName>
+              <label>evolved tail</label>
+              <productDef>EvolvedTail</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchLimbs2</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedJaw</defName>
-							<label>evolved jaw</label>
-							<productDef>EvolvedJaw</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchOrgans1</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedJaw</defName>
+              <label>evolved jaw</label>
+              <productDef>EvolvedJaw</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchOrgans1</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedBrain</defName>
-							<label>evolved brain</label>
-							<productDef>EvolvedBrain</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchOrgans3</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedBrain</defName>
+              <label>evolved brain</label>
+              <productDef>EvolvedBrain</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchOrgans3</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedArm</defName>
-							<label>evolved arm</label>
-							<productDef>EvolvedArm</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchLimbs1</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedArm</defName>
+              <label>evolved arm</label>
+              <productDef>EvolvedArm</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchLimbs1</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedArmClaw</defName>
-							<label>evolved arm claw</label>
-							<productDef>EvolvedArmClaw</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchLimbs2</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedArmClaw</defName>
+              <label>evolved arm claw</label>
+              <productDef>EvolvedArmClaw</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchLimbs2</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedArmSabre</defName>
-							<label>evolved arm sabre</label>
-							<productDef>EvolvedArmSabre</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchLimbs2</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedArmSabre</defName>
+              <label>evolved arm sabre</label>
+              <productDef>EvolvedArmSabre</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchLimbs2</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedArmMace</defName>
-							<label>evolved arm mace</label>
-							<productDef>EvolvedArmMace</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchLimbs2</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedArmMace</defName>
+              <label>evolved arm mace</label>
+              <productDef>EvolvedArmMace</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchLimbs2</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedArmTentacle</defName>
-							<label>evolved arm tentacle</label>
-							<productDef>EvolvedArmTentacle</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchLimbs2</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedArmTentacle</defName>
+              <label>evolved arm tentacle</label>
+              <productDef>EvolvedArmTentacle</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchLimbs2</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedArmShield</defName>
-							<label>evolved arm shield</label>
-							<productDef>EvolvedArmShield</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchLimbs2</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedArmShield</defName>
+              <label>evolved arm shield</label>
+              <productDef>EvolvedArmShield</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchLimbs2</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedSpider</defName>
-							<label>evolved spider</label>
-							<productDef>EvolvedSpider</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchLimbs3</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedSpider</defName>
+              <label>evolved spider</label>
+              <productDef>EvolvedSpider</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchLimbs3</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedPelt</defName>
-							<label>evolved pelt</label>
-							<productDef>EvolvedPelt</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchOrgans1</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedPelt</defName>
+              <label>evolved pelt</label>
+              <productDef>EvolvedPelt</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchOrgans1</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
-						<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-							<defName>EvolvedFilter</defName>
-							<label>evolved psychic filter</label>
-							<productDef>EvolvedFilter</productDef>
-							<productAmount>1</productAmount>
-							<requiredResearch>EvolvedOrgansResearchOrgans2</requiredResearch>
-						</QEthics.GrowerRecipeDef>
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EvolvedFilter</defName>
+              <label>evolved psychic filter</label>
+              <productDef>EvolvedFilter</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchOrgans2</requiredResearch>
+            </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
               <defName>ImmortalOrgan</defName>
@@ -1002,12 +1036,19 @@
               <productAmount>1</productAmount>
               <requiredResearch>EvolvedOrgansResearchOrgans3</requiredResearch>
             </QEthics.GrowerRecipeDef>
-					</value>
-				</li>
-			</operations>
-		</match>
-	</Operation>
+
+            <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+              <defName>EmpathicResonator</defName>
+              <label>empathic resonator</label>
+              <productDef>EmpathicResonator</productDef>
+              <productAmount>1</productAmount>
+              <requiredResearch>EvolvedOrgansResearchOrgans3</requiredResearch>
+            </QEthics.GrowerRecipeDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
 
 
 </Patch>
-

@@ -8,9 +8,9 @@
     "\\Defs\\ResearchProjectDefs",
     "\\Defs\\ThingDefs_Buildings",
     "\\Defs\\ThingDefs_Items",
+    "\\Patches",
     "\\Source",
-    "\\Source\\EvolvedOrgans",
-    "\\Source\\packages"
+    "\\Source\\EvolvedOrgans"
   ],
   "SelectedNode": "\\Source\\EvolvedOrgans\\FoodPoisoningTest.cs",
   "PreviewInSolutionExplorer": false
