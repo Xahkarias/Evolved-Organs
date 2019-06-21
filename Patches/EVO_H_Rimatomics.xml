@@ -35,9 +35,9 @@
               </addedPartProps>
               <stages>
                 <li>
+                  <hungerRateFactor>1.1</hungerRateFactor>
                   <statOffsets>
                     <Radiation>-1</Radiation>
-                    <hungerRateFactor>1.1</hungerRateFactor>
                   </statOffsets>
                 </li>
               </stages>
@@ -45,7 +45,7 @@
 
             <RecipeDef ParentName="SurgeryFlesh">
               <defName>EVO_InstallEvolvedRadiationFilter</defName>
-              <label>implant RAD suppressort</label>
+              <label>implant RAD suppressor</label>
               <description>Implant an organ capable of filtering irrdaiated tissue from it's host.</description>
               <workerClass>Recipe_InstallImplant</workerClass>
               <jobString>Implanting a RAD suppressor.</jobString>
@@ -98,7 +98,7 @@
           <match Class="PatchOperationSequence">
             <operations>
               <li Class="PatchOperationReplace">
-                <xpath>/Defs/HediffDefs[defName="EvolvedRadiationFilter']</xpath>
+                <xpath>/Defs/HediffDefs[defName="EvolvedRadiationFilter"]</xpath>
                 <value>
                   <HediffDef ParentName="AddedBodyPartBase">
                     <defName>EvolvedRadiationFilter</defName>
@@ -121,6 +121,7 @@
                         <label>newly implanted</label>
                         <vomitMtbDays>1</vomitMtbDays>
                         <painOffset>0.15</painOffset>
+                        <hungerRateFactor>1.1</hungerRateFactor>
                         <statOffsets>
                           <Radiation>-.2</Radiation>
                         </statOffsets>
@@ -128,12 +129,14 @@
                       <li>
                         <label>partly adapted</label>
                         <minSeverity>0.2</minSeverity>
+                        <hungerRateFactor>1.1</hungerRateFactor>
                         <statOffsets>
                           <Radiation>-.5</Radiation>
                         </statOffsets>
                       </li>
                       <li>
                         <minSeverity>0.4</minSeverity>
+                        <hungerRateFactor>1.1</hungerRateFactor>
                         <statOffsets>
                           <Radiation>-1</Radiation>
                         </statOffsets>
