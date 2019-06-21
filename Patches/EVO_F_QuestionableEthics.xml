@@ -307,12 +307,8 @@
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="EvolvedFilter"]/recipeMaker</xpath>
         </li>
-        <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="ImmortalOrgan"]/recipeMaker</xpath>
-        </li>
-        <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="EmpathicResonator"]/costList</xpath>
-        </li>
+
+
 
         <!--removes the recipeMaker so that they cant be crafted and dont throw the "you dont have a costlist error" -->
         <li Class="PatchOperationRemove">
@@ -1049,6 +1045,4 @@
       </operations>
     </match>
   </Operation>
-
-
 </Patch>
