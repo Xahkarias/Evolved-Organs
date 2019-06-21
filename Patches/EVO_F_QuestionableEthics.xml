@@ -12,7 +12,7 @@
 			<operations>
 
 				<li Class="PatchOperationReplace"> 
-					<!--moving this to 5x, 2y default is 3x, 3y-->
+					<!--moving this to 4x, 0y default is 3x, 3y-->
 					<xpath>/Defs/ResearchProjectDef[defName="QE_LifeSupportSystem"]/researchViewX</xpath>
 					<value>
 						<researchViewX>4</researchViewX>
@@ -40,7 +40,7 @@
 				</li>
 
 				<li Class="PatchOperationReplace"> 
-					<!--moving this to 5x, 3y default is 4x, 4y-->
+					<!--moving this to 1x, 5y default is 4x, 4y-->
 					<xpath>/Defs/ResearchProjectDef[defName="QE_CrudeBionics"]/researchViewX</xpath>
 					<value>
 						<researchViewX>1</researchViewX>
@@ -55,7 +55,7 @@
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<!--moving this to 4x, 4y default is 5x, 3y-->
+					<!--moving this to 2x, 5y default is 5x, 3y-->
 					<xpath>/Defs/ResearchProjectDef[defName="QE_IntegratedWeaponry"]/researchViewX</xpath>
 					<value>
 						<researchViewX>2</researchViewX>
@@ -69,7 +69,7 @@
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<!--moving this to 4x, 4y default is 5x, 3y-->
+					<!--moving this to 2x, 2y default is 5x, 3y-->
 					<xpath>/Defs/ResearchProjectDef[defName="QE_GenomeSequencing"]/researchViewX</xpath>
 					<value>
 						<researchViewX>2</researchViewX>
@@ -83,7 +83,7 @@
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<!--moving this to 4x, 4y default is 5x, 3y-->
+					<!--moving this to 3x, 2y default is 5x, 3y-->
 					<xpath>/Defs/ResearchProjectDef[defName="QE_VatGrownBeings"]/researchViewX</xpath>
 					<value>
 						<researchViewX>3</researchViewX>
@@ -98,7 +98,7 @@
 
 				
 				<li Class="PatchOperationReplace">
-					<!--moving this to 4x, 4y default is 5x, 3y-->
+					<!--moving this to 4x, 2y default is 5x, 3y-->
 					<xpath>/Defs/ResearchProjectDef[defName="QE_BrainScanning"]/researchViewX</xpath>
 					<value>
 						<researchViewX>4</researchViewX>
@@ -328,7 +328,7 @@
         <li Class="PatchOperationReplace">
           <xpath>/Defs/ThingDef[defName="EvolvedChunk"]/description</xpath>
           <value>
-            <description>This has been deprecated. It is not used when the mod is enabled with Questionable Ethics, so either disassemble it at a crafting spot/machining workbench/drug lab or sell it to a trader.</description>
+            <description>This has been deprecated. It is unused when the mod is enabled with Questionable Ethics, so either disassemble it at a crafting spot/machining workbench/drug lab, or sell it to a trader.</description>
           </value>
         </li>
         
@@ -338,7 +338,7 @@
             <RecipeDef>
               <defName>Disassemble_EvolvedChunk</defName>
               <label>disassemble evolved meat</label>
-              <description>Disassemble some evolved meat because its deprecated and not used with the questionable ethics patch.</description>
+              <description>Disassemble some evolved meat, because it's deprecated and unused when the Questionable Ethics mod is enabled.</description>
               <jobString>Disassembling evolved meat.</jobString>
               <workSpeedStat>SmithingSpeed</workSpeedStat>
               <effectWorking>Cook</effectWorking>
@@ -407,7 +407,7 @@
 							<defName>EvolvedOrgansResearch1</defName>
 							<tab>QE_ResearchTab</tab>
 							<label>Nano-Scale Cellular Engineering</label>
-							<description>By combining our knowledge of biology and bionics, we can engineer cells that have much more potential than anything created naturally.</description>
+							<description>Extract Humanoid Protein at the Butcher Table and create Mechanite Slurry at the Machining Table. Made possible through a synthesis of biology and bionics knowledge.</description>
 							<baseCost>4000</baseCost>
 							<techLevel>Spacer</techLevel>
 							<prerequisites>
@@ -431,8 +431,8 @@
 						<ResearchProjectDef>
 							<defName>EvolvedOrgansResearchOrgans1</defName>
 							<tab>QE_ResearchTab</tab>
-							<label>BioMechanical Organ Application</label>
-							<description>Through the selective processes of germinating and stimulating stem cells at the nano-scale with mechanites, it is possible to create simple internal organs.</description>
+							<label>Biomechanical Organ Evolution</label>
+							<description>Grow evolved organs for simple body parts, like the kidney and liver, at the Organ Vat. We've learned how to germinate and stimulate stem cells with mechanites.</description>
 							<baseCost>2000</baseCost>
 							<techLevel>Spacer</techLevel>
 							<prerequisites>
@@ -453,8 +453,8 @@
 						<ResearchProjectDef>
 							<defName>EvolvedOrgansResearchOrgans2</defName>
 							<tab>QE_ResearchTab</tab>
-							<label>Complex Organ Application</label>
-							<description>The continued understand of stem cells and mechanite integration has allowed the development of advanced cellular structures which can be utilized to create advanced interal organs.</description>
+							<label>Complex Organ Evolution</label>
+							<description>Grow evolved organs for complex body parts, like the heart and lungs, at the Organ Vat. Our development of advanced cellular structures continues!</description>
 							<baseCost>3000</baseCost>
 							<techLevel>Spacer</techLevel>
 							<prerequisites>
@@ -475,8 +475,8 @@
 						<ResearchProjectDef>
 							<defName>EvolvedOrgansResearchOrgans3</defName>
 							<tab>QE_ResearchTab</tab>
-							<label>Advanced Organ Application</label>
-							<description>The understanding of the most difficult bodily structures which would unlock the capacity to engineer the most complex organs and beyond.</description>
+							<label>Advanced Organ Evolution</label>
+							<description>Grow evolved organs for new body parts entirely, like the second lung and combat glands, at the Organ Vat. We are now the masters of organ bio-engineering.</description>
 							<baseCost>4000</baseCost>
 							<techLevel>Spacer</techLevel>
 							<prerequisites>
@@ -497,8 +497,8 @@
 						<ResearchProjectDef>
 							<defName>EvolvedOrgansResearchLimbs1</defName>
 							<tab>QE_ResearchTab</tab>
-							<label>Structural Organ Application</label>
-							<description>To create bones and musculature we must first understand how to propogate the cells and mechanites in load bearing configurations.</description>
+							<label>Structural Organ Evolution</label>
+							<description>Grow evolved limbs for simple body parts, like the arm and leg, at the Organ Vat. We've learned how to engineer cells and mechanites in a load-bearing configuration.</description>
 							<baseCost>2000</baseCost>
 							<techLevel>Spacer</techLevel>
 							<prerequisites>
@@ -519,8 +519,8 @@
 						<ResearchProjectDef>
 							<defName>EvolvedOrgansResearchLimbs2</defName>
 							<tab>QE_ResearchTab</tab>
-							<label>Complex Limb Strcutures</label>
-							<description>The capability to create simple load-bearing structures has been understood, now we must scale up the technology to apply and test it.</description>
+							<label>Complex Limb Structures</label>
+							<description>Grow new evolved limbs for the body, like the arm mace and arm tentacle, at the Organ Vat. We are now improving on the designs of thousands of years of evolution.</description>
 							<baseCost>3000</baseCost>
 							<techLevel>Spacer</techLevel>
 							<prerequisites>
@@ -541,8 +541,8 @@
 						<ResearchProjectDef>
 							<defName>EvolvedOrgansResearchLimbs3</defName>
 							<tab>QE_ResearchTab</tab>
-							<label>Advanced Limb Strcutures</label>
-							<description>The study of what can exist beyond the configurations nature has provided us.  GMO-Humanoid Limbs.  Is the sky the limit?</description>
+							<label>Advanced Limb Structures</label>
+							<description>Grow exotic evolved limbs for the body, like the spider and pinions, at the Organ Vat. GMO-Humanoid limbs...is the sky the limit?</description>
 							<baseCost>4000</baseCost>
 							<techLevel>Spacer</techLevel>
 							<prerequisites>
@@ -564,7 +564,7 @@
 							<defName>EvolvedOrgansResearchAdvanced1</defName>
 							<tab>QE_ResearchTab</tab>
 							<label>True Bio-Mechanical Integration NYI</label>
-							<description>Can we put a powerplant in a humanoid?  Not yet implemented just enjoy the thought though.</description>
+							<description>Can we put a powerplant in a humanoid? Not yet implemented... enjoy the thought, though!</description>
 							<baseCost>10000</baseCost>
 							<techLevel>Spacer</techLevel>
 							<prerequisites>
@@ -587,7 +587,7 @@
 							<defName>EvolvedOrgansResearchAdvanced2</defName>
 							<tab>QE_ResearchTab</tab>
 							<label>Advanced Bio-Mechanical Integration NYI</label>
-							<description>K we can, but now what? We get to finally coding in blaster weapons that you can mount on your arms for the arm god thats what, but thats not in yet so... wait patiently I guess.</description>
+							<description>K we can, but now what? We get to finally coding in blaster weapons that you can mount on your arms for the arm god thats what, but thats not in yet, so... wait patiently, I guess.</description>
 							<baseCost>20000</baseCost>
 							<techLevel>Spacer</techLevel>
 							<prerequisites>
@@ -612,7 +612,7 @@
 						<ThingDef ParentName="ResourceBase">
 							<defName>EVO_Mechanite_Slurry</defName>
 							<label>Mechanite Slurry</label>
-							<description>A vial of distilled water full of nano-scale mechanites ready to be combined with humanoid proteins to be grown into a advanced organ.  These machines were once capable of anything, however during the extraction process they have been rendered generally harmless and will only reactivate when provided data from a Organ Vat and provided a nutrient suspension to begin work.  Maybe someday there will be the concern about the dreaded "Grey Goo" disaster but that day is not today.</description>
+							<description>A vial of distilled water full of nano-scale mechanites. It can be combined with humanoid proteins and grown into an advanced organ at the Organ Vat. These machines were once capable of anything, but the extraction process rendered them harmless. They will only react when immersed in a nutrient solution inside an Organ Vat. Perhaps someday there will be concern about the dreaded "Grey Goo" disaster, but that day is not today.</description>
 							<graphicData>
 								<texPath>Things/Item/Resource/MechaniteSlurryVial</texPath>
 								<graphicClass>Graphic_Single</graphicClass>
@@ -642,7 +642,7 @@
 						<RecipeDef>
 							<defName>Make_Mechanite_Slurry</defName>
 							<label>extract mechanites</label>
-							<description>By utilizing more learned techniques and taking additional time, dissassemble a dead mechanoid into its component parts while being careful to preserve and capture the mechanites found inside.</description>
+							<description>Utilize specialized techniques to carefully dissassemble a dead mechanoid into its component parts. The mechanites inside will be added to a vial of distilled water.</description>
 							<jobString>Extracting mechanites.</jobString>
 							<workSpeedStat>SmithingSpeed</workSpeedStat>
 							<allowMixingIngredients>false</allowMixingIngredients>
