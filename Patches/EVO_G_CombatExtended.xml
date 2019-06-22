@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 	<!--courtesy of Saebbi-->
+	<!--TODO: Whoops forgot to actually make this work with Rah's-->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Combat Extended</li>
