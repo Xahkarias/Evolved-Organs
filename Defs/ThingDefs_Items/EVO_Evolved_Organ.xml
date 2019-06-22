@@ -350,9 +350,9 @@
   </ThingDef>
 
   <ThingDef ParentName="EvolvedOrganBase">
-    <defName>EvolvedArmSabre</defName>
+    <defName>EVORG_Organ_ArmSabre</defName>
     <label>evolved arm sabre</label>
-    <description>An arm sabre created by accelerated evolution. While not great at manpulation, serves as one of the most deadly close combat weapons known to the rim.</description>
+    <description>An arm sabre created by accelerated evolution. While not great at manpulation, it serves as one of the most deadly close combat weapons known to the rim.</description>
     <recipeMaker>
       <researchPrerequisite>EVORG_Research_Limbs2</researchPrerequisite>
 

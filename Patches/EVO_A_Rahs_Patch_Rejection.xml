@@ -1364,10 +1364,10 @@
 
         <!-- Sabre -->
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EvolvedArmSabre"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVORG_Hediff_ArmSabre_Primary"]</xpath>
           <value>
             <HediffDef ParentName="AddedBodyPartBase">
-              <defName>EvolvedArmSabre</defName>
+              <defName>EVORG_Hediff_ArmSabre_Primary</defName>
               <label>evolved arm sabre</label>
               <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
               <labelNoun>an evolved arm sabre</labelNoun>
@@ -1390,7 +1390,7 @@
                   <severityPerDayNotImmune>0.1</severityPerDayNotImmune>
                 </li>
               </comps>
-              <spawnThingOnRemoved>EvolvedArmSabre</spawnThingOnRemoved>
+              <spawnThingOnRemoved>EVORG_Organ_ArmSabre</spawnThingOnRemoved>
               <addedPartProps>
                 <isGoodWeapon>true</isGoodWeapon>
                 <solid>true</solid>
@@ -1449,10 +1449,10 @@
         </li>
 
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EvolvedArmSabre_Secondary"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVORG_Hediff_ArmSabre_Secondary"]</xpath>
           <value>
             <HediffDef ParentName="AddedBodyPartBase">
-              <defName>EvolvedArmSabre_Secondary</defName>
+              <defName>EVORG_Hediff_ArmSabre_Secondary</defName>
               <label>evolved arm sabre</label>
               <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
               <labelNoun>an evolved arm sabre</labelNoun>
@@ -1475,7 +1475,7 @@
                   <severityPerDayNotImmune>0.1</severityPerDayNotImmune>
                 </li>
               </comps>
-              <spawnThingOnRemoved>EvolvedArmSabre</spawnThingOnRemoved>
+              <spawnThingOnRemoved>EVORG_Organ_ArmSabre</spawnThingOnRemoved>
               <addedPartProps>
                 <isGoodWeapon>true</isGoodWeapon>
                 <solid>true</solid>
