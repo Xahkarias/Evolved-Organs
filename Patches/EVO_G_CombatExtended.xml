@@ -232,7 +232,7 @@
 
 							<!--Shield-->
 							<li Class="PatchOperationReplace">
-								<xpath>*/HediffDef[defName="EvolvedArmShield"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<xpath>*/HediffDef[defName="EVORG_Hediff_ArmShield_Primary"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
 								<value>
 									<tools>
 										<li Class="CombatExtended.ToolCE">
@@ -247,14 +247,14 @@
 								</value>
 							</li>
 							<li Class="PatchOperationAdd">
-								<xpath>*/HediffDef[defName="EvolvedArmShield"]/stages/li[3]/statOffsets</xpath>
+								<xpath>*/HediffDef[defName="EVORG_Hediff_ArmShield_Primary"]/stages/li[3]/statOffsets</xpath>
 								<value>
 									<MeleeParryChance>0.75</MeleeParryChance>
 								</value>
 							</li>
 
 							<li Class="PatchOperationReplace">
-								<xpath>*/HediffDef[defName="EvolvedArmShield_Secondary"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<xpath>*/HediffDef[defName="EVORG_Hediff_ArmShield_Secondary"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
 								<value>
 									<tools>
 										<li Class="CombatExtended.ToolCE">
@@ -269,7 +269,7 @@
 								</value>
 							</li>
 							<li Class="PatchOperationAdd">
-								<xpath>*/HediffDef[defName="EvolvedArmShield_Secondary"]/stages/li[3]/statOffsets</xpath>
+								<xpath>*/HediffDef[defName="EVORG_Hediff_ArmShield_Secondary"]/stages/li[3]/statOffsets</xpath>
 								<value>
 									<MeleeParryChance>0.75</MeleeParryChance>
 								</value>
@@ -551,7 +551,7 @@
 
 							<!--Shield-->
 							<li Class="PatchOperationReplace">
-								<xpath>*/HediffDef[defName="EvolvedArmShield"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<xpath>*/HediffDef[defName="EVORG_Hediff_ArmShield_Primary"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
 								<value>
 									<tools>
 										<li Class="CombatExtended.ToolCE">
@@ -566,14 +566,14 @@
 								</value>
 							</li>
 							<li Class="PatchOperationAdd">
-								<xpath>*/HediffDef[defName="EvolvedArmShield"]/stages/li/statOffsets</xpath>
+								<xpath>*/HediffDef[defName="EVORG_Hediff_ArmShield_Primary"]/stages/li/statOffsets</xpath>
 								<value>
 									<MeleeParryChance>0.75</MeleeParryChance>
 								</value>
 							</li>
 
 							<li Class="PatchOperationReplace">
-								<xpath>*/HediffDef[defName="EvolvedArmShield_Secondary"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<xpath>*/HediffDef[defName="EVORG_Hediff_ArmShield_Secondary"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
 								<value>
 									<tools>
 										<li Class="CombatExtended.ToolCE">
@@ -588,7 +588,7 @@
 								</value>
 							</li>
 							<li Class="PatchOperationAdd">
-								<xpath>*/HediffDef[defName="EvolvedArmShield_Secondary"]/stages/li/statOffsets</xpath>
+								<xpath>*/HediffDef[defName="EVORG_Hediff_ArmShield_Secondary"]/stages/li/statOffsets</xpath>
 								<value>
 									<MeleeParryChance>0.75</MeleeParryChance>
 								</value>

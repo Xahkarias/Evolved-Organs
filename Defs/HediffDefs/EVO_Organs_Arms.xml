@@ -406,10 +406,10 @@
 
 	<!-- Shield Arm -->
 	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedArmShield</defName>
+		<defName>EVORG_Hediff_ArmShield_Primary</defName>
 		<label>evolved arm shield</label>
 		<labelNoun>an evolved arm shield</labelNoun>
-		<spawnThingOnRemoved>EvolvedArmShield</spawnThingOnRemoved>
+		<spawnThingOnRemoved>EVORG_Organ_ArmShield</spawnThingOnRemoved>
 		<defaultLabelColor>(.2,1,.9)</defaultLabelColor>
 		<addedPartProps>
 			<solid>true</solid>
@@ -446,11 +446,11 @@
 	</HediffDef>
 
 	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedArmShield_Secondary</defName>
+		<defName>EVORG_Hediff_ArmShield_Secondary</defName>
 		<label>evolved arm shield</label>
 		<labelNoun>an evolved arm shield</labelNoun>
 		<defaultLabelColor>(.2,1,.9)</defaultLabelColor>
-		<spawnThingOnRemoved>EvolvedArmShield</spawnThingOnRemoved>
+		<spawnThingOnRemoved>EVORG_Organ_ArmShield</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>1.0</partEfficiency>

@@ -2040,14 +2040,14 @@
 
         <!-- Shield -->
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EvolvedArmShield"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVORG_Hediff_ArmShield_Primary"]</xpath>
           <value>
             <HediffDef ParentName="AddedBodyPartBase">
-              <defName>EvolvedArmShield</defName>
+              <defName>EVORG_Hediff_ArmShield_Primary</defName>
               <label>evolved arm shield</label>
               <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
               <labelNoun>an evolved arm shield</labelNoun>
-              <spawnThingOnRemoved>EvolvedArmShield</spawnThingOnRemoved>
+              <spawnThingOnRemoved>EVORG_Organ_ArmShield</spawnThingOnRemoved>
               <addedPartProps>
                 <solid>true</solid>
                 <partEfficiency>1.0</partEfficiency>
@@ -2116,14 +2116,14 @@
         </li>
 
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EvolvedArmShield_Secondary"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVORG_Hediff_ArmShield_Secondary"]</xpath>
           <value>
             <HediffDef ParentName="AddedBodyPartBase">
-              <defName>EvolvedArmShield_Secondary</defName>
+              <defName>EVORG_Hediff_ArmShield_Secondary</defName>
               <label>evolved arm shield</label>
               <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
               <labelNoun>an evolved arm shield</labelNoun>
-              <spawnThingOnRemoved>EvolvedArmShield</spawnThingOnRemoved>
+              <spawnThingOnRemoved>EVORG_Organ_ArmShield</spawnThingOnRemoved>
               <addedPartProps>
                 <solid>true</solid>
                 <partEfficiency>1.0</partEfficiency>

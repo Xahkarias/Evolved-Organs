@@ -469,7 +469,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedArmShield_Primary</defName>
+		<defName>EVORG_Surgery_ArmShield_Primary</defName>
 		<label>implant evolved arm shield (primary)</label>
 		<description>Implant an evolved arm shield (primary).</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -490,7 +490,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>EvolvedArmShield</li>
+						<li>EVORG_Organ_ArmShield</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -501,17 +501,17 @@
 				<li>Medicine</li>
 			</categories>
 			<thingDefs>
-				<li>EvolvedArmShield</li>
+				<li>EVORG_Organ_ArmShield</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>Shoulder</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedArmShield</addsHediff>
+		<addsHediff>EVORG_Hediff_ArmShield_Primary</addsHediff>
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedArmShield_Secondary</defName>
+		<defName>EVORG_Surgery_ArmShield_Secondary</defName>
 		<label>implant evolved arm shield (secondary)</label>
 		<description>Implant an evolved arm shield (secondary)</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -532,7 +532,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>EvolvedArmShield</li>
+						<li>EVORG_Organ_ArmShield</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -551,14 +551,14 @@
 				<li>Medicine</li>
 			</categories>
 			<thingDefs>
-				<li>EvolvedArmShield</li>
+				<li>EVORG_Organ_ArmShield</li>
 				<li>EvolvedChunk</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>LowerShoulder</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedArmShield_Secondary</addsHediff>
+		<addsHediff>EVORG_Hediff_ArmShield_Secondary</addsHediff>
 	</RecipeDef>
 
 

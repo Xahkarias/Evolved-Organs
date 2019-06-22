@@ -392,7 +392,7 @@
   </ThingDef>
 
   <ThingDef ParentName="EvolvedOrganBase">
-    <defName>EvolvedArmShield</defName>
+    <defName>EVORG_Organ_ArmShield</defName>
     <label>evolved arm shield</label>
     <description>An arm shield created by accelerated evolution. Not really usable for anything other than blocking damage, but grants its user a massive boost in defensive capabilities.</description>
     <recipeMaker>
