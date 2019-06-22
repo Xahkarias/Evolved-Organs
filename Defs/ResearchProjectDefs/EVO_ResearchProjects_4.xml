@@ -135,6 +135,7 @@
     <researchViewY>4</researchViewY>
   </ResearchProjectDef>
 
+<!--
   <ResearchProjectDef>
     <defName>EvolvedOrgansResearchAdvanced1</defName>
     <tab>EVO_EvolvedOrgansResearchTab</tab>
@@ -171,4 +172,5 @@
     <researchViewX>7</researchViewX>
     <researchViewY>3</researchViewY>
   </ResearchProjectDef>
+  -->
 </Defs>

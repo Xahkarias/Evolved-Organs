@@ -571,6 +571,8 @@
             </ResearchProjectDef>
           </value>
         </li>
+
+        <!--
         <li Class="PatchOperationReplace">
           <xpath>/Defs/ResearchProjectDef[defName="EvolvedOrgansResearchAdvanced1"]</xpath>
           <value>
@@ -616,7 +618,7 @@
             </ResearchProjectDef>
           </value>
         </li>
-
+        -->
 
 
         <!--Finally were patching in new stuff to replace the meat to be used with the vats -->
