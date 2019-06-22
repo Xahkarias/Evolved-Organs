@@ -16,7 +16,7 @@ Lymphatic Proliferator - adds immunity to numerous vanilla infections, and signi
 (Rimatomics only) RAD Filter - will prevent radiation buildup as if you were wearing a protective suit.
 
 Changed Organs:
-Evolved Carapace - changed name to dragonskin, thermal coefficients removed, added flammability reduction, changed name to dragonskin.
+Evolved Carapace - changed name to dragonskin, thermal coefficients removed, added flammability reduction.
 Evolved Stomach - adjusted description, added immunity to food poisoning (woot!). 
 Arms/Tail - added Melee Cooldown reductions per part to increase attack speed as the number of evolved weapons become available.
 
