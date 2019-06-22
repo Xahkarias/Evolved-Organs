@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!--courtesy of Saebbi-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<success>Always</success>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rah's Bionics and Surgery Expansion</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!--ARM-->
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Blunt</li>
+											</capacities>
+											<power>12</power>
+											<cooldownTime>2</cooldownTime>
+											<armorPenetration>0.16</armorPenetration>
+										</li>
+									</tools>
+								</value>
+							</li>
+
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedArm_Secondary"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Blunt</li>
+											</capacities>
+											<power>12</power>
+											<cooldownTime>2</cooldownTime>
+											<armorPenetration>0.16</armorPenetration>
+										</li>
+									</tools>
+								</value>
+							</li>
+
+							<!--SABRE-->
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedArmSabre"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Stab</li>
+												<li>Cut</li>
+											</capacities>
+											<power>27</power>
+											<cooldownTime>2.2</cooldownTime>
+											<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+											<armorPenetration>0.19</armorPenetration>
+										</li>
+									</tools>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>*/HediffDef[defName="EvolvedArmSabre"]/stages/li[3]/statOffsets</xpath>
+								<value>
+									<MeleeCritChance>0.65</MeleeCritChance>
+									<MeleeParryChance>0.65</MeleeParryChance>
+								</value>
+							</li>
+
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedArmSabre_Secondary"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Stab</li>
+												<li>Cut</li>
+											</capacities>
+											<power>27</power>
+											<cooldownTime>2.2</cooldownTime>
+											<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+											<armorPenetration>0.19</armorPenetration>
+										</li>
+									</tools>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>*/HediffDef[defName="EvolvedArmSabre_Secondary"]/stages/li[3]/statOffsets</xpath>
+								<value>
+									<MeleeCritChance>0.65</MeleeCritChance>
+									<MeleeParryChance>0.65</MeleeParryChance>
+								</value>
+							</li>
+
+							<!--MACE-->
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedArmMace"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Blunt</li>
+											</capacities>
+											<power>35</power>
+											<cooldownTime>2.6</cooldownTime>
+											<armorPenetration>0.24</armorPenetration>
+											<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+										</li>
+									</tools>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>*/HediffDef[defName="EvolvedArmMace"]/stages/li[3]/statOffsets</xpath>
+								<value>
+									<MeleeCritChance>0.65</MeleeCritChance>
+									<MeleeParryChance>0.55</MeleeParryChance>
+								</value>
+							</li>
+
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedArmMace_Secondary"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Blunt</li>
+											</capacities>
+											<power>35</power>
+											<cooldownTime>2.6</cooldownTime>
+											<armorPenetration>0.24</armorPenetration>
+											<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+										</li>
+									</tools>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>*/HediffDef[defName="EvolvedArmMace_Secondary"]/stages/li[3]/statOffsets</xpath>
+								<value>
+									<MeleeCritChance>0.65</MeleeCritChance>
+									<MeleeParryChance>0.55</MeleeParryChance>
+								</value>
+							</li>
+
+							<!--CLAW-->
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedArmClaw"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Slash</li>
+											</capacities>
+											<power>15</power>
+											<cooldownTime>1.6</cooldownTime>
+											<armorPenetration>0.21</armorPenetration>
+											<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+										</li>
+									</tools>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>*/HediffDef[defName="EvolvedArmClaw"]/stages/li[3]/statOffsets</xpath>
+								<value>
+									<MeleeCritChance>0.25</MeleeCritChance>
+									<MeleeParryChance>0.25</MeleeParryChance>
+								</value>
+							</li>
+
+
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedArmClaw_Secondary"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Slash</li>
+											</capacities>
+											<power>15</power>
+											<cooldownTime>1.6</cooldownTime>
+											<armorPenetration>0.21</armorPenetration>
+											<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+										</li>
+									</tools>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>*/HediffDef[defName="EvolvedArmClaw_Secondary"]/stages/li[3]/statOffsets</xpath>
+								<value>
+									<MeleeCritChance>0.25</MeleeCritChance>
+									<MeleeParryChance>0.25</MeleeParryChance>
+								</value>
+							</li>
+
+							<!--Tentacle-->
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedArmTentacle"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Scratch</li>
+											</capacities>
+											<power>4</power>
+											<cooldownTime>0.5</cooldownTime>
+											<armorPenetration>0.12</armorPenetration>
+										</li>
+									</tools>
+								</value>
+							</li>
+
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedArmTentacle_Secondary"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Scratch</li>
+											</capacities>
+											<power>4</power>
+											<cooldownTime>0.5</cooldownTime>
+											<armorPenetration>0.12</armorPenetration>
+										</li>
+									</tools>
+								</value>
+							</li>
+
+							<!--Shield-->
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedArmShield"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Blunt</li>
+											</capacities>
+											<power>7</power>
+											<cooldownTime>2.6</cooldownTime>
+											<armorPenetration>0.13</armorPenetration>
+										</li>
+									</tools>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>*/HediffDef[defName="EvolvedArmShield"]/stages/li[3]/statOffsets</xpath>
+								<value>
+									<MeleeParryChance>0.75</MeleeParryChance>
+								</value>
+							</li>
+
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedArmShield_Secondary"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Blunt</li>
+											</capacities>
+											<power>7</power>
+											<cooldownTime>2.6</cooldownTime>
+											<armorPenetration>0.13</armorPenetration>
+										</li>
+									</tools>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>*/HediffDef[defName="EvolvedArmShield_Secondary"]/stages/li[3]/statOffsets</xpath>
+								<value>
+									<MeleeParryChance>0.75</MeleeParryChance>
+								</value>
+							</li>
+
+							<!--TAIL-->
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedTail"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Stab</li>
+												<li>Cut</li>
+											</capacities>
+											<power>25.0</power>
+											<cooldownTime>3</cooldownTime>
+											<armorPenetration>0.24</armorPenetration>
+											<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+										</li>
+									</tools>
+								</value>
+							</li>
+
+							<!--JAW-->
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedJaw"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Stab</li>
+											</capacities>
+											<power>20.0</power>
+											<cooldownTime>2.7</cooldownTime>
+											<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+											<armorPenetration>0.13</armorPenetration>
+										</li>
+									</tools>
+								</value>
+							</li>
+						</operations>
+					</match>
+
+					<nomatch Class="PatchOperationSequence">
+						<operations>
+							<!--ARM-->
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Blunt</li>
+											</capacities>
+											<power>12</power>
+											<cooldownTime>2</cooldownTime>
+											<armorPenetration>0.16</armorPenetration>
+										</li>
+									</tools>
+								</value>
+							</li>
+
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedArm_Secondary"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Blunt</li>
+											</capacities>
+											<power>12</power>
+											<cooldownTime>2</cooldownTime>
+											<armorPenetration>0.16</armorPenetration>
+										</li>
+									</tools>
+								</value>
+							</li>
+
+							<!--SABRE-->
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedArmSabre"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Stab</li>
+												<li>Cut</li>
+											</capacities>
+											<power>27</power>
+											<cooldownTime>2.2</cooldownTime>
+											<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+											<armorPenetration>0.19</armorPenetration>
+										</li>
+									</tools>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>*/HediffDef[defName="EvolvedArmSabre"]/stages/li/statOffsets</xpath>
+								<value>
+									<MeleeCritChance>0.65</MeleeCritChance>
+									<MeleeParryChance>0.65</MeleeParryChance>
+								</value>
+							</li>
+
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedArmSabre_Secondary"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Stab</li>
+												<li>Cut</li>
+											</capacities>
+											<power>27</power>
+											<cooldownTime>2.2</cooldownTime>
+											<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+											<armorPenetration>0.19</armorPenetration>
+										</li>
+									</tools>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>*/HediffDef[defName="EvolvedArmSabre_Secondary"]/stages/li/statOffsets</xpath>
+								<value>
+									<MeleeCritChance>0.65</MeleeCritChance>
+									<MeleeParryChance>0.65</MeleeParryChance>
+								</value>
+							</li>
+
+							<!--MACE-->
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedArmMace"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Blunt</li>
+											</capacities>
+											<power>35</power>
+											<cooldownTime>2.6</cooldownTime>
+											<armorPenetration>0.24</armorPenetration>
+											<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+										</li>
+									</tools>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>*/HediffDef[defName="EvolvedArmMace"]/stages/li/statOffsets</xpath>
+								<value>
+									<MeleeCritChance>0.65</MeleeCritChance>
+									<MeleeParryChance>0.55</MeleeParryChance>
+								</value>
+							</li>
+
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedArmMace_Secondary"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Blunt</li>
+											</capacities>
+											<power>35</power>
+											<cooldownTime>2.6</cooldownTime>
+											<armorPenetration>0.24</armorPenetration>
+											<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+										</li>
+									</tools>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>*/HediffDef[defName="EvolvedArmMace_Secondary"]/stages/li/statOffsets</xpath>
+								<value>
+									<MeleeCritChance>0.65</MeleeCritChance>
+									<MeleeParryChance>0.55</MeleeParryChance>
+								</value>
+							</li>
+
+							<!--CLAW-->
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedArmClaw"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Slash</li>
+											</capacities>
+											<power>15</power>
+											<cooldownTime>1.6</cooldownTime>
+											<armorPenetration>0.21</armorPenetration>
+											<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+										</li>
+									</tools>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>*/HediffDef[defName="EvolvedArmClaw"]/stages/li/statOffsets</xpath>
+								<value>
+									<MeleeCritChance>0.25</MeleeCritChance>
+									<MeleeParryChance>0.25</MeleeParryChance>
+								</value>
+							</li>
+
+
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedArmClaw_Secondary"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Slash</li>
+											</capacities>
+											<power>15</power>
+											<cooldownTime>1.6</cooldownTime>
+											<armorPenetration>0.21</armorPenetration>
+											<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+										</li>
+									</tools>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>*/HediffDef[defName="EvolvedArmClaw_Secondary"]/stages/li/statOffsets</xpath>
+								<value>
+									<MeleeCritChance>0.25</MeleeCritChance>
+									<MeleeParryChance>0.25</MeleeParryChance>
+								</value>
+							</li>
+
+							<!--Tentacle-->
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedArmTentacle"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Scratch</li>
+											</capacities>
+											<power>4</power>
+											<cooldownTime>0.5</cooldownTime>
+											<armorPenetration>0.12</armorPenetration>
+										</li>
+									</tools>
+								</value>
+							</li>
+
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedArmTentacle_Secondary"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Scratch</li>
+											</capacities>
+											<power>4</power>
+											<cooldownTime>0.5</cooldownTime>
+											<armorPenetration>0.12</armorPenetration>
+										</li>
+									</tools>
+								</value>
+							</li>
+
+							<!--Shield-->
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedArmShield"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Blunt</li>
+											</capacities>
+											<power>7</power>
+											<cooldownTime>2.6</cooldownTime>
+											<armorPenetration>0.13</armorPenetration>
+										</li>
+									</tools>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>*/HediffDef[defName="EvolvedArmShield"]/stages/li/statOffsets</xpath>
+								<value>
+									<MeleeParryChance>0.75</MeleeParryChance>
+								</value>
+							</li>
+
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedArmShield_Secondary"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Blunt</li>
+											</capacities>
+											<power>7</power>
+											<cooldownTime>2.6</cooldownTime>
+											<armorPenetration>0.13</armorPenetration>
+										</li>
+									</tools>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>*/HediffDef[defName="EvolvedArmShield_Secondary"]/stages/li/statOffsets</xpath>
+								<value>
+									<MeleeParryChance>0.75</MeleeParryChance>
+								</value>
+							</li>
+
+							<!--TAIL-->
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedTail"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Stab</li>
+												<li>Cut</li>
+											</capacities>
+											<power>25.0</power>
+											<cooldownTime>3</cooldownTime>
+											<armorPenetration>0.24</armorPenetration>
+											<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+										</li>
+									</tools>
+								</value>
+							</li>
+
+							<!--JAW-->
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedJaw"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Stab</li>
+											</capacities>
+											<power>20.0</power>
+											<cooldownTime>2.7</cooldownTime>
+											<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+											<armorPenetration>0.13</armorPenetration>
+										</li>
+									</tools>
+								</value>
+							</li>
+
+						</operations>
+					</nomatch>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -10,10 +10,7 @@
 		<workAmount>3000</workAmount>
 		<skillRequirements>
 			<Medicine>10</Medicine>
-		</skillRequirements>
-		<recipeUsers>
-			<li>Human</li>
-		</recipeUsers>
+		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -55,10 +52,7 @@
 		<workAmount>3000</workAmount>
 		<skillRequirements>
 			<Medicine>10</Medicine>
-		</skillRequirements>
-		<recipeUsers>
-			<li>Human</li>
-		</recipeUsers>
+		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -90,7 +84,7 @@
 				<li>Medicine</li>
 			</categories>
 			<thingDefs>
-				<li>EvolvedArmShield</li>
+				<li>EvolvedArm</li>
 				<li>EvolvedChunk</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -109,10 +103,7 @@
 		<workAmount>3000</workAmount>
 		<skillRequirements>
 			<Medicine>10</Medicine>
-		</skillRequirements>
-		<recipeUsers>
-			<li>Human</li>
-		</recipeUsers>
+		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -154,10 +145,7 @@
 		<workAmount>3000</workAmount>
 		<skillRequirements>
 			<Medicine>10</Medicine>
-		</skillRequirements>
-		<recipeUsers>
-			<li>Human</li>
-		</recipeUsers>
+		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -184,12 +172,12 @@
 				<count>3</count>
 			</li>
 		</ingredients>
-		<fixedIngredientFilter>
+				<fixedIngredientFilter>
 			<categories>
 				<li>Medicine</li>
 			</categories>
 			<thingDefs>
-				<li>EvolvedArmShield</li>
+				<li>EvolvedArmClaw</li>
 				<li>EvolvedChunk</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -209,9 +197,7 @@
 		<skillRequirements>
 			<Medicine>10</Medicine>
 		</skillRequirements>
-		<recipeUsers>
-			<li>Human</li>
-		</recipeUsers>
+		<recipeUsers><li>Human</li></recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -253,10 +239,7 @@
 		<workAmount>3000</workAmount>
 		<skillRequirements>
 			<Medicine>10</Medicine>
-		</skillRequirements>
-		<recipeUsers>
-			<li>Human</li>
-		</recipeUsers>
+		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -282,13 +265,13 @@
 				</filter>
 				<count>3</count>
 			</li>
-		</ingredients>		
-		<fixedIngredientFilter>
+		</ingredients>
+				<fixedIngredientFilter>
 			<categories>
 				<li>Medicine</li>
 			</categories>
 			<thingDefs>
-				<li>EvolvedArmShield</li>
+				<li>EvolvedArmSabre</li>
 				<li>EvolvedChunk</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -307,10 +290,7 @@
 		<workAmount>3000</workAmount>
 		<skillRequirements>
 			<Medicine>10</Medicine>
-		</skillRequirements>
-		<recipeUsers>
-			<li>Human</li>
-		</recipeUsers>
+		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -352,10 +332,7 @@
 		<workAmount>3000</workAmount>
 		<skillRequirements>
 			<Medicine>10</Medicine>
-		</skillRequirements>
-		<recipeUsers>
-			<li>Human</li>
-		</recipeUsers>
+		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -387,7 +364,7 @@
 				<li>Medicine</li>
 			</categories>
 			<thingDefs>
-				<li>EvolvedArmShield</li>
+				<li>EvolvedArmMace</li>
 				<li>EvolvedChunk</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -407,10 +384,7 @@
 		<workAmount>3000</workAmount>
 		<skillRequirements>
 			<Medicine>10</Medicine>
-		</skillRequirements>
-		<recipeUsers>
-			<li>Human</li>
-		</recipeUsers>
+		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -452,10 +426,7 @@
 		<workAmount>3000</workAmount>
 		<skillRequirements>
 			<Medicine>10</Medicine>
-		</skillRequirements>
-		<recipeUsers>
-			<li>Human</li>
-		</recipeUsers>
+		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -487,7 +458,7 @@
 				<li>Medicine</li>
 			</categories>
 			<thingDefs>
-				<li>EvolvedArmShield</li>
+				<li>EvolvedArmTentacle</li>
 				<li>EvolvedChunk</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -506,10 +477,7 @@
 		<workAmount>3000</workAmount>
 		<skillRequirements>
 			<Medicine>10</Medicine>
-		</skillRequirements>
-		<recipeUsers>
-			<li>Human</li>
-		</recipeUsers>
+		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -551,10 +519,7 @@
 		<workAmount>3000</workAmount>
 		<skillRequirements>
 			<Medicine>10</Medicine>
-		</skillRequirements>
-		<recipeUsers>
-			<li>Human</li>
-		</recipeUsers>
+		</skillRequirements><recipeUsers><li>Human</li></recipeUsers>
 		<ingredients>
 			<li>
 				<filter>

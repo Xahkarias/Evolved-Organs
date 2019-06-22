@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!--Depricated, this will be removed in the future-->
-	<ThingDef ParentName="ResourceBase">
-		<defName>EvolvedChunk</defName>
-		<label>Evolved Meat</label>
-		<description>A chunk of unassuming flesh. Its cells are capable of rapid differntation and duplication, allowing the user to create organs of fantastical abilities that far outstrip even archotech.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/EvolvedChunk</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<soundInteract>Standard_Drop</soundInteract>
-		<soundDrop>Standard_Drop</soundDrop>
-		<useHitPoints>true</useHitPoints>
-		<statBases>
-			<MaxHitPoints>50</MaxHitPoints>
-			<MarketValue>100</MarketValue>
-			<Mass>0.6</Mass>
-			<Flammability>1.0</Flammability>
-			<DeteriorationRate>2.0</DeteriorationRate>
-		</statBases>
-		<thingCategories>
-			<li>Manufactured</li>
-		</thingCategories>
-		<tradeTags>
-			<li>ExoticMisc</li>
-		</tradeTags>
-	</ThingDef>
-	
-	
-	
-	<ThingDef ParentName="ResourceBase">
-		<defName>EVO_Humanoid_Protein</defName>
-		<label>Humanoid Protein</label>
-		<description>A vial of humanoid protiens ready to be synthesized with mechanites and formed into a specialized appendage or organ.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/HumanoidProtienVial</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<soundInteract>Standard_Drop</soundInteract>
-		<soundDrop>Standard_Drop</soundDrop>
-		<useHitPoints>true</useHitPoints>
-		<statBases>
-			<MaxHitPoints>50</MaxHitPoints>
-			<MarketValue>10</MarketValue>
-			<Mass>0.01</Mass>
-			<Flammability>.8</Flammability>
-			<DeteriorationRate>5.0</DeteriorationRate>
-		</statBases>
-		<thingCategories>
-			<li>Manufactured</li>
-		</thingCategories>
-		<tradeTags>
-			<li>ExoticMisc</li>
-		</tradeTags>
-	</ThingDef>
+  <!--Deprecated, this will be removed in the future-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>EvolvedChunk</defName>
+    <label>Evolved Meat</label>
+    <description>A chunk of unassuming flesh. Its cells are capable of rapid differntation and duplication, allowing the user to create organs of fantastical abilities that far outstrip even archotech, used at the Evolved Workbench.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/EvolvedChunk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>100</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>EVO_Humanoid_Protein</defName>
+    <label>Humanoid Protein</label>
+    <description>A vial of humanoid protiens ready to be synthesized with mechanites and formed into a specialized appendage or organ.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/HumanoidProtienVial</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>10</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>.8</Flammability>
+      <DeteriorationRate>5.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
 </Defs>

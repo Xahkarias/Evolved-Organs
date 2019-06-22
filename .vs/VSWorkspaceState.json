@@ -2,8 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\About",
-    "\\Defs"
+    "\\Defs",
+    "\\Defs\\Bodies",
+    "\\Defs\\HediffDefs",
+    "\\Defs\\RecipeDefs",
+    "\\Defs\\ResearchProjectDefs",
+    "\\Defs\\ThingDefs_Buildings",
+    "\\Defs\\ThingDefs_Items",
+    "\\Patches"
   ],
-  "SelectedNode": "\\About\\About.xml",
+  "SelectedNode": "\\Patches\\EVO_E9_AlienRace_Vulpine.xml",
   "PreviewInSolutionExplorer": false
 }

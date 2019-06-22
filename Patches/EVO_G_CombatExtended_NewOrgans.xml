@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!--courtesy of Saebbi-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<success>Always</success>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Rah's Bionics and Surgery Expansion</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!--TORQUE ARM-->
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs</xpath>
+								<value>
+									<HediffDef ParentName="AddedBodyPartBase">
+										<defName>EvolvedTorqueArm</defName>
+										<label>evolved torque arm</label>
+										<labelNoun>an evolved torque arm</labelNoun>
+										<defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+										<spawnThingOnRemoved>EvolvedTorqueArm</spawnThingOnRemoved>
+										<addedPartProps>
+											<solid>true</solid>
+											<partEfficiency>1.00</partEfficiency>
+										</addedPartProps>
+										<comps>
+											<li Class="HediffCompProperties_Immunizable">
+												<severityPerDayNotImmune>0.1</severityPerDayNotImmune>
+											</li>
+										</comps>
+										<initialSeverity>0.001</initialSeverity>
+										<stages>
+											<li>
+												<label>newly implanted</label>
+												<vomitMtbDays>1</vomitMtbDays>
+												<painOffset>0.15</painOffset>
+												<capMods>
+													<li>
+														<capacity>Consciousness</capacity>
+														<postFactor>0.95</postFactor>
+													</li>
+													<li>
+														<capacity>Manipulation</capacity>
+														<offset>-0.25</offset>
+													</li>
+												</capMods>
+											</li>
+											<li>
+												<label>partly adapted</label>
+												<minSeverity>0.2</minSeverity>
+												<vomitMtbDays>1</vomitMtbDays>
+												<statOffsets>
+													<ReloadSpeed>0.15</ReloadSpeed>
+												</statOffsets>
+												<capMods>
+													<li>
+														<capacity>Manipulation</capacity>
+														<offset>0.1</offset>
+													</li>
+												</capMods>
+											</li>
+											<li>
+												<minSeverity>0.4</minSeverity>
+												<statOffsets>
+													<ReloadSpeed>0.5</ReloadSpeed>
+												</statOffsets>
+												<capMods>
+													<li>
+														<capacity>Manipulation</capacity>
+														<offset>0.2</offset>
+													</li>
+												</capMods>
+											</li>
+										</stages>
+									</HediffDef>
+									<HediffDef ParentName="AddedBodyPartBase">
+										<defName>EvolvedTorqueArm_Secondary</defName>
+										<label>evolved torque arm</label>
+										<labelNoun>an evolved torque arm</labelNoun>
+										<defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+										<spawnThingOnRemoved>EvolvedTorqueArm</spawnThingOnRemoved>
+										<addedPartProps>
+											<solid>true</solid>
+											<partEfficiency>1.00</partEfficiency>
+										</addedPartProps>
+										<comps>
+											<li Class="HediffCompProperties_Immunizable">
+												<severityPerDayNotImmune>0.1</severityPerDayNotImmune>
+											</li>
+										</comps>
+										<initialSeverity>0.001</initialSeverity>
+										<stages>
+											<li>
+												<label>newly implanted</label>
+												<vomitMtbDays>1</vomitMtbDays>
+												<painOffset>0.15</painOffset>
+												<capMods>
+													<li>
+														<capacity>Consciousness</capacity>
+														<postFactor>0.95</postFactor>
+													</li>
+													<li>
+														<capacity>Manipulation</capacity>
+														<offset>-0.25</offset>
+													</li>
+												</capMods>
+											</li>
+											<li>
+												<label>partly adapted</label>
+												<minSeverity>0.2</minSeverity>
+												<vomitMtbDays>1</vomitMtbDays>
+												<statOffsets>
+													<ReloadSpeed>0.15</ReloadSpeed>
+												</statOffsets>
+												<capMods>
+													<li>
+														<capacity>Manipulation</capacity>
+														<offset>0.2</offset>
+													</li>
+												</capMods>
+											</li>
+											<li>
+												<minSeverity>0.4</minSeverity>
+												<statOffsets>
+													<ReloadSpeed>0.5</ReloadSpeed>
+												</statOffsets>
+												<capMods>
+													<li>
+														<capacity>Manipulation</capacity>
+														<offset>0.4</offset>
+													</li>
+												</capMods>
+											</li>
+										</stages>
+									</HediffDef>
+
+									<ThingDef ParentName="EvolvedOrganBase">
+										<defName>EvolvedTorqueArm</defName>
+										<label>Torque Arm</label>
+										<description>An arm created to expedite the user's ability to wield firearms, coming with many manipulators that change based on the weapon.</description>
+										<recipeMaker>
+											<researchPrerequisite>EvolvedOrgansResearchLimbs2</researchPrerequisite>
+										</recipeMaker>
+										<costList>
+											<EvolvedChunk>12</EvolvedChunk>
+											<ComponentSpacer>1</ComponentSpacer>
+										</costList>
+									</ThingDef>
+
+
+									<RecipeDef ParentName="SurgeryFlesh">
+										<defName>EVO_InstallEvolvedTorqueArm_Primary</defName>
+										<label>implant evolved torque arm (primary)</label>
+										<description>Implant an evolved torque arm (primary).</description>
+										<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+										<jobString>Implanting evolved torque arm.</jobString>
+										<workAmount>3000</workAmount>
+										<skillRequirements>
+											<Medicine>10</Medicine>
+										</skillRequirements>
+										<recipeUsers>
+											<li>Human</li>
+										</recipeUsers>
+										<ingredients>
+											<li>
+												<filter>
+													<categories>
+														<li>Medicine</li>
+													</categories>
+												</filter>
+												<count>2</count>
+											</li>
+											<li>
+												<filter>
+													<thingDefs>
+														<li>EvolvedTorqueArm</li>
+													</thingDefs>
+												</filter>
+												<count>1</count>
+											</li>
+										</ingredients>
+										<fixedIngredientFilter>
+											<categories>
+												<li>Medicine</li>
+											</categories>
+											<thingDefs>
+												<li>EvolvedTorqueArm</li>
+											</thingDefs>
+										</fixedIngredientFilter>
+										<appliedOnFixedBodyParts>
+											<li>Shoulder</li>
+										</appliedOnFixedBodyParts>
+										<addsHediff>EvolvedTorqueArm</addsHediff>
+									</RecipeDef>
+
+									<RecipeDef ParentName="SurgeryFlesh">
+										<defName>EVO_InstallEvolvedTorqueArm_Secondary</defName>
+										<label>implant evolved torque arm (secondary)</label>
+										<description>Implant an evolved torque arm (secondary)</description>
+										<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+										<jobString>Implanting evolved torque arm.</jobString>
+										<workAmount>3000</workAmount>
+										<skillRequirements>
+											<Medicine>10</Medicine>
+										</skillRequirements>
+										<recipeUsers>
+											<li>Human</li>
+										</recipeUsers>
+										<ingredients>
+											<li>
+												<filter>
+													<categories>
+														<li>Medicine</li>
+													</categories>
+												</filter>
+												<count>2</count>
+											</li>
+											<li>
+												<filter>
+													<thingDefs>
+														<li>EvolvedTorqueArm</li>
+													</thingDefs>
+												</filter>
+												<count>1</count>
+											</li>
+											<li>
+												<filter>
+													<thingDefs>
+														<li>EvolvedChunk</li>
+													</thingDefs>
+												</filter>
+												<count>3</count>
+											</li>
+										</ingredients>
+										<fixedIngredientFilter>
+											<categories>
+												<li>Medicine</li>
+											</categories>
+											<thingDefs>
+												<li>EvolvedTorqueArm</li>
+												<li>EvolvedChunk</li>
+											</thingDefs>
+										</fixedIngredientFilter>
+										<appliedOnFixedBodyParts>
+											<li>LowerShoulder</li>
+										</appliedOnFixedBodyParts>
+										<addsHediff>EvolvedTorqueArm_Secondary</addsHediff>
+									</RecipeDef>
+
+
+								</value>
+								<success>Always</success>
+							</li>
+
+							<!--Try to suppress me fucker-->
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs</xpath>
+								<value>
+									<ThingDef ParentName="EvolvedOrganBase">
+										<defName>EvolvedAntiSuppressor</defName>
+										<label>Sympathetic Neuralizer</label>
+										<description>An organ designed to combat the natural panic response, allowing the host to focus in combat without distraction.</description>
+										<recipeMaker>
+											<researchPrerequisite>EvolvedOrgansResearchOrgans3</researchPrerequisite>
+										</recipeMaker>
+										<costList>
+											<EvolvedChunk>12</EvolvedChunk>
+											<ComponentSpacer>1</ComponentSpacer>
+										</costList>
+									</ThingDef>
+
+									<HediffDef ParentName="AddedBodyPartBase">
+										<defName>EvolvedAntiSuppressor</defName>
+										<label>Sympathetic Neuralizer</label>
+										<defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+										<labelNoun>a sympathetic neuralizer</labelNoun>
+										<spawnThingOnRemoved>EvolvedAntiSuppressor</spawnThingOnRemoved>
+										<addedPartProps>
+											<solid>true</solid>
+											<partEfficiency>2.0</partEfficiency>
+										</addedPartProps>
+										<comps>
+											<li Class="HediffCompProperties_Immunizable">
+												<severityPerDayNotImmune>0.1</severityPerDayNotImmune>
+											</li>
+										</comps>
+										<initialSeverity>0.001</initialSeverity>						
+										<stages>
+											<li>
+												<label>newly implanted</label>
+												<vomitMtbDays>1</vomitMtbDays>
+												<painOffset>0.15</painOffset>
+												<capMods>
+													<li>
+														<capacity>Consciousness</capacity>
+														<postFactor>0.95</postFactor>
+													</li>
+												</capMods>
+											</li>
+											<li>
+												<label>partly adapted</label>
+												<minSeverity>0.2</minSeverity>
+												<vomitMtbDays>1</vomitMtbDays>
+												<statOffsets>
+													<Suppressability>-0.25</Suppressability>
+												</statOffsets>
+											</li>
+											<li>
+												<minSeverity>0.4</minSeverity>
+												<statOffsets>
+													<Suppressability>-1</Suppressability>
+												</statOffsets>
+											</li>
+										</stages>
+									</HediffDef>
+
+									<RecipeDef ParentName="SurgeryFlesh">
+										<defName>EVO_InstallEvolvedAntiSuppressor</defName>
+										<label>implant sympathetic neuralizer</label>
+										<description>Implant an organ capable of neutralizing the natural panic response.</description>
+										<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+										<jobString>Implanting a sympathetic neuralizer.</jobString>
+										<workAmount>3000</workAmount>
+										<skillRequirements>
+											<Medicine>10</Medicine>
+										</skillRequirements>
+										<recipeUsers>
+											<li>Human</li>
+										</recipeUsers>
+										<ingredients>
+											<li>
+												<filter>
+													<categories>
+														<li>Medicine</li>
+													</categories>
+												</filter>
+												<count>2</count>
+											</li>
+											<li>
+												<filter>
+													<thingDefs>
+														<li>EvolvedAntiSuppressor</li>
+													</thingDefs>
+												</filter>
+												<count>1</count>
+											</li>
+										</ingredients>
+										<fixedIngredientFilter>
+											<categories>
+												<li>Medicine</li>
+											</categories>
+											<thingDefs>
+												<li>EvolvedAntiSuppressor</li>
+											</thingDefs>
+										</fixedIngredientFilter>
+										<appliedOnFixedBodyParts>
+											<li>LeftAbdomenCavity</li>
+										</appliedOnFixedBodyParts>
+										<addsHediff>EvolvedAntiSuppressor</addsHediff>
+									</RecipeDef>
+								</value>
+							</li>
+
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/ThingDef[defName = "EvolvedTorqueArm"]</xpath>
+								<value>
+									<tickerType>Rare</tickerType>
+									<comps>
+										<li Class="CompProperties_Rottable">
+											<daysToRotStart>0.6</daysToRotStart>
+											<rotDestroys>true</rotDestroys>
+										</li>
+									</comps>
+								</value>
+								<success>Always</success>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/ThingDef[defName = "EvolvedAntiSuppressor"]</xpath>
+								<value>
+									<tickerType>Rare</tickerType>
+									<comps>
+										<li Class="CompProperties_Rottable">
+											<daysToRotStart>0.6</daysToRotStart>
+											<rotDestroys>true</rotDestroys>
+										</li>
+									</comps>
+								</value>
+								<success>Always</success>
+							</li>
+						</operations>
+					</match>
+
+					<!--NO RAHS-->
+					<nomatch Class="PatchOperationSequence">
+						<operations>
+							<!--TORQUE ARM-->
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs</xpath>
+								<value>
+									<HediffDef ParentName="AddedBodyPartBase">
+										<defName>EvolvedTorqueArm</defName>
+										<label>evolved torque arm</label>
+										<labelNoun>an evolved torque arm</labelNoun>
+										<defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+										<spawnThingOnRemoved>EvolvedTorqueArm</spawnThingOnRemoved>
+										<addedPartProps>
+											<solid>true</solid>
+											<partEfficiency>1.00</partEfficiency>
+										</addedPartProps>
+										<stages>
+											<li>
+												<statOffsets>
+													<ReloadSpeed>0.5</ReloadSpeed>
+												</statOffsets>
+												<capMods>
+													<li>
+														<capacity>Manipulation</capacity>
+														<offset>0.2</offset>
+													</li>
+												</capMods>
+											</li>
+										</stages>
+									</HediffDef>
+									<HediffDef ParentName="AddedBodyPartBase">
+										<defName>EvolvedTorqueArm_Secondary</defName>
+										<label>evolved torque arm</label>
+										<labelNoun>an evolved torque arm</labelNoun>
+										<defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+										<spawnThingOnRemoved>EvolvedTorqueArm</spawnThingOnRemoved>
+										<addedPartProps>
+											<solid>true</solid>
+											<partEfficiency>1.00</partEfficiency>
+										</addedPartProps>
+										<stages>
+											<li>
+												<statOffsets>
+													<ReloadSpeed>0.5</ReloadSpeed>
+												</statOffsets>
+												<capMods>
+													<li>
+														<capacity>Manipulation</capacity>
+														<offset>0.4</offset>
+													</li>
+												</capMods>
+											</li>
+										</stages>
+									</HediffDef>
+
+									<ThingDef ParentName="EvolvedOrganBase">
+										<defName>EvolvedTorqueArm</defName>
+										<label>Torque Arm</label>
+										<description>An arm created to expedite the user's ability to wield firearms, coming with many manipulators that change based on the weapon.</description>
+										<recipeMaker>
+											<researchPrerequisite>EvolvedOrgansResearchLimbs2</researchPrerequisite>
+										</recipeMaker>
+										<costList>
+											<EvolvedChunk>12</EvolvedChunk>
+											<ComponentSpacer>1</ComponentSpacer>
+										</costList>
+									</ThingDef>
+
+
+									<RecipeDef ParentName="SurgeryFlesh">
+										<defName>EVO_InstallEvolvedTorqueArm_Primary</defName>
+										<label>implant evolved torque arm (primary)</label>
+										<description>Implant an evolved torque arm (primary).</description>
+										<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+										<jobString>Implanting evolved torque arm.</jobString>
+										<workAmount>3000</workAmount>
+										<skillRequirements>
+											<Medicine>10</Medicine>
+										</skillRequirements>
+										<recipeUsers>
+											<li>Human</li>
+										</recipeUsers>
+										<ingredients>
+											<li>
+												<filter>
+													<categories>
+														<li>Medicine</li>
+													</categories>
+												</filter>
+												<count>2</count>
+											</li>
+											<li>
+												<filter>
+													<thingDefs>
+														<li>EvolvedTorqueArm</li>
+													</thingDefs>
+												</filter>
+												<count>1</count>
+											</li>
+										</ingredients>
+										<fixedIngredientFilter>
+											<categories>
+												<li>Medicine</li>
+											</categories>
+											<thingDefs>
+												<li>EvolvedTorqueArm</li>
+											</thingDefs>
+										</fixedIngredientFilter>
+										<appliedOnFixedBodyParts>
+											<li>Shoulder</li>
+										</appliedOnFixedBodyParts>
+										<addsHediff>EvolvedTorqueArm</addsHediff>
+									</RecipeDef>
+
+									<RecipeDef ParentName="SurgeryFlesh">
+										<defName>EVO_InstallEvolvedTorqueArm_Secondary</defName>
+										<label>implant evolved torque arm (secondary)</label>
+										<description>Implant an evolved torque arm (secondary)</description>
+										<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+										<jobString>Implanting evolved torque arm.</jobString>
+										<workAmount>3000</workAmount>
+										<skillRequirements>
+											<Medicine>10</Medicine>
+										</skillRequirements>
+										<recipeUsers>
+											<li>Human</li>
+										</recipeUsers>
+										<ingredients>
+											<li>
+												<filter>
+													<categories>
+														<li>Medicine</li>
+													</categories>
+												</filter>
+												<count>2</count>
+											</li>
+											<li>
+												<filter>
+													<thingDefs>
+														<li>EvolvedTorqueArm</li>
+													</thingDefs>
+												</filter>
+												<count>1</count>
+											</li>
+											<li>
+												<filter>
+													<thingDefs>
+														<li>EvolvedChunk</li>
+													</thingDefs>
+												</filter>
+												<count>3</count>
+											</li>
+										</ingredients>
+										<fixedIngredientFilter>
+											<categories>
+												<li>Medicine</li>
+											</categories>
+											<thingDefs>
+												<li>EvolvedTorqueArm</li>
+												<li>EvolvedChunk</li>
+											</thingDefs>
+										</fixedIngredientFilter>
+										<appliedOnFixedBodyParts>
+											<li>LowerShoulder</li>
+										</appliedOnFixedBodyParts>
+										<addsHediff>EvolvedTorqueArm_Secondary</addsHediff>
+									</RecipeDef>
+
+
+								</value>
+								<success>Always</success>
+							</li>
+
+							<!--Try to suppress me fucker-->
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs</xpath>
+								<value>
+									<ThingDef ParentName="EvolvedOrganBase">
+										<defName>EvolvedAntiSuppressor</defName>
+										<label>Sympathetic Neuralizer</label>
+										<description>An organ designed to combat the natural panic response, allowing the host to focus in combat without distraction.</description>
+										<recipeMaker>
+											<researchPrerequisite>EvolvedOrgansResearchOrgans3</researchPrerequisite>
+										</recipeMaker>
+										<costList>
+											<EvolvedChunk>12</EvolvedChunk>
+											<ComponentSpacer>1</ComponentSpacer>
+										</costList>
+									</ThingDef>
+
+									<HediffDef ParentName="AddedBodyPartBase">
+										<defName>EvolvedAntiSuppressor</defName>
+										<label>Sympathetic Neuralizer</label>
+										<defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+										<labelNoun>a sympathetic neuralizer</labelNoun>
+										<spawnThingOnRemoved>EvolvedAntiSuppressor</spawnThingOnRemoved>
+										<addedPartProps>
+											<solid>true</solid>
+											<partEfficiency>2.0</partEfficiency>
+										</addedPartProps>
+										<stages>
+											<li>
+												<statOffsets>
+													<Suppressability>-1</Suppressability>
+												</statOffsets>
+											</li>
+										</stages>
+									</HediffDef>
+
+									<RecipeDef ParentName="SurgeryFlesh">
+										<defName>EVO_InstallEvolvedAntiSuppressor</defName>
+										<label>implant sympathetic neuralizer</label>
+										<description>Implant an organ capable of neutralizing the natural panic response.</description>
+										<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+										<jobString>Implanting a sympathetic neuralizer.</jobString>
+										<workAmount>3000</workAmount>
+										<skillRequirements>
+											<Medicine>10</Medicine>
+										</skillRequirements>
+										<recipeUsers>
+											<li>Human</li>
+										</recipeUsers>
+										<ingredients>
+											<li>
+												<filter>
+													<categories>
+														<li>Medicine</li>
+													</categories>
+												</filter>
+												<count>2</count>
+											</li>
+											<li>
+												<filter>
+													<thingDefs>
+														<li>EvolvedAntiSuppressor</li>
+													</thingDefs>
+												</filter>
+												<count>1</count>
+											</li>
+										</ingredients>
+										<fixedIngredientFilter>
+											<categories>
+												<li>Medicine</li>
+											</categories>
+											<thingDefs>
+												<li>EvolvedAntiSuppressor</li>
+											</thingDefs>
+										</fixedIngredientFilter>
+										<appliedOnFixedBodyParts>
+											<li>LeftAbdomenCavity</li>
+										</appliedOnFixedBodyParts>
+										<addsHediff>EvolvedAntiSuppressor</addsHediff>
+									</RecipeDef>
+								</value>
+							</li>
+
+						</operations>
+					</nomatch>
+				</li>
+
+				<li Class="PatchOperationFindMod">
+					<success>Always</success>
+					<mods>
+						<li>Questionable Ethics</li>
+						<li>Questionable Ethics Enhanced</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationRemove">
+								<xpath>/Defs/ThingDef[defName="EvolvedAntiSuppressor"]/costList</xpath>
+							</li>
+							<li Class="PatchOperationRemove">
+								<xpath>/Defs/ThingDef[defName="EvolvedAntiSuppressor"]/recipeMaker</xpath>
+							</li>
+
+							<li Class="PatchOperationRemove">
+								<xpath>/Defs/ThingDef[defName="EvolvedTorqueArm"]/costList</xpath>
+							</li>
+							<li Class="PatchOperationRemove">
+								<xpath>/Defs/ThingDef[defName="EvolvedTorqueArm"]/recipeMaker</xpath>
+							</li>
+
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs</xpath>
+								<value>
+									<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+										<defName>EvolvedTorqueArm</defName>
+										<label>evolved torque arm</label>
+										<productDef>EvolvedTorqueArm</productDef>
+										<productAmount>1</productAmount>
+										<requiredResearch>EvolvedOrgansResearchLimbs2</requiredResearch>
+									</QEthics.GrowerRecipeDef>
+								</value>
+							</li>
+
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs</xpath>
+								<value>
+									<QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
+										<defName>EvolvedAntiSuppressor</defName>
+										<label>Sympathetic Neuralizer</label>
+										<productDef>EvolvedAntiSuppressor</productDef>
+										<productAmount>1</productAmount>
+										<requiredResearch>EvolvedOrgansResearchOrgans3</requiredResearch>
+									</QEthics.GrowerRecipeDef>
+								</value>
+							</li>
+
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+
+
+
+
+
+
+
+
+
+
+
+
+

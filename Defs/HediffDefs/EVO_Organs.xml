@@ -2,477 +2,627 @@
 <Defs>
 
 
-	<!-- Second Heart -->
-	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedSecondHeart</defName>
-		<label>evolved second heart</label>
-		<labelNoun>an evolved second heart</labelNoun>
-		<spawnThingOnRemoved>EvolvedSecondHeart</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-			<partEfficiency>2.0</partEfficiency>
-		</addedPartProps>
-		<stages>
-			<li>
-				<capMods>
-					<li>
-						<capacity>BloodPumping</capacity>
-						<offset>0.8</offset>
-					</li>
-					<li>
-						<capacity>Moving</capacity>
-						<offset>0.1</offset>
-					</li>
-				</capMods>
-			</li>
-		</stages>
-	</HediffDef>
+  <!-- Second Heart -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>EvolvedSecondHeart</defName>
+    <label>evolved second heart</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>an evolved second heart</labelNoun>
+    <spawnThingOnRemoved>EvolvedSecondHeart</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+    </addedPartProps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>0.8</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
 
-	<!-- Primary Heart -->
-	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedPrimaryHeart</defName>
-		<label>evolved primary heart</label>
-		<labelNoun>an evolved primary heart</labelNoun>
-		<spawnThingOnRemoved>EvolvedPrimaryHeart</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-			<partEfficiency>2.0</partEfficiency>
-		</addedPartProps>
-	</HediffDef>
+  <!-- Primary Heart -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>EvolvedPrimaryHeart</defName>
+    <label>evolved primary heart</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>an evolved primary heart</labelNoun>
+    <spawnThingOnRemoved>EvolvedPrimaryHeart</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
 
-	<!-- Kidney -->
-	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedKidney</defName>
-		<label>evolved kidney</label>
-		<labelNoun>an evolved kidney</labelNoun>
-		<spawnThingOnRemoved>EvolvedKidney</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-			<partEfficiency>2.0</partEfficiency>
-		</addedPartProps>
-		<stages>
-			<li>
-				<statOffsets>
-					<ToxicSensitivity>-0.1</ToxicSensitivity>
-				</statOffsets>
-			</li>
-		</stages>
-	</HediffDef>
+  <!-- Kidney -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>EvolvedKidney</defName>
+    <label>evolved kidney</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>an evolved kidney</labelNoun>
+    <spawnThingOnRemoved>EvolvedKidney</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <ToxicSensitivity>-0.1</ToxicSensitivity>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
 
-	<!-- Lung -->
-	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedLung</defName>
-		<label>evolved lung</label>
-		<labelNoun>an evolved lung</labelNoun>
-		<spawnThingOnRemoved>EvolvedLung</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-			<partEfficiency>2.0</partEfficiency>
-		</addedPartProps>
-	</HediffDef>
+  <!-- Lung -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>EvolvedLung</defName>
+    <label>evolved lung</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>an evolved lung</labelNoun>
+    <spawnThingOnRemoved>EvolvedLung</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
 
-	<!-- Third Lung -->
-	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedThirdLung</defName>
-		<label>evolved third lung</label>
-		<labelNoun>an evolved third lung</labelNoun>
-		<spawnThingOnRemoved>EvolvedThirdLung</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-			<partEfficiency>2.0</partEfficiency>
-		</addedPartProps>
-		<stages>
-			<li>
-				<statOffsets>
-					<ToxicSensitivity>-0.5</ToxicSensitivity>
-				</statOffsets>
-				<capMods>
-					<li>
-						<capacity>Breathing</capacity>
-						<offset>0.8</offset>
-					</li>
-				</capMods>
-			</li>
-		</stages>
-	</HediffDef>
+  <!-- Third Lung -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>EvolvedThirdLung</defName>
+    <label>evolved third lung</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>an evolved third lung</labelNoun>
+    <spawnThingOnRemoved>EvolvedThirdLung</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <ToxicSensitivity>-0.5</ToxicSensitivity>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>0.8</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
 
-	<!-- Stomach -->
-	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedStomach</defName>
-		<label>evolved stomach</label>
-		<labelNoun>an evolved stomach</labelNoun>
-		<spawnThingOnRemoved>EvolvedStomach</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-			<partEfficiency>2.0</partEfficiency>
-		</addedPartProps>
-		<stages>
-			<li>
-				<hungerRateFactor>0.75</hungerRateFactor>
-			</li>
-		</stages>
-	</HediffDef>
+  <!-- Stomach -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>EvolvedStomach</defName>
+    <label>evolved stomach</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>an evolved stomach</labelNoun>
+    <spawnThingOnRemoved>EvolvedStomach</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+    </addedPartProps>
+    <stages>
+      <li>
+        <makeImmuneTo>
+          <li>FoodPoisoning</li>
+        </makeImmuneTo>
+        <hungerRateFactor>0.75</hungerRateFactor>
+      </li>
+    </stages>
+  </HediffDef>
 
-	<!-- Liver -->
-	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedLiver</defName>
-		<label>evolved liver</label>
-		<labelNoun>an evolved liver</labelNoun>
-		<spawnThingOnRemoved>EvolvedLiver</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-			<partEfficiency>2.0</partEfficiency>
-		</addedPartProps>
-		<stages>
-			<li>
-				<statOffsets>
-					<ImmunityGainSpeed>0.5</ImmunityGainSpeed>
-				</statOffsets>
-				<restFallFactor>0.75</restFallFactor>
-			</li>
-		</stages>
-	</HediffDef>
+  <!-- Liver -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>EvolvedLiver</defName>
+    <label>evolved liver</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>an evolved liver</labelNoun>
+    <spawnThingOnRemoved>EvolvedLiver</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <ImmunityGainSpeed>0.5</ImmunityGainSpeed>
+        </statOffsets>
+        <restFallFactor>0.75</restFallFactor>
+      </li>
+    </stages>
+  </HediffDef>
 
-	<!-- Brain -->
-	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedBrain</defName>
-		<label>evolved brain</label>
-		<labelNoun>an evolved brain</labelNoun>
-		<addedPartProps>
-			<solid>true</solid>
-			<partEfficiency>1.7</partEfficiency>
-		</addedPartProps>
-		<comps>
-			<li Class="HediffCompProperties_HealPermanentWounds" />
-		</comps>
-		<stages>
-			<li>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>0.2</offset>
-					</li>
-				</capMods>
-				<statOffsets>
-					<GlobalLearningFactor>0.10</GlobalLearningFactor>
-					<ResearchSpeed>0.10</ResearchSpeed>
-					<MentalBreakThreshold>-0.25</MentalBreakThreshold>
-				</statOffsets>
-			</li>
-		</stages>
-	</HediffDef>
+  <!-- Brain -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>EvolvedBrain</defName>
+    <label>evolved brain</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>an evolved brain</labelNoun>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.7</partEfficiency>
+    </addedPartProps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.2</offset>
+          </li>
+        </capMods>
+        <statOffsets>
+          <GlobalLearningFactor>0.10</GlobalLearningFactor>
+          <ResearchSpeed>0.10</ResearchSpeed>
+          <MentalBreakThreshold>-0.25</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
 
-	<!-- Eyes -->
-	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedEye</defName>
-		<label>evolved eye</label>
-		<labelNoun>an evolved eye</labelNoun>
-		<spawnThingOnRemoved>EvolvedEye</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-			<partEfficiency>2.0</partEfficiency>
-		</addedPartProps>
-		<stages>
-			<li>
-				<statOffsets>
-					<AimingDelayFactor>-0.15</AimingDelayFactor>
-					<ShootingAccuracyPawn>2</ShootingAccuracyPawn>
-				</statOffsets>
-			</li>
-		</stages>
-	</HediffDef>
+  <!-- Eyes -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>EvolvedEye</defName>
+    <label>evolved eye</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>an evolved eye</labelNoun>
+    <spawnThingOnRemoved>EvolvedEye</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <AimingDelayFactor>-0.15</AimingDelayFactor>
+          <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
 
-	<!-- Pinions -->
-	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedPinions</defName>
-		<label>evolved pinions</label>
-		<labelNoun>some evolved pinions</labelNoun>
-		<spawnThingOnRemoved>EvolvedPinions</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-			<partEfficiency>2.0</partEfficiency>
-		</addedPartProps>
-		<stages>
-			<li>
-				<capMods>
-					<li>
-						<capacity>Moving</capacity>
-						<offset>2.5</offset>
-					</li>
-				</capMods>
-			</li>
-		</stages>
-	</HediffDef>
+  <!-- Pinions -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>EvolvedPinions</defName>
+    <label>evolved pinions</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>some evolved pinions</labelNoun>
+    <spawnThingOnRemoved>EvolvedPinions</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+    </addedPartProps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>2.5</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
 
-	<!-- Glands -->
-	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedCombatGlands</defName>
-		<label>evolved combat glands</label>
-		<labelNoun>some evolved glands</labelNoun>
-		<spawnThingOnRemoved>EvolvedCombatGlands</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-			<partEfficiency>2.0</partEfficiency>
-		</addedPartProps>
-		<stages>
-			<li>
-				<statOffsets>
-					<MeleeDodgeChance>1.0</MeleeDodgeChance>
-					<MeleeHitChance>6</MeleeHitChance>
-				</statOffsets>
-				<painFactor>0.9</painFactor>
-			</li>
-		</stages>
-	</HediffDef>
+  <!-- Glands -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>EvolvedCombatGlands</defName>
+    <label>evolved combat glands</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>some evolved glands</labelNoun>
+    <spawnThingOnRemoved>EvolvedCombatGlands</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <MeleeDodgeChance>1.0</MeleeDodgeChance>
+          <MeleeHitChance>6</MeleeHitChance>
+          <MeleeWeapon_CooldownMultiplier>-.1</MeleeWeapon_CooldownMultiplier>
+        </statOffsets>
+        <painFactor>0.9</painFactor>
+      </li>
+    </stages>
+  </HediffDef>
 
-	<!-- Legs-->
-	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedLeg</defName>
-		<label>evolved leg</label>
-		<labelNoun>an evolved leg</labelNoun>
-		<spawnThingOnRemoved>EvolvedLeg</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-			<partEfficiency>2.0</partEfficiency>
-		</addedPartProps>
-		<stages>
-			<li>
-				<statOffsets>
-					<CarryingCapacity>20</CarryingCapacity>
-				</statOffsets>
-			</li>
-		</stages>
-	</HediffDef>
+  <!-- Legs-->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>EvolvedLeg</defName>
+    <label>evolved leg</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>an evolved leg</labelNoun>
+    <spawnThingOnRemoved>EvolvedLeg</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <CarryingCapacity>20</CarryingCapacity>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
 
-	<!-- Nose-->
-	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedNose</defName>
-		<label>evolved nose</label>
-		<labelNoun>an evolved nose</labelNoun>
-		<spawnThingOnRemoved>EvolvedNose</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-			<partEfficiency>2.0</partEfficiency>
-		</addedPartProps>
-		<stages>
-			<li>
-				<statOffsets>
-					<PlantWorkSpeed>0.2</PlantWorkSpeed>
-					<TameAnimalChance>0.1</TameAnimalChance>
-					<TrainAnimalChance>0.2</TrainAnimalChance>
-				</statOffsets>
-			</li>
-		</stages>
-	</HediffDef>
+  <!-- Nose-->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>EvolvedNose</defName>
+    <label>evolved nose</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>an evolved nose</labelNoun>
+    <spawnThingOnRemoved>EvolvedNose</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <PlantWorkSpeed>0.2</PlantWorkSpeed>
+          <TameAnimalChance>0.1</TameAnimalChance>
+          <TrainAnimalChance>0.2</TrainAnimalChance>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
 
-	<!-- Neck-->
-	<HediffDef ParentName="ImplantHediffBase">
-		<defName>EvolvedLarnyx</defName>
-		<label>evolved larnyx</label>
-		<labelNoun>an evolved larnyx</labelNoun>
-		<spawnThingOnRemoved>EvolvedLarnyx</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-			<partEfficiency>2.0</partEfficiency>
-		</addedPartProps>
-		<stages>
-			<li>
-				<statOffsets>
-					<SocialImpact>0.3</SocialImpact>
-					<TradePriceImprovement>0.10</TradePriceImprovement>
-					<AimingDelayFactor>-0.25</AimingDelayFactor>
-				</statOffsets>
-			</li>
-		</stages>
-	</HediffDef>
+  <!-- Neck-->
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>EvolvedLarnyx</defName>
+    <label>evolved larnyx</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>an evolved larnyx</labelNoun>
+    <spawnThingOnRemoved>EvolvedLarnyx</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <SocialImpact>0.3</SocialImpact>
+          <TradePriceImprovement>0.10</TradePriceImprovement>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
 
-	<!-- Ears -->
-	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedEar</defName>
-		<label>evolved ear</label>
-		<labelNoun>an evolved ear</labelNoun>
-		<spawnThingOnRemoved>EvolvedEar</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-			<partEfficiency>2.0</partEfficiency>
-		</addedPartProps>
-		<stages>
-			<li>
-				<statOffsets>
-					<MeleeDodgeChance>1</MeleeDodgeChance>
-				</statOffsets>
-			</li>
-		</stages>
-	</HediffDef>
+  <!-- Ears -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>EvolvedEar</defName>
+    <label>evolved ear</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>an evolved ear</labelNoun>
+    <spawnThingOnRemoved>EvolvedEar</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <MeleeDodgeChance>1</MeleeDodgeChance>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
 
-	<!-- Ribs -->
-	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedRibcage</defName>
-		<label>evolved ribcage</label>
-		<labelNoun>an evolved ribcage</labelNoun>
-		<spawnThingOnRemoved>EvolvedRibcage</spawnThingOnRemoved>
-		<addedPartProps>
-			<partEfficiency>2.0</partEfficiency>
-		</addedPartProps>
-		<stages>
-			<li>
-				<statOffsets>
-					<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
-					<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
-					<ArmorRating_Heat>0.20</ArmorRating_Heat>
-				</statOffsets>
-			</li>
-		</stages>
-	</HediffDef>
+  <!-- Ribs -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>EvolvedRibcage</defName>
+    <label>evolved ribcage</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>an evolved ribcage</labelNoun>
+    <spawnThingOnRemoved>EvolvedRibcage</spawnThingOnRemoved>
+    <addedPartProps>
+      <partEfficiency>2.0</partEfficiency>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+          <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+          <ArmorRating_Heat>0.20</ArmorRating_Heat>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
 
-	<!-- Torso -->
-	<HediffDef ParentName="ImplantHediffBase">
-		<defName>EvolvedCarapace</defName>
-		<label>evolved carapace</label>
-		<labelNoun>some evolved carapace</labelNoun>
-		<spawnThingOnRemoved>EvolvedCarapace</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-			<partEfficiency>2.0</partEfficiency>
-		</addedPartProps>
-		<stages>
-			<li>
-				<statOffsets>
-					<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
-					<ArmorRating_Heat>0.20</ArmorRating_Heat>
-					<ComfyTemperatureMin>-35</ComfyTemperatureMin>
-					<ComfyTemperatureMax>30</ComfyTemperatureMax>
-				</statOffsets>
-			</li>
-		</stages>
-	</HediffDef>
+  <!-- Torso -->
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>EvolvedCarapace</defName>
+    <label>Dragonskin</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>some dragonskin</labelNoun>
+    <spawnThingOnRemoved>EvolvedCarapace</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+          <ArmorRating_Heat>0.20</ArmorRating_Heat>
+          <Flammability>-.8</Flammability>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
 
-	<!-- Spine -->
-	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedSpine</defName>
-		<label>evolved spine</label>
-		<labelNoun>an evolved spine</labelNoun>
-		<spawnThingOnRemoved>EvolvedSpine</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-			<partEfficiency>2.0</partEfficiency>
-		</addedPartProps>
-		<stages>
-			<li>
-				<statOffsets>
-					<WorkSpeedGlobal>0.20</WorkSpeedGlobal>
-				</statOffsets>
-			</li>
-		</stages>
-	</HediffDef>
 
-	<!-- Tail -->
-	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedTail</defName>
-		<label>evolved tail</label>
-		<labelNoun>an evolved tail</labelNoun>
-		<comps>
-			<li Class="HediffCompProperties_VerbGiver">
-				<tools>
-					<li>
-						<capacities>
-							<li>Stab</li>
-							<li>Cut</li>
-						</capacities>
-						<power>25.0</power>
-						<cooldownTime>3</cooldownTime>
-						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
-					</li>
-				</tools>
-			</li>
-		</comps>
-		<spawnThingOnRemoved>EvolvedTail</spawnThingOnRemoved>
-		<addedPartProps>
-			<isGoodWeapon>true</isGoodWeapon>
-			<solid>true</solid>
-			<partEfficiency>2.0</partEfficiency>
-		</addedPartProps>
-		<stages>
-			<li>
-				<capMods>
-					<li>
-						<capacity>Manipulation</capacity>
-						<offset>0.15</offset>
-					</li>
-				</capMods>
-			</li>
-		</stages>
-	</HediffDef>
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>EvolvedPelt</defName>
+    <label>evolved pelt</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>some evolved pelts</labelNoun>
+    <spawnThingOnRemoved>EvolvedPelt</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <HuntingStealth>5</HuntingStealth>
+          <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+          <ArmorRating_Heat>0.10</ArmorRating_Heat>
+          <ComfyTemperatureMin>-35</ComfyTemperatureMin>
+          <ComfyTemperatureMax>30</ComfyTemperatureMax>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  <!-- Spine -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>EvolvedSpine</defName>
+    <label>evolved spine</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>an evolved spine</labelNoun>
+    <spawnThingOnRemoved>EvolvedSpine</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <WorkSpeedGlobal>0.20</WorkSpeedGlobal>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
 
-	<!-- Jaw -->
-	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedJaw</defName>
-		<label>evolved jaw</label>
-		<labelNoun>an evolved jaw</labelNoun>
-		<comps>
-			<li Class="HediffCompProperties_VerbGiver">
-				<tools>
-					<li>
-						<capacities>
-							<li>Stab</li>
-						</capacities>
-						<power>20.0</power>
-						<cooldownTime>2.7</cooldownTime>
-						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
-					</li>
-				</tools>
-			</li>
-		</comps>
-		<spawnThingOnRemoved>EvolvedJaw</spawnThingOnRemoved>
-		<addedPartProps>
-			<isGoodWeapon>true</isGoodWeapon>
-			<solid>true</solid>
-			<partEfficiency>2.0</partEfficiency>
-		</addedPartProps>
+  <!-- Tail -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>EvolvedTail</defName>
+    <label>evolved tail</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>an evolved tail</labelNoun>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <capacities>
+              <li>Stab</li>
+              <li>Cut</li>
+            </capacities>
+            <power>25.0</power>
+            <cooldownTime>3</cooldownTime>
+            <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    <spawnThingOnRemoved>EvolvedTail</spawnThingOnRemoved>
+    <addedPartProps>
+      <isGoodWeapon>true</isGoodWeapon>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <MeleeWeapon_CooldownMultiplier>-.5</MeleeWeapon_CooldownMultiplier>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.15</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
 
-		<stages>
-			<li>
-				<statOffsets>
-					<EatingSpeed>0.7</EatingSpeed>
-					<SocialImpact>0.1</SocialImpact>
-				</statOffsets>
-			</li>
-		</stages>
-	</HediffDef>
+  <!-- Jaw -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>EvolvedJaw</defName>
+    <label>evolved jaw</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>an evolved jaw</labelNoun>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <capacities>
+              <li>Stab</li>
+            </capacities>
+            <power>20.0</power>
+            <cooldownTime>2.7</cooldownTime>
+            <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    <spawnThingOnRemoved>EvolvedJaw</spawnThingOnRemoved>
+    <addedPartProps>
+      <isGoodWeapon>true</isGoodWeapon>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <EatingSpeed>0.7</EatingSpeed>
+          <SocialImpact>0.1</SocialImpact>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
 
-	<!-- Spider legs -->
-	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedSpider</defName>
-		<label>evolved spider leg cluster</label>
-		<labelNoun>an evolved spider leg cluster</labelNoun>
-		<comps>
-			<li Class="HediffCompProperties_VerbGiver">
-				<tools>
-					<li>
-						<capacities>
-							<li>Stab</li>
-						</capacities>
-						<power>5.0</power>
-						<cooldownTime>0.65</cooldownTime>
-						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
-					</li>
-				</tools>
-			</li>
-		</comps>
-		<spawnThingOnRemoved>EvolvedSpider</spawnThingOnRemoved>
-		<addedPartProps>
-			<isGoodWeapon>true</isGoodWeapon>
-			<solid>true</solid>
-			<partEfficiency>2.0</partEfficiency>
-		</addedPartProps>
-		<stages>
-			<li>
+  <!-- Spider legs -->
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>EvolvedSpider</defName>
+    <label>evolved spider leg cluster</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>an evolved spider leg cluster</labelNoun>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <capacities>
+              <li>Stab</li>
+            </capacities>
+            <power>5.0</power>
+            <cooldownTime>0.65</cooldownTime>
+            <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    <spawnThingOnRemoved>EvolvedSpider</spawnThingOnRemoved>
+    <addedPartProps>
+      <isGoodWeapon>true</isGoodWeapon>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <MeleeDodgeChance>4</MeleeDodgeChance>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
 
-				<statOffsets>
-					<MeleeDodgeChance>4</MeleeDodgeChance>
-				</statOffsets>
-			</li>
-		</stages>
-	</HediffDef>
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>EvolvedFilter</defName>
+    <label>evolved psychic filter</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>a psychic brain filter</labelNoun>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.0</partEfficiency>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <PsychicSensitivity>-2</PsychicSensitivity>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>EvolvedFilter</defName>
+    <label>evolved psychic filter</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>a psychic brain filter</labelNoun>
+    <stages>
+      <li>
+        <statOffsets>
+          <PsychicSensitivity>-2</PsychicSensitivity>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>EmpathicResonator</defName>
+    <label>empathic resonator</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>a empathic resonator</labelNoun>
+    <stages>
+      <li>
+        <statOffsets>
+          <PsychicSensitivity>.5</PsychicSensitivity>
+          <SocialImpact>2</SocialImpact>
+          <TameAnimalChance>2</TameAnimalChance>
+          <TrainAnimalChance>1.5</TrainAnimalChance>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>ImmortalOrgan</defName>
+    <label>ra's vacuole</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>an organ that renders a pawn biologically immortal</labelNoun>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.0</partEfficiency>
+    </addedPartProps>
+    <comps>
+      <li Class="HediffCompProperties_HealPermanentWounds" />
+    </comps>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <makeImmuneTo>
+          <li>Aging</li>
+        </makeImmuneTo>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="InfectionBase">
+    <defName>Aging</defName>
+    <label>aging</label>
+    <description>a dummy hediffDef to add a tooltip for the makeImmuneTo tag</description>
+    <comps>
+      <li Class="HediffCompProperties_Immunizable"/>
+    </comps>
+  </HediffDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>LymphaticProliferator</defName>
+    <label>lymphatic proliferator</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>an organ that significantly boosts it's hosts immunizing capability, rendering them immune to most normal infectious agents.</labelNoun>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.0</partEfficiency>
+    </addedPartProps>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <makeImmuneTo>
+          <li>WoundInfection</li>
+          <li>Flu</li>
+          <li>Plague</li>
+          <li>Malaria</li>
+          <li>SleepingSickness</li>
+        </makeImmuneTo>
+        <statOffsets>
+          <ImmunityGainSpeed>1.5</ImmunityGainSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
 
 </Defs>

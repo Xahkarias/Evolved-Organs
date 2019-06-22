@@ -3,7 +3,7 @@
 	<RecipeDef>
 		<defName>Make_EvolvedChunk</defName>
 		<label>make evolved meat</label>
-		<description>Make some evolved meat.</description>
+		<description>Make some evolved meat using medicine, components, and humanoid proteins.</description>
 		<jobString>Making evolved meat.</jobString>
 		<workSpeedStat>SmithingSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
@@ -59,7 +59,7 @@
 	<RecipeDef>
 		<defName>Make_Humanoid_Protein</defName>
 		<label>refine humanoid proteins</label>
-		<description>Refine proteins from Humanoid Meat.</description>
+		<description>Refine proteins from butchered Humanoid Meat.</description>
 		<jobString>Refining humanoid protein.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		    <allowMixingIngredients>true</allowMixingIngredients>
