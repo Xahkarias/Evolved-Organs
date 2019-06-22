@@ -145,19 +145,6 @@
                   </HediffDef>
                 </value>
               </li>
-              <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName = "EVORG_Organ_RadiationFilter"]</xpath>
-                <value>
-                  <tickerType>Rare</tickerType>
-                  <comps>
-                    <li Class="CompProperties_Rottable">
-                      <daysToRotStart>0.6</daysToRotStart>
-                      <rotDestroys>true</rotDestroys>
-                    </li>
-                  </comps>
-                </value>
-                <success>Always</success>
-              </li>
             </operations>
           </match>
         </li>

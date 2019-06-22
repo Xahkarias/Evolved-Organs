@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!--This patch forces all organ items with the prefix EVORG_Organ_ to rot if not frozen-->
+    <Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+            <li>Rah's Bionics and Surgery Expansion</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[contains(defName, "EVORG_Organ_")]</xpath>
+                    <value>
+                        <tickerType>Rare</tickerType>
+                        <comps>
+                            <li Class="CompProperties_Rottable">
+                                <daysToRotStart>0.6</daysToRotStart>
+                                <rotDestroys>true</rotDestroys>
+                            </li>
+                        </comps>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
+
+
+
+
