@@ -311,6 +311,23 @@
 									</tools>
 								</value>
 							</li>
+
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedSpider"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Stab</li>
+											</capacities>
+											<power>5.0</power>
+											<cooldownTime>0.65</cooldownTime>
+											<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+											<armorPenetration>0.05</armorPenetration>
+										</li>
+									</tools>
+								</value>
+							</li>
 						</operations>
 					</match>
 
@@ -614,6 +631,23 @@
 								</value>
 							</li>
 
+							<!--Spider-->
+							<li Class="PatchOperationReplace">
+								<xpath>*/HediffDef[defName="EvolvedSpider"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<value>
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<capacities>
+												<li>Stab</li>
+											</capacities>
+											<power>5.0</power>
+											<cooldownTime>0.65</cooldownTime>
+											<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+											<armorPenetration>0.05</armorPenetration>
+										</li>
+									</tools>
+								</value>
+							</li>
 						</operations>
 					</nomatch>
 				</li>

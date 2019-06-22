@@ -7,6 +7,7 @@ Rimatomics Compatability
 Research Overhaul, added 9 new researches, removed legacy research.  Added research tab.
 
 New Body Part: Left Abdominal Cavity.  (will create a hediff shuffle issue with savegames if you have other mods that add body parts, sorry no real eloquent way around this, use devmode to add/remove hediffs to correct the shuffle if your save is important).
+New Compatability: Combat Extended - all arms/tails/legs are now CE compatible. However, due to the way CE is coded, they do not have any special counterparry, parry, crit, or dodge stat inherent to the body part.
 
 New Organs:
 Psychic Filter - blocks psychic emenations and is installed in the skull.
@@ -14,6 +15,7 @@ Camoflauged Pelt - increases hunting stealth and has a wide thermal comfort zone
 Ra's Vacuole - will heal old wounds such as scars, damage, etc & renders a pawn biologically immortal by preventing all age related problems such as cancer/fraility/etc (They can still die via bullets and stuff).
 Lymphatic Proliferator - adds immunity to numerous vanilla infections, and significantly boosts immunity gain rate.  (leave comments for mods that add immunizable infections that could be added to this organ).
 (Rimatomics only) RAD Filter - will prevent radiation buildup as if you were wearing a protective suit.
+(CE only)
 
 Changed Organs:
 Evolved Carapace - changed name to dragonskin, thermal coefficients removed, added flammability reduction.
