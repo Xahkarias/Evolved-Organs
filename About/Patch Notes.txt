@@ -6,7 +6,7 @@ Rimatomics Compatability
 
 Research Overhaul, added 9 new researches, removed legacy research.  Added research tab.
 
-New Body Part: Left Abdominal Cavity.
+New Body Part: Left Abdominal Cavity.  (will create a hediff shuffle issue with savegames if you have other mods that add body parts, sorry no real eloquent way around this, use devmode to add/remove hediffs to correct the shuffle if your save is important).
 
 New Organs:
 Psychic Filter - blocks psychic emenations and is installed in the skull.
