@@ -1047,7 +1047,7 @@
     <defName>EVO_InstallImmortalOrgan</defName>
     <label>implant ra's vacuole</label>
     <description>Implant an organ dedicated to biological immortality to render a pawn ageless.</description>
-    <workerClass>Recipe_InstallImplant</workerClass>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
     <jobString>Implanting Ra's vacuole.</jobString>
     <workAmount>3000</workAmount>
     <skillRequirements>
@@ -1093,7 +1093,7 @@
     <defName>EVO_InstallLymphaticProliferator</defName>
     <label>implant a lymphatic proliferator</label>
     <description>Implant an organ dedicated to boosting it's hosts immunological capability.</description>
-    <workerClass>Recipe_InstallImplant</workerClass>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
     <jobString>Implanting Lymphatic Proliferator.</jobString>
     <workAmount>3000</workAmount>
     <skillRequirements>
