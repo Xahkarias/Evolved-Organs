@@ -186,24 +186,6 @@
           <xpath>/Defs/ThingDef[defName="EvolvedBrain"]/costList</xpath>
         </li>
         <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="EVORG_Organ_ArmNorm"]/costList</xpath>
-        </li>
-        <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="EVORG_Organ_ArmClaw"]/costList</xpath>
-        </li>
-        <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="EVORG_Organ_ArmMace"]/costList</xpath>
-        </li>
-        <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="EVORG_Organ_ArmSabre"]/costList</xpath>
-        </li>
-        <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="EVORG_Organ_ArmTentacle"]/costList</xpath>
-        </li>
-        <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="EVORG_Organ_ArmShield"]/costList</xpath>
-        </li>
-        <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="EvolvedSpider"]/costList</xpath>
         </li>
         <li Class="PatchOperationRemove">
@@ -282,24 +264,6 @@
         </li>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="EvolvedBrain"]/recipeMaker</xpath>
-        </li>
-        <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="EVORG_Organ_ArmNorm"]/recipeMaker</xpath>
-        </li>
-        <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="EVORG_Organ_ArmClaw"]/recipeMaker</xpath>
-        </li>
-        <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="EVORG_Organ_ArmMace"]/recipeMaker</xpath>
-        </li>
-        <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="EVORG_Organ_ArmSabre"]/recipeMaker</xpath>
-        </li>
-        <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="EVORG_Organ_ArmTentacle"]/recipeMaker</xpath>
-        </li>
-        <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="EVORG_Organ_ArmShield"]/recipeMaker</xpath>
         </li>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="EvolvedSpider"]/recipeMaker</xpath>

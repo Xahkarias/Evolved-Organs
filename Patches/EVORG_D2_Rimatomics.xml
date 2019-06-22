@@ -156,12 +156,6 @@
           </mods>
           <match Class="PatchOperationSequence">
             <operations>
-              <li Class="PatchOperationRemove">
-                <xpath>/Defs/ThingDef[defName="EVORG_Organ_RadiationFilter"]/costList</xpath>
-              </li>
-              <li Class="PatchOperationRemove">
-                <xpath>/Defs/ThingDef[defName="EVORG_Organ_RadiationFilter"]/recipeMaker</xpath>
-              </li>
               <li Class="PatchOperationAdd">
                 <xpath>/Defs</xpath>
                 <value>

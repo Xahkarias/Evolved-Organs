@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!--This patch removes all recipe makers and cost lists from properly prefixed organs-->
+    <Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+            <li>Questionable Ethics</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ThingDef[contains(defName, "EVORG_Organ_")]/costList</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ThingDef[contains(defName, "EVORG_Organ_")]/recipeMaker</xpath>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
+
+
+
+
