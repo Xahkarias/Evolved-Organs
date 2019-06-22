@@ -46,7 +46,7 @@
             <RecipeDef ParentName="SurgeryFlesh">
               <defName>EVO_InstallEvolvedRadiationFilter</defName>
               <label>implant RAD suppressor</label>
-              <description>Implant an organ capable of filtering irrdaiated tissue from it's host.</description>
+              <description>Implant an organ capable of filtering irradiated tissue from it's host.</description>
               <workerClass>Recipe_InstallImplant</workerClass>
               <jobString>Implanting a RAD suppressor.</jobString>
               <workAmount>3000</workAmount>
