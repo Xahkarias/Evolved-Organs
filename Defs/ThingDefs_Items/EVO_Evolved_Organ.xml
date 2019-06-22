@@ -41,7 +41,7 @@
   </ThingDef>
 
   <ThingDef ParentName="EvolvedOrganBase">
-    <defName>EvolvedPrimaryHeart</defName>
+    <defName>EVORG_Organ_Heart_Primary</defName>
     <label>evolved primary heart</label>
     <description>A primary heart created by accelerated evolution. Much more efficient and resilitent compared to a regular heart, it consists of a more robust and powerful design.</description>
     <recipeMaker>
@@ -55,7 +55,7 @@
   </ThingDef>
 
   <ThingDef ParentName="EvolvedOrganBase">
-    <defName>EvolvedKidney</defName>
+    <defName>EVORG_Organ_Kidney</defName>
     <label>evolved kidney</label>
     <description>A kidney created by accelerated evolution. Can filter toxic buildup and other impurities out of blood much more efficiently.</description>
     <recipeMaker>

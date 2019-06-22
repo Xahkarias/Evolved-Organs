@@ -3,7 +3,7 @@
 
 
   <RecipeDef ParentName="SurgeryFlesh">
-    <defName>EVO_InstallEvolvedPrimaryHeart</defName>
+    <defName>EVORG_Surgery_Heart_Primary</defName>
     <label>implant evolved primary heart</label>
     <description>Implant an evolved primary heart.</description>
     <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -27,7 +27,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>EvolvedPrimaryHeart</li>
+            <li>EVORG_Organ_Heart_Primary</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -38,17 +38,17 @@
         <li>Medicine</li>
       </categories>
       <thingDefs>
-        <li>EvolvedPrimaryHeart</li>
+        <li>EVORG_Organ_Heart_Primary</li>
       </thingDefs>
     </fixedIngredientFilter>
     <appliedOnFixedBodyParts>
       <li>Heart</li>
     </appliedOnFixedBodyParts>
-    <addsHediff>EvolvedPrimaryHeart</addsHediff>
+    <addsHediff>EVORG_Heddiff_Heart_Primary</addsHediff>
   </RecipeDef>
 
   <RecipeDef ParentName="SurgeryFlesh">
-    <defName>EVO_InstallEvolvedKidney</defName>
+    <defName>EVORG_Surgery_Kidney</defName>
     <label>implant evolved kidney</label>
     <description>Implant an evolved kidney.</description>
     <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -72,7 +72,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>EvolvedKidney</li>
+            <li>EVORG_Organ_Kidney</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -83,13 +83,13 @@
         <li>Medicine</li>
       </categories>
       <thingDefs>
-        <li>EvolvedKidney</li>
+        <li>EVORG_Organ_Kidney</li>
       </thingDefs>
     </fixedIngredientFilter>
     <appliedOnFixedBodyParts>
       <li>Kidney</li>
     </appliedOnFixedBodyParts>
-    <addsHediff>EvolvedKidney</addsHediff>
+    <addsHediff>EVORG_Heddiff_Kidney</addsHediff>
   </RecipeDef>
 
   <RecipeDef ParentName="SurgeryFlesh">
@@ -138,7 +138,7 @@
   </RecipeDef>
 
   <RecipeDef ParentName="SurgeryFlesh">
-    <defName>EVO_InstallEvolvedJaw</defName>
+    <defName>EVORG_Surgery_Jaw</defName>
     <label>implant evolved jaw</label>
     <description>Implant an evolved jaw.</description>
     <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -183,7 +183,7 @@
   </RecipeDef>
 
   <RecipeDef ParentName="SurgeryFlesh">
-    <defName>EVO_InstallEvolvedStomach</defName>
+    <defName>EVORG_Surgery_Stomach</defName>
     <label>implant evolved stomach</label>
     <description>Implant an evolved stomach.</description>
     <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -228,7 +228,7 @@
   </RecipeDef>
 
   <RecipeDef ParentName="SurgeryFlesh">
-    <defName>EVO_InstallEvolvedLiver</defName>
+    <defName>EVORG_Surgery_Liver</defName>
     <label>implant evolved liver</label>
     <description>Implant an evolved liver.</description>
     <workerClass>Recipe_InstallArtificialBodyPart</workerClass>

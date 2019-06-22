@@ -129,12 +129,6 @@
           <xpath>/Defs/ThingDef[defName="EvolvedSecondHeart"]/costList</xpath>
         </li>
         <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="EvolvedPrimaryHeart"]/costList</xpath>
-        </li>
-        <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="EvolvedKidney"]/costList</xpath>
-        </li>
-        <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="EvolvedLung"]/costList</xpath>
         </li>
         <li Class="PatchOperationRemove">
@@ -207,12 +201,6 @@
         <!--Removes the researchPrereq for the vanilla organ recipes-->
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="EvolvedSecondHeart"]/recipeMaker</xpath>
-        </li>
-        <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="EvolvedPrimaryHeart"]/recipeMaker</xpath>
-        </li>
-        <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="EvolvedKidney"]/recipeMaker</xpath>
         </li>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="EvolvedLung"]/recipeMaker</xpath>
@@ -773,17 +761,17 @@
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-              <defName>EvolvedPrimaryHeart</defName>
+              <defName>EVORG_Organ_Heart_Primary</defName>
               <label>evolved primary heart</label>
-              <productDef>EvolvedPrimaryHeart</productDef>
+              <productDef>EVORG_Organ_Heart_Primary</productDef>
               <productAmount>1</productAmount>
               <requiredResearch>EVORG_Research_Organs1</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-              <defName>EvolvedKidney</defName>
+              <defName>EVORG_Organ_Kidney</defName>
               <label>evolved kidney</label>
-              <productDef>EvolvedKidney</productDef>
+              <productDef>EVORG_Organ_Kidney</productDef>
               <productAmount>1</productAmount>
               <requiredResearch>EVORG_Research_Start2</requiredResearch>
             </QEthics.GrowerRecipeDef>

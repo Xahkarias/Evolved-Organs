@@ -75,14 +75,14 @@
 
         <!-- Primary Heart -->
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EvolvedPrimaryHeart"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVORG_Heddiff_Heart_Primary"]</xpath>
           <value>
             <HediffDef ParentName="AddedBodyPartBase">
-              <defName>EvolvedPrimaryHeart</defName>
+              <defName>EVORG_Heddiff_Heart_Primary</defName>
               <label>evolved primary heart</label>
               <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
               <labelNoun>an evolved primary heart</labelNoun>
-              <spawnThingOnRemoved>EvolvedPrimaryHeart</spawnThingOnRemoved>
+              <spawnThingOnRemoved>EVORG_Organ_Heart_Primary</spawnThingOnRemoved>
               <addedPartProps>
                 <solid>true</solid>
                 <partEfficiency>2.0</partEfficiency>
@@ -124,14 +124,14 @@
 
         <!-- Kidney -->
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EvolvedKidney"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVORG_Heddiff_Kidney"]</xpath>
           <value>
             <HediffDef ParentName="AddedBodyPartBase">
-              <defName>EvolvedKidney</defName>
+              <defName>EVORG_Heddiff_Kidney</defName>
               <label>evolved kidney</label>
               <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
               <labelNoun>an evolved kidney</labelNoun>
-              <spawnThingOnRemoved>EvolvedKidney</spawnThingOnRemoved>
+              <spawnThingOnRemoved>EVORG_Organ_Kidney</spawnThingOnRemoved>
               <addedPartProps>
                 <solid>true</solid>
                 <partEfficiency>2.0</partEfficiency>
