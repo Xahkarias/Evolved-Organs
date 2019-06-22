@@ -49,7 +49,7 @@
 		<products>
 			<EvolvedChunk>5</EvolvedChunk>
 		</products>
-		<researchPrerequisite>EvolvedOrgansR1</researchPrerequisite>
+		<researchPrerequisite>EVORG_Research_Start1</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>10</Crafting>
 		</skillRequirements>
@@ -87,7 +87,7 @@
 		<products>
 			<EVO_Humanoid_Protein>5</EVO_Humanoid_Protein>
 		</products>
-		<researchPrerequisite>EvolvedOrgansR1</researchPrerequisite>
+		<researchPrerequisite>EVORG_Research_Start1</researchPrerequisite>
 		<skillRequirements>
 			<Crafting>5</Crafting>
 			<Cooking>5</Cooking>

@@ -144,7 +144,7 @@
 										<label>Torque Arm</label>
 										<description>An arm created to expedite the user's ability to wield firearms, coming with many manipulators that change based on the weapon.</description>
 										<recipeMaker>
-											<researchPrerequisite>EvolvedOrgansResearchLimbs2</researchPrerequisite>
+											<researchPrerequisite>EVORG_Research_Limbs2</researchPrerequisite>
 										</recipeMaker>
 										<costList>
 											<EvolvedChunk>12</EvolvedChunk>
@@ -266,7 +266,7 @@
 										<label>Sympathetic Neuralizer</label>
 										<description>An organ designed to combat the natural panic response, allowing the host to focus in combat without distraction.</description>
 										<recipeMaker>
-											<researchPrerequisite>EvolvedOrgansResearchOrgans3</researchPrerequisite>
+											<researchPrerequisite>EVORG_Research_Organs2</researchPrerequisite>
 										</recipeMaker>
 										<costList>
 											<EvolvedChunk>12</EvolvedChunk>
@@ -456,7 +456,7 @@
 										<label>Torque Arm</label>
 										<description>An arm created to expedite the user's ability to wield firearms, coming with many manipulators that change based on the weapon.</description>
 										<recipeMaker>
-											<researchPrerequisite>EvolvedOrgansResearchLimbs2</researchPrerequisite>
+											<researchPrerequisite>EVORG_Research_Limbs2</researchPrerequisite>
 										</recipeMaker>
 										<costList>
 											<EvolvedChunk>12</EvolvedChunk>
@@ -578,7 +578,7 @@
 										<label>Sympathetic Neuralizer</label>
 										<description>An organ designed to combat the natural panic response, allowing the host to focus in combat without distraction.</description>
 										<recipeMaker>
-											<researchPrerequisite>EvolvedOrgansResearchOrgans3</researchPrerequisite>
+											<researchPrerequisite>EVORG_Research_Organs2</researchPrerequisite>
 										</recipeMaker>
 										<costList>
 											<EvolvedChunk>12</EvolvedChunk>
@@ -686,7 +686,7 @@
 										<label>evolved torque arm</label>
 										<productDef>EvolvedTorqueArm</productDef>
 										<productAmount>1</productAmount>
-										<requiredResearch>EvolvedOrgansResearchLimbs2</requiredResearch>
+										<requiredResearch>EVORG_Research_Limbs2</requiredResearch>
 									</QEthics.GrowerRecipeDef>
 								</value>
 							</li>
@@ -699,7 +699,7 @@
 										<label>Sympathetic Neuralizer</label>
 										<productDef>EvolvedAntiSuppressor</productDef>
 										<productAmount>1</productAmount>
-										<requiredResearch>EvolvedOrgansResearchOrgans3</requiredResearch>
+										<requiredResearch>EVORG_Research_Organs2</requiredResearch>
 									</QEthics.GrowerRecipeDef>
 								</value>
 							</li>

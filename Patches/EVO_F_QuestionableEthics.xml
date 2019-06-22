@@ -383,7 +383,7 @@
                 <ComponentIndustrial>2</ComponentIndustrial>
                 <Neutroamine>2</Neutroamine>
               </products>
-              <researchPrerequisite>EvolvedOrgansR1</researchPrerequisite>
+              <researchPrerequisite>EVORG_Research_Start1</researchPrerequisite>
               <skillRequirements>
                 <Crafting>1</Crafting>
               </skillRequirements>
@@ -415,10 +415,10 @@
         </li>
 
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/ResearchProjectDef[defName="EvolvedOrgansR1"]</xpath>
+          <xpath>/Defs/ResearchProjectDef[defName="EVORG_Research_Start1"]</xpath>
           <value>
             <ResearchProjectDef>
-              <defName>EvolvedOrgansR1</defName>
+              <defName>EVORG_Research_Start1</defName>
               <tab>QE_ResearchTab</tab>
               <label>Nano-Scale Cellular Engineering</label>
               <description>Extract Humanoid Protein at the Butcher Table and create Mechanite Slurry at the Machining Table. Made possible through a synthesis of biology and bionics knowledge.</description>
@@ -440,17 +440,17 @@
           </value>
         </li>
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/ResearchProjectDef[defName="EvolvedOrgansR2"]</xpath>
+          <xpath>/Defs/ResearchProjectDef[defName="EVORG_Research_Start2"]</xpath>
           <value>
             <ResearchProjectDef>
-              <defName>EvolvedOrgansR2</defName>
+              <defName>EVORG_Research_Start2</defName>
               <tab>QE_ResearchTab</tab>
               <label>Biomechanical Organ Evolution</label>
               <description>Grow evolved organs for simple body parts, like the kidney and liver, at the Organ Vat. We've learned how to germinate and stimulate stem cells with mechanites.</description>
               <baseCost>2000</baseCost>
               <techLevel>Spacer</techLevel>
               <prerequisites>
-                <li>EvolvedOrgansR1</li>
+                <li>EVORG_Research_Start1</li>
               </prerequisites>
               <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
               <requiredResearchFacilities>
@@ -462,17 +462,17 @@
           </value>
         </li>
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/ResearchProjectDef[defName="EvolvedOrgansResearchOrgans2"]</xpath>
+          <xpath>/Defs/ResearchProjectDef[defName="EVORG_Research_Organs1"]</xpath>
           <value>
             <ResearchProjectDef>
-              <defName>EvolvedOrgansResearchOrgans2</defName>
+              <defName>EVORG_Research_Organs1</defName>
               <tab>QE_ResearchTab</tab>
               <label>Complex Organ Evolution</label>
               <description>Grow evolved organs for complex body parts, like the heart and lungs, at the Organ Vat. Our development of advanced cellular structures continues!</description>
               <baseCost>3000</baseCost>
               <techLevel>Spacer</techLevel>
               <prerequisites>
-                <li>EvolvedOrgansR2</li>
+                <li>EVORG_Research_Start2</li>
               </prerequisites>
               <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
               <requiredResearchFacilities>
@@ -484,17 +484,17 @@
           </value>
         </li>
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/ResearchProjectDef[defName="EvolvedOrgansResearchOrgans3"]</xpath>
+          <xpath>/Defs/ResearchProjectDef[defName="EVORG_Research_Organs2"]</xpath>
           <value>
             <ResearchProjectDef>
-              <defName>EvolvedOrgansResearchOrgans3</defName>
+              <defName>EVORG_Research_Organs2</defName>
               <tab>QE_ResearchTab</tab>
               <label>Advanced Organ Evolution</label>
               <description>Grow evolved organs for new body parts entirely, like the second lung and combat glands, at the Organ Vat. We are now the masters of organ bio-engineering.</description>
               <baseCost>4000</baseCost>
               <techLevel>Spacer</techLevel>
               <prerequisites>
-                <li>EvolvedOrgansResearchOrgans2</li>
+                <li>EVORG_Research_Organs1</li>
               </prerequisites>
               <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
               <requiredResearchFacilities>
@@ -506,17 +506,17 @@
           </value>
         </li>
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/ResearchProjectDef[defName="EvolvedOrgansResearchLimbs1"]</xpath>
+          <xpath>/Defs/ResearchProjectDef[defName="EVORG_Research_Limbs1"]</xpath>
           <value>
             <ResearchProjectDef>
-              <defName>EvolvedOrgansResearchLimbs1</defName>
+              <defName>EVORG_Research_Limbs1</defName>
               <tab>QE_ResearchTab</tab>
               <label>Structural Organ Evolution</label>
               <description>Grow evolved limbs for simple body parts, like the arm and leg, at the Organ Vat. We've learned how to engineer cells and mechanites in a load-bearing configuration.</description>
               <baseCost>2000</baseCost>
               <techLevel>Spacer</techLevel>
               <prerequisites>
-                <li>EvolvedOrgansR2</li>
+                <li>EVORG_Research_Start2</li>
               </prerequisites>
               <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
               <requiredResearchFacilities>
@@ -528,17 +528,17 @@
           </value>
         </li>
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/ResearchProjectDef[defName="EvolvedOrgansResearchLimbs2"]</xpath>
+          <xpath>/Defs/ResearchProjectDef[defName="EVORG_Research_Limbs2"]</xpath>
           <value>
             <ResearchProjectDef>
-              <defName>EvolvedOrgansResearchLimbs2</defName>
+              <defName>EVORG_Research_Limbs2</defName>
               <tab>QE_ResearchTab</tab>
               <label>Complex Limb Structures</label>
               <description>Grow new evolved limbs for the body, like the arm mace and arm tentacle, at the Organ Vat. We are now improving on the designs of thousands of years of evolution.</description>
               <baseCost>3000</baseCost>
               <techLevel>Spacer</techLevel>
               <prerequisites>
-                <li>EvolvedOrgansResearchLimbs1</li>
+                <li>EVORG_Research_Limbs1</li>
               </prerequisites>
               <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
               <requiredResearchFacilities>
@@ -550,17 +550,17 @@
           </value>
         </li>
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/ResearchProjectDef[defName="EvolvedOrgansResearchLimbs3"]</xpath>
+          <xpath>/Defs/ResearchProjectDef[defName="EVORG_Research_Limbs3"]</xpath>
           <value>
             <ResearchProjectDef>
-              <defName>EvolvedOrgansResearchLimbs3</defName>
+              <defName>EVORG_Research_Limbs3</defName>
               <tab>QE_ResearchTab</tab>
               <label>Advanced Limb Structures</label>
               <description>Grow exotic evolved limbs for the body, like the spider and pinions, at the Organ Vat. GMO-Humanoid limbs...is the sky the limit?</description>
               <baseCost>4000</baseCost>
               <techLevel>Spacer</techLevel>
               <prerequisites>
-                <li>EvolvedOrgansResearchLimbs2</li>
+                <li>EVORG_Research_Limbs2</li>
               </prerequisites>
               <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
               <requiredResearchFacilities>
@@ -584,8 +584,8 @@
               <baseCost>10000</baseCost>
               <techLevel>Spacer</techLevel>
               <prerequisites>
-                <li>EvolvedOrgansResearchOrgans3</li>
-                <li>EvolvedOrgansResearchLimbs3</li>
+                <li>EVORG_Research_Organs2</li>
+                <li>EVORG_Research_Limbs3</li>
               </prerequisites>
               <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
               <requiredResearchFacilities>
@@ -689,7 +689,7 @@
               <specialProducts>
                 <li>Butchery</li>
               </specialProducts>
-              <researchPrerequisite>EvolvedOrgansR1</researchPrerequisite>
+              <researchPrerequisite>EVORG_Research_Start1</researchPrerequisite>
               <skillRequirements>
                 <Crafting>7</Crafting>
                 <Medicine>5</Medicine>
@@ -797,7 +797,7 @@
               <defName>EVO_Mechanite_Slurry</defName>
               <label>propogate mechanites</label>
               <productDef>EVO_Mechanite_Slurry</productDef>
-              <requiredResearch>EvolvedOrgansR1</requiredResearch>
+              <requiredResearch>EVORG_Research_Start1</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -805,7 +805,7 @@
               <label>evolved secondary heart</label>
               <productDef>EvolvedSecondHeart</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansResearchOrgans3</requiredResearch>
+              <requiredResearch>EVORG_Research_Organs2</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -813,7 +813,7 @@
               <label>evolved primary heart</label>
               <productDef>EvolvedPrimaryHeart</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansResearchOrgans2</requiredResearch>
+              <requiredResearch>EVORG_Research_Organs1</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -821,7 +821,7 @@
               <label>evolved kidney</label>
               <productDef>EvolvedKidney</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansR2</requiredResearch>
+              <requiredResearch>EVORG_Research_Start2</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -829,7 +829,7 @@
               <label>evolved lung</label>
               <productDef>EvolvedLung</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansResearchOrgans2</requiredResearch>
+              <requiredResearch>EVORG_Research_Organs1</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -837,7 +837,7 @@
               <label>evolved third lung</label>
               <productDef>EvolvedThirdLung</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansResearchOrgans3</requiredResearch>
+              <requiredResearch>EVORG_Research_Organs2</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -845,7 +845,7 @@
               <label>evolved stomach</label>
               <productDef>EvolvedStomach</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansResearchOrgans2</requiredResearch>
+              <requiredResearch>EVORG_Research_Organs1</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -853,7 +853,7 @@
               <label>evolved liver</label>
               <productDef>EvolvedLiver</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansR2</requiredResearch>
+              <requiredResearch>EVORG_Research_Start2</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -861,7 +861,7 @@
               <label>evolved eye</label>
               <productDef>EvolvedEye</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansResearchOrgans2</requiredResearch>
+              <requiredResearch>EVORG_Research_Organs1</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -869,7 +869,7 @@
               <label>evolved pinions</label>
               <productDef>EvolvedPinions</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansResearchLimbs3</requiredResearch>
+              <requiredResearch>EVORG_Research_Limbs3</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -877,7 +877,7 @@
               <label>evolved combat glands</label>
               <productDef>EvolvedCombatGlands</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansResearchOrgans3</requiredResearch>
+              <requiredResearch>EVORG_Research_Organs2</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -885,7 +885,7 @@
               <label>evolved leg</label>
               <productDef>EvolvedLeg</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansResearchLimbs1</requiredResearch>
+              <requiredResearch>EVORG_Research_Limbs1</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -893,7 +893,7 @@
               <label>evolved nose</label>
               <productDef>EvolvedNose</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansR2</requiredResearch>
+              <requiredResearch>EVORG_Research_Start2</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -901,7 +901,7 @@
               <label>evolved larnyx</label>
               <productDef>EvolvedLarnyx</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansResearchOrgans2</requiredResearch>
+              <requiredResearch>EVORG_Research_Organs1</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -909,7 +909,7 @@
               <label>evolved ear</label>
               <productDef>EvolvedEar</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansResearchOrgans2</requiredResearch>
+              <requiredResearch>EVORG_Research_Organs1</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -917,7 +917,7 @@
               <label>evolved ribcage</label>
               <productDef>EvolvedRibcage</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansR2</requiredResearch>
+              <requiredResearch>EVORG_Research_Start2</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -925,7 +925,7 @@
               <label>evolved Carapace</label>
               <productDef>EvolvedCarapace</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansR2</requiredResearch>
+              <requiredResearch>EVORG_Research_Start2</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -933,7 +933,7 @@
               <label>evolved spine</label>
               <productDef>EvolvedSpine</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansResearchOrgans3</requiredResearch>
+              <requiredResearch>EVORG_Research_Organs2</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -941,7 +941,7 @@
               <label>evolved tail</label>
               <productDef>EvolvedTail</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansResearchLimbs2</requiredResearch>
+              <requiredResearch>EVORG_Research_Limbs2</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -949,7 +949,7 @@
               <label>evolved jaw</label>
               <productDef>EvolvedJaw</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansR2</requiredResearch>
+              <requiredResearch>EVORG_Research_Start2</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -957,7 +957,7 @@
               <label>evolved brain</label>
               <productDef>EvolvedBrain</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansResearchOrgans3</requiredResearch>
+              <requiredResearch>EVORG_Research_Organs2</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -965,7 +965,7 @@
               <label>evolved arm</label>
               <productDef>EvolvedArm</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansResearchLimbs1</requiredResearch>
+              <requiredResearch>EVORG_Research_Limbs1</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -973,7 +973,7 @@
               <label>evolved arm claw</label>
               <productDef>EvolvedArmClaw</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansResearchLimbs2</requiredResearch>
+              <requiredResearch>EVORG_Research_Limbs2</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -981,7 +981,7 @@
               <label>evolved arm sabre</label>
               <productDef>EvolvedArmSabre</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansResearchLimbs2</requiredResearch>
+              <requiredResearch>EVORG_Research_Limbs2</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -989,7 +989,7 @@
               <label>evolved arm mace</label>
               <productDef>EvolvedArmMace</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansResearchLimbs2</requiredResearch>
+              <requiredResearch>EVORG_Research_Limbs2</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -997,7 +997,7 @@
               <label>evolved arm tentacle</label>
               <productDef>EvolvedArmTentacle</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansResearchLimbs2</requiredResearch>
+              <requiredResearch>EVORG_Research_Limbs2</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -1005,7 +1005,7 @@
               <label>evolved arm shield</label>
               <productDef>EvolvedArmShield</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansResearchLimbs2</requiredResearch>
+              <requiredResearch>EVORG_Research_Limbs2</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -1013,7 +1013,7 @@
               <label>evolved spider</label>
               <productDef>EvolvedSpider</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansResearchLimbs3</requiredResearch>
+              <requiredResearch>EVORG_Research_Limbs3</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -1021,7 +1021,7 @@
               <label>evolved pelt</label>
               <productDef>EvolvedPelt</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansR2</requiredResearch>
+              <requiredResearch>EVORG_Research_Start2</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -1029,7 +1029,7 @@
               <label>evolved psychic filter</label>
               <productDef>EvolvedFilter</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansResearchOrgans2</requiredResearch>
+              <requiredResearch>EVORG_Research_Organs1</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -1037,7 +1037,7 @@
               <label>ra's vacuole</label>
               <productDef>ImmortalOrgan</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansResearchOrgans3</requiredResearch>
+              <requiredResearch>EVORG_Research_Organs2</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -1045,7 +1045,7 @@
               <label>empathic resonator</label>
               <productDef>EmpathicResonator</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansResearchOrgans3</requiredResearch>
+              <requiredResearch>EVORG_Research_Organs2</requiredResearch>
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
@@ -1053,7 +1053,7 @@
               <label>lymphatic proliferator</label>
               <productDef>LymphaticProliferator</productDef>
               <productAmount>1</productAmount>
-              <requiredResearch>EvolvedOrgansResearchOrgans2</requiredResearch>
+              <requiredResearch>EVORG_Research_Organs1</requiredResearch>
             </QEthics.GrowerRecipeDef>
           </value>
         </li>

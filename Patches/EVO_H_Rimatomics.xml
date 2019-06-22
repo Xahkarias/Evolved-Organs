@@ -15,7 +15,7 @@
               <label>RAD suppressor</label>
               <description>An evolved organ developed to release protective protiens which insulate cells from radiation damage as well as filtering and replacing irradiated tissue.</description>
               <recipeMaker>
-                <researchPrerequisite>EvolvedOrgansResearchOrgans2</researchPrerequisite>
+                <researchPrerequisite>EVORG_Research_Organs1</researchPrerequisite>
               </recipeMaker>
               <costList>
                 <EvolvedChunk>12</EvolvedChunk>
@@ -183,7 +183,7 @@
                     <label>RAD filter</label>
                     <productDef>EvolvedRadiationFilter</productDef>
                     <productAmount>1</productAmount>
-                    <requiredResearch>EvolvedOrgansResearchOrgans2</requiredResearch>
+                    <requiredResearch>EVORG_Research_Organs1</requiredResearch>
                   </QEthics.GrowerRecipeDef>
                 </value>
               </li>
