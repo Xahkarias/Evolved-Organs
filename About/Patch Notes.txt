@@ -15,7 +15,8 @@ Camoflauged Pelt - increases hunting stealth and has a wide thermal comfort zone
 Ra's Vacuole - will heal old wounds such as scars, damage, etc & renders a pawn biologically immortal by preventing all age related problems such as cancer/fraility/etc (They can still die via bullets and stuff).
 Lymphatic Proliferator - adds immunity to numerous vanilla infections, and significantly boosts immunity gain rate.  (leave comments for mods that add immunizable infections that could be added to this organ).
 (Rimatomics only) RAD Filter - will prevent radiation buildup as if you were wearing a protective suit.
-(CE only)
+(CE only) Torque Arm - Increases pawn reload speed
+(CE Only) Sympathetic Neuralizer - Makes the pawn unable to be suppressed
 
 Changed Organs:
 Evolved Carapace - changed name to dragonskin, thermal coefficients removed, added flammability reduction.
