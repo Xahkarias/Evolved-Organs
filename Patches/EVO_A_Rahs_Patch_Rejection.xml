@@ -174,14 +174,14 @@
 
         <!-- Lung -->
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EvolvedLung"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVORG_Heddiff_Lung"]</xpath>
           <value>
             <HediffDef ParentName="AddedBodyPartBase">
-              <defName>EvolvedLung</defName>
+              <defName>EVORG_Heddiff_Lung</defName>
               <label>evolved lung</label>
               <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
               <labelNoun>an evolved lung</labelNoun>
-              <spawnThingOnRemoved>EvolvedLung</spawnThingOnRemoved>
+              <spawnThingOnRemoved>EVORG_Organ_Lung</spawnThingOnRemoved>
               <addedPartProps>
                 <solid>true</solid>
                 <partEfficiency>2.0</partEfficiency>

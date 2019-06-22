@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="EvolvedOrganBase">
+  <ThingDef ParentName="EVORG_OrgBase">
     <defName>EVORG_Organ_ArmNorm</defName>
     <label>evolved arm</label>
     <description>A normal arm created by accelerated evolution. Much more efficient than a natural arm in all ways, even outstripping bionics.</description>
@@ -14,7 +14,7 @@
     </costList>
   </ThingDef>
 
-  <ThingDef ParentName="EvolvedOrganBase">
+  <ThingDef ParentName="EVORG_OrgBase">
     <defName>EVORG_Organ_ArmClaw</defName>
     <label>evolved arm claw</label>
     <description>An arm claw created by accelerated evolution. While worse than an normal arm at manipulation and worse than a bone sabre at combat, lives in a healthy balance between the two.</description>
@@ -27,7 +27,7 @@
     </costList>
   </ThingDef>
 
-  <ThingDef ParentName="EvolvedOrganBase">
+  <ThingDef ParentName="EVORG_OrgBase">
     <defName>EVORG_Organ_ArmSabre</defName>
     <label>evolved arm sabre</label>
     <description>An arm sabre created by accelerated evolution. While not great at manpulation, it serves as one of the most deadly close combat weapons known to the rim.</description>
@@ -40,7 +40,7 @@
     </costList>
   </ThingDef>
 
-  <ThingDef ParentName="EvolvedOrganBase">
+  <ThingDef ParentName="EVORG_OrgBase">
     <defName>EVORG_Organ_ArmMace</defName>
     <label>evolved arm mace</label>
     <description>An arm mace created by accelerated evolution. While not great at manpulation, serves as one of the most deadly close combat weapons known to the rim.</description>
@@ -53,7 +53,7 @@
     </costList>
   </ThingDef>
 
-  <ThingDef ParentName="EvolvedOrganBase">
+  <ThingDef ParentName="EVORG_OrgBase">
     <defName>EVORG_Organ_ArmTentacle</defName>
     <label>evolved arm tentacle</label>
     <description>An arm tentacle created by accelerated evolution. Not great at combat, but amazing at manipulating objects due to the wide range of articulation.</description>
@@ -66,7 +66,7 @@
     </costList>
   </ThingDef>
 
-  <ThingDef ParentName="EvolvedOrganBase">
+  <ThingDef ParentName="EVORG_OrgBase">
     <defName>EVORG_Organ_ArmShield</defName>
     <label>evolved arm shield</label>
     <description>An arm shield created by accelerated evolution. Not really usable for anything other than blocking damage, but grants its user a massive boost in defensive capabilities.</description>

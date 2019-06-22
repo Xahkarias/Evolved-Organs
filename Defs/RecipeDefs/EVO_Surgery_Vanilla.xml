@@ -93,7 +93,7 @@
   </RecipeDef>
 
   <RecipeDef ParentName="SurgeryFlesh">
-    <defName>EVO_InstallEvolvedLung</defName>
+    <defName>EVORG_Surgery_Lung</defName>
     <label>implant evolved lung</label>
     <description>Implant an evolved lung.</description>
     <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -117,7 +117,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>EvolvedLung</li>
+            <li>EVORG_Organ_Lung</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -128,13 +128,13 @@
         <li>Medicine</li>
       </categories>
       <thingDefs>
-        <li>EvolvedLung</li>
+        <li>EVORG_Organ_Lung</li>
       </thingDefs>
     </fixedIngredientFilter>
     <appliedOnFixedBodyParts>
       <li>Lung</li>
     </appliedOnFixedBodyParts>
-    <addsHediff>EvolvedLung</addsHediff>
+    <addsHediff>EVORG_Heddiff_Lung</addsHediff>
   </RecipeDef>
 
   <RecipeDef ParentName="SurgeryFlesh">

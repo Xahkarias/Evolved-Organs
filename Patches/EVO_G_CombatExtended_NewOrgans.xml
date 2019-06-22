@@ -139,7 +139,7 @@
 										</stages>
 									</HediffDef>
 
-									<ThingDef ParentName="EvolvedOrganBase">
+									<ThingDef ParentName="EVORG_OrgBase">
 										<defName>EvolvedTorqueArm</defName>
 										<label>Torque Arm</label>
 										<description>An arm created to expedite the user's ability to wield firearms, coming with many manipulators that change based on the weapon.</description>
@@ -261,7 +261,7 @@
 							<li Class="PatchOperationAdd">
 								<xpath>/Defs</xpath>
 								<value>
-									<ThingDef ParentName="EvolvedOrganBase">
+									<ThingDef ParentName="EVORG_OrgBase">
 										<defName>EvolvedAntiSuppressor</defName>
 										<label>Sympathetic Neuralizer</label>
 										<description>An organ designed to combat the natural panic response, allowing the host to focus in combat without distraction.</description>
@@ -451,7 +451,7 @@
 										</stages>
 									</HediffDef>
 
-									<ThingDef ParentName="EvolvedOrganBase">
+									<ThingDef ParentName="EVORG_OrgBase">
 										<defName>EvolvedTorqueArm</defName>
 										<label>Torque Arm</label>
 										<description>An arm created to expedite the user's ability to wield firearms, coming with many manipulators that change based on the weapon.</description>
@@ -573,7 +573,7 @@
 							<li Class="PatchOperationAdd">
 								<xpath>/Defs</xpath>
 								<value>
-									<ThingDef ParentName="EvolvedOrganBase">
+									<ThingDef ParentName="EVORG_OrgBase">
 										<defName>EvolvedAntiSuppressor</defName>
 										<label>Sympathetic Neuralizer</label>
 										<description>An organ designed to combat the natural panic response, allowing the host to focus in combat without distraction.</description>

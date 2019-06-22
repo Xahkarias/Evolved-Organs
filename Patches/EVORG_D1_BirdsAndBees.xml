@@ -26,7 +26,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs</xpath>
 					<value>
-						<ThingDef ParentName="EvolvedOrganBase">
+						<ThingDef ParentName="EVORG_OrgBase">
 							<defName>EVORG_Organ_ReproductiveOrgans</defName>
 							<label>evolved reproductive organs</label>
 							<description>A set of reproductive organs created by accelerated evolution. I cannot imagine what "features" this has to make it so efficient.</description>

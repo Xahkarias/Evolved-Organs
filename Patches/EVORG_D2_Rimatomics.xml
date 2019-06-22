@@ -10,7 +10,7 @@
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <ThingDef ParentName="EvolvedOrganBase">
+            <ThingDef ParentName="EVORG_OrgBase">
               <defName>EVORG_Organ_RadiationFilter</defName>
               <label>RAD suppressor</label>
               <description>An evolved organ developed to release protective protiens which insulate cells from radiation damage as well as filtering and replacing irradiated tissue.</description>

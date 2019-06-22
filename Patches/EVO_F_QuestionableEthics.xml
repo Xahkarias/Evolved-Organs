@@ -129,9 +129,6 @@
           <xpath>/Defs/ThingDef[defName="EvolvedSecondHeart"]/costList</xpath>
         </li>
         <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="EvolvedLung"]/costList</xpath>
-        </li>
-        <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="EvolvedThirdLung"]/costList</xpath>
         </li>
         <li Class="PatchOperationRemove">
@@ -203,9 +200,6 @@
           <xpath>/Defs/ThingDef[defName="EvolvedSecondHeart"]/recipeMaker</xpath>
         </li>
         <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="EvolvedLung"]/recipeMaker</xpath>
-        </li>
-        <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="EvolvedThirdLung"]/recipeMaker</xpath>
         </li>
         <li Class="PatchOperationRemove">
@@ -269,7 +263,7 @@
 
         <!--removes the recipeMaker so that they cant be crafted and dont throw the "you dont have a costlist error" -->
         <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="EvolvedOrganBase"]/recipeMaker</xpath>
+          <xpath>/Defs/ThingDef[defName="EVORG_OrgBase"]/recipeMaker</xpath>
         </li>
 
         <!--but wait the secondary arms still use it! nOPE!-->
@@ -777,9 +771,9 @@
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-              <defName>EvolvedLung</defName>
+              <defName>EVORG_Organ_Lung</defName>
               <label>evolved lung</label>
-              <productDef>EvolvedLung</productDef>
+              <productDef>EVORG_Organ_Lung</productDef>
               <productAmount>1</productAmount>
               <requiredResearch>EVORG_Research_Organs1</requiredResearch>
             </QEthics.GrowerRecipeDef>
