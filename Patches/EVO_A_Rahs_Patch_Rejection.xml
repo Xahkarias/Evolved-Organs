@@ -1536,10 +1536,10 @@
 
         <!--Claw-->
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EvolvedArmClaw"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVORG_Hediff_ArmClaw_Primary"]</xpath>
           <value>
             <HediffDef ParentName="AddedBodyPartBase">
-              <defName>EvolvedArmClaw</defName>
+              <defName>EVORG_Hediff_ArmClaw_Primary</defName>
               <label>evolved arm claw</label>
               <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
               <labelNoun>an evolved arm claw</labelNoun>
@@ -1561,7 +1561,7 @@
                 </li>
               </comps>
               <initialSeverity>0.001</initialSeverity>
-              <spawnThingOnRemoved>EvolvedArmClaw</spawnThingOnRemoved>
+              <spawnThingOnRemoved>EVORG_Organ_ArmClaw</spawnThingOnRemoved>
               <addedPartProps>
                 <isGoodWeapon>true</isGoodWeapon>
                 <solid>true</solid>
@@ -1619,10 +1619,10 @@
         </li>
 
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EvolvedArmClaw_Secondary"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVORG_Hediff_ArmClaw_Secondary"]</xpath>
           <value>
             <HediffDef ParentName="AddedBodyPartBase">
-              <defName>EvolvedArmClaw_Secondary</defName>
+              <defName>EVORG_Hediff_ArmClaw_Secondary</defName>
               <label>evolved arm claw</label>
               <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
               <labelNoun>an evolved arm claw</labelNoun>
@@ -1644,7 +1644,7 @@
                 </li>
               </comps>
               <initialSeverity>0.001</initialSeverity>
-              <spawnThingOnRemoved>EvolvedArmClaw</spawnThingOnRemoved>
+              <spawnThingOnRemoved>EVORG_Organ_ArmClaw</spawnThingOnRemoved>
               <addedPartProps>
                 <isGoodWeapon>true</isGoodWeapon>
                 <solid>true</solid>
@@ -1703,10 +1703,10 @@
 
         <!-- mace -->
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EvolvedArmMace"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVORG_Hediff_ArmMace_Primary"]</xpath>
           <value>
             <HediffDef ParentName="AddedBodyPartBase">
-              <defName>EvolvedArmMace</defName>
+              <defName>EVORG_Hediff_ArmMace_Primary</defName>
               <label>evolved arm mace</label>
               <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
               <labelNoun>an evolved arm mace</labelNoun>
@@ -1728,7 +1728,7 @@
                   <severityPerDayNotImmune>0.1</severityPerDayNotImmune>
                 </li>
               </comps>
-              <spawnThingOnRemoved>EvolvedArmMace</spawnThingOnRemoved>
+              <spawnThingOnRemoved>EVORG_Organ_ArmMace</spawnThingOnRemoved>
               <addedPartProps>
                 <isGoodWeapon>true</isGoodWeapon>
                 <solid>true</solid>
@@ -1788,10 +1788,10 @@
         </li>
 
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EvolvedArmMace_Secondary"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVORG_Hediff_ArmMace_Secondary"]</xpath>
           <value>
             <HediffDef ParentName="AddedBodyPartBase">
-              <defName>EvolvedArmMace_Secondary</defName>
+              <defName>EVORG_Hediff_ArmMace_Secondary</defName>
               <label>evolved arm mace</label>
               <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
               <labelNoun>an evolved arm mace</labelNoun>
@@ -1814,7 +1814,7 @@
                 </li>
               </comps>
               <initialSeverity>0.001</initialSeverity>
-              <spawnThingOnRemoved>EvolvedArmMace</spawnThingOnRemoved>
+              <spawnThingOnRemoved>EVORG_Organ_ArmMace</spawnThingOnRemoved>
               <addedPartProps>
                 <isGoodWeapon>true</isGoodWeapon>
                 <solid>true</solid>

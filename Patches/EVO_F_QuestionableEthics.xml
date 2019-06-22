@@ -189,10 +189,10 @@
           <xpath>/Defs/ThingDef[defName="EvolvedArm"]/costList</xpath>
         </li>
         <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="EvolvedArmClaw"]/costList</xpath>
+          <xpath>/Defs/ThingDef[defName="EVORG_Organ_ArmClaw"]/costList</xpath>
         </li>
         <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="EvolvedArmMace"]/costList</xpath>
+          <xpath>/Defs/ThingDef[defName="EVORG_Organ_ArmMace"]/costList</xpath>
         </li>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="EVORG_Organ_ArmSabre"]/costList</xpath>
@@ -287,10 +287,10 @@
           <xpath>/Defs/ThingDef[defName="EvolvedArm"]/recipeMaker</xpath>
         </li>
         <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="EvolvedArmClaw"]/recipeMaker</xpath>
+          <xpath>/Defs/ThingDef[defName="EVORG_Organ_ArmClaw"]/recipeMaker</xpath>
         </li>
         <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="EvolvedArmMace"]/recipeMaker</xpath>
+          <xpath>/Defs/ThingDef[defName="EVORG_Organ_ArmMace"]/recipeMaker</xpath>
         </li>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="EVORG_Organ_ArmSabre"]/recipeMaker</xpath>
@@ -969,9 +969,9 @@
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-              <defName>EvolvedArmClaw</defName>
+              <defName>EVORG_Organ_ArmClaw</defName>
               <label>evolved arm claw</label>
-              <productDef>EvolvedArmClaw</productDef>
+              <productDef>EVORG_Organ_ArmClaw</productDef>
               <productAmount>1</productAmount>
               <requiredResearch>EVORG_Research_Limbs2</requiredResearch>
             </QEthics.GrowerRecipeDef>
@@ -985,9 +985,9 @@
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-              <defName>EvolvedArmMace</defName>
+              <defName>EVORG_Organ_ArmMace</defName>
               <label>evolved arm mace</label>
-              <productDef>EvolvedArmMace</productDef>
+              <productDef>EVORG_Organ_ArmMace</productDef>
               <productAmount>1</productAmount>
               <requiredResearch>EVORG_Research_Limbs2</requiredResearch>
             </QEthics.GrowerRecipeDef>

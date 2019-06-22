@@ -336,7 +336,7 @@
   </ThingDef>
 
   <ThingDef ParentName="EvolvedOrganBase">
-    <defName>EvolvedArmClaw</defName>
+    <defName>EVORG_Organ_ArmClaw</defName>
     <label>evolved arm claw</label>
     <description>An arm claw created by accelerated evolution. While worse than an normal arm at manipulation and worse than a bone sabre at combat, lives in a healthy balance between the two.</description>
     <recipeMaker>
@@ -364,7 +364,7 @@
   </ThingDef>
 
   <ThingDef ParentName="EvolvedOrganBase">
-    <defName>EvolvedArmMace</defName>
+    <defName>EVORG_Organ_ArmMace</defName>
     <label>evolved arm mace</label>
     <description>An arm mace created by accelerated evolution. While not great at manpulation, serves as one of the most deadly close combat weapons known to the rim.</description>
     <recipeMaker>

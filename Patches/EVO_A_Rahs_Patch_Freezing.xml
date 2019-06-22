@@ -295,7 +295,7 @@
 					<success>Always</success>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName = "EvolvedArmClaw"]</xpath>
+					<xpath>/Defs/ThingDef[defName = "EVORG_Organ_ArmClaw"]</xpath>
 					<value>
 						<tickerType>Rare</tickerType>
 						<comps>
@@ -321,7 +321,7 @@
 					<success>Always</success>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName = "EvolvedArmMace"]</xpath>
+					<xpath>/Defs/ThingDef[defName = "EVORG_Organ_ArmMace"]</xpath>
 					<value>
 						<tickerType>Rare</tickerType>
 						<comps>

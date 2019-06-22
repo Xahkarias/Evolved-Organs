@@ -165,7 +165,7 @@
 
 	<!-- Macelimb -->
 	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedArmMace</defName>
+		<defName>EVORG_Hediff_ArmMace_Primary</defName>
 		<label>evolved arm mace</label>
 		<labelNoun>an evolved arm mace</labelNoun>
 		<defaultLabelColor>(.2,1,.9)</defaultLabelColor>
@@ -184,7 +184,7 @@
 				</tools>
 			</li>
 		</comps>
-		<spawnThingOnRemoved>EvolvedArmMace</spawnThingOnRemoved>
+		<spawnThingOnRemoved>EVORG_Organ_ArmMace</spawnThingOnRemoved>
 		<addedPartProps>
 			<isGoodWeapon>true</isGoodWeapon>
 			<solid>true</solid>
@@ -206,7 +206,7 @@
 	</HediffDef>
 
 	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedArmMace_Secondary</defName>
+		<defName>EVORG_Hediff_ArmMace_Secondary</defName>
 		<label>evolved arm mace</label>
 		<labelNoun>an evolved arm mace</labelNoun>
 		<defaultLabelColor>(.2,1,.9)</defaultLabelColor>
@@ -225,7 +225,7 @@
 				</tools>
 			</li>
 		</comps>
-		<spawnThingOnRemoved>EvolvedArmMace</spawnThingOnRemoved>
+		<spawnThingOnRemoved>EVORG_Organ_ArmMace</spawnThingOnRemoved>
 		<addedPartProps>
 			<isGoodWeapon>true</isGoodWeapon>
 			<solid>true</solid>
@@ -248,7 +248,7 @@
 
 	<!-- Clawlimb -->
 	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedArmClaw</defName>
+		<defName>EVORG_Hediff_ArmClaw_Primary</defName>
 		<label>evolved arm claw</label>
 		<labelNoun>an evolved arm claw</labelNoun>
 		<defaultLabelColor>(.2,1,.9)</defaultLabelColor>
@@ -266,7 +266,7 @@
 				</tools>
 			</li>
 		</comps>
-		<spawnThingOnRemoved>EvolvedArmClaw</spawnThingOnRemoved>
+		<spawnThingOnRemoved>EVORG_Organ_ArmClaw</spawnThingOnRemoved>
 		<addedPartProps>
 			<isGoodWeapon>true</isGoodWeapon>
 			<solid>true</solid>
@@ -288,7 +288,7 @@
 	</HediffDef>
 
 	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedArmClaw_Secondary</defName>
+		<defName>EVORG_Hediff_ArmClaw_Secondary</defName>
 		<label>evolved arm claw</label>
 		<labelNoun>an evolved arm claw</labelNoun>
 		<defaultLabelColor>(.2,1,.9)</defaultLabelColor>
@@ -306,7 +306,7 @@
 				</tools>
 			</li>
 		</comps>
-		<spawnThingOnRemoved>EvolvedArmClaw</spawnThingOnRemoved>
+		<spawnThingOnRemoved>EVORG_Organ_ArmClaw</spawnThingOnRemoved>
 		<addedPartProps>
 			<isGoodWeapon>true</isGoodWeapon>
 			<solid>true</solid>
