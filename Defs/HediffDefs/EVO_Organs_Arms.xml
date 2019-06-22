@@ -5,6 +5,7 @@
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>EvolvedArm</defName>
 		<label>evolved arm</label>
+		<defaultLabelColor>(.2,1,.9)</defaultLabelColor>
 		<labelNoun>an evolved arm</labelNoun>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
@@ -43,6 +44,7 @@
 		<defName>EvolvedArm_Secondary</defName>
 		<label>evolved arm</label>
 		<labelNoun>an evolved arm</labelNoun>
+		<defaultLabelColor>(.2,1,.9)</defaultLabelColor>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -82,6 +84,7 @@
 		<defName>EvolvedArmSabre</defName>
 		<label>evolved arm sabre</label>
 		<labelNoun>an evolved arm sabre</labelNoun>
+		<defaultLabelColor>(.2,1,.9)</defaultLabelColor>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -124,6 +127,7 @@
 		<defName>EvolvedArmSabre_Secondary</defName>
 		<label>evolved arm sabre</label>
 		<labelNoun>an evolved arm sabre</labelNoun>
+		<defaultLabelColor>(.2,1,.9)</defaultLabelColor>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -167,6 +171,7 @@
 		<defName>EvolvedArmMace</defName>
 		<label>evolved arm mace</label>
 		<labelNoun>an evolved arm mace</labelNoun>
+		<defaultLabelColor>(.2,1,.9)</defaultLabelColor>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -208,6 +213,7 @@
 		<defName>EvolvedArmMace_Secondary</defName>
 		<label>evolved arm mace</label>
 		<labelNoun>an evolved arm mace</labelNoun>
+		<defaultLabelColor>(.2,1,.9)</defaultLabelColor>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -250,6 +256,7 @@
 		<defName>EvolvedArmClaw</defName>
 		<label>evolved arm claw</label>
 		<labelNoun>an evolved arm claw</labelNoun>
+		<defaultLabelColor>(.2,1,.9)</defaultLabelColor>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -290,6 +297,7 @@
 		<defName>EvolvedArmClaw_Secondary</defName>
 		<label>evolved arm claw</label>
 		<labelNoun>an evolved arm claw</labelNoun>
+		<defaultLabelColor>(.2,1,.9)</defaultLabelColor>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -331,6 +339,7 @@
 		<defName>EvolvedArmTentacle</defName>
 		<label>evolved tentacle</label>
 		<labelNoun>an evolved tentacle</labelNoun>
+		<defaultLabelColor>(.2,1,.9)</defaultLabelColor>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -369,6 +378,7 @@
 		<defName>EvolvedArmTentacle_Secondary</defName>
 		<label>evolved tentacle</label>
 		<labelNoun>an evolved tentacle</labelNoun>
+		<defaultLabelColor>(.2,1,.9)</defaultLabelColor>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -408,6 +418,7 @@
 		<label>evolved arm shield</label>
 		<labelNoun>an evolved arm shield</labelNoun>
 		<spawnThingOnRemoved>EvolvedArmShield</spawnThingOnRemoved>
+		<defaultLabelColor>(.2,1,.9)</defaultLabelColor>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>1.0</partEfficiency>
@@ -446,6 +457,7 @@
 		<defName>EvolvedArmShield_Secondary</defName>
 		<label>evolved arm shield</label>
 		<labelNoun>an evolved arm shield</labelNoun>
+		<defaultLabelColor>(.2,1,.9)</defaultLabelColor>
 		<spawnThingOnRemoved>EvolvedArmShield</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
