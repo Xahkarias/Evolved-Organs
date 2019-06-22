@@ -378,7 +378,7 @@
   </ThingDef>
 
   <ThingDef ParentName="EvolvedOrganBase">
-    <defName>EvolvedArmTentacle</defName>
+    <defName>EVORG_Organ_ArmTentacle</defName>
     <label>evolved arm tentacle</label>
     <description>An arm tentacle created by accelerated evolution. Not great at combat, but amazing at manipulating objects due to the wide range of articulation.</description>
     <recipeMaker>

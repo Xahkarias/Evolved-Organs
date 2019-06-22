@@ -376,7 +376,7 @@
 
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedArmTentacle_Primary</defName>
+		<defName>EVORG_Surgery_ArmTentacle_Primary</defName>
 		<label>implant evolved tentacle (primary)</label>
 		<description>Implant an evolved tentacle (primary).</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -397,7 +397,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>EvolvedArmTentacle</li>
+						<li>EVORG_Organ_ArmTentacle</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -408,17 +408,17 @@
 				<li>Medicine</li>
 			</categories>
 			<thingDefs>
-				<li>EvolvedArmTentacle</li>
+				<li>EVORG_Organ_ArmTentacle</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>Shoulder</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedArmTentacle</addsHediff>
+		<addsHediff>EVORG_Hediff_ArmTentacle_Primary</addsHediff>
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedArmTentacle_Secondary</defName>
+		<defName>EVORG_Surgery_ArmTentacle_Secondary</defName>
 		<label>implant evolved tentacle (secondary)</label>
 		<description>Implant an evolved tentacle (secondary)</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -439,7 +439,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>EvolvedArmTentacle</li>
+						<li>EVORG_Organ_ArmTentacle</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -458,14 +458,14 @@
 				<li>Medicine</li>
 			</categories>
 			<thingDefs>
-				<li>EvolvedArmTentacle</li>
+				<li>EVORG_Organ_ArmTentacle</li>
 				<li>EvolvedChunk</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>LowerShoulder</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedArmTentacle_Secondary</addsHediff>
+		<addsHediff>EVORG_Hediff_ArmTentacle_Secondary</addsHediff>
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">

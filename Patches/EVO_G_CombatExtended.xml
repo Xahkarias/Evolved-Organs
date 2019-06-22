@@ -199,7 +199,7 @@
 
 							<!--Tentacle-->
 							<li Class="PatchOperationReplace">
-								<xpath>*/HediffDef[defName="EvolvedArmTentacle"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<xpath>*/HediffDef[defName="EVORG_Hediff_ArmTentacle_Primary"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
 								<value>
 									<tools>
 										<li Class="CombatExtended.ToolCE">
@@ -215,7 +215,7 @@
 							</li>
 
 							<li Class="PatchOperationReplace">
-								<xpath>*/HediffDef[defName="EvolvedArmTentacle_Secondary"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<xpath>*/HediffDef[defName="EVORG_Hediff_ArmTentacle_Secondary"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
 								<value>
 									<tools>
 										<li Class="CombatExtended.ToolCE">
@@ -518,7 +518,7 @@
 
 							<!--Tentacle-->
 							<li Class="PatchOperationReplace">
-								<xpath>*/HediffDef[defName="EvolvedArmTentacle"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<xpath>*/HediffDef[defName="EVORG_Hediff_ArmTentacle_Primary"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
 								<value>
 									<tools>
 										<li Class="CombatExtended.ToolCE">
@@ -534,7 +534,7 @@
 							</li>
 
 							<li Class="PatchOperationReplace">
-								<xpath>*/HediffDef[defName="EvolvedArmTentacle_Secondary"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
+								<xpath>*/HediffDef[defName="EVORG_Hediff_ArmTentacle_Secondary"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/verbs</xpath>
 								<value>
 									<tools>
 										<li Class="CombatExtended.ToolCE">

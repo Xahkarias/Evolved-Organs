@@ -1876,10 +1876,10 @@
 
         <!-- Tentacle -->
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EvolvedArmTentacle"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVORG_Hediff_ArmTentacle_Primary"]</xpath>
           <value>
             <HediffDef ParentName="AddedBodyPartBase">
-              <defName>EvolvedArmTentacle</defName>
+              <defName>EVORG_Hediff_ArmTentacle_Primary</defName>
               <label>evolved tentacle</label>
               <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
               <labelNoun>an evolved tentacle</labelNoun>
@@ -1900,7 +1900,7 @@
                 </li>
               </comps>
               <initialSeverity>0.001</initialSeverity>
-              <spawnThingOnRemoved>EvolvedArmTentacle</spawnThingOnRemoved>
+              <spawnThingOnRemoved>EVORG_Organ_ArmTentacle</spawnThingOnRemoved>
               <addedPartProps>
                 <solid>true</solid>
                 <partEfficiency>1.0</partEfficiency>
@@ -1958,10 +1958,10 @@
         </li>
 
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EvolvedArmTentacle_Secondary"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVORG_Hediff_ArmTentacle_Secondary"]</xpath>
           <value>
             <HediffDef ParentName="AddedBodyPartBase">
-              <defName>EvolvedArmTentacle_Secondary</defName>
+              <defName>EVORG_Hediff_ArmTentacle_Secondary</defName>
               <label>evolved tentacle</label>
               <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
               <labelNoun>an evolved tentacle</labelNoun>
@@ -1982,7 +1982,7 @@
                 </li>
               </comps>
               <initialSeverity>0.001</initialSeverity>
-              <spawnThingOnRemoved>EvolvedArmTentacle</spawnThingOnRemoved>
+              <spawnThingOnRemoved>EVORG_Organ_ArmTentacle</spawnThingOnRemoved>
               <addedPartProps>
                 <solid>true</solid>
                 <partEfficiency>1.0</partEfficiency>

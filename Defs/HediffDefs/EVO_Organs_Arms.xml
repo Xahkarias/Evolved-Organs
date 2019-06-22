@@ -329,7 +329,7 @@
 
 	<!-- Tentacle -->
 	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedArmTentacle</defName>
+		<defName>EVORG_Hediff_ArmTentacle_Primary</defName>
 		<label>evolved tentacle</label>
 		<labelNoun>an evolved tentacle</labelNoun>
 		<defaultLabelColor>(.2,1,.9)</defaultLabelColor>
@@ -346,7 +346,7 @@
 				</tools>
 			</li>
 		</comps>
-		<spawnThingOnRemoved>EvolvedArmTentacle</spawnThingOnRemoved>
+		<spawnThingOnRemoved>EVORG_Organ_ArmTentacle</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>1.0</partEfficiency>
@@ -367,7 +367,7 @@
 	</HediffDef>
 
 	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedArmTentacle_Secondary</defName>
+		<defName>EVORG_Hediff_ArmTentacle_Secondary</defName>
 		<label>evolved tentacle</label>
 		<labelNoun>an evolved tentacle</labelNoun>
 		<defaultLabelColor>(.2,1,.9)</defaultLabelColor>
@@ -384,7 +384,7 @@
 				</tools>
 			</li>
 		</comps>
-		<spawnThingOnRemoved>EvolvedArmTentacle</spawnThingOnRemoved>
+		<spawnThingOnRemoved>EVORG_Organ_ArmTentacle</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>1.0</partEfficiency>

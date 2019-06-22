@@ -198,7 +198,7 @@
           <xpath>/Defs/ThingDef[defName="EvolvedArmSabre"]/costList</xpath>
         </li>
         <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="EvolvedArmTentacle"]/costList</xpath>
+          <xpath>/Defs/ThingDef[defName="EVORG_Organ_ArmTentacle"]/costList</xpath>
         </li>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="EVORG_Organ_ArmShield"]/costList</xpath>
@@ -296,7 +296,7 @@
           <xpath>/Defs/ThingDef[defName="EvolvedArmSabre"]/recipeMaker</xpath>
         </li>
         <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="EvolvedArmTentacle"]/recipeMaker</xpath>
+          <xpath>/Defs/ThingDef[defName="EVORG_Organ_ArmTentacle"]/recipeMaker</xpath>
         </li>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="EVORG_Organ_ArmShield"]/recipeMaker</xpath>
@@ -993,9 +993,9 @@
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-              <defName>EvolvedArmTentacle</defName>
+              <defName>EVORG_Organ_ArmTentacle</defName>
               <label>evolved arm tentacle</label>
-              <productDef>EvolvedArmTentacle</productDef>
+              <productDef>EVORG_Organ_ArmTentacle</productDef>
               <productAmount>1</productAmount>
               <requiredResearch>EVORG_Research_Limbs2</requiredResearch>
             </QEthics.GrowerRecipeDef>
