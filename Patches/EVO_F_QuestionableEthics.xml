@@ -186,7 +186,7 @@
           <xpath>/Defs/ThingDef[defName="EvolvedBrain"]/costList</xpath>
         </li>
         <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="EvolvedArm"]/costList</xpath>
+          <xpath>/Defs/ThingDef[defName="EVORG_Organ_ArmNorm"]/costList</xpath>
         </li>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="EVORG_Organ_ArmClaw"]/costList</xpath>
@@ -284,7 +284,7 @@
           <xpath>/Defs/ThingDef[defName="EvolvedBrain"]/recipeMaker</xpath>
         </li>
         <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="EvolvedArm"]/recipeMaker</xpath>
+          <xpath>/Defs/ThingDef[defName="EVORG_Organ_ArmNorm"]/recipeMaker</xpath>
         </li>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="EVORG_Organ_ArmClaw"]/recipeMaker</xpath>
@@ -323,11 +323,11 @@
         <!--but wait the secondary arms still use it! nOPE!-->
         <li Class="PatchOperationRemove">
           <xpath>
-            /Defs/RecipeDef[contains(defName, "EVO_InstallEvolvedArm")]/ingredients/li[3]
+            /Defs/RecipeDef[contains(defName, "EVORG_Surgery_ArmNorm")]/ingredients/li[3]
           </xpath>
         </li>
         <li Class="PatchOperationRemove">
-          <xpath>/Defs/RecipeDef[contains(defName, "EVO_InstallEvolvedArm")]/fixedIngredientFilter/thingDefs/li[2]</xpath>
+          <xpath>/Defs/RecipeDef[contains(defName, "EVORG_Surgery_ArmNorm")]/fixedIngredientFilter/thingDefs/li[2]</xpath>
         </li>
 
         <!--Then we remove the bench altogether -->
@@ -961,9 +961,9 @@
             </QEthics.GrowerRecipeDef>
 
             <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-              <defName>EvolvedArm</defName>
+              <defName>EVORG_Organ_ArmNorm</defName>
               <label>evolved arm</label>
-              <productDef>EvolvedArm</productDef>
+              <productDef>EVORG_Organ_ArmNorm</productDef>
               <productAmount>1</productAmount>
               <requiredResearch>EVORG_Research_Limbs1</requiredResearch>
             </QEthics.GrowerRecipeDef>

@@ -2,7 +2,7 @@
 <Defs>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedArm_Primary</defName>
+		<defName>EVORG_Surgery_ArmNorm_Primary</defName>
 		<label>implant evolved arm (primary)</label>
 		<description>Implant an evolved arm (primary).</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -23,7 +23,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>EvolvedArm</li>
+						<li>EVORG_Organ_ArmNorm</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -34,17 +34,17 @@
 				<li>Medicine</li>
 			</categories>
 			<thingDefs>
-				<li>EvolvedArm</li>
+				<li>EVORG_Organ_ArmNorm</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>Shoulder</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedArm</addsHediff>
+		<addsHediff>EVORG_Hediff_ArmNorm_Primary</addsHediff>
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>EVO_InstallEvolvedArm_Secondary</defName>
+		<defName>EVORG_Surgery_ArmNorm_Secondary</defName>
 		<label>implant evolved arm (secondary)</label>
 		<description>Implant an evolved arm (secondary).</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -65,7 +65,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>EvolvedArm</li>
+						<li>EVORG_Organ_ArmNorm</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -84,14 +84,14 @@
 				<li>Medicine</li>
 			</categories>
 			<thingDefs>
-				<li>EvolvedArm</li>
+				<li>EVORG_Organ_ArmNorm</li>
 				<li>EvolvedChunk</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>LowerShoulder</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>EvolvedArm_Secondary</addsHediff>
+		<addsHediff>EVORG_Hediff_ArmNorm_Secondary</addsHediff>
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">

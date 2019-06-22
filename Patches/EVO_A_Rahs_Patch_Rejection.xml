@@ -1199,10 +1199,10 @@
 
         <!-- Arm -->
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EvolvedArm"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVORG_Hediff_ArmNorm_Primary"]</xpath>
           <value>
             <HediffDef ParentName="AddedBodyPartBase">
-              <defName>EvolvedArm</defName>
+              <defName>EVORG_Hediff_ArmNorm_Primary</defName>
               <label>evolved arm</label>
               <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
               <labelNoun>an evolved arm</labelNoun>
@@ -1222,7 +1222,7 @@
                   <severityPerDayNotImmune>0.1</severityPerDayNotImmune>
                 </li>
               </comps>
-              <spawnThingOnRemoved>EvolvedArm</spawnThingOnRemoved>
+              <spawnThingOnRemoved>EVORG_Organ_ArmNorm</spawnThingOnRemoved>
               <addedPartProps>
                 <solid>true</solid>
                 <partEfficiency>1.0</partEfficiency>
@@ -1280,10 +1280,10 @@
         </li>
 
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/HediffDef[defName = "EvolvedArm_Secondary"]</xpath>
+          <xpath>/Defs/HediffDef[defName = "EVORG_Hediff_ArmNorm_Secondary"]</xpath>
           <value>
             <HediffDef ParentName="AddedBodyPartBase">
-              <defName>EvolvedArm_Secondary</defName>
+              <defName>EVORG_Hediff_ArmNorm_Secondary</defName>
               <label>evolved arm</label>
               <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
               <labelNoun>an evolved arm</labelNoun>
@@ -1303,7 +1303,7 @@
                   <severityPerDayNotImmune>0.1</severityPerDayNotImmune>
                 </li>
               </comps>
-              <spawnThingOnRemoved>EvolvedArm</spawnThingOnRemoved>
+              <spawnThingOnRemoved>EVORG_Organ_ArmNorm</spawnThingOnRemoved>
               <addedPartProps>
                 <solid>true</solid>
                 <partEfficiency>1.0</partEfficiency>

@@ -3,7 +3,7 @@
 
 	<!-- Arm -->
 	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedArm</defName>
+		<defName>EVORG_Hediff_ArmNorm_Primary</defName>
 		<label>evolved arm</label>
 		<defaultLabelColor>(.2,1,.9)</defaultLabelColor>
 		<labelNoun>an evolved arm</labelNoun>
@@ -20,7 +20,7 @@
 				</tools>
 			</li>
 		</comps>
-		<spawnThingOnRemoved>EvolvedArm</spawnThingOnRemoved>
+		<spawnThingOnRemoved>EVORG_Organ_ArmNorm</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>1.0</partEfficiency>
@@ -41,7 +41,7 @@
 	</HediffDef>
 
 	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>EvolvedArm_Secondary</defName>
+		<defName>EVORG_Hediff_ArmNorm_Secondary</defName>
 		<label>evolved arm</label>
 		<labelNoun>an evolved arm</labelNoun>
 		<defaultLabelColor>(.2,1,.9)</defaultLabelColor>
@@ -58,7 +58,7 @@
 				</tools>
 			</li>
 		</comps>
-		<spawnThingOnRemoved>EvolvedArm</spawnThingOnRemoved>
+		<spawnThingOnRemoved>EVORG_Organ_ArmNorm</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>1.0</partEfficiency>
