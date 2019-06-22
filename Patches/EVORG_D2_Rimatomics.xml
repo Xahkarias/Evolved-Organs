@@ -11,7 +11,7 @@
           <xpath>/Defs</xpath>
           <value>
             <ThingDef ParentName="EvolvedOrganBase">
-              <defName>EvolvedRadiationFilter</defName>
+              <defName>EVORG_Organ_RadiationFilter</defName>
               <label>RAD suppressor</label>
               <description>An evolved organ developed to release protective protiens which insulate cells from radiation damage as well as filtering and replacing irradiated tissue.</description>
               <recipeMaker>
@@ -24,11 +24,11 @@
             </ThingDef>
 
             <HediffDef ParentName="AddedBodyPartBase">
-              <defName>EvolvedRadiationFilter</defName>
+              <defName>EVORG_Hediff_RadiationFilter</defName>
               <label>RAD suppressor</label>
               <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
               <labelNoun>a RAD suppressor</labelNoun>
-              <spawnThingOnRemoved>EvolvedRadiationFilter</spawnThingOnRemoved>
+              <spawnThingOnRemoved>EVORG_Organ_RadiationFilter</spawnThingOnRemoved>
               <addedPartProps>
                 <solid>true</solid>
                 <partEfficiency>1.0</partEfficiency>
@@ -44,7 +44,7 @@
             </HediffDef>
 
             <RecipeDef ParentName="SurgeryFlesh">
-              <defName>EVO_InstallEvolvedRadiationFilter</defName>
+              <defName>EVORG_Surgery_RadiationFilter</defName>
               <label>implant RAD suppressor</label>
               <description>Implant an organ capable of filtering irradiated tissue from it's host.</description>
               <workerClass>Recipe_InstallImplant</workerClass>
@@ -68,7 +68,7 @@
                 <li>
                   <filter>
                     <thingDefs>
-                      <li>EvolvedRadiationFilter</li>
+                      <li>EVORG_Organ_RadiationFilter</li>
                     </thingDefs>
                   </filter>
                   <count>1</count>
@@ -79,14 +79,14 @@
                   <li>Medicine</li>
                 </categories>
                 <thingDefs>
-                  <li>EvolvedRadiationFilter</li>
+                  <li>EVORG_Organ_RadiationFilter</li>
                 </thingDefs>
               </fixedIngredientFilter>
               <appliedOnFixedBodyParts>
                 <li>LeftChestCavity</li>
               </appliedOnFixedBodyParts>
               <removesHediff>EvolvedThirdLung</removesHediff>
-              <addsHediff>EvolvedRadiationFilter</addsHediff>
+              <addsHediff>EVORG_Hediff_RadiationFilter</addsHediff>
             </RecipeDef>
           </value>
         </li>
@@ -98,14 +98,14 @@
           <match Class="PatchOperationSequence">
             <operations>
               <li Class="PatchOperationReplace">
-                <xpath>/Defs/HediffDefs[defName="EvolvedRadiationFilter"]</xpath>
+                <xpath>/Defs/HediffDefs[defName="EVORG_Hediff_RadiationFilter"]</xpath>
                 <value>
                   <HediffDef ParentName="AddedBodyPartBase">
-                    <defName>EvolvedRadiationFilter</defName>
+                    <defName>EVORG_Hediff_RadiationFilter</defName>
                     <label>RAD suppressor</label>
                     <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
                     <labelNoun>a RAD suppressor</labelNoun>
-                    <spawnThingOnRemoved>EvolvedRadiationFilter</spawnThingOnRemoved>
+                    <spawnThingOnRemoved>EVORG_Organ_RadiationFilter</spawnThingOnRemoved>
                     <addedPartProps>
                       <solid>true</solid>
                       <partEfficiency>1.0</partEfficiency>
@@ -146,7 +146,7 @@
                 </value>
               </li>
               <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName = "EvolvedRadiationFilter"]</xpath>
+                <xpath>/Defs/ThingDef[defName = "EVORG_Organ_RadiationFilter"]</xpath>
                 <value>
                   <tickerType>Rare</tickerType>
                   <comps>
@@ -170,18 +170,18 @@
           <match Class="PatchOperationSequence">
             <operations>
               <li Class="PatchOperationRemove">
-                <xpath>/Defs/ThingDef[defName="EvolvedRadiationFilter"]/costList</xpath>
+                <xpath>/Defs/ThingDef[defName="EVORG_Organ_RadiationFilter"]/costList</xpath>
               </li>
               <li Class="PatchOperationRemove">
-                <xpath>/Defs/ThingDef[defName="EvolvedRadiationFilter"]/recipeMaker</xpath>
+                <xpath>/Defs/ThingDef[defName="EVORG_Organ_RadiationFilter"]/recipeMaker</xpath>
               </li>
               <li Class="PatchOperationAdd">
                 <xpath>/Defs</xpath>
                 <value>
                   <QEthics.GrowerRecipeDef ParentName="EvolvedOrganGrowerRecipeBase">
-                    <defName>EvolvedRadiationFilter</defName>
+                    <defName>EVORG_Organ_RadiationFilter</defName>
                     <label>RAD filter</label>
-                    <productDef>EvolvedRadiationFilter</productDef>
+                    <productDef>EVORG_Organ_RadiationFilter</productDef>
                     <productAmount>1</productAmount>
                     <requiredResearch>EVORG_Research_Organs1</requiredResearch>
                   </QEthics.GrowerRecipeDef>

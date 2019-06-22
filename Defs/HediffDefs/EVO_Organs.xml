@@ -485,6 +485,7 @@
   </HediffDef>
 
   <!-- Spider legs -->
+  <!--TODO: See if making a pawn move with only a waist, no legs, is possible-->
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>EvolvedSpider</defName>
     <label>evolved spider leg cluster</label>
