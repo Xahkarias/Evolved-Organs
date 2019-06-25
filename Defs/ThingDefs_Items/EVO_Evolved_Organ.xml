@@ -252,6 +252,20 @@
   </ThingDef>
 
   <ThingDef ParentName="EVORG_OrgBase">
+    <defName>PhotosyntheticSkin</defName>
+    <label>photosyntetic skin</label>
+    <description>Skin which contains chloroplasts that absorb sunlight and negate hunger, effectiveness depends on how much skin is available.</description>
+    <recipeMaker>
+      <researchPrerequisite>EVORG_Research_Start2</researchPrerequisite>
+
+    </recipeMaker>
+    <costList>
+      <EvolvedChunk>12</EvolvedChunk>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="EVORG_OrgBase">
     <defName>EvolvedPelt</defName>
     <label>evolved pelt</label>
     <description>A furred pelt created by accelerated evolution.  Allows the host to blend into it's surroundings while also serving as a effective insulant protecting the humanoid from hostile temperatures.</description>

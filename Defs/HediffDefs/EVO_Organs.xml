@@ -363,6 +363,26 @@
     </stages>
   </HediffDef>
 
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>PhotosyntheticSkin</defName>
+    <label>Photosynthetic skin</label>
+    <defaultLabelColor>(.2,1,.9)</defaultLabelColor>
+    <labelNoun>some photosynthetic skin</labelNoun>
+    <spawnThingOnRemoved></spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>2.0</partEfficiency>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+          <ArmorRating_Heat>0.20</ArmorRating_Heat>
+          <Flammability>.2</Flammability>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
 
   <HediffDef ParentName="ImplantHediffBase">
     <defName>EvolvedPelt</defName>

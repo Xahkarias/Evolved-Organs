@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using System.Text;
 using Harmony;
@@ -16,6 +17,7 @@ namespace EvolvedOrgans
         {
             HarmonyInstance harmony = HarmonyInstance.Create("rimworld.evolvedorgans");
             Log.Message("Harmony successfully patched in Evolved Organ Methods", false);
+            harmony.PatchAll();
         }
 
         [HarmonyPatch(typeof(FoodUtility))]
@@ -54,6 +56,103 @@ namespace EvolvedOrgans
 
             }
         }
+
+        //[HarmonyPatch(typeof(Pawn))]
+        //[HarmonyPatch(nameof(Pawn.TickRare))]
+
+        //static class AddFoodFromSun_Patch
+        //{
+        //    [HarmonyPostfix]
+        //    public static void AddFoodFromSun_Postfix()
+        //    {
+        //        Log.Message("running postfix for sun");
+        //        Map map = Current.Game.CurrentMap;
+        //        IEnumerable<Pawn> pawnlist = map.mapPawns.AllPawns;
+        //        for (int i = 0; i < map.mapPawns.AllPawnsCount; i++)
+        //        {
+        //            Pawn pawn = (Pawn)pawnlist;//Somehow iterate thru pawnlist and set Pawn pawn = each pawn in the forloop
+        //            Log.Message(pawn.ToString());
+        //            if (pawn.health.hediffSet.HasHediff(HediffDef.Named("PhotosyntheticSkin")))
+        //            {
+        //                float sunlevel = pawn.Map.skyManager.CurSkyGlow;
+        //                double worncoverage = 0;
+        //                float foodadded = 0f;
+        //                if (pawn.apparel.BodyPartGroupIsCovered(BodyPartGroupDefOf.UpperHead) || pawn.apparel.BodyPartGroupIsCovered(BodyPartGroupDefOf.FullHead))
+        //                {
+        //                    worncoverage += .1;
+        //                    Log.Message(worncoverage.ToString());
+        //                }
+        //                if (pawn.apparel.BodyPartGroupIsCovered(BodyPartGroupDefOf.Torso))
+        //                {
+        //                    worncoverage += .4;
+        //                    Log.Message(worncoverage.ToString());
+        //                }
+        //                if (pawn.apparel.BodyPartGroupIsCovered(BodyPartGroupDefOf.Legs))
+        //                {
+        //                    worncoverage += .3;
+        //                    Log.Message(worncoverage.ToString());
+        //                }
+        //                if (pawn.apparel.BodyPartGroupIsCovered(BodyPartGroupDefOf.LeftHand))
+        //                {
+        //                    worncoverage += .1;
+        //                    Log.Message(worncoverage.ToString());
+        //                }
+        //                if (pawn.apparel.BodyPartGroupIsCovered(BodyPartGroupDefOf.RightHand))
+        //                {
+        //                    worncoverage += .1;
+        //                    Log.Message(worncoverage.ToString());
+        //                }
+        //                Log.Message(pawn.Name.ToString() + "has hediff photosynthesis, light level is : " + sunlevel.ToString());
+        //                if (sunlevel > .01)
+        //                {
+        //                    Log.Message("light level is : " + sunlevel.ToString());
+        //                    if (worncoverage < 1)
+        //                    {
+        //                        Log.Message("worncoverage is : " + (worncoverage).ToString());
+        //                        foodadded = Math.Max(sunlevel * (float)(worncoverage * -1), 0);//some number to increase food need by every 250 ticks?
+        //                        Log.Message("adding food need via photosynthesis " + foodadded.ToString());
+        //                        pawn.needs.food.CurLevel += foodadded;
+        //                    }
+
+        //                }
+        //            }
+        //        }
+        //    }
+        //}
+
+        [HarmonyPatch(typeof(Recipe_InstallImplant), "GetPartsToApplyOn", new Type[] { typeof(Pawn), typeof(RecipeDef)})]
+        public class AddImplantstoEvolvedOrgans_Patch
+        {
+            [HarmonyPostfix]
+            public static IEnumerable<BodyPartRecord> GetPartsToApplyOn_Postfix(Pawn pawn, RecipeDef recipe)
+            {
+                Log.Message("running patch for GetPartsToApplyOn");
+                if (recipe.defName.Contains("EVORG_"))
+                {
+                    Log.Message("pawn target has installed evolved organ, allowing implant");
+                    for (int i = 0; i < recipe.appliedOnFixedBodyParts.Count; i++)
+                    {
+                        BodyPartDef part = recipe.appliedOnFixedBodyParts[i];
+                        List<BodyPartRecord> bpList = pawn.RaceProps.body.AllParts;
+                        for (int j = 0; j < bpList.Count; j++)
+                        {
+                            BodyPartRecord record = bpList[j];
+                            if (record.def == part)
+                            {
+                                if (pawn.health.hediffSet.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined, null, null).Contains(record))
+                                {
+                                    if (!pawn.health.hediffSet.hediffs.Any((Hediff x) => x.Part == record && x.def == recipe.addsHediff))
+                                    {
+                                       yield return record;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                } yield break;
+            }
+        }
+
         //try to warn the user before they add a bill to overwrite a implant.
         //static class PreventMultipleImplants_Patch
         //{

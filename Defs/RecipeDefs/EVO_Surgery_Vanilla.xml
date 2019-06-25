@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
   <RecipeDef ParentName="SurgeryFlesh">
     <defName>EVORG_Surgery_Heart_Primary</defName>
     <label>implant evolved primary heart</label>
@@ -273,7 +271,7 @@
   </RecipeDef>
 
   <RecipeDef ParentName="SurgeryFlesh">
-    <defName>EVO_InstallEvolvedBrain</defName>
+    <defName>EVORG_InstallEvolvedBrain</defName>
     <label>implant evolved brain</label>
     <description>Implant an evolved brain.</description>
     <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -319,7 +317,7 @@
   </RecipeDef>
 
   <RecipeDef ParentName="SurgeryFlesh">
-    <defName>EVO_InstallEvolvedEye</defName>
+    <defName>EVORG_InstallEvolvedEye</defName>
     <label>implant evolved eye</label>
     <description>Implant an evolved eye.</description>
     <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -364,7 +362,7 @@
   </RecipeDef>
 
   <RecipeDef ParentName="SurgeryFlesh">
-    <defName>EVO_InstallEvolvedSpine</defName>
+    <defName>EVORG_InstallEvolvedSpine</defName>
     <label>implant evolved spine</label>
     <description>Implant an evolved spine.</description>
     <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -409,7 +407,7 @@
   </RecipeDef>
 
   <RecipeDef ParentName="SurgeryFlesh">
-    <defName>EVO_InstallEvolvedNose</defName>
+    <defName>EVORG_InstallEvolvedNose</defName>
     <label>implant evolved nose</label>
     <description>Implant an evolved nose.</description>
     <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -454,7 +452,7 @@
   </RecipeDef>
 
   <RecipeDef ParentName="SurgeryFlesh">
-    <defName>EVO_InstallEvolvedEar</defName>
+    <defName>EVORG_InstallEvolvedEar</defName>
     <label>implant evolved ear</label>
     <description>Implant an evolved ear.</description>
     <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -499,7 +497,7 @@
   </RecipeDef>
 
   <RecipeDef ParentName="SurgeryFlesh">
-    <defName>EVO_InstallEvolvedRibcage</defName>
+    <defName>EVORG_InstallEvolvedRibcage</defName>
     <label>implant evolved ribcage</label>
     <description>Implant an evolved ribcage.</description>
     <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -544,7 +542,7 @@
   </RecipeDef>
 
   <RecipeDef ParentName="SurgeryFlesh">
-    <defName>EVO_InstallEvolvedLeg</defName>
+    <defName>EVORG_InstallEvolvedLeg</defName>
     <label>implant evolved leg</label>
     <description>Implant an evolved leg.</description>
     <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -589,7 +587,7 @@
   </RecipeDef>
 
   <RecipeDef ParentName="SurgeryFlesh">
-    <defName>EVO_InstallEvolvedLarnyx</defName>
+    <defName>EVORG_InstallEvolvedLarnyx</defName>
     <label>implant evolved larnyx</label>
     <description>Implant an evolved larnyx.</description>
     <workerClass>Recipe_InstallImplant</workerClass>
@@ -634,7 +632,7 @@
   </RecipeDef>
 
   <RecipeDef ParentName="SurgeryFlesh">
-    <defName>EVO_InstallEvolvedCarapace</defName>
+    <defName>EVORG_InstallEvolvedCarapace</defName>
     <label>implant evolved carapace</label>
     <description>Implant an evolved carapace.</description>
     <workerClass>Recipe_InstallImplant</workerClass>
@@ -675,12 +673,56 @@
     <appliedOnFixedBodyParts>
       <li>Torso</li>
     </appliedOnFixedBodyParts>
-    <removesHediff>EvolvedPelt</removesHediff>
     <addsHediff>EvolvedCarapace</addsHediff>
   </RecipeDef>
 
   <RecipeDef ParentName="SurgeryFlesh">
-    <defName>EVO_InstallEvolvedPelt</defName>
+    <defName>EVORG_InstallPhotosyntheticSkin</defName>
+    <label>implant photosynthetic skin</label>
+    <description>Implant photosynthetic skin onto the torso.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Implanting photosynthetic skin.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>PhotosyntheticSkin</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>PhotosyntheticSkin</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>PhotosyntheticSkin</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>EVORG_InstallEvolvedPelt</defName>
     <label>implant evolved pelt</label>
     <description>Implant the cells required to grow an evolved pelt into the host's lower dermis.</description>
     <workerClass>Recipe_InstallImplant</workerClass>
@@ -721,12 +763,11 @@
     <appliedOnFixedBodyParts>
       <li>Torso</li>
     </appliedOnFixedBodyParts>
-    <removesHediff>EvolvedCarapace</removesHediff>
     <addsHediff>EvolvedPelt</addsHediff>
   </RecipeDef>
 
   <RecipeDef ParentName="SurgeryFlesh">
-    <defName>EVO_InstallEvolvedFilter</defName>
+    <defName>EVORG_InstallEvolvedFilter</defName>
     <label>implant psychic filter</label>
     <description>Implant an organ dedicated to filtering psychic emenations into the host's skull.</description>
     <workerClass>Recipe_InstallImplant</workerClass>
@@ -772,7 +813,7 @@
   </RecipeDef>
 
   <RecipeDef ParentName="SurgeryFlesh">
-    <defName>EVO_InstallEmpathicResonator</defName>
+    <defName>EVORG_InstallEmpathicResonator</defName>
     <label>implant empathic resonator</label>
     <description>Implant an organ dedicated to psychic manipulaton via empathic suggestion.  Boosts a pawn ability to communicate both verbally and non-verbally increasing social and animal interaction outcomes.</description>
     <workerClass>Recipe_InstallImplant</workerClass>
@@ -796,7 +837,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>EvolvedFilter</li>
+            <li>EmpathicResonator</li>
           </thingDefs>
         </filter>
         <count>1</count>

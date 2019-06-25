@@ -7,7 +7,7 @@
 
   <ResearchProjectDef>
     <defName>EVORG_Research_Start1</defName>
-    <tab>EVO_EvolvedOrgansResearchTab</tab>
+    <tab>EVORG_EvolvedOrgansResearchTab</tab>
     <label>Nano-Scale Cellular Engineering</label>
     <description>By combining our knowledge of biology and bionics, we can engineer cells that have much more potential than anything created naturally.</description>
     <baseCost>4000</baseCost>
@@ -28,7 +28,7 @@
   <!--OrganPath-->
   <ResearchProjectDef>
     <defName>EVORG_Research_Start2</defName>
-    <tab>EVO_EvolvedOrgansResearchTab</tab>
+    <tab>EVORG_EvolvedOrgansResearchTab</tab>
     <label>BioMechanical Organ Application</label>
     <description>Through the selective processes of germinating and stimulating stem cells at the nano-scale with mechanites, it is possible to create simple internal organs.</description>
     <baseCost>2000</baseCost>
@@ -46,7 +46,7 @@
 
   <ResearchProjectDef>
     <defName>EVORG_Research_Organs1</defName>
-    <tab>EVO_EvolvedOrgansResearchTab</tab>
+    <tab>EVORG_EvolvedOrgansResearchTab</tab>
     <label>Complex Organ Application</label>
     <description>The continued understand of stem cells and mechanite integration has allowed the development of advanced cellular structures which can be utilized to create advanced interal organs.</description>
     <baseCost>3000</baseCost>
@@ -64,7 +64,7 @@
 
   <ResearchProjectDef>
     <defName>EVORG_Research_Organs2</defName>
-    <tab>EVO_EvolvedOrgansResearchTab</tab>
+    <tab>EVORG_EvolvedOrgansResearchTab</tab>
     <label>Advanced Organ Application</label>
     <description>The understanding of the most difficult bodily structures which would unlock the capacity to engineer the most complex organs and beyond.</description>
     <baseCost>4000</baseCost>
@@ -83,7 +83,7 @@
   <!-- Limbs -->
   <ResearchProjectDef>
     <defName>EVORG_Research_Limbs1</defName>
-    <tab>EVO_EvolvedOrgansResearchTab</tab>
+    <tab>EVORG_EvolvedOrgansResearchTab</tab>
     <label>Structural Organ Application</label>
     <description>To create bones and musculature we must first understand how to propogate the cells and mechanites in load bearing configurations.</description>
     <baseCost>2000</baseCost>
@@ -101,7 +101,7 @@
 
   <ResearchProjectDef>
     <defName>EVORG_Research_Limbs2</defName>
-    <tab>EVO_EvolvedOrgansResearchTab</tab>
+    <tab>EVORG_EvolvedOrgansResearchTab</tab>
     <label>Complex Limb Strcutures</label>
     <description>The capability to create simple load-bearing structures has been understood, now we must scale up the technology to apply and test it.</description>
     <baseCost>3000</baseCost>
@@ -119,7 +119,7 @@
 
   <ResearchProjectDef>
     <defName>EVORG_Research_Limbs3</defName>
-    <tab>EVO_EvolvedOrgansResearchTab</tab>
+    <tab>EVORG_EvolvedOrgansResearchTab</tab>
     <label>Advanced Limb Strcutures</label>
     <description>The study of what can exist beyond the configurations nature has provided us.  GMO-Humanoid Limbs.  Is the sky the limit?</description>
     <baseCost>4000</baseCost>
