@@ -308,6 +308,12 @@
           <xpath>/Defs/ThingDef[defName="EvolvedPelt"]/recipeMaker</xpath>
         </li>
         <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="ImmortalOrgan"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="EmpathicResonator"]/recipeMaker</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="EvolvedFilter"]/recipeMaker</xpath>
         </li>
         <li Class="PatchOperationRemove">
