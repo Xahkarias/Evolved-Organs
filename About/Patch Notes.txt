@@ -1,3 +1,9 @@
+0.1.5
+
+Fixed:
+Missing recipelist remove ops from QE patch for ImmortalOrgan and EmpathicResonator (fixes red log errors)
+Corrected item filter requirements for the Resonator to properly require a resonator item (was incorrectly expecting a filter item).
+
 0.1.4
 
 Added:
