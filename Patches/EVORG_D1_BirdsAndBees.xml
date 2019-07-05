@@ -31,7 +31,7 @@
 							<label>evolved reproductive organs</label>
 							<description>A set of reproductive organs created by accelerated evolution. I cannot imagine what "features" this has to make it so efficient.</description>
 							<costList>
-								<EvolvedChunk>12</EvolvedChunk>
+								<EVORG_ItemEvolvedChunk>12</EVORG_ItemEvolvedChunk>
 								<ComponentSpacer>1</ComponentSpacer>
 							</costList>
 						</ThingDef>

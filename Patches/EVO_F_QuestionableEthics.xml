@@ -286,7 +286,7 @@
 
         <!--Then the magical meat itself, were leaving it in so users dont have red warnings in their savegames, they can either take it apart or sell it -->
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/ThingDef[defName="EvolvedChunk"]/description</xpath>
+          <xpath>/Defs/ThingDef[defName="EVORG_ItemEvolvedChunk"]/description</xpath>
           <value>
             <description>This has been deprecated. It is unused when the mod is enabled with Questionable Ethics, so either disassemble it at a crafting spot/machining workbench/drug lab, or sell it to a trader.</description>
           </value>
@@ -296,7 +296,7 @@
           <xpath>/Defs</xpath>
           <value>
             <RecipeDef>
-              <defName>Disassemble_EvolvedChunk</defName>
+              <defName>Disassemble_EVORG_ItemEvolvedChunk</defName>
               <label>disassemble evolved meat</label>
               <description>Disassemble some evolved meat, because it's deprecated and unused when the Questionable Ethics mod is enabled.</description>
               <jobString>Disassembling evolved meat.</jobString>
@@ -313,7 +313,7 @@
                 <li>
                   <filter>
                     <thingDefs>
-                      <li>EvolvedChunk</li>
+                      <li>EVORG_ItemEvolvedChunk</li>
                     </thingDefs>
                   </filter>
                   <count>1</count>
@@ -321,11 +321,11 @@
               </ingredients>
               <fixedIngredientFilter>
                 <thingDefs>
-                  <li>EvolvedChunk</li>
+                  <li>EVORG_ItemEvolvedChunk</li>
                 </thingDefs>
               </fixedIngredientFilter>
               <products>
-                <EVO_Humanoid_Protein>5</EVO_Humanoid_Protein>
+                <EVORG_Item_Humanoid_Protein>5</EVORG_Item_Humanoid_Protein>
                 <ComponentIndustrial>2</ComponentIndustrial>
                 <Neutroamine>2</Neutroamine>
               </products>
@@ -340,7 +340,7 @@
 
         <!--And the specific bill to make it -->
         <li Class="PatchOperationRemove">
-          <xpath>/Defs/RecipeDef[defName="Make_EvolvedChunk"]</xpath>
+          <xpath>/Defs/RecipeDef[defName="Make_EVORG_ItemEvolvedChunk"]</xpath>
         </li>
 
 
@@ -716,7 +716,7 @@
                 <li>
                   <filter>
                     <thingDefs>
-                      <li>EVO_Humanoid_Protein</li>
+                      <li>EVORG_Item_Humanoid_Protein</li>
                     </thingDefs>
                   </filter>
                   <count>35</count>

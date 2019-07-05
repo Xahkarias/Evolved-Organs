@@ -147,7 +147,7 @@
 											<researchPrerequisite>EVORG_Research_Limbs2</researchPrerequisite>
 										</recipeMaker>
 										<costList>
-											<EvolvedChunk>12</EvolvedChunk>
+											<EVORG_ItemEvolvedChunk>12</EVORG_ItemEvolvedChunk>
 											<ComponentSpacer>1</ComponentSpacer>
 										</costList>
 									</ThingDef>
@@ -231,7 +231,7 @@
 											<li>
 												<filter>
 													<thingDefs>
-														<li>EvolvedChunk</li>
+														<li>EVORG_ItemEvolvedChunk</li>
 													</thingDefs>
 												</filter>
 												<count>3</count>
@@ -243,7 +243,7 @@
 											</categories>
 											<thingDefs>
 												<li>EvolvedTorqueArm</li>
-												<li>EvolvedChunk</li>
+												<li>EVORG_ItemEvolvedChunk</li>
 											</thingDefs>
 										</fixedIngredientFilter>
 										<appliedOnFixedBodyParts>
@@ -269,7 +269,7 @@
 											<researchPrerequisite>EVORG_Research_Organs2</researchPrerequisite>
 										</recipeMaker>
 										<costList>
-											<EvolvedChunk>12</EvolvedChunk>
+											<EVORG_ItemEvolvedChunk>12</EVORG_ItemEvolvedChunk>
 											<ComponentSpacer>1</ComponentSpacer>
 										</costList>
 									</ThingDef>
@@ -459,7 +459,7 @@
 											<researchPrerequisite>EVORG_Research_Limbs2</researchPrerequisite>
 										</recipeMaker>
 										<costList>
-											<EvolvedChunk>12</EvolvedChunk>
+											<EVORG_ItemEvolvedChunk>12</EVORG_ItemEvolvedChunk>
 											<ComponentSpacer>1</ComponentSpacer>
 										</costList>
 									</ThingDef>
@@ -543,7 +543,7 @@
 											<li>
 												<filter>
 													<thingDefs>
-														<li>EvolvedChunk</li>
+														<li>EVORG_ItemEvolvedChunk</li>
 													</thingDefs>
 												</filter>
 												<count>3</count>
@@ -555,7 +555,7 @@
 											</categories>
 											<thingDefs>
 												<li>EvolvedTorqueArm</li>
-												<li>EvolvedChunk</li>
+												<li>EVORG_ItemEvolvedChunk</li>
 											</thingDefs>
 										</fixedIngredientFilter>
 										<appliedOnFixedBodyParts>
@@ -581,7 +581,7 @@
 											<researchPrerequisite>EVORG_Research_Organs2</researchPrerequisite>
 										</recipeMaker>
 										<costList>
-											<EvolvedChunk>12</EvolvedChunk>
+											<EVORG_ItemEvolvedChunk>12</EVORG_ItemEvolvedChunk>
 											<ComponentSpacer>1</ComponentSpacer>
 										</costList>
 									</ThingDef>

@@ -18,7 +18,7 @@
                 <researchPrerequisite>EVORG_Research_Organs1</researchPrerequisite>
               </recipeMaker>
               <costList>
-                <EvolvedChunk>12</EvolvedChunk>
+                <EVORG_ItemEvolvedChunk>12</EVORG_ItemEvolvedChunk>
                 <ComponentSpacer>1</ComponentSpacer>
               </costList>
             </ThingDef>

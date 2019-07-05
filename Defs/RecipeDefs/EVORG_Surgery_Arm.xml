@@ -73,7 +73,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>EvolvedChunk</li>
+						<li>EVORG_Item_EvolvedChunk</li>
 					</thingDefs>
 				</filter>
 				<count>3</count>
@@ -85,7 +85,7 @@
 			</categories>
 			<thingDefs>
 				<li>EVORG_Organ_ArmNorm</li>
-				<li>EvolvedChunk</li>
+				<li>EVORG_Item_EvolvedChunk</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
@@ -166,7 +166,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>EvolvedChunk</li>
+						<li>EVORG_Item_EvolvedChunk</li>
 					</thingDefs>
 				</filter>
 				<count>3</count>
@@ -178,7 +178,7 @@
 			</categories>
 			<thingDefs>
 				<li>EVORG_Organ_ArmClaw</li>
-				<li>EvolvedChunk</li>
+				<li>EVORG_Item_EvolvedChunk</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
@@ -260,7 +260,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>EvolvedChunk</li>
+						<li>EVORG_Item_EvolvedChunk</li>
 					</thingDefs>
 				</filter>
 				<count>3</count>
@@ -272,7 +272,7 @@
 			</categories>
 			<thingDefs>
 				<li>EVORG_Organ_ArmSabre</li>
-				<li>EvolvedChunk</li>
+				<li>EVORG_Item_EvolvedChunk</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
@@ -353,7 +353,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>EvolvedChunk</li>
+						<li>EVORG_Item_EvolvedChunk</li>
 					</thingDefs>
 				</filter>
 				<count>3</count>
@@ -365,7 +365,7 @@
 			</categories>
 			<thingDefs>
 				<li>EVORG_Organ_ArmMace</li>
-				<li>EvolvedChunk</li>
+				<li>EVORG_Item_EvolvedChunk</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
@@ -447,7 +447,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>EvolvedChunk</li>
+						<li>EVORG_Item_EvolvedChunk</li>
 					</thingDefs>
 				</filter>
 				<count>3</count>
@@ -459,7 +459,7 @@
 			</categories>
 			<thingDefs>
 				<li>EVORG_Organ_ArmTentacle</li>
-				<li>EvolvedChunk</li>
+				<li>EVORG_Item_EvolvedChunk</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
@@ -540,7 +540,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>EvolvedChunk</li>
+						<li>EVORG_Item_EvolvedChunk</li>
 					</thingDefs>
 				</filter>
 				<count>3</count>
@@ -552,7 +552,7 @@
 			</categories>
 			<thingDefs>
 				<li>EVORG_Organ_ArmShield</li>
-				<li>EvolvedChunk</li>
+				<li>EVORG_Item_EvolvedChunk</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>

@@ -33,7 +33,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>EVO_Humanoid_Protein</li>
+						<li>EVORG_Item_Humanoid_Protein</li>
 					</thingDefs>
 				</filter>
 				<count>5</count>
@@ -43,11 +43,11 @@
 			<thingDefs>
 				<li>MedicineIndustrial</li>
 				<li>ComponentIndustrial</li>
-				<li>EVO_Humanoid_Protein</li>
+				<li>EVORG_Item_Humanoid_Protein</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<EvolvedChunk>5</EvolvedChunk>
+			<EVORG_Item_EvolvedChunk>5</EVORG_Item_EvolvedChunk>
 		</products>
 		<researchPrerequisite>EVORG_Research_Start1</researchPrerequisite>
 		<skillRequirements>
@@ -85,7 +85,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<EVO_Humanoid_Protein>5</EVO_Humanoid_Protein>
+			<EVORG_Item_Humanoid_Protein>5</EVORG_Item_Humanoid_Protein>
 		</products>
 		<researchPrerequisite>EVORG_Research_Start1</researchPrerequisite>
 		<skillRequirements>
