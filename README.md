@@ -1,7 +1,7 @@
 # EvolvedOrgans
 Repo for the Rimworld mod, EvolvedOrgans
 
-NOTE: DEVELOPMENT IS DISCONTINUED. AS OF DECEMBER 12 I AM WORKING ON A REVAMPED VERSION. 
+NOTE: DEVELOPMENT IS DISCONTINUED. REVAMPED VERSION HERE https://github.com/Xahkarias/EvolvedOrgansRedux
 
 Hi there:
 
